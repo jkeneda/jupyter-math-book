@@ -52,3 +52,16 @@ If you have a markdown file and you'd like to quickly add YAML metadata to it, s
 ```
 jupyter-book myst init path/to/markdownfile.md
 ```
+
+$math$
+
+<iframe height="430" src="https://demo.webwork.rochester.edu/webwork2/html2xml?
+&answersSubmitted=0
+&sourceFilePath=Library/Rochester/setAlgebra01RealNumbers/lhp1_31-34_mo.pg
+&problemSeed=123567890
+&displayMode=MathJax
+&courseID=daemon_course
+&userID=daemon
+&course_password=daemon
+&outputformat=simple" width="540">
+</iframe>
