@@ -1,0 +1,17 @@
+{
+    "tasks": [
+        {
+            "label": "Build-a-book",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "./.vscode/build.sh"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
