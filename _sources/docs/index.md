@@ -1,11 +1,8 @@
-# Welcome to your Jupyter Book
+# Welcome to Business Math
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This book is the author's attempt at an [open-source](https://github.com/jkeneda/jupyter-math-book), accessible approach to interactive [OER](https://www.oercommons.org/).
 
-Check out the content pages bundled with this sample book to see more.
+If you're a student, please navigate to the intro page for the appropriate course.  You can use the table of contents below or the navigation panel to the left.
 
 ```{tableofcontents}
 ```
