@@ -3,9 +3,14 @@
 
 format: jb-book
 root: docs/intro
-chapters:
-  #- file: docs/math-tests
-  - file: docs/markdown
-  - file: docs/notebooks
-  - file: docs/markdown-notebooks
-  - file: docs/my-markdown-file
+parts:
+  - caption: Business Algebra - 1324
+    chapters:
+    - file: docs/Business-Algebra/Functions/test
+  - caption: Example Book Stuff
+    chapters:
+    - file: docs/math-tests
+    - file: docs/markdown
+    - file: docs/notebooks
+    - file: docs/markdown-notebooks
+    - file: docs/my-markdown-file
