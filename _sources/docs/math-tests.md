@@ -1,6 +1,7 @@
 # Math Tests
 
 You can do inline math: $e^{i\pi} = -1$ and display style math:
+
 $$a^2 + b^2 = c^2$$
 
 <iframe height="490" src="https://demo.webwork.rochester.edu/webwork2/html2xml?
