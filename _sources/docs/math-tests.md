@@ -1,10 +1,9 @@
 # Math Tests
 
-You can do inline math: $e^{i\pi} = -1$ and display style math:  
-
+You can do inline math: $e^{i\pi} = -1$ and display style math:
 $$a^2 + b^2 = c^2$$
 
-<iframe height="490" src="https://demo.webwork.rochester.edu/webwork2/html2xml?
+<iframe height="430" src="https://demo.webwork.rochester.edu/webwork2/html2xml?
 &answersSubmitted=0
 &sourceFilePath=Library/Rochester/setAlgebra01RealNumbers/lhp1_31-34_mo.pg
 &problemSeed=123567890
