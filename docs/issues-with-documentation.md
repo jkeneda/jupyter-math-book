@@ -6,3 +6,5 @@
 - Missing bibliography from "Get started with references"
 
 - The build seemed to break if I tweaked something in toc?  Or maybe referenced a page without a title?  At some point, the building froze, and I tried rolling back to fix the problem.  Deleting the _build folder seems to do the trick.
+
+- The splash page for the documentation has broken links.  I think they need to be .md instead of just the file name, so that they get updated to .html correctly.

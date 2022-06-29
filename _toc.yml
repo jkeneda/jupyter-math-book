@@ -2,10 +2,19 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: docs/intro
-chapters:
-  - file: docs/math-tests
-  - file: docs/markdown
-  - file: docs/notebooks
-  - file: docs/markdown-notebooks
-  - file: docs/my-markdown-file
+root: docs/index
+parts:
+  - caption: Business Algebra - MATH 1324
+    chapters:
+      - file: docs/business-algebra/functions/test
+      # - file: docs/business-algebra/exponentials-and-logarithms
+      # - file: docs/business-algebra/matrices-and-systems-of-equations
+      # - file: docs/business-algebra/linear-programming
+      # - file: docs/business-algebra/probability
+  - caption: Development Stuff
+    chapters:
+      - file: docs/tutorial-stuff/math-tests
+      - file: docs/tutorial-stuff/markdown
+      - file: docs/tutorial-stuff/notebooks
+      - file: docs/tutorial-stuff/markdown-notebooks
+      - file: docs/tutorial-stuff/my-markdown-file
