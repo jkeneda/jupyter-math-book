@@ -1,4 +1,4 @@
-# Table of Contents for Unit 3
+# Matrices and Systems of Equations
 
 ```{tableofcontents}
 ```

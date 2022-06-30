@@ -1,4 +1,4 @@
-# Table of Contents for Unit 2
+# Exponentials and Logarithms
 
 ```{tableofcontents}
 ```
