@@ -107,10 +107,22 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="functions/index.html">
      Functions
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="functions/1-a-relations-and-functions.html">
+       Relations and Functions
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="exponentials-and-logarithms/index.html">
@@ -143,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../development-stuff/index.html">
    Development Stuff
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -285,7 +297,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Here’s a list of the fundamental topic sections we’ll be covering in the course:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions/index.html">Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions/1-a-relations-and-functions.html">Relations and Functions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="exponentials-and-logarithms/index.html">Exponentials and Logarithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrices-and-systems-of-equations/index.html">Matrices and Systems of Equations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-programming/index.html">Linear Programming</a></li>

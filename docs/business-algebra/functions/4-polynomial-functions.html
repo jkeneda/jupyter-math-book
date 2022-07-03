@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions</title>
+    <title>Polynomials</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,10 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Relations and Functions" href="1-a-relations-and-functions.html" />
-    <link rel="prev" title="Business Algebra (MATH 1324)" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,22 +96,22 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../index.html">
    Business Algebra (MATH 1324)
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="index.html">
      Functions
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
      <i class="fas fa-chevron-down">
      </i>
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/4-polynomial-functions.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/4-polynomial-functions.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -272,6 +272,26 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#determining-end-behavior-the-leading-coefficient-test-end-behavior">
+   Determining End Behavior (The Leading Coefficient Test) {#end-behavior}
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-leading-coefficient-test">
+     The Leading Coefficient Test
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -279,23 +299,111 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Functions</h1>
+                <h1>Polynomials</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#determining-end-behavior-the-leading-coefficient-test-end-behavior">
+   Determining End Behavior (The Leading Coefficient Test) {#end-behavior}
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-leading-coefficient-test">
+     The Leading Coefficient Test
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1-a-relations-and-functions.html">Relations and Functions</a></li>
-</ul>
+  <div class="tex2jax_ignore mathjax_ignore section" id="polynomials">
+<h1>Polynomials<a class="headerlink" href="#polynomials" title="Permalink to this headline">¶</a></h1>
+<p>Polynomials are the class of functions generated by adding, subtracting, and multiplying numbers and (powers of) a variable $<span class="math notranslate nohighlight">\(x\)</span>$.</p>
+<p>We’ve already been discussing some examples of polynomials.  It’s typical to categorize polynomials by their <em>degree</em>.</p>
+<p>|——–|————|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Degree</p></th>
+<th class="text-align:center head"><p>Polynomial</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>0</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(c\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>1</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(mx + b\)</span>$</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>2</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>3</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(a_3 x^3 + a_2 x^2 + a_1 x + a_0\)</span>$</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(\vdots\)</span>$</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(\vdots\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(n\)</span>$</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\)</span>$</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>——–</p></td>
+<td class="text-align:center"><p>————</p></td>
+</tr>
+</tbody>
+</table>
+<p>In this table, all of the non-$<span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( letters (like \)</span><span class="math notranslate nohighlight">\(c, m, a_0, a_1, ...\)</span>$) are taken to be some fixed constants.  These constants are called the <em>coefficients</em> of the polynomial.</p>
+<p>polynomial
+: A <strong>polynomial</strong> is any function of the form $<span class="math notranslate nohighlight">\(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\)</span><span class="math notranslate nohighlight">\(, where \)</span><span class="math notranslate nohighlight">\(a_0, a_1, ..., a_n\)</span><span class="math notranslate nohighlight">\( are constants and \)</span><span class="math notranslate nohighlight">\(n\)</span>$ is a non-negative integer.</p>
+<p>degree
+: The <strong>degree</strong> of a polynomial is the highest power of $<span class="math notranslate nohighlight">\(x\)</span>$ that occurs in the polynomial.</p>
+<p>For example, the quadratics that we saw in the last section are the degree 2 polynomials.  Something like $<span class="math notranslate nohighlight">\(y = 2x - 3\)</span><span class="math notranslate nohighlight">\( is a degree 1 polynomial, because it can be thought of as \)</span><span class="math notranslate nohighlight">\(2x^1 - 3x^0\)</span><span class="math notranslate nohighlight">\(.  Similarly, \)</span><span class="math notranslate nohighlight">\(y = 7\)</span><span class="math notranslate nohighlight">\( (a constant function) is a degree 0 polynomial, since it can be written \)</span><span class="math notranslate nohighlight">\(7x^0\)</span><span class="math notranslate nohighlight">\( (recall that \)</span><span class="math notranslate nohighlight">\(x^0 = 1\)</span>$).</p>
+<p>As in the previous section, we’re going to be focused on some ways that we can write a polynomial function.</p>
+<p>|————–|—————|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>General Form</p></th>
+<th class="text-align:center head"><p>Factored Form</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\)</span>$</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(a_n (x - r_1)(x - r_2)\cdots (x - r_n)\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>————–</p></td>
+<td class="text-align:center"><p>—————</p></td>
+</tr>
+</tbody>
+</table>
+<p>The left form is useful for determining what the “end behavior” of the graph looks like - where $<span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( is a large positive or negative number.  The right form is more useful for determining the &quot;inside&quot; portion of the graph, because \)</span><span class="math notranslate nohighlight">\(r_1, ..., r_n\)</span><span class="math notranslate nohighlight">\( are the *roots* of the polynomial.  Roots correspond to \)</span><span class="math notranslate nohighlight">\(x\)</span>$-intercepts on the graph.</p>
+<div class="section" id="determining-end-behavior-the-leading-coefficient-test-end-behavior">
+<h2>Determining End Behavior (The Leading Coefficient Test) {#end-behavior}<a class="headerlink" href="#determining-end-behavior-the-leading-coefficient-test-end-behavior" title="Permalink to this headline">¶</a></h2>
+<p>First, we’re going to focus on determining what the edges of a polynomial’s graph should look like.  We’ll learn how to determine the interior behavior of the graph later.</p>
+<p>We saw in the last section that $<span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span><span class="math notranslate nohighlight">\( &quot;opens up&quot; if \)</span><span class="math notranslate nohighlight">\(a\)</span><span class="math notranslate nohighlight">\( is positive, and it &quot;opens down&quot; if \)</span><span class="math notranslate nohighlight">\(a\)</span>$ is negative.  More generally, polynomials with an even degree will either “open up” or “open down”, depending on the positivity or negativity of their <em>leading coefficient</em>.</p>
+<p>leading coefficient
+: The <strong>leading coefficient</strong> of a polynomial is the coefficient of its highest-degree term.</p>
+<p>For example, the coefficients of the terms in $<span class="math notranslate nohighlight">\(-x^4 + 2x^2 + 7\)</span><span class="math notranslate nohighlight">\( are -1, 2, and 7.  The leading coefficient would be -1, because that's the coefficient on the term with the highest power of \)</span><span class="math notranslate nohighlight">\(x\)</span>$.  This polynomial would open down on the edges of the graph by the Leading Coefficient Test.</p>
+<div class="section" id="the-leading-coefficient-test">
+<h3>The Leading Coefficient Test<a class="headerlink" href="#the-leading-coefficient-test" title="Permalink to this headline">¶</a></h3>
+<p>Coming Soon!  See your lecture notes/videos for help with this topic.</p>
+<hr class="docutils" />
+<p><span class="xref myst">Return to Previous Section</span></p>
+<p><span class="xref myst">Continue to Next Section</span></p>
+<p><span class="xref myst">Return to Table of Contents</span></p>
+</div>
 </div>
 </div>
 
@@ -323,21 +431,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Business Algebra (MATH 1324)</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="1-a-relations-and-functions.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Relations and Functions</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

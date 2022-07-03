@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relations and Functions</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Exponentials and Logarithms" href="../exponentials-and-logarithms/index.html" />
+    <link rel="prev" title="Functions" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   Welcome to Business Math!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Business Algebra (MATH 1324)
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="index.html">
+     Functions
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Relations and Functions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../exponentials-and-logarithms/index.html">
+     Exponentials and Logarithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../matrices-and-systems-of-equations/index.html">
+     Matrices and Systems of Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../linear-programming/index.html">
+     Linear Programming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../probability/index.html">
+     Intro to Probability Theory
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../business-calculus/index.html">
+   Business Calculus (MATH 1325)
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../development-stuff/index.html">
+   Development Stuff
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/math-tests.html">
+     Math Tests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/notebooks.html">
+     Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/markdown-notebooks.html">
+     Notebooks with MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/my-markdown-file.html">
+     Here’s my sample title
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../development-stuff/issues-with-documentation.html">
+     Issues list
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/1-a-relations-and-functions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        <a class="issues-button"
+            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/1-a-relations-and-functions.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relations">
+   Relations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sets">
+   Sets
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#domains-and-ranges">
+   Domains and Ranges
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-5">
+     Example 5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remark-about-set-notation">
+     Remark about set notation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technical-definition-of-a-relation">
+   Technical definition of a relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-6">
+     Example 6
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-7">
+     Example 7
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#remark-about-functions">
+       Remark about Functions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-is-it-a-function">
+   Practice: Is it a function?
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Relations and Functions</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relations">
+   Relations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sets">
+   Sets
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#domains-and-ranges">
+   Domains and Ranges
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-5">
+     Example 5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remark-about-set-notation">
+     Remark about set notation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technical-definition-of-a-relation">
+   Technical definition of a relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-6">
+     Example 6
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-7">
+     Example 7
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#remark-about-functions">
+       Remark about Functions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-is-it-a-function">
+   Practice: Is it a function?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="relations-and-functions">
+<h1>Relations and Functions<a class="headerlink" href="#relations-and-functions" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we introduce <em>relations</em> and <em>functions</em>, which are used to model relationships between two sets.</p>
+<div class="section" id="relations">
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">¶</a></h2>
+<p>It’s very important in mathematics to have clear, unambiguous definitions for our terms.  In these notes, definitions will look like this:</p>
+<p>relation
+: (informal) A <strong>relation</strong> has a set of inputs and a set of outputs.  For each input, the relation returns <em>at least one</em> output.</p>
+<div class="section" id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>People and their pets:</p>
+<p>|——–|——|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Person</p></th>
+<th class="text-align:center head"><p>Pets</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Jill</p></td>
+<td class="text-align:center"><p>Jack</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Lola</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Stevie</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>——-+——</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Josh</p></td>
+<td class="text-align:center"><p>Curie</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>======+=======</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Kenzie</p></td>
+<td class="text-align:center"><p>Ellie</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Josie</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Lux</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Sheyleah</p></td>
+<td class="text-align:center"><p>Mittens</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>——</p></td>
+<td class="text-align:center"><p>——</p></td>
+</tr>
+</tbody>
+</table>
+<p>We can interpret the above table as a relation if we think of the person as the “input” and their pets as the “outputs”.  For example, the input <em>Jill</em> produces the outputs <em>Jack</em>, <em>Lola</em>, and <em>Stevie</em>.  The input <em>Josh</em> produces Josh’s only pet, <em>Curie</em>.</p>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>Total medals per country in the Tokyo 2020 Olympic Games:</p>
+<p>|———|——–|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Country</p></th>
+<th class="text-align:center head"><p>Medals</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>USA</p></td>
+<td class="text-align:center"><p>113</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>China</p></td>
+<td class="text-align:center"><p>88</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Russia</p></td>
+<td class="text-align:center"><p>71</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Great Britain</p></td>
+<td class="text-align:center"><p>65</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Japan</p></td>
+<td class="text-align:center"><p>58</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Australia</p></td>
+<td class="text-align:center"><p>46</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Italy</p></td>
+<td class="text-align:center"><p>40</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Germany</p></td>
+<td class="text-align:center"><p>37</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Netherlands</p></td>
+<td class="text-align:center"><p>36</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>France</p></td>
+<td class="text-align:center"><p>33</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>———</p></td>
+<td class="text-align:center"><p>——–</p></td>
+</tr>
+</tbody>
+</table>
+<p>The above table represents a relation if we think of the country as the “input” and its number of medals as the “output”.</p>
+<p>Before we discuss the types of relations that will be useful in business algebra, we need to make some formal definitions of the sets and types of relations we’ll be using.</p>
+</div>
+</div>
+<div class="section" id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<p>Every relation has a <em>set</em> of inputs and a <em>set</em> of outputs.  A relation represents a connection between two sets.  But what are these sets?</p>
+<p>set
+: A <strong>set</strong> is a collection of objects (usually called the <em>elements</em> of the set).  In this class, those elements can be basically anything: names, countries, images, text, or (most typically) numbers.</p>
+<div class="section" id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
+<p>The set of Jill’s pets from Example 1 (above) could be written like $<span class="math notranslate nohighlight">\(\{\text{Jack}, \text{Lola}, \text{Stevie}\}\)</span>$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.</p>
+</div>
+<div class="section" id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
+<p>Often, we want to work with sets of numbers.  For example, if we wanted to work with the <strong>integers</strong>, we could write $<span class="math notranslate nohighlight">\(\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}\)</span>$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.</p>
+<p>|————-|———–|——————-|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Name of Set</p></th>
+<th class="text-align:center head"><p>Shorthand</p></th>
+<th class="text-align:center head"><p>Corresponding Set</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>the integers</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>$</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(\{..., -3, -2, -1, 0, 1, 2, 3, ...\}\)</span>$</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>the reals</p></td>
+<td class="text-align:center"><p>$<span class="math notranslate nohighlight">\(\mathbb{R}\)</span><span class="math notranslate nohighlight">\( or \)</span><span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>$</p></td>
+<td class="text-align:center"><p>all real numbers (like $<span class="math notranslate nohighlight">\(0, -0.\overline{333}, \pi, \frac{5}{7}, \sqrt{2}\)</span>$, etc.)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>——</p></td>
+<td class="text-align:center"><p>——-</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>You can think of the real numbers as being the complete number line - everything between negative and positive infinity.</p>
+</div>
+</div>
+<div class="section" id="domains-and-ranges">
+<h2>Domains and Ranges<a class="headerlink" href="#domains-and-ranges" title="Permalink to this headline">¶</a></h2>
+<p>To better analyze relations, we have terminology to separate the set of “inputs” from the set of “outputs”.</p>
+<p>domain
+: The <strong>domain</strong> of a relation is its set of inputs.  It is sometimes denoted $<span class="math notranslate nohighlight">\(D\)</span>$ for short.</p>
+<p>range
+: The <strong>range</strong> of a relation is its set of outputs.  It is sometimes denoted $<span class="math notranslate nohighlight">\(R\)</span>$ for short.</p>
+<p>Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like “What’s the domain?” only makes sense if we’re discussing a particular relation already, in the same way that “What’s their age?” only makes sense if we’re discussing a particular person already.</p>
+<div class="section" id="example-5">
+<h3>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h3>
+<p>Let’s return to the Olympic medals example.  If we look at the relation determined by the top 3 countries by medal count, we get:</p>
+<p>|———|——–|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Country</p></th>
+<th class="text-align:center head"><p>Medals</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>USA</p></td>
+<td class="text-align:center"><p>113</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>China</p></td>
+<td class="text-align:center"><p>88</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Russia</p></td>
+<td class="text-align:center"><p>71</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>———</p></td>
+<td class="text-align:center"><p>——–</p></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>domain</em> of this relation is $<span class="math notranslate nohighlight">\(D = \{\text{USA}, \text{China}, \text{Russia}\}\)</span><span class="math notranslate nohighlight">\(, and the *range* of this relation is \)</span><span class="math notranslate nohighlight">\(R = \{113, 88, 71\}\)</span>$.</p>
+</div>
+<div class="section" id="remark-about-set-notation">
+<h3>Remark about set notation<a class="headerlink" href="#remark-about-set-notation" title="Permalink to this headline">¶</a></h3>
+<p>Sets don’t care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:</p>
+<div class="math notranslate nohighlight">
+\[\{113, 88, 71\} = \{71, 88, 113\} = \{71, 71, 88, 88, 88, 113\}\]</div>
+<p>Any of these would be valid answers to “What’s the range of the relation above?”, but the first one is the most obvious/simple to write, so we usually just go with that one.</p>
+</div>
+</div>
+<div class="section" id="technical-definition-of-a-relation">
+<h2>Technical definition of a relation<a class="headerlink" href="#technical-definition-of-a-relation" title="Permalink to this headline">¶</a></h2>
+<p>It is typical to use the ordered pair notation $<span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\( to say &quot;the input \)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( corresponds to the output \)</span><span class="math notranslate nohighlight">\(y\)</span><span class="math notranslate nohighlight">\(&quot; in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair \)</span><span class="math notranslate nohighlight">\((\text{USA}, 113)\)</span>$.  The input is <em>always</em> on the left, and the output is <em>always</em> on the right.  With this notation, we can revise our definition of relation to be a little more precise now:</p>
+<p>relation
+: A relation is a collection of ordered pairs $<span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\(, where \)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( belongs to the domain and \)</span><span class="math notranslate nohighlight">\(y\)</span>$ belongs to the range of the relation.</p>
+<div class="section" id="example-6">
+<h3>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h3>
+<p>The relation from Example 5 could be rewritten this way:</p>
+<div class="math notranslate nohighlight">
+\[\{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}\]</div>
+<p>Note the curly braces.  We still use set notation for relations: a relation is technically the set of its input/output pairs.</p>
+<p>Now we’re ready to discuss the most useful type of relations: functions.</p>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>A <em>function</em> is a special type of relation.  So it still has a domain (set of inputs) and a range (set of outputs).  But it follows one additional rule: every input has <em>exactly one</em> output.  Functions are very predictable - one thing goes in, and one thing comes out.</p>
+<p>function
+: A <strong>function</strong> is a relation such that each input corresponds to <em>exactly one</em> output.</p>
+<div class="section" id="example-7">
+<h3>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h3>
+<p>Let’s return to the first relation we looked at to see why it’s <strong>not</strong> a function:</p>
+<p>|——–|——|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Person</p></th>
+<th class="text-align:center head"><p>Pets</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Jill</p></td>
+<td class="text-align:center"><p>Jack</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Lola</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Stevie</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Josh</p></td>
+<td class="text-align:center"><p>Curie</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Kenzie</p></td>
+<td class="text-align:center"><p>Ellie</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Josie</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p></p></td>
+<td class="text-align:center"><p>Lux</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Sheyleah</p></td>
+<td class="text-align:center"><p>Mittens</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>——</p></td>
+<td class="text-align:center"><p>——</p></td>
+</tr>
+</tbody>
+</table>
+<p>This is <strong>not</strong> a function, because some of its inputs have more than one output.  For example, the input Jill has three different outputs, and a function should produce exactly one output for Jill.  Functions are useful because they are unambiguous.  If I say something like “Jill’s pet”, it’s still unclear which of her three pets I’m referring to.  We won’t be able to do much math if we work with relations that are ambiguous like this.  We need the fact that functions are predictable/unambiguous if we’re going to use them algebraically.</p>
+<p>Even if we removed Jill and her pets from the table, the relation above would <em>still</em> not represent a function.  Can you see why?  Expand the Details section below to see the answer.</p>
+<details>
+<pre>
+The input Kenzie still produces more than one output.
+</pre>
+</details>
+<div class="section" id="remark-about-functions">
+<h4>Remark about Functions<a class="headerlink" href="#remark-about-functions" title="Permalink to this headline">¶</a></h4>
+<p>Note that it’s okay for a function to have multiple inputs that produce the same output.  For example, the following represents a function:</p>
+<p>|—|—|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>—</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+<p>This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn’t matter if a particular output is repeated.</p>
+</div>
+</div>
+</div>
+<div class="section" id="practice-is-it-a-function">
+<h2>Practice: Is it a function?<a class="headerlink" href="#practice-is-it-a-function" title="Permalink to this headline">¶</a></h2>
+<p>Is this relation a function?</p>
+<div class="math notranslate nohighlight">
+\[\{(1, 1), (2, 2), (3, 3), (4, 4)\}\]</div>
+<details>
+<pre>
+Yes, each input corresponds to just a single output.
+</pre>
+</details>
+<br>
+<p>How about this one?</p>
+<div class="math notranslate nohighlight">
+\[\{(1, 1), (2, 1), (3, 4), (4, 4)\}\]</div>
+<details>
+<pre>
+Yes, this is still a function.  Look at each individual input.  Is its output predictable?
+The inputs 1 and 2 always cause an output of 1, and the inputs 3 and 4 always cause an output of 4, so there's no ambiguity possible in our outputs.
+Each input corresponds to a single possible output.
+</pre>
+</details>
+<br>
+<p>Lastly, is this relation a function?</p>
+<div class="math notranslate nohighlight">
+\[\{(1, 1), (1, 2), (1, 3), (1, 4)\}\]</div>
+<details>
+<pre>
+No, this is not a function.  The input 1 has multiple outputs.
+So if we give this relation an input of 1, we don't know what the output will be.
+The output could be 1, 2, 3, or 4.  This violates the definition of a function.
+</pre>
+</details>
+<br>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\business-algebra\functions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Functions</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../exponentials-and-logarithms/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exponentials and Logarithms</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Josh Keneda<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

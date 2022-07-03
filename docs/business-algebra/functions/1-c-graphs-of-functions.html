@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions</title>
+    <title>Graphs of Functions</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,10 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Relations and Functions" href="1-a-relations-and-functions.html" />
-    <link rel="prev" title="Business Algebra (MATH 1324)" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,22 +96,22 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../index.html">
    Business Algebra (MATH 1324)
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="index.html">
      Functions
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
      <i class="fas fa-chevron-down">
      </i>
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/1-c-graphs-of-functions.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/1-c-graphs-of-functions.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -272,6 +272,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphs-of-discrete-relations-discrete-graphs">
+   Graphs of Discrete Relations {#discrete-graphs}
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphs-of-functions-defined-by-equations-equation-graphs">
+   Graphs of Functions Defined by Equations {#equation-graphs}
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -279,24 +297,58 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Functions</h1>
+                <h1>Graphs of Functions</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphs-of-discrete-relations-discrete-graphs">
+   Graphs of Discrete Relations {#discrete-graphs}
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphs-of-functions-defined-by-equations-equation-graphs">
+   Graphs of Functions Defined by Equations {#equation-graphs}
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1-a-relations-and-functions.html">Relations and Functions</a></li>
-</ul>
+  <div class="tex2jax_ignore mathjax_ignore section" id="graphs-of-functions">
+<h1>Graphs of Functions<a class="headerlink" href="#graphs-of-functions" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we’ll see how to graphically represent functions.</p>
+<div class="section" id="graphs-of-discrete-relations-discrete-graphs">
+<h2>Graphs of Discrete Relations {#discrete-graphs}<a class="headerlink" href="#graphs-of-discrete-relations-discrete-graphs" title="Permalink to this headline">¶</a></h2>
+<p>We’ve defined a relation as a set of ordered pairs $<span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\(.  For example, we can define a relation \)</span><span class="math notranslate nohighlight">\(r = \{(1,3), (2, 1), (3, 5)\}\)</span><span class="math notranslate nohighlight">\(.  When the inputs and outputs are real numbers (like in \)</span><span class="math notranslate nohighlight">\(r\)</span><span class="math notranslate nohighlight">\(), we can represent the same relation using a graph in the \)</span><span class="math notranslate nohighlight">\(xy\)</span>$-plane.</p>
+<div id="calculator1" style="width: 60%; height: 300px; margin-left: auto; margin-right: auto;">
 </div>
+<p>This graph depicts the relation $<span class="math notranslate nohighlight">\(\{(1,3), (2, 1), (3, 5)\}\)</span><span class="math notranslate nohighlight">\(.  You can click on the points to see their coordinates.  Consider the point \)</span><span class="math notranslate nohighlight">\((x, y) = (2, 1)\)</span><span class="math notranslate nohighlight">\(, which is pictured in blue.  You can recover its \)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\(-value by squashing it onto the horizontal (\)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\(-)axis.  You can recover its \)</span><span class="math notranslate nohighlight">\(y\)</span><span class="math notranslate nohighlight">\(-value by squashing it onto the vertical (\)</span><span class="math notranslate nohighlight">\(y\)</span>$-)axis.</p>
+<blockquote>
+<div><p>Stop here and investigate the graph until you’re comfortable translating between a data point $<span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\( and its corresponding point on the \)</span><span class="math notranslate nohighlight">\(xy\)</span>$-plane.</p>
+</div></blockquote>
+</div>
+<div class="section" id="graphs-of-functions-defined-by-equations-equation-graphs">
+<h2>Graphs of Functions Defined by Equations {#equation-graphs}<a class="headerlink" href="#graphs-of-functions-defined-by-equations-equation-graphs" title="Permalink to this headline">¶</a></h2>
+<p>We can also graph functions that are defined by equations.  Recall that an equation like $<span class="math notranslate nohighlight">\(y = x^2\)</span><span class="math notranslate nohighlight">\( is interpreted as a function by thinking of \)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( as the input and \)</span><span class="math notranslate nohighlight">\(y\)</span><span class="math notranslate nohighlight">\( as the corresponding output.  The graph of this function consists of all \)</span><span class="math notranslate nohighlight">\((x, y)\)</span>$ that satisfy the equation.</p>
+<div id="calculator2" style="width: 60%; height: 300px; margin-left: auto; margin-right: auto;">
+</div>
+<p>The graph above is a graph of $<span class="math notranslate nohighlight">\(y = x^2\)</span><span class="math notranslate nohighlight">\(.  It includes points like \)</span><span class="math notranslate nohighlight">\((-1, 1)\)</span><span class="math notranslate nohighlight">\( and \)</span><span class="math notranslate nohighlight">\((2, 4)\)</span><span class="math notranslate nohighlight">\(, because those are \)</span><span class="math notranslate nohighlight">\((x, y)\)</span>$ pairs that satisfy the equation.</p>
+<p>We could generate more points like this by choosing an arbitrary $<span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\(-value and then plugging it into the equation to find its corresponding \)</span><span class="math notranslate nohighlight">\(y\)</span><span class="math notranslate nohighlight">\(.  For example, if you plug in \)</span><span class="math notranslate nohighlight">\(x = 3\)</span><span class="math notranslate nohighlight">\(, you get \)</span><span class="math notranslate nohighlight">\(y = 3^2 = 9\)</span><span class="math notranslate nohighlight">\(, so the point \)</span><span class="math notranslate nohighlight">\((3, 9)\)</span>$ would also be part of this graph.</p>
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script src="1-1-c-graphs-of-functions.js">// Populates Desmos graphs
+</script></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -323,21 +375,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Business Algebra (MATH 1324)</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="1-a-relations-and-functions.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Relations and Functions</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
