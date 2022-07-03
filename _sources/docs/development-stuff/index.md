@@ -1,4 +1,4 @@
 # Development Stuff
 
-```{tableofcontents}
-```
+To do:
+- fix dns issue in github pages settings
