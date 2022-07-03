@@ -32,7 +32,7 @@ slope-intercept form
 
 ## Finding the Equation of a Line Connecting Two Data Points
 
-#### Example 1 {#ex1}
+### Example 1 {#ex1}
 Let's say that you want the equation of a line passing through $$(1, 2)$$ and $$(4, 8)$$.
 
 We know that the line can be written as $$y = mx + b$$, but we need to determine $$m$$ and $$b$$.

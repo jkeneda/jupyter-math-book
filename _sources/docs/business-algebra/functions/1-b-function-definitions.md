@@ -1,14 +1,8 @@
----
-layout: default
-title: 1324 - business algebra
----
-
-Functions Defined by Algebraic Expressions
-===
+# Functions Defined by Algebraic Expressions
 
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
 
-#### Example 1
+## Example 1
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 |-------------|-----------------------------|
@@ -36,7 +30,7 @@ $$A(x) = x^2 \text{ square yards},$$
 
 where the input is thought of as "$$x$$ yards", and the output is measured in square yards.
 
-#### What if we want to work in different units?
+## What if we want to work in different units?
 
 Let's say that you're measuring the area of an entire (square) ranch.  In that case, even if the side length $$x$$ was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate $$\frac{1 \text{ acre}}{4,840 \text{ square yards}}$$:
 
@@ -48,7 +42,7 @@ So the functions $$A$$ and $$A^*$$ will take any side length $$x$$ (in yards) an
 
 To elaborate on the notation in the last example, let's look at the ingredients that we'll be using to define functions by formulas/equations.
 
-#### Example 2 {#example-2}
+### Example 2 {#example-2}
 
 Suppose you're running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs $8.25.
 
@@ -68,7 +62,7 @@ $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x$$
 
 We can express this more compactly using **function notation**.  Function notation replaces a diagram like $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$ with a compact formula like $$y = \$8.25x$$.  This formula contains the same information - it says that the output (shipping cost) is $8.25 times the input (number of orders).
 
-### Functions in math vs. computer science
+## Functions in math vs. computer science
 
 If we were writing code in a programming language, we might write something like:
 
@@ -82,13 +76,3 @@ In math, we do the same thing, but because we're doing computations by hand, we 
 For example, the function above could be written as $$f(x) = 8.25 x$$.  It could also be written as $$g(x) = 8.25 x$$ or $$y = 8.25 x$$, depending on what we'd like to name the function/output.
 
 When you see something like $$h(x) = -20x + 5$$, you should think "$$h$$ is a function that takes the input $$x$$ (the inputs are listed in parentheses) and spits out the output -20 times $$x$$ plus 5".
-
-<!-- Incomplete -->
-
----
-
-[Return to Previous Section](1-1-a-relations-and-functions.html)
-
-[Continue to Next Section](1-1-c-graphs-of-functions.html)
-
-[Return to Table of Contents](index.html)
