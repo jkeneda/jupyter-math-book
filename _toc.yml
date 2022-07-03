@@ -3,18 +3,41 @@
 
 format: jb-book
 root: docs/index
-parts:
-  - caption: Business Algebra - MATH 1324
-    chapters:
-      - file: docs/business-algebra/functions/test
-      # - file: docs/business-algebra/exponentials-and-logarithms
-      # - file: docs/business-algebra/matrices-and-systems-of-equations
-      # - file: docs/business-algebra/linear-programming
-      # - file: docs/business-algebra/probability
-  - caption: Development Stuff
-    chapters:
-      - file: docs/tutorial-stuff/math-tests
-      - file: docs/tutorial-stuff/markdown
-      - file: docs/tutorial-stuff/notebooks
-      - file: docs/tutorial-stuff/markdown-notebooks
-      - file: docs/tutorial-stuff/my-markdown-file
+chapters: 
+  - file: docs/business-algebra/index
+    sections:
+    - file: docs/business-algebra/functions/index
+      sections:
+      - file: docs/business-algebra/functions/1-a-relations-and-functions.md
+      - file: docs/business-algebra/functions/1-b-function-definitions.md
+      - file: docs/business-algebra/functions/1-c-graphs-of-functions.md
+      - file: docs/business-algebra/functions/2-linear-functions.md
+      - file: docs/business-algebra/functions/3-quadratic-functions.md
+      - file: docs/business-algebra/functions/4-polynomial-functions.md
+      - file: docs/business-algebra/functions/5-rational-functions.md
+    - file: docs/business-algebra/exponentials-and-logarithms/index
+      sections:
+      - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/index.md
+        sections:
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/1-exponential-functions.md
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/2-logarithmic-functions.md
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/3-exp-and-log-equations.md
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/4-applications.md
+      - file: docs/business-algebra/exponentials-and-logarithms/finance/index.md
+        sections:
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/1-simple-interest.md
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/2-compound-interest.md
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/3-future-value.md
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/4-present-value.md
+    - file: docs/business-algebra/matrices-and-systems-of-equations/index
+    - file: docs/business-algebra/linear-programming/index
+    - file: docs/business-algebra/probability/index
+  - file: docs/business-calculus/index
+  - file: docs/development-stuff/index
+    sections:
+    - file: docs/development-stuff/math-tests
+    - file: docs/development-stuff/markdown
+    - file: docs/development-stuff/notebooks
+    - file: docs/development-stuff/markdown-notebooks
+    - file: docs/development-stuff/my-markdown-file
+    - file: docs/development-stuff/issues-with-documentation
