@@ -63,10 +63,10 @@ set
 ```
 
 ### Example 3
-The set of Jill's pets from Example 1 (above) could be written like $$\{\text{Jack}, \text{Lola}, \text{Stevie}\}$$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
+The set of Jill's pets from Example 1 (above) could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
 
 ### Example 4
-Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $$\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
+Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
 
 | Name of Set | Shorthand | Corresponding Set |
 |:-----------|-----------|-------------------:|
@@ -81,10 +81,10 @@ To better analyze relations, we have terminology to separate the set of "inputs"
 
 ```{glossary}
 domain
-    The **domain** of a relation is its set of inputs.  It is sometimes denoted $$D$$ for short.
+    The **domain** of a relation is its set of inputs.  It is sometimes denoted $D$ for short.
 
 range
-    The **range** of a relation is its set of outputs.  It is sometimes denoted $$R$$ for short.
+    The **range** of a relation is its set of outputs.  It is sometimes denoted $R$ for short.
 ```
 
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
@@ -114,7 +114,7 @@ It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ co
 
 ```{glossary}
 relation
-    A relation is a collection of ordered pairs $$(x, y)$$, where $$x$$ belongs to the domain and $$y$$ belongs to the range of the relation.
+    A relation is a collection of ordered pairs $(x, y)$, where $x$ belongs to the domain and $y$ belongs to the range of the relation.
 ```
 
 ### Example 6
@@ -145,10 +145,13 @@ Let's return to the first relation we looked at to see why it's **not** a functi
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
+| | |
 | Josh | Curie |
+| | |
 | Kenzie | Ellie |
 |       | Josie |
 |       | Lux |
+| | |
 | Sheyleah | Mittens |
 
 This is **not** a function, because some of its inputs have more than one output.  For example, the input Jill has three different outputs, and a function should produce exactly one output for Jill.  Functions are useful because they are unambiguous.  If I say something like "Jill's pet", it's still unclear which of her three pets I'm referring to.  We won't be able to do much math if we work with relations that are ambiguous like this.  We need the fact that functions are predictable/unambiguous if we're going to use them algebraically.
