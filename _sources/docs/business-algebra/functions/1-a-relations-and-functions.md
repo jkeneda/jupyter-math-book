@@ -108,7 +108,7 @@ Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the rela
 The *domain* of this relation is $D = \{\text{USA}, \text{China}, \text{Russia}\}$, and the *range* of this relation is $R = \{113, 88, 71\}$.
 ````
 
-```{remark}
+```{prf:remark}
 Sets don't care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:
 
 $$
