@@ -148,6 +148,8 @@ function
 ```
 
 ````{prf:example}
+:class: dropdown
+
 Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it's **not** a function:
 
 | Person | Pets |
