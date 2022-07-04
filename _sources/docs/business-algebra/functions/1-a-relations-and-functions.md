@@ -12,9 +12,8 @@ relation
 ```
 The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
-(pets)=
 ````{prf:example}
-:class: dropdown
+:label: pets
 
 People and their pets:
 
@@ -36,7 +35,6 @@ We can interpret the above table as a relation if we think of the person as the 
 ````
 
 ````{prf:example}
-:class: dropdown
 :label: medals
 
 Total medals per country in the Tokyo 2020 Olympic Games:
