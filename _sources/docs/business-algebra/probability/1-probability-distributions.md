@@ -35,10 +35,12 @@ We know all of the possible outcomes for the die roll, and we know how likely th
 This represents the probability distribution of $n$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under "The Central Limit Theorem".
 ```
 
-The probability $$\frac{1}{6} = 0.1\bar{6}$$ might be more commonly written as $$16.\bar{6} \%$$.  In other words, if we pick a specific number between 1 and 6 (like 3), there's close to a 17% chance that we'll roll it next time we roll the die.  That's true for all of these numbers - they're all equally likely.  This is an example of a ***uniform*** *probability distribution*.
+The probability $\frac{1}{6} = 0.1\bar{6}$ might be more commonly written as $16.\bar{6} \%$.  In other words, if we pick a specific number between 1 and 6 (like 3), there's close to a 17% chance that we'll roll it next time we roll the die.  That's true for all of these numbers - they're all equally likely.  This is an example of a ***uniform*** *probability distribution*.
 
+```{glossary}
 uniform
-: A probability distribution is called **uniform** when all of its outcomes are equally likely.
+    A probability distribution is called **uniform** when all of its outcomes are equally likely.
+```
 
 Examples of uniform probability distributions include things like flipping a fair coin or rolling a fair die.  Every possible outcome is equally likely to happen.
 
@@ -73,10 +75,14 @@ Click on the slider above and use your arrow keys (or direct clicks) to change t
 
 We quickly see a familiar pattern emerge.  The distribution gets closer and closer to a bell curve.  The bell curve arises so much in practice that it is called the *normal distribution*.
 
+```{glossary}
 normal distribution
-: A **normal distribution** is another (more technical) name for a bell curve.
+    A **normal distribution** is another (more technical) name for a bell curve.
+```
 
-> Note: There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for now.
+```{warning}
+There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for now.
+```
 
 <script src="../../../_static/chart.js">
 </script>

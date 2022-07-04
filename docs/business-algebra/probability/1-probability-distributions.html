@@ -503,9 +503,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Note</p>
 <p>This represents the probability distribution of <span class="math notranslate nohighlight">\(n\)</span> in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under “The Central Limit Theorem”.</p>
 </div>
-<p>The probability $<span class="math notranslate nohighlight">\(\frac{1}{6} = 0.1\bar{6}\)</span><span class="math notranslate nohighlight">\( might be more commonly written as \)</span><span class="math notranslate nohighlight">\(16.\bar{6} \%\)</span>$.  In other words, if we pick a specific number between 1 and 6 (like 3), there’s close to a 17% chance that we’ll roll it next time we roll the die.  That’s true for all of these numbers - they’re all equally likely.  This is an example of a <em><strong>uniform</strong></em> <em>probability distribution</em>.</p>
-<p>uniform
-: A probability distribution is called <strong>uniform</strong> when all of its outcomes are equally likely.</p>
+<p>The probability <span class="math notranslate nohighlight">\(\frac{1}{6} = 0.1\bar{6}\)</span> might be more commonly written as <span class="math notranslate nohighlight">\(16.\bar{6} \%\)</span>.  In other words, if we pick a specific number between 1 and 6 (like 3), there’s close to a 17% chance that we’ll roll it next time we roll the die.  That’s true for all of these numbers - they’re all equally likely.  This is an example of a <em><strong>uniform</strong></em> <em>probability distribution</em>.</p>
+<dl class="glossary simple">
+<dt id="term-uniform">uniform<a class="headerlink" href="#term-uniform" title="Permalink to this term">¶</a></dt><dd><p>A probability distribution is called <strong>uniform</strong> when all of its outcomes are equally likely.</p>
+</dd>
+</dl>
 <p>Examples of uniform probability distributions include things like flipping a fair coin or rolling a fair die.  Every possible outcome is equally likely to happen.</p>
 <p>Not all probability distributions are uniform.  Sometimes, some outcomes are more likely than others.</p>
 </div>
@@ -532,11 +534,14 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <p>Click on the slider above and use your arrow keys (or direct clicks) to change the number of dice that we’re totalling.  What happens to the shape of the graph as the number of dice increases?</p>
 <p>We quickly see a familiar pattern emerge.  The distribution gets closer and closer to a bell curve.  The bell curve arises so much in practice that it is called the <em>normal distribution</em>.</p>
-<p>normal distribution
-: A <strong>normal distribution</strong> is another (more technical) name for a bell curve.</p>
-<blockquote>
-<div><p>Note: There’s much more to say here, but normal random variables have <em>infinitely</em> many possible outcomes, and we’re going to focus on simpler random variables for now.</p>
-</div></blockquote>
+<dl class="glossary simple">
+<dt id="term-normal-distribution">normal distribution<a class="headerlink" href="#term-normal-distribution" title="Permalink to this term">¶</a></dt><dd><p>A <strong>normal distribution</strong> is another (more technical) name for a bell curve.</p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There’s much more to say here, but normal random variables have <em>infinitely</em> many possible outcomes, and we’re going to focus on simpler random variables for now.</p>
+</div>
 <script src="../../../_static/chart.js">
 </script>
 <script src="../../../_static/distributions.js"> // Functions for handling dice distributions
