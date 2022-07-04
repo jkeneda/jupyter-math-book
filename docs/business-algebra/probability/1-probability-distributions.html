@@ -45,7 +45,6 @@
     <script src="../../../_static/togglebutton.js"></script>
     <script src="../../../_static/1-c-graphs-of-functions.js"></script>
     <script src="../../../_static/1-probability-distributions.js"></script>
-    <script src="../../../_static/central-limit-theorem.js"></script>
     <script src="../../../_static/chart.js"></script>
     <script src="../../../_static/distributions.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
@@ -56,10 +55,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Probability Distributions" href="central-limit-theorem.html" />
+    <link rel="next" title="Business Calculus (MATH 1325)" href="../../business-calculus/index.html" />
     <link rel="prev" title="Intro to Probability Theory" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -261,11 +262,6 @@ const thebe_selector_output = ".output, .cell_output"
        Probability Distributions
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="central-limit-theorem.html">
-       Probability Distributions
-      </a>
-     </li>
     </ul>
    </li>
   </ul>
@@ -406,6 +402,16 @@ const thebe_selector_output = ".output, .cell_output"
    Example 1
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-central-limit-theorem">
+   The Central Limit Theorem
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -431,6 +437,16 @@ const thebe_selector_output = ".output, .cell_output"
    Example 1
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-central-limit-theorem">
+   The Central Limit Theorem
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -442,30 +458,67 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="probability-distributions">
 <h1>Probability Distributions<a class="headerlink" href="#probability-distributions" title="Permalink to this headline">¶</a></h1>
-<p>If we’re playing a game with dice, it’s easy to understand what to expect from the roll of a single die - it’ll roll a 1, 2, 3, 4, 5, or 6, and all of those have an equal chance of happening.  But to understand more complicated situations, we’ll need more complicated models.  The math used to model <em>randomness</em> or <em>uncertainty</em> is called Probability Theory.</p>
+<p>If we’re playing a game with dice, it’s easy to understand what to expect from the roll of a single die - we can roll a 1, 2, 3, 4, 5, or 6, and all of those have an equal chance of happening.  But to understand more complicated situations, we’ll need more complicated models.  The math used to model <em>randomness</em> or <em>uncertainty</em> is called Probability Theory.</p>
 <p>When working with randomness, there are multiple possible outcomes, each with their own probability of occurring.  To represent these outcomes and their probabilities, we use a <em>probability distribution</em>.</p>
-<p>probability distribution
-: A <strong>probability distribution</strong> (for a given experiment) is a table or graph that relates <em>all possible outcomes</em> and <em>their probabilities of occurring</em>.</p>
+<dl class="glossary simple">
+<dt id="term-probability-distribution">probability distribution<a class="headerlink" href="#term-probability-distribution" title="Permalink to this term">¶</a></dt><dd><p>A <strong>probability distribution</strong>  is a table or graph that relates <em>all possible outcomes</em> and <em>their probabilities of occurring</em>.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The probabilities in a probability distribution should add up to 1 (or 100%).</p>
+</div>
+<p>When randomness is involved, we don’t know the exact outcome we’ll get in advance.  Since the outcome isn’t known yet, we can give the outcome a <em>variable name</em>, like $<span class="math notranslate nohighlight">\(n\)</span>$, until it’s determined.  We call this a <em>random variable</em>.</p>
+<dl class="glossary simple">
+<dt id="term-random-variable">random variable<a class="headerlink" href="#term-random-variable" title="Permalink to this term">¶</a></dt><dd><p>A <strong>random variable</strong> is a variable that represents a set of random possible outcomes.</p>
+</dd>
+</dl>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>In the game of Yahtzee, you roll 5 dice.  In the “Chance” category, your score is simply the <em>total</em> that you roll with all 5 dice.  Here’s the distribution of the possible scores for the “Chance” category - and how likely they are.  In other words, the graph below is the <em>probability distribution</em> of the scores you can get.</p>
+<p>If $<span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( represents the number we'll get next time we roll a die, then \)</span><span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( could be 1, 2, 3, 4, 5, or 6.  Since the value of \)</span><span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( depends on some randomness, \)</span><span class="math notranslate nohighlight">\(n\)</span>$ is a random variable.</p>
+<p>We know all of the possible outcomes for the die roll, and we know how likely they are to occur.  Putting those together, we can write the <em>probability distribution for $<span class="math notranslate nohighlight">\(n\)</span>$</em>:</p>
+<p>|——————+—+—+—+—+—+—|
+| Outcome of $<span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\(:| 1 | 2 | 3 | 4 | 5 | 6 |
+|------------------+---+---+---+---+---+---|
+| Probability:     | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span>$ |
+|——————+—+—+—+—+—+—|</p>
+<blockquote>
+<div><p>Note: This represents the probability distribution of $<span class="math notranslate nohighlight">\(n\)</span>$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under “The Central Limit Theorem”.</p>
+</div></blockquote>
+<p>The probability $<span class="math notranslate nohighlight">\(\frac{1}{6} = 0.1\bar{6}\)</span><span class="math notranslate nohighlight">\( might be more commonly written as \)</span><span class="math notranslate nohighlight">\(16.\bar{6} \%\)</span>$.  In other words, if we pick a specific number between 1 and 6 (like 3), there’s close to a 17% chance that we’ll roll it next time we roll the die.  That’s true for all of these numbers - they’re all equally likely.  This is an example of a <em><strong>uniform</strong></em> <em>probability distribution</em>.</p>
+<p>uniform
+: A probability distribution is called <strong>uniform</strong> when all of its outcomes are equally likely.</p>
+<p>Examples of uniform probability distributions include things like flipping a fair coin or rolling a fair die.  Every possible outcome is equally likely to happen.</p>
+<p>Not all probability distributions are uniform.  Sometimes, some outcomes are more likely than others.</p>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>In the game of Yahtzee, you roll 5 dice.  In the “Chance” category, your score is simply the <em>total</em> that you roll with all 5 dice.  Here’s the distribution of the possible scores for the “Chance” category - and how likely they are.  In other words, the graph below is the <em>probability distribution</em> of the scores you can get.  Try hovering over the bars in the graph for more info.  Which outcomes are the most likely?</p>
 <div>
-    <canvas id="myChart"></canvas>
+    <canvas id="originalEx"/>
+</div>
+<p>The shape of this probability distribution might seem familiar to you.  Let’s explore the bell-curved shape of this example a bit more.</p>
+</div>
+<div class="section" id="the-central-limit-theorem">
+<h2>The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
+<p>If we only roll a single die, then the chart looks pretty boring.  All of the outcomes are equally likely.  Below is its uniform probability distribution (in graph form).  You can see that each number has a $<span class="math notranslate nohighlight">\(\frac{1}{6} = 16.\bar{6}\%\)</span>$ chance of being rolled.</p>
+<div>
+    <canvas id="myChart"/>
 </div>
 <div>
     <form id="form1" onsubmit="return false;">
-        <input type="text" id="textBox" value="5d6">
-        <!--<input type="button" id="refreshButton" value="Refresh Distribution">-->
-        <input type="button" id="sampleButton" value="Roll">
+        Number of Dice:<br/>
+        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
+        (minimum of 1, max of 10)
     </form>
 </div>
-<div>
-    <p id="log">
-    </p>
-    <p>
-        Click the roll button to *sample* (i.e. "try the experiment once") from the distribution.  You can change the distribution (e.g. 2d6 means "roll two 6-sided dice", 10d10 means "roll ten 10-sided dice").  Your roll will be displayed above.
-    </p>
-</div>
+<p>Click on the slider above and use your arrow keys (or direct clicks) to change the number of dice that we’re totalling.  What happens to the shape of the graph as the number of dice increases?</p>
+<p>We quickly see a familiar pattern emerge.  The distribution gets closer and closer to a bell curve.  The bell curve arises so much in practice that it is called the <em>normal distribution</em>.</p>
+<p>normal distribution
+: A <strong>normal distribution</strong> is another (more technical) name for a bell curve.</p>
+<blockquote>
+<div><p>Note: There’s much more to say here, but normal random variables have <em>infinitely</em> many possible outcomes, and we’re going to focus on simpler random variables for now.</p>
+</div></blockquote>
 <script src="../../../_static/chart.js">
 </script>
 <script src="../../../_static/distributions.js"> // Functions for handling dice distributions
@@ -506,10 +559,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">Intro to Probability Theory</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="central-limit-theorem.html" title="next page">
+    <a class='right-next' id="next-link" href="../../business-calculus/index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Probability Distributions</p>
+        <p class="prev-next-title">Business Calculus (MATH 1325)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
