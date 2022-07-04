@@ -95,6 +95,8 @@ range
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
 
 ````{prf:example}
+:label: top-3
+
 Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
@@ -124,8 +126,8 @@ relation
     A relation is a collection of ordered pairs $(x, y)$, where $x$ belongs to the domain and $y$ belongs to the range of the relation.
 ```
 
-### Example 6
-The relation from Example 5 could be rewritten this way: 
+````{prf:example}
+The relation from {prf:ref}`top-3` could be rewritten this way: 
 
 $$
 \{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}
