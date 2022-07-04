@@ -32,7 +32,7 @@ We know all of the possible outcomes for the die roll, and we know how likely th
 
 
 ```{note}
-This represents the probability distribution of $$n$$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under "The Central Limit Theorem".
+This represents the probability distribution of $n$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under "The Central Limit Theorem".
 ```
 
 The probability $$\frac{1}{6} = 0.1\bar{6}$$ might be more commonly written as $$16.\bar{6} \%$$.  In other words, if we pick a specific number between 1 and 6 (like 3), there's close to a 17% chance that we'll roll it next time we roll the die.  That's true for all of these numbers - they're all equally likely.  This is an example of a ***uniform*** *probability distribution*.
