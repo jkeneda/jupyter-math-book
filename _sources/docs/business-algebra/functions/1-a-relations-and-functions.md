@@ -12,8 +12,8 @@ relation
 ```
 The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
+(pets)=
 ````{prf:example}
-:label: pets
 :class: dropdown
 
 People and their pets:
