@@ -32,7 +32,7 @@ In the game of Yahtzee, you roll 5 dice.  In the "Chance" category, your score i
 <script src="../../../_static/chart.js">
 </script>
 
-<script src="../../../_static/distributions.mjs"> // Functions for handling dice distributions
+<script src="../../../_static/distributions.js"> // Functions for handling dice distributions
 </script>
 
 <script src="../../../_static/1-probability-distributions.js">// Creates local chart and handles events

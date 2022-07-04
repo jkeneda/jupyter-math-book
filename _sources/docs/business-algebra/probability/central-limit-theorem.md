@@ -81,7 +81,7 @@ normal distribution
 <script src="../../../_static/chart.js">
 </script>
 
-<script src="../../../_static/distributions.mjs"> // Functions for handling dice distributions
+<script src="../../../_static/distributions.js"> // Functions for handling dice distributions
 </script>
 
 <script src="../../../_static/central-limit-theorem.js">// Creates local chart and handles events
