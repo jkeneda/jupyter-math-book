@@ -173,7 +173,7 @@ The input Kenzie still produces more than one output.
 </details>
 ````
 
-````{prf:remark}
+````{remark}
 
 Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following **does** represent a function:
 
