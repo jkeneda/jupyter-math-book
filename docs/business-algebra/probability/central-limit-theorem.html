@@ -52,8 +52,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -448,22 +446,22 @@ const thebe_selector_output = ".output, .cell_output"
 <blockquote>
 <div><p>Note: The probabilities in a probability distribution should add up to 1 (or 100%).</p>
 </div></blockquote>
-<p>When randomness is involved, we don’t know the exact outcome we’ll get in advance.  Since the outcome isn’t known yet, we can give the outcome a <em>variable name</em>, like $<span class="math notranslate nohighlight">\(n\)</span>$, until it’s determined.  We call this a <em>random variable</em>.</p>
+<p>When randomness is involved, we don’t know the exact outcome we’ll get in advance.  Since the outcome isn’t known yet, we can give the outcome a <em>variable name</em>, like $$n$$, until it’s determined.  We call this a <em>random variable</em>.</p>
 <p>random variable
 : A <strong>random variable</strong> is a variable that represents a set of random possible outcomes.</p>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>If $<span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( represents the number we'll get next time we roll a die, then \)</span><span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( could be 1, 2, 3, 4, 5, or 6.  Since the value of \)</span><span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\( depends on some randomness, \)</span><span class="math notranslate nohighlight">\(n\)</span>$ is a random variable.</p>
-<p>We know all of the possible outcomes for the die roll, and we know how likely they are to occur.  Putting those together, we can write the <em>probability distribution for $<span class="math notranslate nohighlight">\(n\)</span>$</em>:</p>
+<p>If $$n$$ represents the number we’ll get next time we roll a die, then $$n$$ could be 1, 2, 3, 4, 5, or 6.  Since the value of $$n$$ depends on some randomness, $$n$$ is a random variable.</p>
+<p>We know all of the possible outcomes for the die roll, and we know how likely they are to occur.  Putting those together, we can write the <em>probability distribution for $$n$$</em>:</p>
 <p>|——————+—+—+—+—+—+—|
-| Outcome of $<span class="math notranslate nohighlight">\(n\)</span><span class="math notranslate nohighlight">\(:| 1 | 2 | 3 | 4 | 5 | 6 |
-|------------------+---+---+---+---+---+---|
-| Probability:     | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span><span class="math notranslate nohighlight">\( | \)</span><span class="math notranslate nohighlight">\(\frac{1}{6}\)</span>$ |
+| Outcome of $$n$$:| 1 | 2 | 3 | 4 | 5 | 6 |
+|——————+—+—+—+—+—+—|
+| Probability:     | $$\frac{1}{6}$$ | $$\frac{1}{6}$$ | $$\frac{1}{6}$$ | $$\frac{1}{6}$$ | $$\frac{1}{6}$$ | $$\frac{1}{6}$$ |
 |——————+—+—+—+—+—+—|</p>
 <blockquote>
-<div><p>Note: This represents the probability distribution of $<span class="math notranslate nohighlight">\(n\)</span>$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under “The Central Limit Theorem”.</p>
+<div><p>Note: This represents the probability distribution of $$n$$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under “The Central Limit Theorem”.</p>
 </div></blockquote>
-<p>The probability $<span class="math notranslate nohighlight">\(\frac{1}{6} = 0.1\bar{6}\)</span><span class="math notranslate nohighlight">\( might be more commonly written as \)</span><span class="math notranslate nohighlight">\(16.\bar{6} \%\)</span>$.  In other words, if we pick a specific number between 1 and 6 (like 3), there’s close to a 17% chance that we’ll roll it next time we roll the die.  That’s true for all of these numbers - they’re all equally likely.  This is an example of a <em><strong>uniform</strong></em> <em>probability distribution</em>.</p>
+<p>The probability $$\frac{1}{6} = 0.1\bar{6}$$ might be more commonly written as $$16.\bar{6} %$$.  In other words, if we pick a specific number between 1 and 6 (like 3), there’s close to a 17% chance that we’ll roll it next time we roll the die.  That’s true for all of these numbers - they’re all equally likely.  This is an example of a <em><strong>uniform</strong></em> <em>probability distribution</em>.</p>
 <p>uniform
 : A probability distribution is called <strong>uniform</strong> when all of its outcomes are equally likely.</p>
 <p>Examples of uniform probability distributions include things like flipping a fair coin or rolling a fair die.  Every possible outcome is equally likely to happen.</p>
@@ -479,7 +477,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="the-central-limit-theorem">
 <h2>The Central Limit Theorem<a class="headerlink" href="#the-central-limit-theorem" title="Permalink to this headline">¶</a></h2>
-<p>If we only roll a single die, then the chart looks pretty boring.  All of the outcomes are equally likely.  Below is its uniform probability distribution (in graph form).  You can see that each number has a $<span class="math notranslate nohighlight">\(\frac{1}{6} = 16.\bar{6}\%\)</span>$ chance of being rolled.</p>
+<p>If we only roll a single die, then the chart looks pretty boring.  All of the outcomes are equally likely.  Below is its uniform probability distribution (in graph form).  You can see that each number has a $$\frac{1}{6} = 16.\bar{6}%$$ chance of being rolled.</p>
 <div>
     <canvas id="myChart"/>
 </div>
@@ -543,7 +541,7 @@ const thebe_selector_output = ".output, .cell_output"
     
       By Josh Keneda<br/>
     
-        &copy; Copyright 2021.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>
