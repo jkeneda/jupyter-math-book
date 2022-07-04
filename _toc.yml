@@ -32,6 +32,9 @@ chapters:
     - file: docs/business-algebra/matrices-and-systems-of-equations/index
     - file: docs/business-algebra/linear-programming/index
     - file: docs/business-algebra/probability/index
+      sections:
+      - file: docs/business-algebra/probability/1-probability-distributions.md
+      - file: docs/business-algebra/probability/central-limit-theorem.md
   - file: docs/business-calculus/index
   - file: docs/development-stuff/index
     sections:

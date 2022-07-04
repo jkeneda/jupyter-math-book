@@ -4,6 +4,7 @@
 title: ""
 author: Josh Keneda
 logo: logo.png
+copyright: "2022"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -28,5 +29,19 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: favicon.ico
   use_issues_button: true
   use_repository_button: false
+
+sphinx:
+  config:
+    html_extra_path: ['CNAME', 'favicon.ico'] # Guarantee new builds will still have domain redirect and iconl
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist

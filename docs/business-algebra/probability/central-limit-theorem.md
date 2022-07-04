@@ -78,21 +78,11 @@ normal distribution
 
 > Note: There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for now.
 
-
-
----
-
-[Return to Previous Section](tbd)
-
-[Continue to Next Section](tbd)
-
-[Return to Table of Contents](index.html)
-
-<script src="../Graphing Tools/chart.js">
+<script src="../../../_static/chart.js">
 </script>
 
-<script src="../Graphing Tools/distributions.mjs"> // Functions for handling dice distributions
+<script src="../../../_static/distributions.js"> // Functions for handling dice distributions
 </script>
 
-<script src="central-limit-theorem.js">// Creates local chart and handles events
+<script src="../../../_static/central-limit-theorem.js">// Creates local chart and handles events
 </script>

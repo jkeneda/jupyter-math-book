@@ -1,3 +1,5 @@
+// Requires Desmos calc API to be loaded
+
 var calculator1 = Desmos.GraphingCalculator(document.getElementById('calculator1'), { expressions: false, projectorMode: true });
 
     calculator1.setExpression({
