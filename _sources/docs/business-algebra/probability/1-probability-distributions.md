@@ -32,7 +32,7 @@ We know all of the possible outcomes for the die roll, and we know how likely th
 
 
 ```{note}
-This represents the probability distribution of $n$ in the form of a table.  We could equivalently represent it as a bar graph.  See the graph below under "The Central Limit Theorem".
+This represents the probability distribution of $n$ in the form of a table.  We could equivalently represent it as a bar graph.  See the [bar graph](central-limit-theorem) form below.
 ```
 
 The probability $\frac{1}{6} = 0.1\bar{6}$ might be more commonly written as $16.\bar{6} \%$.  In other words, if we pick a specific number between 1 and 6 (like 3), there's close to a 17% chance that we'll roll it next time we roll the die.  That's true for all of these numbers - they're all equally likely.  This is an example of a ***uniform*** *probability distribution*.
@@ -55,9 +55,10 @@ In the game of Yahtzee, you roll 5 dice.  In the "Chance" category, your score i
 
 The shape of this probability distribution might seem familiar to you.  Let's explore the bell-curved shape of this example a bit more.
 
+(central-limit-theorem)=
 ## The Central Limit Theorem
 
-If we only roll a single die, then the chart looks pretty boring.  All of the outcomes are equally likely.  Below is its uniform probability distribution (in graph form).  You can see that each number has a $$\frac{1}{6} = 16.\bar{6}\%$$ chance of being rolled.
+If we only roll a single die, then the chart looks pretty boring.  All of the outcomes are equally likely.  Below is its uniform probability distribution (in graph form).  You can see that each number has a $\frac{1}{6} = 16.\bar{6}\%$ chance of being rolled.
 
 <div>
     <canvas id="myChart"/>
