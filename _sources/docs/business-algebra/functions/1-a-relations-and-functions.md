@@ -147,7 +147,7 @@ function
     A **function** is a relation such that each input corresponds to *exactly one* output.
 ```
 
-In other words, to be a function: ***every $x$ produces only one $y$***.
+In other words: for a relation to be a *function*, ***every $x$ produces only one $y$***.
 
 ````{prf:example}
 :class: dropdown
