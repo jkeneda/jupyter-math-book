@@ -133,7 +133,8 @@ $$
 \{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}
 $$
 
-Note the curly braces.  We still use set notation for relations: a relation is technically the set of its input/output pairs.
+Note the curly braces.  We can still use set notation for relations: a relation is technically the *set of its input/output pairs*.
+````
 
 Now we're ready to discuss the most useful type of relations: functions.
 
