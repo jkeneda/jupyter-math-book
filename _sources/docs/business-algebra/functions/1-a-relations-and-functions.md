@@ -13,6 +13,8 @@ relation
 
 
 ````{prf:example}
+:label: pets
+
 People and their pets:
 
 | Person | Pets |
@@ -64,7 +66,7 @@ set
 ```
 
 ### Example 3
-The set of Jill's pets from Example 1 (above) could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
+The set of Jill's pets from {prf:ref}`pets` could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
 
 ### Example 4
 Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
