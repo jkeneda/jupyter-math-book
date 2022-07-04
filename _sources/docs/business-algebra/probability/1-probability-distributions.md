@@ -81,7 +81,9 @@ normal distribution
     A **normal distribution** is another (more technical) name for a bell curve.
 ```
 
-```{warning}
+```{prf:remark}
+nonumber
+
 There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for this course.  You'll see more about *continuous* distributions (like the bell curve) if you take a course in statistics.
 ```
 
