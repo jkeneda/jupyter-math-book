@@ -146,8 +146,8 @@ function
     A **function** is a relation such that each input corresponds to *exactly one* output.
 ```
 
-### Example 7
-Let's return to the first relation we looked at to see why it's **not** a function:
+````{prf:example}
+Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it's **not** a function:
 
 | Person | Pets |
 | :---  | ---: |
@@ -171,8 +171,9 @@ Even if we removed Jill and her pets from the table, the relation above would *s
 The input Kenzie still produces more than one output.
 </pre>
 </details>
+````
 
-#### Remark about Functions
+````{prf:remark}
 Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following represents a function:
 
 |Input|Output|
@@ -182,6 +183,7 @@ Note that it's okay for a function to have multiple inputs that produce the same
 | 3 | 7 |
 
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
+````
 
 ## Practice: Is it a function?
 
