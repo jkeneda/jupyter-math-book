@@ -22,7 +22,7 @@ We can also graph functions that are defined by equations.  Recall that an equat
 
 The graph above is a graph of $y = x^2$.  It includes points like $(-1, 1)$ and $(2, 4)$, because those are $(x, y)$ pairs that satisfy the equation.  
 
-We could generate more points like this by choosing an arbitrary $x$-value and then plugging it into the equation to find its corresponding $$y$$.  For example, if you plug in $x = 3$, you get $y = 3^2 = 9$, so the point $(3, 9)$ would also be part of this graph.
+We could generate more points like this by choosing an arbitrary $x$-value and then plugging it into the equation to find its corresponding $y$.  For example, if you plug in $x = 3$, you get $y = 3^2 = 9$, so the point $(3, 9)$ would also be part of this graph.
 
 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
