@@ -1,4 +1,4 @@
-// Must load Chart.js and distributions.mjs before this will work
+// Must load Chart.js and distributions.js before this will work
 
 // Chart.defaults.scales[x].min = 1; // Doesn't work here.
 
