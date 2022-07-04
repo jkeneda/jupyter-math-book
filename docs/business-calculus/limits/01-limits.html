@@ -52,6 +52,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -393,10 +395,12 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="limits">
 <h1>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">¶</a></h1>
-<p>In this section, we introduce the notion of a <em>limit</em>, which essentially describes what the output of a function/expression is doing while its input approaches a specific value.  For example, the limit as $$x \rightarrow 3$$ (read: “$$x$$ approaches 3”) of the function $$f(x) = x^2$$ would be 9.  We write this relationship like this:</p>
-<p>$$\lim_{x\rightarrow 3} f(x) = 9$$</p>
+<p>In this section, we introduce the notion of a <em>limit</em>, which essentially describes what the output of a function/expression is doing while its input approaches a specific value.  For example, the limit as $<span class="math notranslate nohighlight">\(x \rightarrow 3\)</span><span class="math notranslate nohighlight">\( (read: &quot;\)</span><span class="math notranslate nohighlight">\(x\)</span><span class="math notranslate nohighlight">\( approaches 3&quot;) of the function \)</span><span class="math notranslate nohighlight">\(f(x) = x^2\)</span>$ would be 9.  We write this relationship like this:</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\rightarrow 3} f(x) = 9\]</div>
 <p>or equivalently as</p>
-<p>$$\lim_{x\rightarrow 3} x^2 = 9.$$</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\rightarrow 3} x^2 = 9.\]</div>
 </div>
 
     <script type="text/x-thebe-config">

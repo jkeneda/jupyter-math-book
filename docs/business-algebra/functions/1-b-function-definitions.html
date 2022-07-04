@@ -52,6 +52,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -497,18 +499,21 @@ const thebe_selector_output = ".output, .cell_output"
 </tbody>
 </table>
 <p>This table might be helpful, but it’s missing a lot of information.  What if they want to know about a side length of 65 yards?  Or 200 yards?</p>
-<p>Instead of working with tables like this, it’s much more efficient to use an algebraic expression to represent the <em>relationship</em> between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: “$x$ squared”).</p>
+<p>Instead of working with tables like this, it’s much more efficient to use an algebraic expression to represent the <em>relationship</em> between the input and the output.  If we make a square pen whose sides are <span class="math notranslate nohighlight">\(x\)</span> yards long, then the area of the pen will be <span class="math notranslate nohighlight">\(x*x = x^2\)</span> square yards (hence the name of the expression: “<span class="math notranslate nohighlight">\(x\)</span> squared”).</p>
 <p>To represent this relationship compactly, we can write something like:</p>
-<p>$$y = x^2$$</p>
+<div class="math notranslate nohighlight">
+\[y = x^2\]</div>
 <p>or</p>
-<p>$$A(x) = x^2 \text{ square yards},$$</p>
-<p>where the input is thought of as “$x$ yards”, and the output is measured in square yards.</p>
+<div class="math notranslate nohighlight">
+\[A(x) = x^2 \text{ square yards},\]</div>
+<p>where the input is thought of as “<span class="math notranslate nohighlight">\(x\)</span> yards”, and the output is measured in square yards.</p>
 </div>
 <div class="section" id="what-if-we-want-to-work-in-different-units">
 <h2>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">¶</a></h2>
-<p>Let’s say that you’re measuring the area of an entire (square) ranch.  In that case, even if the side length $x$ was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate $\frac{1 \text{ acre}}{4,840 \text{ square yards}}$:</p>
-<p>$$\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.$$</p>
-<p>So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and produce the corresponding pen area (in square yards and acres, respectively).</p>
+<p>Let’s say that you’re measuring the area of an entire (square) ranch.  In that case, even if the side length <span class="math notranslate nohighlight">\(x\)</span> was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate <span class="math notranslate nohighlight">\(\frac{1 \text{ acre}}{4,840 \text{ square yards}}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.\]</div>
+<p>So the functions <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A^*\)</span> will take any side length <span class="math notranslate nohighlight">\(x\)</span> (in yards) and produce the corresponding pen area (in square yards and acres, respectively).</p>
 </div>
 <div class="section" id="function-notation">
 <h2>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">¶</a></h2>
@@ -516,16 +521,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
 <p>Suppose you’re running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs $8.25.</p>
-<p>Let’s say that you have 10 orders to ship, and you want to know how much money to bring to the post office.  You need 10 boxes at $8.25 each, so you should bring $$8.50 \times 10= $82.50$.</p>
+<p>Let’s say that you have 10 orders to ship, and you want to know how much money to bring to the post office.  You need 10 boxes at $8.25 each, so you should bring <span class="math notranslate nohighlight">\(\$8.50 \times 10= \$82.50\)</span>.</p>
 <p>Each day, you have a different number of orders.  To speed up the process of computing shipping costs, we want an efficient function/formula that relates the number of orders to the total shipping costs.  The function should work like this:</p>
-<p>$$10 \text{ orders } \rightarrow \fbox{ function } \rightarrow $82.50$$</p>
+<div class="math notranslate nohighlight">
+\[10 \text{ orders } \rightarrow \fbox{ function } \rightarrow \$82.50\]</div>
 <p>We plug in the number of orders and it spits out our total shipping costs.</p>
-<p>Since the number of orders changes each day, we’ll use the variable $x$ to stand in for the number of orders.  It’s traditional to use $x$ to stand for the <em>input</em> to a function and $y$ to stand for the <em>output</em> to a function.</p>
-<p>Since each order costs $8.25 in shipping, we see that the total shipping costs for $x$ orders should be $$8.25 \times x$.  This gives us the following situation:</p>
-<p>$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow $8.25x$$</p>
+<p>Since the number of orders changes each day, we’ll use the variable <span class="math notranslate nohighlight">\(x\)</span> to stand in for the number of orders.  It’s traditional to use <span class="math notranslate nohighlight">\(x\)</span> to stand for the <em>input</em> to a function and <span class="math notranslate nohighlight">\(y\)</span> to stand for the <em>output</em> to a function.</p>
+<p>Since each order costs $8.25 in shipping, we see that the total shipping costs for <span class="math notranslate nohighlight">\(x\)</span> orders should be <span class="math notranslate nohighlight">\(\$8.25 \times x\)</span>.  This gives us the following situation:</p>
+<div class="math notranslate nohighlight">
+\[x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x\]</div>
 <p>We can express this more compactly using <strong>function notation</strong>.  Function notation replaces a diagram like</p>
-<p>$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$
-with a compact formula like $y = $8.25x$.  This formula contains the same information - it says that the output (shipping cost) is $8.25 times the input (number of orders).</p>
+<div class="math notranslate nohighlight">
+\[x \text{ orders } \rightarrow \fbox{ function } \rightarrow y\]</div>
+<p>with a compact formula like <span class="math notranslate nohighlight">\(y = \$8.25x\)</span>.  This formula contains the same information - it says that the output (shipping cost) is $8.25 times the input (number of orders).</p>
 </div>
 </div>
 <div class="section" id="functions-in-math-vs-computer-science">
@@ -536,9 +544,9 @@ with a compact formula like $y = $8.25x$.  This formula contains the same inform
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>In math, we do the same thing, but because we’re doing computations by hand, we like to abbreviate everything.  Instead of using an input like “orderNumber”, we use the shorthand $x$.  Instead of using a function name like “shippingCost”, we might use $f$ or $g$ to stand for the function.</p>
-<p>For example, the function above could be written as $f(x) = 8.25 x$.  It could also be written as $g(x) = 8.25 x$ or $y = 8.25 x$, depending on what we’d like to name the function/output.</p>
-<p>When you see something like $h(x) = -20x + 5$, you should think “$h$ is a function that takes the input $x$ (the inputs are listed in parentheses) and spits out the output -20 times $x$ plus 5”.</p>
+<p>In math, we do the same thing, but because we’re doing computations by hand, we like to abbreviate everything.  Instead of using an input like “orderNumber”, we use the shorthand <span class="math notranslate nohighlight">\(x\)</span>.  Instead of using a function name like “shippingCost”, we might use <span class="math notranslate nohighlight">\(f\)</span> or <span class="math notranslate nohighlight">\(g\)</span> to stand for the function.</p>
+<p>For example, the function above could be written as <span class="math notranslate nohighlight">\(f(x) = 8.25 x\)</span>.  It could also be written as <span class="math notranslate nohighlight">\(g(x) = 8.25 x\)</span> or <span class="math notranslate nohighlight">\(y = 8.25 x\)</span>, depending on what we’d like to name the function/output.</p>
+<p>When you see something like <span class="math notranslate nohighlight">\(h(x) = -20x + 5\)</span>, you should think “<span class="math notranslate nohighlight">\(h\)</span> is a function that takes the input <span class="math notranslate nohighlight">\(x\)</span> (the inputs are listed in parentheses) and spits out the output -20 times <span class="math notranslate nohighlight">\(x\)</span> plus 5”.</p>
 </div>
 </div>
 
