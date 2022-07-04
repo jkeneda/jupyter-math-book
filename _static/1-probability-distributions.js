@@ -11,11 +11,9 @@ function updateChart (myChart) {
 // refreshButton.addEventListener('click', function () {updateChart(myChart);});
 
 // Sample event handling
-const sampleButton = document.getElementById('sampleButton');
-sampleButton.addEventListener('click', function () {
+document.getElementById('sampleButton').addEventListener('click', function () {
     updateChart(myChart);
     document.getElementById('log').innerHTML = log()});
 
 // Form submission event handling
-const form = document.getElementById('form1');
-form.addEventListener('submit', function () {updateChart(myChart);});
+document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});

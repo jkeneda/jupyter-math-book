@@ -26,9 +26,7 @@ function updateChart (myChart) {
 }
 
 // Sample event handling
-const diceSelect = document.getElementById('textBox');
-diceSelect.addEventListener('change', () => {updateChart(myChart);});
+document.getElementById('textBox').addEventListener('change', () => {updateChart(myChart);});
 
 // Form submission event handling
-const form1 = document.getElementById('form1');
-form1.addEventListener('submit', function () {updateChart(myChart);});
+document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
