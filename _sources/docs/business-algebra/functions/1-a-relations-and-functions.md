@@ -13,8 +13,8 @@ relation
 The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
 ````{prf:example}
-:class: dropdown
 :label: pets
+:class: dropdown
 
 People and their pets:
 
