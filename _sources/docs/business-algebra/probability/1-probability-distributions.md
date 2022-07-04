@@ -82,7 +82,7 @@ normal distribution
 ```
 
 ```{warning}
-There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for now.
+There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for this course.  You'll see more about *continuous* distributions (like the bell curve) if you take a course in statistics.
 ```
 
 <script src="../../../_static/chart.js">
