@@ -34,7 +34,6 @@ chapters:
     - file: docs/business-algebra/probability/index
       sections:
       - file: docs/business-algebra/probability/1-probability-distributions.md
-      - file: docs/business-algebra/probability/central-limit-theorem.md
   - file: docs/business-calculus/index
   - file: docs/development-stuff/index
     sections:
@@ -44,3 +43,4 @@ chapters:
     - file: docs/development-stuff/markdown-notebooks
     - file: docs/development-stuff/my-markdown-file
     - file: docs/development-stuff/issues-with-documentation
+  - file: genindex

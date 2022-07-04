@@ -10,9 +10,11 @@ It's very important in mathematics to have clear, unambiguous definitions for ou
 relation
     A **relation** has a set of inputs and a set of outputs.  For each input, the relation returns *at least one* output.
 ```
+The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
+````{prf:example}
+:label: pets
 
-### Example 1
 People and their pets:
 
 | Person | Pets |
@@ -30,9 +32,11 @@ People and their pets:
 | Sheyleah | Mittens |
 
 We can interpret the above table as a relation if we think of the person as the "input" and their pets as the "outputs".  For example, the input *Jill* produces the outputs *Jack*, *Lola*, and *Stevie*.  The input *Josh* produces Josh's only pet, *Curie*.
+````
 
+````{prf:example}
+:label: medals
 
-### Example 2
 Total medals per country in the Tokyo 2020 Olympic Games:
 
 | Country | Medals |
@@ -50,6 +54,7 @@ Total medals per country in the Tokyo 2020 Olympic Games:
 
 
 The above table represents a relation if we think of the country as the "input" and its number of medals as the "output".
+````
 
 Before we discuss the types of relations that will be useful in business algebra, we need to make some formal definitions of the sets and types of relations we'll be using.
 
@@ -62,10 +67,10 @@ set
     A **set** is a collection of objects (usually called the *elements* of the set).  In this class, those elements can be basically anything: names, countries, images, text, or (most typically) numbers.
 ```
 
-### Example 3
-The set of Jill's pets from Example 1 (above) could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
+````{prf:example}
+The set of Jill's pets from {prf:ref}`pets` could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
+````
 
-### Example 4
 Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
 
 | Name of Set | Shorthand | Corresponding Set |
@@ -89,8 +94,10 @@ range
 
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
 
-### Example 5
-Let's return to the Olympic medals example.  If we look at the relation determined by the top 3 countries by medal count, we get:
+````{prf:example}
+:label: top-3
+
+Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
 | :---  |  ---: |
@@ -99,8 +106,9 @@ Let's return to the Olympic medals example.  If we look at the relation determin
 | Russia  | 71     |
 
 The *domain* of this relation is $D = \{\text{USA}, \text{China}, \text{Russia}\}$, and the *range* of this relation is $R = \{113, 88, 71\}$.
+````
 
-### Remark about set notation
+```{prf:remark}
 Sets don't care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:
 
 $$
@@ -108,6 +116,7 @@ $$
 $$
 
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
+```
 
 ## Technical definition of a relation
 It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ corresponds to the output $y$" in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair $(\text{USA}, 113)$.  The input is *always* on the left, and the output is *always* on the right.  With this notation, we can revise our definition of relation to be a little more precise now:
@@ -117,14 +126,15 @@ relation
     A relation is a collection of ordered pairs $(x, y)$, where $x$ belongs to the domain and $y$ belongs to the range of the relation.
 ```
 
-### Example 6
-The relation from Example 5 could be rewritten this way: 
+````{prf:example}
+The relation from {prf:ref}`top-3` could be rewritten this way: 
 
 $$
 \{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}
 $$
 
-Note the curly braces.  We still use set notation for relations: a relation is technically the set of its input/output pairs.
+Note the curly braces.  We can still use set notation for relations: a relation is technically the *set of its input/output pairs*.
+````
 
 Now we're ready to discuss the most useful type of relations: functions.
 
@@ -137,8 +147,12 @@ function
     A **function** is a relation such that each input corresponds to *exactly one* output.
 ```
 
-### Example 7
-Let's return to the first relation we looked at to see why it's **not** a function:
+In other words: for a relation to be a *function*, ***every $x$ produces only one $y$***.
+
+````{prf:example}
+:class: dropdown
+
+Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it's **not** a function:
 
 | Person | Pets |
 | :---  | ---: |
@@ -162,9 +176,10 @@ Even if we removed Jill and her pets from the table, the relation above would *s
 The input Kenzie still produces more than one output.
 </pre>
 </details>
+````
 
-#### Remark about Functions
-Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following represents a function:
+````{prf:remark}
+Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following **does** represent a function:
 
 |Input|Output|
 |:---|---:|
@@ -173,6 +188,7 @@ Note that it's okay for a function to have multiple inputs that produce the same
 | 3 | 7 |
 
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
+````
 
 ## Practice: Is it a function?
 
