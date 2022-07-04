@@ -1,4 +1,4 @@
-// Must load Chart.js and distributions.mjs before this will work
+// Must load Chart.js and distributions.js before this will work
 
 var myChart = makeNormalizedChart('myChart', document.getElementById('textBox').value); // Initialize chart
 
@@ -17,5 +17,5 @@ sampleButton.addEventListener('click', function () {
     document.getElementById('log').innerHTML = log()});
 
 // Form submission event handling
-const form1 = document.getElementById('form1');
-form1.addEventListener('submit', function () {updateChart(myChart);});
+const form = document.getElementById('form1');
+form.addEventListener('submit', function () {updateChart(myChart);});
