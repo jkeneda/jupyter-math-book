@@ -27,6 +27,7 @@ If $n$ represents the number we'll get next time we roll a die, then $n$ could b
 We know all of the possible outcomes for the die roll, and we know how likely they are to occur.  Putting those together, we can write the *probability distribution for $n$*:
 
 | Outcome of $n$:| 1 | 2 | 3 | 4 | 5 | 6 |
+|:---|---|---|---|---|---|---:|
 | Probability:     | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ |
 
 
