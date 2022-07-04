@@ -13,6 +13,7 @@ relation
 
 
 ````{prf:example}
+:class: dropdown
 :label: pets
 
 People and their pets:
