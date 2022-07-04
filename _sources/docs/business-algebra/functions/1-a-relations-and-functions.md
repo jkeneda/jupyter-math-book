@@ -35,6 +35,8 @@ We can interpret the above table as a relation if we think of the person as the 
 ````
 
 ````{prf:example}
+:label: medals
+
 Total medals per country in the Tokyo 2020 Olympic Games:
 
 | Country | Medals |
@@ -92,8 +94,8 @@ range
 
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
 
-### Example 5
-Let's return to the Olympic medals example.  If we look at the relation determined by the top 3 countries by medal count, we get:
+````{prf:example}
+Let's return to the {prf:ref}`Olympic medals example <medals>`.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
 | :---  |  ---: |
@@ -102,8 +104,9 @@ Let's return to the Olympic medals example.  If we look at the relation determin
 | Russia  | 71     |
 
 The *domain* of this relation is $D = \{\text{USA}, \text{China}, \text{Russia}\}$, and the *range* of this relation is $R = \{113, 88, 71\}$.
+````
 
-### Remark about set notation
+```{remark}
 Sets don't care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:
 
 $$
@@ -111,6 +114,7 @@ $$
 $$
 
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
+```
 
 ## Technical definition of a relation
 It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ corresponds to the output $y$" in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair $(\text{USA}, 113)$.  The input is *always* on the left, and the output is *always* on the right.  With this notation, we can revise our definition of relation to be a little more precise now:
