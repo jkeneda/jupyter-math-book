@@ -95,7 +95,7 @@ range
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
 
 ````{prf:example}
-Let's return to the {prf:ref}`Olympic medals example <medals>`.  If we look at the relation determined by the top 3 countries by medal count, we get:
+Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
 | :---  |  ---: |
