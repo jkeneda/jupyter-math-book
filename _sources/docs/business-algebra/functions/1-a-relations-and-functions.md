@@ -10,7 +10,7 @@ It's very important in mathematics to have clear, unambiguous definitions for ou
 relation
     A **relation** has a set of inputs and a set of outputs.  For each input, the relation returns *at least one* output.
 ```
-
+The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
 ````{prf:example}
 :class: dropdown
