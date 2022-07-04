@@ -12,7 +12,7 @@ relation
 ```
 
 
-### Example 1
+````{prf:example}
 People and their pets:
 
 | Person | Pets |
@@ -30,9 +30,9 @@ People and their pets:
 | Sheyleah | Mittens |
 
 We can interpret the above table as a relation if we think of the person as the "input" and their pets as the "outputs".  For example, the input *Jill* produces the outputs *Jack*, *Lola*, and *Stevie*.  The input *Josh* produces Josh's only pet, *Curie*.
+````
 
-
-### Example 2
+````{prf:example}
 Total medals per country in the Tokyo 2020 Olympic Games:
 
 | Country | Medals |
@@ -50,6 +50,7 @@ Total medals per country in the Tokyo 2020 Olympic Games:
 
 
 The above table represents a relation if we think of the country as the "input" and its number of medals as the "output".
+````
 
 Before we discuss the types of relations that will be useful in business algebra, we need to make some formal definitions of the sets and types of relations we'll be using.
 
