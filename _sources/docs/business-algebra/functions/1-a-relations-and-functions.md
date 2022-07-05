@@ -10,6 +10,7 @@ It's very important in mathematics to have clear, unambiguous definitions for ou
 relation
     A **relation** has a set of inputs and a set of outputs.  For each input, the relation returns *at least one* output.
 :::
+
 The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
 ::::{prf:example}
@@ -199,10 +200,10 @@ $$
 $$
 
 <details>
-<pre>
-Yes, each input corresponds to just a single output.
-</pre>
-</details>
+    <pre>
+    Yes, each input corresponds to just a single output.
+    </pre>
+    </details>
 <br>
 
 How about this one?
@@ -210,11 +211,11 @@ How about this one?
 $$\{(1, 1), (2, 1), (3, 4), (4, 4)\}$$
 
 <details>
-<pre>
-Yes, this is still a function.  Look at each individual input.  Is its output predictable?
-The inputs 1 and 2 always cause an output of 1, and the inputs 3 and 4 always cause an output of 4, so there's no ambiguity possible in our outputs.
-Each input corresponds to a single possible output.
-</pre>
+    <pre>
+    Yes, this is still a function.  Look at each individual input.  Is its output predictable?
+    The inputs 1 and 2 always cause an output of 1, and the inputs 3 and 4 always cause an output of 4, so there's no ambiguity possible in our outputs.
+    Each input corresponds to a single possible output.
+    </pre>
 </details>
 <br>
 
@@ -223,10 +224,10 @@ Lastly, is this relation a function?
 $$\{(1, 1), (1, 2), (1, 3), (1, 4)\}$$
 
 <details>
-<pre>
-No, this is not a function.  The input 1 has multiple outputs.
-So if we give this relation an input of 1, we don't know what the output will be.
-The output could be 1, 2, 3, or 4.  This violates the definition of a function.
-</pre>
+    <pre>
+    No, this is not a function.  The input 1 has multiple outputs.
+    So if we give this relation an input of 1, we don't know what the output will be.
+    The output could be 1, 2, 3, or 4.  This violates the definition of a function.
+    </pre>
 </details>
 <br>
