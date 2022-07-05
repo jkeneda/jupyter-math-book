@@ -404,11 +404,6 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-1">
-   Example 1
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
    What if we want to work in different units?
   </a>
@@ -451,11 +446,6 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-1">
-   Example 1
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
    What if we want to work in different units?
   </a>
@@ -489,8 +479,9 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="functions-defined-by-algebraic-expressions">
 <h1>Functions Defined by Algebraic Expressions<a class="headerlink" href="#functions-defined-by-algebraic-expressions" title="Permalink to this headline">¶</a></h1>
 <p>So far, we’ve been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you’re working with numerical functions, there’s often a simple formula that describes how to produce the output from a given input.</p>
-<div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 7 </span></p>
+<div class="example-content section" id="proof-content">
 <p>Suppose a farmer wants to build a square pen.  They’re interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -519,8 +510,9 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
-<p>This table might be helpful, but it’s missing a lot of information.  What if they want to know about a side length of 65 yards?  Or 200 yards?</p>
-<p>Instead of working with tables like this, it’s much more efficient to use an algebraic expression to represent the <em>relationship</em> between the input and the output.  If we make a square pen whose sides are <span class="math notranslate nohighlight">\(x\)</span> yards long, then the area of the pen will be <span class="math notranslate nohighlight">\(x*x = x^2\)</span> square yards (hence the name of the expression: “<span class="math notranslate nohighlight">\(x\)</span> squared”).</p>
+</div>
+</div><p>This table might be helpful in some cases, but it’s missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?</p>
+<p>Instead of working with tables like this, it’s much more efficient to use an algebraic expression to represent the <em>general relationship</em> between the input and the output.  If we make a square pen whose sides are <span class="math notranslate nohighlight">\(x\)</span> yards long, then the area of the pen will be <span class="math notranslate nohighlight">\(x*x = x^2\)</span> square yards (hence the name of the expression: “<span class="math notranslate nohighlight">\(x\)</span> squared”).</p>
 <p>To represent this relationship compactly, we can write something like:</p>
 <div class="math notranslate nohighlight">
 \[y = x^2\]</div>
@@ -528,7 +520,6 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[A(x) = x^2 \text{ square yards},\]</div>
 <p>where the input is thought of as “<span class="math notranslate nohighlight">\(x\)</span> yards”, and the output is measured in square yards.</p>
-</div>
 <div class="section" id="what-if-we-want-to-work-in-different-units">
 <h2>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say that you’re measuring the area of an entire (square) ranch.  In that case, even if the side length <span class="math notranslate nohighlight">\(x\)</span> was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate <span class="math notranslate nohighlight">\(\frac{1 \text{ acre}}{4,840 \text{ square yards}}\)</span>:</p>

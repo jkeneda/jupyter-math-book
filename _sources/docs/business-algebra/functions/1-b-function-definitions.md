@@ -2,7 +2,7 @@
 
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
 
-## Example 1
+:::{prf:example}
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 | Side Length | Pen Area |
@@ -13,10 +13,11 @@ Suppose a farmer wants to build a square pen.  They're interested in knowing how
 | 80 yards | 6400 square yards (1.32 acres) |
 | 90 yards | 8100 square yards (1.67 acres) |
 | 100 yards | 10,000 square yards (2.07 acres) |
+:::
 
-This table might be helpful, but it's missing a lot of information.  What if they want to know about a side length of 65 yards?  Or 200 yards?
+This table might be helpful in some cases, but it's missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?
 
-Instead of working with tables like this, it's much more efficient to use an algebraic expression to represent the *relationship* between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: "$x$ squared").
+Instead of working with tables like this, it's much more efficient to use an algebraic expression to represent the *general relationship* between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: "$x$ squared").
 
 To represent this relationship compactly, we can write something like:
 

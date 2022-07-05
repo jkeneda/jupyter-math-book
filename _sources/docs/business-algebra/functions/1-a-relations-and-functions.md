@@ -116,9 +116,7 @@ The *domain* of this relation is $D = \{\text{USA}, \text{China}, \text{Russia}\
 :::{prf:remark}
 Sets don't care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:
 
-$$
-\{113, 88, 71\} = \{71, 88, 113\} = \{71, 71, 88, 88, 88, 113\}
-$$
+$$\{113, 88, 71\} = \{71, 88, 113\} = \{71, 71, 88, 88, 88, 113\}$$
 
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
 :::
@@ -136,9 +134,7 @@ relation
 
 The relation from {prf:ref}`top-3` could be rewritten this way: 
 
-$$
-\{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}
-$$
+$$\{(\text{USA}, 113), (\text{China}, 88), (\text{Russia}, 71)\}$$
 
 Note the curly braces.  We can still use set notation for relations: a relation is technically the *set of its input/output pairs*.
 ::::
@@ -214,9 +210,7 @@ This still satisfies the definition of a function, even though the output is alw
 
 Is this relation a function?
 
-$$
-\{(1, 1), (2, 2), (3, 3), (4, 4)\}
-$$
+$$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 
 <details>
 <pre>
