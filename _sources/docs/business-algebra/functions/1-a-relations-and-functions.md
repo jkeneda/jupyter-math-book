@@ -208,6 +208,7 @@ This still satisfies the definition of a function, even though the output is alw
 
 ## Practice: Is it a function?
 
+::::{prf:example}
 Is this relation a function?
 
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
@@ -217,13 +218,7 @@ $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 
 Yes, each input corresponds to just a single output.
 :::
-
-<details>
-<pre>
-Yes, each input corresponds to just a single output.
-</pre>
-</details>
-<br>
+::::
 
 How about this one?
 
