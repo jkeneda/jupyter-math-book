@@ -194,7 +194,7 @@ The input Kenzie still produces more than one output.
 </details>
 ::::
 
-::::{prf:remark}
+:::{prf:remark}
 Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following **does** represent a function:
 
 |Input|Output|
@@ -204,7 +204,7 @@ Note that it's okay for a function to have multiple inputs that produce the same
 | 3 | 7 |
 
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
-::::
+:::
 
 ## Practice: Is it a function?
 
@@ -212,12 +212,13 @@ This still satisfies the definition of a function, even though the output is alw
 Is this relation a function?
 
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
+
 :::{admonition} Answer
 :class: dropdown
 
 Yes, each input corresponds to just a single output.
 :::
-::::
+
 
 How about this one?
 
