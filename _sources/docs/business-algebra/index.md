@@ -4,7 +4,7 @@ These notes cover the material for MATH 1324.  You can also find coverage of som
 
 ## Tips for Navigation
 
-It would be a good idea to add [this page]() to your list of bookmarked links on [mySPC](https://experience.elluciancloud.com/spc).
+It would be a good idea to add [this page](index.md) (copy the link) to your list of bookmarked links on [mySPC](https://experience.elluciancloud.com/spc).
 
 Here's a list of the fundamental topic sections we'll be covering in the course:
 
