@@ -2,7 +2,7 @@
 
 In this section, we'll see how to graphically represent functions.
 
-## Graphs of Discrete Relations {#discrete-graphs}
+## Graphs of Discrete Relations
 
 We've defined a relation as a set of ordered pairs $(x, y)$.  For example, we can define a relation $r = \{(1,3), (2, 1), (3, 5)\}$.  When the inputs and outputs are real numbers (like in $r$), we can represent the same relation using a graph in the $xy$-plane.
 
@@ -13,7 +13,7 @@ This graph depicts the relation $\{(1,3), (2, 1), (3, 5)\}$.  You can click on t
 
 > Stop here and investigate the graph until you're comfortable translating between a data point $(x, y)$ and its corresponding point on the $xy$-plane.
 
-## Graphs of Functions Defined by Equations {#equation-graphs}
+## Graphs of Functions Defined by Equations
 
 We can also graph functions that are defined by equations.  Recall that an equation like $y = x^2$ is interpreted as a function by thinking of $x$ as the input and $y$ as the corresponding output.  The graph of this function consists of all $(x, y)$ that satisfy the equation.
 
