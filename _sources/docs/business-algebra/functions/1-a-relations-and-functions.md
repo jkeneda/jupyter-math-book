@@ -243,7 +243,7 @@ $$\{(1, 1), (1, 2), (1, 3), (1, 4)\}$$
 :::{admonition} Answer
 :class: dropdown
 
-No, this is not a function.  The input 1 has multiple outputs.
+No, this is not a function.  The input 1 has multiple potential outputs.
 So if we give this relation an input of 1, we don't know what the output will be.
 The output could be 1, 2, 3, or 4.  This violates the definition of a function.
 :::
