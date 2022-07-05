@@ -212,6 +212,12 @@ Is this relation a function?
 
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 
+:::
+:class: dropdown
+
+Yes, each input corresponds to just a single output.
+:::
+
 <details>
 <pre>
 Yes, each input corresponds to just a single output.
