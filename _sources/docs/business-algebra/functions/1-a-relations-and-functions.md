@@ -151,7 +151,7 @@ variable
 :::
 
 :::{prf:remark}
-For example, the {prf:ref}`previous example <short-olympics>` can be thought of as a set of $(x, y)$ pairs.  The possible concrete values for $x$ (which make up the domain) are USA, China, or Russia, and the possible values for $y$ (which make up the range) are 113, 88, or 71.  If you specify a value for $x$, then the corresponding $y$-value can be looked up from the table.
+For example, the {prf:ref}`previous example <short-olympics>` can be thought of as a set of $(x, y)$ pairs.  The possible concrete values for $x$ (which make up the domain) are USA, China, or Russia, and the possible values for $y$ (which make up the range) are 113, 88, or 71.  If you specify a value for $x$, then the corresponding $y$-value can then be looked up from either the {prf:ref}`table form <top-3>` or {prf:ref}`set form <short-olympics>` of the relation.
 :::
 
 Now we're ready to discuss the most useful type of relations: functions.
