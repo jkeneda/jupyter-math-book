@@ -151,9 +151,9 @@ variable
 :::
 
 :::{prf:remark}
-The {prf:ref}`previous example <short-olympics>` is a set of $(x, y)$ pairs.  We're implicitly using $x$ and $y$ as variables to stand in for inputs and outputs (respectively) that we'll decide later.
+The {prf:ref}`example above <short-olympics>` is a set of $(x, y)$ pairs.  We're implicitly using $x$ and $y$ as variables to stand in for inputs and outputs (respectively) that we'll decide later.
 
-The possible concrete values for $x$ (which make up the domain) are USA, China, or Russia, and the possible values for $y$ (which make up the range) are 113, 88, or 71.  If you specify a value for $x$, then the corresponding $y$-value can then be looked up from either the {prf:ref}`table form <top-3>` or {prf:ref}`set form <short-olympics>` of the relation.
+The possible concrete values for $x$ (which make up the :term:`domain`) are USA, China, or Russia, and the possible values for $y$ (which make up the :term:`range`) are 113, 88, or 71.  If you specify a value for $x$, then the corresponding $y$-value can then be looked up from either the {prf:ref}`table form <top-3>` or {prf:ref}`set form <short-olympics>` of the relation.
 :::
 
 Now we're ready to discuss the most useful type of relations: functions.
