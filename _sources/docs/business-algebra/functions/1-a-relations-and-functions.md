@@ -2,12 +2,16 @@
 
 In this section, we introduce *relations* and *functions*, which are used to model relationships between two sets.
 
-## Relations
+## Relationships between inputs and outputs
+
+In many situations, we have one piece of information and we want to use it to find another, *related* piece of information.  For example, your payroll office might need to find an employee's salary information.  If they know the employee, then they can use a table of salary information to look up the corresponding salary.  In situations like this, we could think of the table as having a bunch of possible "inputs" (the employee of interest) and a bunch of corresponding "outputs" (their salary).
+
+In this set of notes, we want to explore input-output relationships more carefully.  By the end of this set of notes, we'll see *functions*, which are a special type of input-output relation.  Functions are the most useful relations for computation, because they're very predictable.
 
 It's very important in mathematics to have clear, unambiguous definitions for our terms.  In these notes, definitions will look like this:
 
 :::{glossary}
-relation
+relation (informal)
     A **relation** has a set of inputs and a set of outputs.  For each input, the relation returns *at least one* output.
 :::
 
@@ -119,7 +123,7 @@ $$
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
 :::
 
-## Technical definition of a relation
+## Relations
 It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ corresponds to the output $y$" in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair $(\text{USA}, 113)$.  The input is *always* on the left, and the output is *always* on the right.  With this notation, we can revise our definition of relation to be a little more precise now:
 
 :::{glossary}
