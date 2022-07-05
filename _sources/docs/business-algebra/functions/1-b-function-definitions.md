@@ -67,11 +67,11 @@ with a compact formula like $y = \$8.25x$.  This formula contains the same infor
 
 If we were writing code in a programming language, we might write something like:
 
-``` javascript
+::: javascript
 function shippingCost(orderNumber) {
     return 8.25 * orderNumber
 }
-```
+:::
 In math, we do the same thing, but because we're doing computations by hand, we like to abbreviate everything.  Instead of using an input like "orderNumber", we use the shorthand $x$.  Instead of using a function name like "shippingCost", we might use $f$ or $g$ to stand for the function.
 
 For example, the function above could be written as $f(x) = 8.25 x$.  It could also be written as $g(x) = 8.25 x$ or $y = 8.25 x$, depending on what we'd like to name the function/output.

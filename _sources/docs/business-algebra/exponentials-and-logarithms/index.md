@@ -1,4 +1,4 @@
 # Exponentials and Logarithms
 
-```{tableofcontents}
-```
+:::{tableofcontents}
+:::

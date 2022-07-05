@@ -6,5 +6,5 @@ I recommend that you start by adding this page's URL to your list of bookmarked 
 
 Here's a list of the fundamental topic sections we'll be covering in the course:
 
-```{tableofcontents}
-```
+:::{tableofcontents}
+:::

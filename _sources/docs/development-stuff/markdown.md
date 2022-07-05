@@ -25,9 +25,9 @@ that is being called.
 
 Here is a "note" directive:
 
-```{note}
+:::{note}
 Here is a note
-```
+:::
 
 It will be rendered in a special box when you build your book.
 
@@ -46,8 +46,8 @@ render properly.
 For example, if the references for your book are stored in `references.bib`,
 then the bibliography is inserted with:
 
-```{bibliography}
-```
+:::{bibliography}
+:::
 
 ## Learn more
 

@@ -4,5 +4,5 @@ These online notes are my attempt at an [open-source](https://github.com/jkeneda
 
 If you're a student, navigate to the table of contents page for the appropriate course (both 1324 and 1325 are available here).  You can use the table of contents below or the navigation panel to the left.
 
-```{tableofcontents}
-```
+:::{tableofcontents}
+:::

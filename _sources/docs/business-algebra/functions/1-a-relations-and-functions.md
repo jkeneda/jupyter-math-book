@@ -6,10 +6,10 @@ In this section, we introduce *relations* and *functions*, which are used to mod
 
 It's very important in mathematics to have clear, unambiguous definitions for our terms.  In these notes, definitions will look like this:
 
-```{glossary}
+:::{glossary}
 relation
     A **relation** has a set of inputs and a set of outputs.  For each input, the relation returns *at least one* output.
-```
+:::
 The definition of a relation is very broad.  Many things are relations.  Here are a couple of examples.
 
 ::::{prf:example}
@@ -62,10 +62,10 @@ Before we discuss the types of relations that will be useful in business algebra
 
 Every relation has a *set* of inputs and a *set* of outputs.  A relation represents a connection between two sets.  But what are these sets?
 
-```{glossary}
+:::{glossary}
 set
     A **set** is a collection of objects (usually called the *elements* of the set).  In this class, those elements can be basically anything: names, countries, images, text, or (most typically) numbers.
-```
+:::
 
 ::::{prf:example}
 The set of Jill's pets from {prf:ref}`pets` could be written like $\{\text{Jack}, \text{Lola}, \text{Stevie}\}$.  If a set is made up of just a few elements, we can use a comma-separated list of the elements - surrounded with curly braces - to denote the whole set.
@@ -84,13 +84,13 @@ You can think of the real numbers as being the complete number line - everything
 
 To better analyze relations, we have terminology to separate the set of "inputs" from the set of "outputs".
 
-```{glossary}
+:::{glossary}
 domain
     The **domain** of a relation is its set of inputs.  It is sometimes denoted $D$ for short.
 
 range
     The **range** of a relation is its set of outputs.  It is sometimes denoted $R$ for short.
-```
+:::
 
 Note that the domain and range are properties of a specific relation, and that relation should be clear from context.  A question like "What's the domain?" only makes sense if we're discussing a particular relation already, in the same way that "What's their age?" only makes sense if we're discussing a particular person already.
 
@@ -108,7 +108,7 @@ Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the rela
 The *domain* of this relation is $D = \{\text{USA}, \text{China}, \text{Russia}\}$, and the *range* of this relation is $R = \{113, 88, 71\}$.
 ::::
 
-```{prf:remark}
+:::{prf:remark}
 Sets don't care about the order of their elements, and they ignore repeated elements.  So all of the following sets are identical:
 
 $$
@@ -116,15 +116,15 @@ $$
 $$
 
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
-```
+:::
 
 ## Technical definition of a relation
 It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ corresponds to the output $y$" in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair $(\text{USA}, 113)$.  The input is *always* on the left, and the output is *always* on the right.  With this notation, we can revise our definition of relation to be a little more precise now:
 
-```{glossary}
+:::{glossary}
 relation
     A relation is a collection of ordered pairs $(x, y)$, where $x$ belongs to the domain and $y$ belongs to the range of the relation.
-```
+:::
 
 ::::{prf:example}
 The relation from {prf:ref}`top-3` could be rewritten this way: 
@@ -142,10 +142,10 @@ Now we're ready to discuss the most useful type of relations: functions.
 
 A *function* is a special type of relation.  So it still has a domain (set of inputs) and a range (set of outputs).  But it follows one additional rule: every input has *exactly one* output.  Functions are very predictable - one thing goes in, and one thing comes out.
 
-```{glossary}
+:::{glossary}
 function
     A **function** is a relation such that each input corresponds to *exactly one* output.
-```
+:::
 
 In other words: for a relation to be a *function*, ***every $x$ produces only one $y$***.
 

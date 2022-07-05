@@ -4,21 +4,21 @@ If we're playing a game with dice, it's easy to understand what to expect from t
 
 When working with randomness, there are multiple possible outcomes, each with their own probability of occurring.  To represent these outcomes and their probabilities, we use a *probability distribution*.
 
-```{glossary}
+:::{glossary}
 probability distribution
     A **probability distribution**  is a table or graph that relates *all possible outcomes* and *their probabilities of occurring*.
-```
+:::
 
-```{note}
+:::{note}
 The probabilities in a probability distribution should add up to 1 (or 100%).
-```
+:::
 
 When randomness is involved, we don't know the exact outcome we'll get in advance.  Since the outcome isn't known yet, we can give the outcome a *variable name*, like $$n$$, until it's determined.  We call this a *random variable*.
 
-```{glossary}
+:::{glossary}
 random variable
     A **random variable** is a variable that represents a set of random possible outcomes.
-```
+:::
 
 #### Example 1
  
@@ -31,16 +31,16 @@ We know all of the possible outcomes for the die roll, and we know how likely th
 | Probability:     | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ | $\frac{1}{6}$ |
 
 
-```{note}
+:::{note}
 This represents the probability distribution of $n$ in the form of a table.  We could equivalently represent it as a bar graph.  See the [bar graph](central-limit-theorem) form below.
-```
+:::
 
 The probability $\frac{1}{6} = 0.1\bar{6}$ might be more commonly written as $16.\bar{6} \%$.  In other words, if we pick a specific number between 1 and 6 (like 3), there's close to a 17% chance that we'll roll it next time we roll the die.  That's true for all of these numbers - they're all equally likely.  This is an example of a ***uniform*** *probability distribution*.
 
-```{glossary}
+:::{glossary}
 uniform
     A probability distribution is called **uniform** when all of its outcomes are equally likely.
-```
+:::
 
 Examples of uniform probability distributions include things like flipping a fair coin or rolling a fair die.  Every possible outcome is equally likely to happen.
 
@@ -76,16 +76,16 @@ Click on the slider above and use your arrow keys (or direct clicks) to change t
 
 We quickly see a familiar pattern emerge.  The distribution gets closer and closer to a bell curve.  The bell curve arises so much in practice that it is called the *normal distribution*.
 
-```{glossary}
+:::{glossary}
 normal distribution
     A **normal distribution** is another (more technical) name for a bell curve.
-```
+:::
 
-```{prf:remark}
+:::{prf:remark}
 :nonumber: true
 
 There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for this course.  You'll see more about *continuous* distributions (like the bell curve) if you take a course in statistics.
-```
+:::
 
 <script src="../../../_static/chart.js">
 </script>
