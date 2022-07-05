@@ -132,6 +132,8 @@ relation
 :::
 
 ::::{prf:example}
+:label: short-olympics
+
 The relation from {prf:ref}`top-3` could be rewritten this way: 
 
 $$
@@ -140,6 +142,17 @@ $$
 
 Note the curly braces.  We can still use set notation for relations: a relation is technically the *set of its input/output pairs*.
 ::::
+
+As in the definition of *relation* above, we often use **variables** as temporary stand-ins for values that we haven't yet decided on.
+
+:::{glossary}
+variable
+    A **variable** (often $x$, $y$, or $n$) is a shorthand expression of indeterminate value.  Its specific, concrete value can be specified or computed later.
+:::
+
+:::{remark}
+For example, the {prf:ref}`previous example <short-olympics>` can be thought of as a set of $(x, y)$ pairs.  The possible concrete values for $x$ (which make up the domain) are USA, China, or Russia, and the possible values for $y$ (which make up the range) are 113, 88, or 71.  If you specify a value for $x$, then the corresponding $y$-value can be looked up from the table.
+:::
 
 Now we're ready to discuss the most useful type of relations: functions.
 
