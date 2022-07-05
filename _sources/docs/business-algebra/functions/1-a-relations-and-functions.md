@@ -210,6 +210,7 @@ This still satisfies the definition of a function, even though the output is alw
 
 ::::{prf:example}
 Is this relation a function?
+
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 :::{admonition} Answer
 :class: dropdown
