@@ -19,7 +19,7 @@ In any linear function, $y$ is changing at a *constant rate* with respect to $x$
 
 ```{glossary}
 slope
-    The **slope** of a line tells you how quickly $y$ is changing with respect to $x$.  It's usually denoted by $m$.  You can compute it using the {ref}`formula <slope-formula>` below.
+    The **slope** of a line tells you how quickly $y$ is changing with respect to $x$.  It's usually denoted by $m$.  You can compute it using the {prf:ref}`formula <slope-formula>` below.
 ```
 
 If you already know two data points on the line (call them $(x_1, y_1)$ and $(x_2, y_2)$), then you can compute the slope using the following formula:
