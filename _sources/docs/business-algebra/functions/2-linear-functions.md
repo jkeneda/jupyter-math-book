@@ -17,13 +17,18 @@ linear function
 
 In any linear function, $y$ is changing at a *constant rate* with respect to $x$.  In other words, every time $x$ goes up by 1, $y$ will go up (or down) by some constant amount.  That amount is determined by the *slope* of the line.  
 
-<div id="slope"></div>
+```{glossary}
 slope
-: The **slope** of a line tells you how quickly $$y$$ is changing with respect to $$x$$.  It's usually denoted by $$m$$.
+    The **slope** of a line tells you how quickly $y$ is changing with respect to $x$.  It's usually denoted by $m$.  You can compute it using the {ref}`formula <slope-formula>` below.
+```
 
-If you already know two data points on the line (call them $$(x_1, y_1)$$ and $$(x_2, y_2)$$), then you can compute the slope using the following formula:
+If you already know two data points on the line (call them $(x_1, y_1)$ and $(x_2, y_2)$), then you can compute the slope using the following formula:
 
-$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+```{math}
+:label: slope-formula
+
+m = \frac{y_2 - y_1}{x_2 - x_1}
+```
 
 This formula can also be written in shorthand as $$m = \frac{\Delta y}{\Delta x}$$, where the Greek letter Delta ($$\Delta$$) can be read as "change in __". In other words, the slope is the change in $$y$$ divided by the change in $$x$$.  From this perspective, we see that the slope is measuring how much change there is in $$y$$ per change in $$x$$.
 
