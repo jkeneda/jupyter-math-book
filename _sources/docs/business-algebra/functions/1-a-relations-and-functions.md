@@ -187,6 +187,7 @@ Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it'
 This is **not** a function, because some of its inputs have more than one output.  For example, the input Jill has three different outputs, and a function should produce exactly one output for Jill.  Functions are useful because they are unambiguous.  If I say something like "Jill's pet", it's still unclear which of her three pets I'm referring to.  We won't be able to do much math if we work with relations that are ambiguous like this.  We need the fact that functions are predictable/unambiguous if we're going to use them algebraically.
 
 Even if we removed Jill and her pets from the table, the relation above would *still* not represent a function.  Can you see why?
+
 ```{admonition} Explanation
 :class: dropdown
 
