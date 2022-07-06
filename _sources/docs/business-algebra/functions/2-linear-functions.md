@@ -2,18 +2,20 @@
 
 In this section, we look at one of the simplest classes of functions: linear functions.
 
-## Closely Related Quantities
+## Closely Correlated Quantities
 
-Linear functions arise when one quantity has a *constant rate of change* with respect to another.  We saw an example of this earlier, where we computed [shipping costs](1-1-b-function-definitions.html#example-2).
+Linear functions arise when one quantity has a *constant rate of change* with respect to another.  We saw an example of this earlier, where we computed {prf:ref}`shipping costs <shipping-cost-example>`.
 
-Let's recall that function: $$f(x) = \$8.25 x$$.  Note that every time our order number $$x$$ goes up by 1, the shipping cost should go up by $8.25.  So we say that the shipping cost has a constant rate of change with respect to the number of orders.  In other words, the change in the shipping cost is directly proportional to the change in the number of orders.
+Let's recall that function: $f(x) = \$8.25 x$.  Note that every time our order number $x$ goes up by 1, the shipping cost should go up by \$8.25.  So we say that the shipping cost has a constant rate of change with respect to the number of orders.  In other words, the change in the shipping cost is directly proportional to the change in the number of orders.
 
 ## General Definitions
 
+```{glossary}
 linear function
-: A **linear function** is a function that can be written in the form $$y = mx + b$$, where $$x$$ represents the input, $$y$$ represents the output, and $$m, b$$ are constants.
+    A **linear function** is a function that can be written in the form $$y = mx + b$$, where $$x$$ represents the input, $$y$$ represents the output, and $$m, b$$ are constants.
+```
 
-In any linear function, $$y$$ is changing at a *constant rate* with respect to $$x$$.  In other words, every time $$x$$ goes up by 1, $$y$$ will go up (or down) by some constant amount.  That amount is determined by the *slope* of the line.  
+In any linear function, $y$ is changing at a *constant rate* with respect to $x$.  In other words, every time $x$ goes up by 1, $y$ will go up (or down) by some constant amount.  That amount is determined by the *slope* of the line.  
 
 <div id="slope"></div>
 slope

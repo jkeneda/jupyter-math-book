@@ -1,4 +1,4 @@
 # Linear Programming
 
-:::{tableofcontents}
-:::
+```{tableofcontents}
+```

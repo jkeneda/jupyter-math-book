@@ -8,5 +8,5 @@ It would be a good idea to add [this page](index.md) (copy the link) to your lis
 
 Here's a list of the fundamental topic sections we'll be covering in the course:
 
-:::{tableofcontents}
-:::
+```{tableofcontents}
+```

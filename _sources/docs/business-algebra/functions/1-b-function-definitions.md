@@ -2,7 +2,7 @@
 
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
 
-:::{prf:example}
+```{prf:example}
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 | Side Length | Pen Area |
@@ -13,7 +13,7 @@ Suppose a farmer wants to build a square pen.  They're interested in knowing how
 | 80 yards | 6400 square yards (1.32 acres) |
 | 90 yards | 8100 square yards (1.67 acres) |
 | 100 yards | 10,000 square yards (2.07 acres) |
-:::
+```
 
 This table might be helpful in some cases, but it's missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?
 
@@ -41,7 +41,8 @@ So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and prod
 
 To elaborate on the notation in the last example, let's look at the ingredients that we'll be using to define functions by formulas/equations.
 
-### Example 2
+```{prf:example}
+:label: shipping-cost-example
 
 Suppose you're running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs \$8.25.
 
@@ -58,8 +59,9 @@ Since the number of orders changes each day, we'll use the variable $x$ to stand
 Since each order costs \$8.25 in shipping, we see that the total shipping costs for $x$ orders should be $\$8.25 \times x$.  This gives us the following situation:
 
 $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x$$
+```
 
-We can express this more compactly using **function notation**.  Function notation replaces a diagram like
+We can express the above function more compactly using **function notation**.  Function notation replaces a diagram like
  
 $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$
 with a compact formula like $y = \$8.25x$.  This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).
@@ -68,11 +70,11 @@ with a compact formula like $y = \$8.25x$.  This formula contains the same infor
 
 If we were writing code in a programming language, we might write something like:
 
-::: javascript
+``` javascript
 function shippingCost(orderNumber) {
     return 8.25 * orderNumber
 }
-:::
+```
 
 In math, we do the same thing, but because we're doing computations by hand, we like to abbreviate everything.  Instead of using an input like "orderNumber", we use the shorthand $x$.  Instead of using a function name like "shippingCost", we might use $f$ or $g$ to stand for the function.
 

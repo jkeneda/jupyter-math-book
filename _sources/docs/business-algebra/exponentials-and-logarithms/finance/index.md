@@ -1,4 +1,4 @@
 # Finance
 
-:::{tableofcontents}
-:::
+```{tableofcontents}
+```

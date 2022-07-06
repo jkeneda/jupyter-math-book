@@ -412,13 +412,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#function-notation">
    Function Notation
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2">
-     Example 2
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
@@ -454,13 +447,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#function-notation">
    Function Notation
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2">
-     Example 2
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
@@ -530,8 +516,9 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="function-notation">
 <h2>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">¶</a></h2>
 <p>To elaborate on the notation in the last example, let’s look at the ingredients that we’ll be using to define functions by formulas/equations.</p>
-<div class="section" id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<div class="proof example admonition" id="shipping-cost-example">
+<p class="admonition-title"><span class="caption-number">Example 11 </span></p>
+<div class="example-content section" id="proof-content">
 <p>Suppose you’re running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs $8.25.</p>
 <p>Let’s say that you have 10 orders to ship, and you want to know how much money to bring to the post office.  You need 10 boxes at $8.25 each, so you should bring <span class="math notranslate nohighlight">\(\$8.50 \times 10= \$82.50\)</span>.</p>
 <p>Each day, you have a different number of orders.  To speed up the process of computing shipping costs, we want an efficient function/formula that relates the number of orders to the total shipping costs.  The function should work like this:</p>
@@ -542,11 +529,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Since each order costs $8.25 in shipping, we see that the total shipping costs for <span class="math notranslate nohighlight">\(x\)</span> orders should be <span class="math notranslate nohighlight">\(\$8.25 \times x\)</span>.  This gives us the following situation:</p>
 <div class="math notranslate nohighlight">
 \[x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x\]</div>
-<p>We can express this more compactly using <strong>function notation</strong>.  Function notation replaces a diagram like</p>
+</div>
+</div><p>We can express the above function more compactly using <strong>function notation</strong>.  Function notation replaces a diagram like</p>
 <div class="math notranslate nohighlight">
 \[x \text{ orders } \rightarrow \fbox{ function } \rightarrow y\]</div>
 <p>with a compact formula like <span class="math notranslate nohighlight">\(y = \$8.25x\)</span>.  This formula contains the same information - it says that the output (shipping cost) is $8.25 times the input (number of orders).</p>
-</div>
 </div>
 <div class="section" id="functions-in-math-vs-computer-science">
 <h2>Functions in math vs. computer science<a class="headerlink" href="#functions-in-math-vs-computer-science" title="Permalink to this headline">¶</a></h2>
