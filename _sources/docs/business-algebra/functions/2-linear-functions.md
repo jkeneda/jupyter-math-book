@@ -41,14 +41,16 @@ slope-intercept form
 $m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
 ```
 
-## Finding the Equation of a Line Connecting Two Data Points
+## Finding the Equation of a Line
+
+It only takes two data points to determine a line.  In this subsection we'll see how to use two points to find the equation of the line that contains them.
 
 ### Example 1 {#ex1}
 Let's say that you want the equation of a line passing through $$(1, 2)$$ and $$(4, 8)$$.
 
 We know that the line can be written as $$y = mx + b$$, but we need to determine $$m$$ and $$b$$.
 
-It's a good idea to start by finding $$m$$.  Based on the <a href="#slope">slope formula</a> above, we compute:
+It's a good idea to start by finding $$m$$.  Based on the slope formula {eq}`slope-formula` above, we compute:
 
 $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{8-2}{4-1} = \frac{6}{3} = 2$$
 
