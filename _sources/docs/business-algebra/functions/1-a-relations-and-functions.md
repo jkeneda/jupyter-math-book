@@ -188,6 +188,8 @@ This is **not** a function, because some of its inputs have more than one output
 
 Even if we removed Jill and her pets from the table, the relation above would *still* not represent a function.  Can you see why?
 ```{admonition} Explanation
+:class: dropdown
+
 The input Kenzie still produces more than one output.
 ```
 ````
