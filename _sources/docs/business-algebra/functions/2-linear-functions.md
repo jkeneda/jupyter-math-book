@@ -12,7 +12,7 @@ Let's recall that function: $f(x) = \$8.25 x$.  Note that every time our order n
 
 ```{glossary}
 linear function
-    A **linear function** is a function that can be written in the form $$y = mx + b$$, where $$x$$ represents the input, $$y$$ represents the output, and $$m, b$$ are constants.
+    A **linear function** is a function that can be written in the form $y = mx + b$, where $x$ represents the input, $y$ represents the output, and $m, b$ are constants.
 ```
 
 In any linear function, $y$ is changing at a *constant rate* with respect to $x$.  In other words, every time $x$ goes up by 1, $y$ will go up (or down) by some constant amount.  That amount is determined by the *slope* of the line.  
