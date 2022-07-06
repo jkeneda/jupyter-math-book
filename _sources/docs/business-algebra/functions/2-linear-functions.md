@@ -30,7 +30,7 @@ If you already know two data points on the line (call them $(x_1, y_1)$ and $(x_
 m = \frac{y_2 - y_1}{x_2 - x_1}
 ```
 
-This formula can also be written in shorthand as $m = \frac{\Delta y}{\Delta x}$, where the Greek letter Delta ($\Delta$) can be read as "change in __". In other words, the slope is the change in $y$ divided by the change in $x$.  From this perspective, we see that the slope is measuring how much change there is in $y$ per change in $x$.
+This formula can also be written in shorthand as $m = \frac{\Delta y}{\Delta x}$, where the Greek letter Delta ($\Delta$) can be read as "change in __". In other words, the slope is "the change in $y$ divided by the change in $x$".  From this perspective, we see that the slope is measuring how much change there is in $y$ per change in $x$.
 
 slope-intercept form
 : The equation of a line is said to be in **slope-intercept form** if it looks like $$y = mx + b$$.  In this form, $$m$$ tells you the slope and $$b$$ tells you the $$y$$-intercept (which we'll discuss below).
