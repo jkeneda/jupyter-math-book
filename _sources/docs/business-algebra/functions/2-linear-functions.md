@@ -32,10 +32,14 @@ m = \frac{y_2 - y_1}{x_2 - x_1}
 
 This formula can also be written in shorthand as $m = \frac{\Delta y}{\Delta x}$, where the Greek letter Delta ($\Delta$) can be read as "change in __". In other words, the slope is "the change in $y$ divided by the change in $x$".  From this perspective, we see that the slope is measuring how much change there is in $y$ per change in $x$.
 
+```{glossary}
 slope-intercept form
-: The equation of a line is said to be in **slope-intercept form** if it looks like $$y = mx + b$$.  In this form, $$m$$ tells you the slope and $$b$$ tells you the $$y$$-intercept (which we'll discuss below).
+    The equation of a line is said to be in **slope-intercept form** if it looks like $y = mx + b$.  In this form, $m$ tells you the slope and $b$ tells you the $y$-intercept (discussed below).
+```
 
-> **Warning**: $$m$$ and $$b$$ are allowed to be zero.  For example, in our shipping cost function, we have $$m = 8.25$$ and $$b = 0$$, so that $$y = 8.25 x + 0 = 8.25 x$$.
+```{warning}
+$m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
+```
 
 ## Finding the Equation of a Line Connecting Two Data Points
 
