@@ -17,10 +17,10 @@ linear function
 
 In any linear function, $y$ is changing at a *constant rate* with respect to $x$.  In other words, every time $x$ goes up by 1, $y$ will go up (or down) by some constant amount.  That amount is determined by the *slope* of the line.  
 
-:::{glossary}
+```{glossary}
 slope
     The **slope** of a line tells you how quickly $y$ is changing with respect to $x$.  It's usually denoted by $m$.  You can compute it using the formula {eq}`slope-formula` below.
-:::
+```
 
 If you already know two data points on the line (call them $(x_1, y_1)$ and $(x_2, y_2)$), then you can compute the slope using the following formula:
 
