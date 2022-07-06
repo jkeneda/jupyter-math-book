@@ -7,7 +7,7 @@ Suppose a farmer wants to build a square pen.  They're interested in knowing how
 
 | Side Length | Pen Area |
 |:-----------|---------------------------:|
-| 50 yards | 2500 sqare yards (0.52 acres)  |
+| 50 yards | 2500 square yards (0.52 acres)  |
 | 60 yards | 3600 square yards (0.74 acres) |
 | 70 yards | 4900 square yards (1.01 acres) |
 | 80 yards | 6400 square yards (1.32 acres) |

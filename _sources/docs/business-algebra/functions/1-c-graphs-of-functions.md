@@ -11,7 +11,9 @@ We've defined a relation as a set of ordered pairs $(x, y)$.  For example, we ca
 
 This graph depicts the relation $\{(1,3), (2, 1), (3, 5)\}$.  You can click on the points to see their coordinates.  Consider the point $(x, y) = (2, 1)$, which is pictured in blue.  You can recover its $x$-value by squashing it onto the horizontal ($x$-)axis.  You can recover its $y$-value by squashing it onto the vertical ($y$-)axis.
 
-> Stop here and investigate the graph until you're comfortable translating between a data point $(x, y)$ and its corresponding point on the $xy$-plane.
+:::{tip}
+Stop here and investigate the graph until you're comfortable translating between a data point $(x, y)$ and its corresponding point on the $xy$-plane.
+:::
 
 ## Graphs of Functions Defined by Equations
 
