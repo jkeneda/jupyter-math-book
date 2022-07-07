@@ -3,6 +3,8 @@
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
 
 ```{prf:example}
+:label: square-pen-example
+
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 | Side Length | Pen Area |
@@ -27,7 +29,7 @@ or
 
 $$A(x) = x^2 \text{ square yards},$$
 
-where the input is thought of as "$x$ yards", and the output is measured in square yards.
+where the input is thought of as "$x$ yards", and the output (denoted as $y$ or $A(x)$, depending on whether we want to emphasize the dependence on $x$) is measured in square yards.
 
 ## What if we want to work in different units?
 
@@ -74,6 +76,14 @@ y = \$8.25x
 
 This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.  The notation $y = f(x)$, where $f(x)$ is some expression in $x$, is called *function notation*.
 ````
+
+```{prf:example}
+The function that's being used in the {prf:ref}`square pen example <square-pen-example>` above is written
+
+$$y = x^2$$
+
+in function notation.
+```
 
 ## Functions in math vs. computer science
 
