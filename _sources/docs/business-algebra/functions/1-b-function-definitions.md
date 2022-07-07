@@ -62,7 +62,7 @@ $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x$$
 
 We can express the above function more compactly using **function notation**.  Function notation replaces a diagram like
  
-$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$
+$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y = \$8.25 x$$
 
 with a compact formula like:
 
