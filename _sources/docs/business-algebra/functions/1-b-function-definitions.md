@@ -86,7 +86,7 @@ in function notation.
 ```
 
 ```{prf:remark}
-Function notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).
+Function notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).  An expression like $y = x^2$ tells us how the function relates its inputs to its outputs.
 ```
 
 ## Functions in math vs. computer science
