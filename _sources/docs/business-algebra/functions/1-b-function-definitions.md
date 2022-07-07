@@ -69,7 +69,7 @@ with a compact formula like
 
 $$y = \$8.25x.$$
 
-This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).
+This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.
 
 ## Functions in math vs. computer science
 
