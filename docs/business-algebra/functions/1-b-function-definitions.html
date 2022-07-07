@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions Defined by Algebraic Expressions</title>
+    <title>2. Functions Defined by Algebraic Expressions</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -61,8 +61,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Graphs of Functions" href="1-c-graphs-of-functions.html" />
-    <link rel="prev" title="Relations and Functions" href="1-a-relations-and-functions.html" />
+    <link rel="next" title="3. Graphs of Functions" href="1-c-graphs-of-functions.html" />
+    <link rel="prev" title="1. Relations and Functions" href="1-a-relations-and-functions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -127,37 +127,37 @@ const thebe_selector_output = ".output, .cell_output"
     <ul class="current">
      <li class="toctree-l3">
       <a class="reference internal" href="1-a-relations-and-functions.html">
-       Relations and Functions
+       1. Relations and Functions
       </a>
      </li>
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       Functions Defined by Algebraic Expressions
+       2. Functions Defined by Algebraic Expressions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="1-c-graphs-of-functions.html">
-       Graphs of Functions
+       3. Graphs of Functions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="2-linear-functions.html">
-       Linear Functions
+       4. Linear Functions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="3-quadratic-functions.html">
-       Quadratic Functions
+       5. Quadratic Functions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="4-polynomial-functions.html">
-       Polynomials
+       6. Polynomials
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="5-rational-functions.html">
-       Rational Functions
+       7. Rational Functions
       </a>
      </li>
     </ul>
@@ -405,17 +405,17 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
-   What if we want to work in different units?
+   2.1. What if we want to work in different units?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#function-notation">
-   Function Notation
+   2.2. Function Notation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
-   Functions in math vs. computer science
+   2.3. Functions in math vs. computer science
   </a>
  </li>
 </ul>
@@ -440,17 +440,17 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
-   What if we want to work in different units?
+   2.1. What if we want to work in different units?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#function-notation">
-   Function Notation
+   2.2. Function Notation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
-   Functions in math vs. computer science
+   2.3. Functions in math vs. computer science
   </a>
  </li>
 </ul>
@@ -463,10 +463,10 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="functions-defined-by-algebraic-expressions">
-<h1>Functions Defined by Algebraic Expressions<a class="headerlink" href="#functions-defined-by-algebraic-expressions" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Functions Defined by Algebraic Expressions<a class="headerlink" href="#functions-defined-by-algebraic-expressions" title="Permalink to this headline">¶</a></h1>
 <p>So far, we’ve been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you’re working with numerical functions, there’s often a simple formula that describes how to produce the output from a given input.</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 10 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 2.1 </span></p>
 <div class="example-content section" id="proof-content">
 <p>Suppose a farmer wants to build a square pen.  They’re interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:</p>
 <table class="colwidths-auto table">
@@ -507,17 +507,17 @@ const thebe_selector_output = ".output, .cell_output"
 \[A(x) = x^2 \text{ square yards},\]</div>
 <p>where the input is thought of as “<span class="math notranslate nohighlight">\(x\)</span> yards”, and the output is measured in square yards.</p>
 <div class="section" id="what-if-we-want-to-work-in-different-units">
-<h2>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say that you’re measuring the area of an entire (square) ranch.  In that case, even if the side length <span class="math notranslate nohighlight">\(x\)</span> was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate <span class="math notranslate nohighlight">\(\frac{1 \text{ acre}}{4,840 \text{ square yards}}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.\]</div>
 <p>So the functions <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A^*\)</span> will take any side length <span class="math notranslate nohighlight">\(x\)</span> (in yards) and produce the corresponding pen area (in square yards and acres, respectively).</p>
 </div>
 <div class="section" id="function-notation">
-<h2>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">¶</a></h2>
 <p>To elaborate on the notation in the last example, let’s look at the ingredients that we’ll be using to define functions by formulas/equations.</p>
 <div class="proof example admonition" id="shipping-cost-example">
-<p class="admonition-title"><span class="caption-number">Example 11 </span></p>
+<p class="admonition-title"><span class="caption-number">Example 2.2 </span></p>
 <div class="example-content section" id="proof-content">
 <p>Suppose you’re running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs $8.25.</p>
 <p>Let’s say that you have 10 orders to ship, and you want to know how much money to bring to the post office.  You need 10 boxes at $8.25 each, so you should bring <span class="math notranslate nohighlight">\(\$8.50 \times 10= \$82.50\)</span>.</p>
@@ -539,7 +539,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>This formula contains the same information - it says that the output (shipping cost) is $8.25 times the input (number of orders).  From now on we’ll write functions this way.</p>
 </div>
 <div class="section" id="functions-in-math-vs-computer-science">
-<h2>Functions in math vs. computer science<a class="headerlink" href="#functions-in-math-vs-computer-science" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Functions in math vs. computer science<a class="headerlink" href="#functions-in-math-vs-computer-science" title="Permalink to this headline">¶</a></h2>
 <p>If we were writing code in a programming language, we might write something like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">shippingCost</span><span class="p">(</span><span class="nx">orderNumber</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mf">8.25</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">orderNumber</span><span class="w"></span>
@@ -581,13 +581,13 @@ const thebe_selector_output = ".output, .cell_output"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Relations and Functions</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Relations and Functions</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="1-c-graphs-of-functions.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Graphs of Functions</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Graphs of Functions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
