@@ -41,7 +41,7 @@ So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and prod
 
 To elaborate on the notation in the last example, let's look at the ingredients that we'll be using to define functions by formulas/equations.
 
-```{prf:example}
+````{prf:example}
 :label: shipping-cost-example
 
 Suppose you're running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs \$8.25.
@@ -59,17 +59,21 @@ Since the number of orders changes each day, we'll use the variable $x$ to stand
 Since each order costs \$8.25 in shipping, we see that the total shipping costs for $x$ orders should be $\$8.25 \times x$.  This gives us the following situation:
 
 $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x$$
-```
 
 We can express the above function more compactly using **function notation**.  Function notation replaces a diagram like
  
 $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$
 
-with a compact formula like 
+with a compact formula like:
 
-$$y = \$8.25x.$$
+```{math}
+:label: function-notation-example
 
-This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.
+y = \$8.25x
+```
+
+This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.  The notation $y = f(x)$, where $f(x)$ is some expression in $x$, is called *function notation*.
+````
 
 ## Functions in math vs. computer science
 

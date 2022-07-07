@@ -38,7 +38,7 @@ slope-intercept form
 ```
 
 ```{warning}
-$m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
+$m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>` {eq}`function-notation-example`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
 ```
 
 ## Finding the Equation of a Line
