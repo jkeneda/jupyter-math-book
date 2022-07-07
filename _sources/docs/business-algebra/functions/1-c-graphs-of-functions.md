@@ -15,7 +15,8 @@ Consider the point $(x, y) = (2, 1)$, which is pictured in blue.  You can recove
  Decide what you think the coordinates should be for the unlabeled points.  You can check your answer by clicking on each point. Investigate the graph above until you're comfortable translating between a data point $(x, y)$ and its corresponding point on the $xy$-plane.
 ```
 ```{admonition} Answer
-:
+:class: dropdown
+
 The graph depicts the relation $\{(1,3), (2, 1), (3, 5)\}$.
 ```
 
