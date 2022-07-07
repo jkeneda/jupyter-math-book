@@ -82,7 +82,11 @@ The function that's being used in the {prf:ref}`square pen example <square-pen-e
 
 $$y = x^2$$
 
-in function notation.  This notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).
+in function notation.
+```
+
+```{prf:remark}
+Function notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).
 ```
 
 ## Functions in math vs. computer science
