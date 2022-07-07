@@ -31,6 +31,7 @@ repository:
 html:
   favicon: favicon.ico
   use_issues_button: true
+  use_multitoc_numbering: false
   use_repository_button: false
 
 sphinx:
