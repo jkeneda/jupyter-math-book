@@ -419,13 +419,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1-ex1">
-     4.3.1. Example 1 {#ex1}
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#procedure">
-     4.3.2. Procedure:
+    <a class="reference internal nav-link" href="#general-procedure">
+     4.3.1. General Procedure
     </a>
    </li>
   </ul>
@@ -466,13 +461,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1-ex1">
-     4.3.1. Example 1 {#ex1}
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#procedure">
-     4.3.2. Procedure:
+    <a class="reference internal nav-link" href="#general-procedure">
+     4.3.1. General Procedure
     </a>
    </li>
   </ul>
@@ -521,16 +511,17 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="finding-the-equation-of-a-line">
 <h2><span class="section-number">4.3. </span>Finding the Equation of a Line<a class="headerlink" href="#finding-the-equation-of-a-line" title="Permalink to this headline">¶</a></h2>
 <p>It only takes two data points to determine a line.  In this subsection we’ll see how to use two points to find the equation of the line that contains them.</p>
-<div class="section" id="example-1-ex1">
-<h3><span class="section-number">4.3.1. </span>Example 1 {#ex1}<a class="headerlink" href="#example-1-ex1" title="Permalink to this headline">¶</a></h3>
-<p>Let’s say that you want the equation of a line passing through $<span class="math notranslate nohighlight">\((1, 2)\)</span><span class="math notranslate nohighlight">\( and \)</span><span class="math notranslate nohighlight">\((4, 8)\)</span>$.</p>
-<p>We know that the line can be written as $<span class="math notranslate nohighlight">\(y = mx + b\)</span><span class="math notranslate nohighlight">\(, but we need to determine \)</span><span class="math notranslate nohighlight">\(m\)</span><span class="math notranslate nohighlight">\( and \)</span><span class="math notranslate nohighlight">\(b\)</span>$.</p>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 4.1 </span></p>
+<div class="example-content section" id="proof-content">
+<p>Let’s say that you want the equation of a line passing through <span class="math notranslate nohighlight">\((1, 2)\)</span> and <span class="math notranslate nohighlight">\((4, 8)\)</span>.</p>
+<p>We know that the line can be written as <span class="math notranslate nohighlight">\(y = mx + b\)</span>, but we need to determine <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.</p>
 <p>It’s a good idea to start by finding $<span class="math notranslate nohighlight">\(m\)</span>$.  Based on the slope formula <a class="reference internal" href="#equation-slope-formula">(4.1)</a> above, we compute:</p>
 <div class="math notranslate nohighlight">
 \[m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{8-2}{4-1} = \frac{6}{3} = 2\]</div>
-<p>That means that the line we’re looking for is $<span class="math notranslate nohighlight">\(y = 2x + b\)</span><span class="math notranslate nohighlight">\(, but we still need to determine \)</span><span class="math notranslate nohighlight">\(b\)</span>$.</p>
-<p>To determine $<span class="math notranslate nohighlight">\(b\)</span><span class="math notranslate nohighlight">\(, note that we already know a couple of \)</span><span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\( that should balance the equation.  Namely, \)</span><span class="math notranslate nohighlight">\((1, 2)\)</span><span class="math notranslate nohighlight">\( and \)</span><span class="math notranslate nohighlight">\((4, 8)\)</span><span class="math notranslate nohighlight">\( should solve the equation.  We can plug in either of them to solve for \)</span><span class="math notranslate nohighlight">\(b\)</span>$.</p>
-<p>Let’s plug in $<span class="math notranslate nohighlight">\((x, y) = (1, 2)\)</span><span class="math notranslate nohighlight">\( into the equation we've developed so far: \)</span><span class="math notranslate nohighlight">\(y = 2x + b\)</span>$.</p>
+<p>That means that the line we’re looking for is <span class="math notranslate nohighlight">\(y = 2x + b\)</span>, but we still need to determine <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p>To determine <span class="math notranslate nohighlight">\(b\)</span>, note that we already know a couple of <span class="math notranslate nohighlight">\((x, y)\)</span> that should balance the equation.  Namely, <span class="math notranslate nohighlight">\((1, 2)\)</span> and <span class="math notranslate nohighlight">\((4, 8)\)</span> should solve the equation.  We can plug in either of them to solve for <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p>Let’s plug in one of these points, say <span class="math notranslate nohighlight">\((x, y) = (1, 2)\)</span>, into the equation we’ve developed so far: <span class="math notranslate nohighlight">\(y = 2x + b\)</span>.</p>
 <p>We get:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -540,13 +531,14 @@ const thebe_selector_output = ".output, .cell_output"
 0 &amp;= b
 \end{align*}
 \end{split}\]</div>
-<p>So $<span class="math notranslate nohighlight">\(y = 2x\)</span>$ is the line we’re looking for.</p>
-<blockquote>
-<div><p>Note that we could write $<span class="math notranslate nohighlight">\(y = 2x + 0\)</span><span class="math notranslate nohighlight">\( if we wanted to emphasize that \)</span><span class="math notranslate nohighlight">\(b = 0\)</span>$, but normally we suppress the 0 term.</p>
-</div></blockquote>
+<p>So <span class="math notranslate nohighlight">\(y = 2x\)</span> is the line we’re looking for.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We could write <span class="math notranslate nohighlight">\(y = 2x + 0\)</span> if we wanted to emphasize that <span class="math notranslate nohighlight">\(b = 0\)</span>, but normally we suppress the 0 term.</p>
 </div>
-<div class="section" id="procedure">
-<h3><span class="section-number">4.3.2. </span>Procedure:<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h3>
+</div>
+</div><div class="section" id="general-procedure">
+<h3><span class="section-number">4.3.1. </span>General Procedure<a class="headerlink" href="#general-procedure" title="Permalink to this headline">¶</a></h3>
 <p>Following the example above, we can see the following general procedure for finding the equation of a line that passes through some given data points.</p>
 <ol class="simple">
 <li><p>(Optional but useful) Graph the data points you’re given.  You need at least two points to determine the line.</p></li>
@@ -554,10 +546,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Plug in $<span class="math notranslate nohighlight">\(m\)</span><span class="math notranslate nohighlight">\( and one of your data points \)</span><span class="math notranslate nohighlight">\((x, y)\)</span><span class="math notranslate nohighlight">\( into the equation \)</span><span class="math notranslate nohighlight">\(y = mx + b\)</span><span class="math notranslate nohighlight">\(.  This should leave \)</span><span class="math notranslate nohighlight">\(b\)</span><span class="math notranslate nohighlight">\( as your only variable, and we can solve for \)</span><span class="math notranslate nohighlight">\(b\)</span>$ from there.</p></li>
 <li><p>Write $<span class="math notranslate nohighlight">\(y = mx + b\)</span><span class="math notranslate nohighlight">\(, with \)</span><span class="math notranslate nohighlight">\(m\)</span><span class="math notranslate nohighlight">\( and \)</span><span class="math notranslate nohighlight">\(b\)</span>$ replaced by the constants you found in steps 2 and 3.</p></li>
 </ol>
-<hr class="docutils" />
-<p><span class="xref myst">Return to Previous Section</span></p>
-<p><span class="xref myst">Continue to Next Section</span></p>
-<p><span class="xref myst">Return to Table of Contents</span></p>
 </div>
 </div>
 </div>
