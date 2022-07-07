@@ -91,7 +91,7 @@ Function notation implicitly thinks of $x$ as our input (also called the *indepe
 
 ## Functions in math vs. computer science
 
-If we were writing code in a programming language, we might write something like:
+Let's return to the {prf:ref}`shipping cost example <shipping-cost-example>` above.  If we were writing code in a programming language, we might write something like:
 
 ``` javascript
 function shippingCost(orderNumber) {
