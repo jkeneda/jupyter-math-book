@@ -4,6 +4,9 @@
 
 :::{tab-item} Zoom In
 This is the zoomed-in content.
+```{note}
+Does this work now?
+```
 :::
 
 :::{tab-item} Zoom Out
