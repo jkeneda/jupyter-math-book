@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4. Linear Functions</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,6 +38,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -49,7 +48,7 @@
     <script src="../../../_static/chart.js"></script>
     <script src="../../../_static/distributions.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -70,7 +69,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -79,9 +92,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -97,14 +111,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../index.html">
-   Welcome to Business Math!
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Welcome to Business Math!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../index.html">
    Business Algebra (MATH 1324)
@@ -322,87 +337,148 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/docs/business-algebra/functions/2-linear-functions.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        
-        <a class="issues-button"
-            href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/2-linear-functions.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/business-algebra/functions/2-linear-functions.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/docs/business-algebra/functions/2-linear-functions.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#closely-correlated-quantities">
    4.1. Closely Correlated Quantities
@@ -427,12 +503,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Linear Functions</h1>
@@ -473,47 +548,48 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="linear-functions">
-<h1><span class="section-number">4. </span>Linear Functions<a class="headerlink" href="#linear-functions" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="linear-functions">
+<h1><span class="section-number">4. </span>Linear Functions<a class="headerlink" href="#linear-functions" title="Permalink to this headline">#</a></h1>
 <p>In this section, we look at one of the simplest classes of functions: linear functions.</p>
-<div class="section" id="closely-correlated-quantities">
-<h2><span class="section-number">4.1. </span>Closely Correlated Quantities<a class="headerlink" href="#closely-correlated-quantities" title="Permalink to this headline">¶</a></h2>
+<section id="closely-correlated-quantities">
+<h2><span class="section-number">4.1. </span>Closely Correlated Quantities<a class="headerlink" href="#closely-correlated-quantities" title="Permalink to this headline">#</a></h2>
 <p>Linear functions arise when one quantity has a <em>constant rate of change</em> with respect to another.  We saw an example of this earlier, where we computed <a class="reference internal" href="1-b-function-definitions.html#shipping-cost-example">shipping costs</a>.</p>
 <p>Let’s recall that function: <span class="math notranslate nohighlight">\(f(x) = \$8.25 x\)</span>.  Note that every time our order number <span class="math notranslate nohighlight">\(x\)</span> goes up by 1, the shipping cost should go up by $8.25.  So we say that the shipping cost has a constant rate of change with respect to the number of orders.  In other words, the change in the shipping cost is directly proportional to the change in the number of orders.</p>
-</div>
-<div class="section" id="general-definitions">
-<h2><span class="section-number">4.2. </span>General Definitions<a class="headerlink" href="#general-definitions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="general-definitions">
+<h2><span class="section-number">4.2. </span>General Definitions<a class="headerlink" href="#general-definitions" title="Permalink to this headline">#</a></h2>
 <dl class="glossary simple">
-<dt id="term-linear-function">linear function<a class="headerlink" href="#term-linear-function" title="Permalink to this term">¶</a></dt><dd><p>A <strong>linear function</strong> is a function that can be written in the form <span class="math notranslate nohighlight">\(y = mx + b\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> represents the input, <span class="math notranslate nohighlight">\(y\)</span> represents the output, and <span class="math notranslate nohighlight">\(m, b\)</span> are constants.</p>
+<dt id="term-linear-function">linear function<a class="headerlink" href="#term-linear-function" title="Permalink to this term">#</a></dt><dd><p>A <strong>linear function</strong> is a function that can be written in the form <span class="math notranslate nohighlight">\(y = mx + b\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> represents the input, <span class="math notranslate nohighlight">\(y\)</span> represents the output, and <span class="math notranslate nohighlight">\(m, b\)</span> are constants.</p>
 </dd>
 </dl>
 <p>In any linear function, <span class="math notranslate nohighlight">\(y\)</span> is changing at a <em>constant rate</em> with respect to <span class="math notranslate nohighlight">\(x\)</span>.  In other words, every time <span class="math notranslate nohighlight">\(x\)</span> goes up by 1, <span class="math notranslate nohighlight">\(y\)</span> will go up (or down) by some constant amount.  That amount is determined by the <em>slope</em> of the line.</p>
 <dl class="glossary simple">
-<dt id="term-slope">slope<a class="headerlink" href="#term-slope" title="Permalink to this term">¶</a></dt><dd><p>The <strong>slope</strong> of a line tells you how quickly <span class="math notranslate nohighlight">\(y\)</span> is changing with respect to <span class="math notranslate nohighlight">\(x\)</span>.  It’s usually denoted by <span class="math notranslate nohighlight">\(m\)</span>.  You can compute it using the formula <a class="reference internal" href="#equation-slope-formula">(4.1)</a> below.</p>
+<dt id="term-slope">slope<a class="headerlink" href="#term-slope" title="Permalink to this term">#</a></dt><dd><p>The <strong>slope</strong> of a line tells you how quickly <span class="math notranslate nohighlight">\(y\)</span> is changing with respect to <span class="math notranslate nohighlight">\(x\)</span>.  It’s usually denoted by <span class="math notranslate nohighlight">\(m\)</span>.  You can compute it using the formula <a class="reference internal" href="#equation-slope-formula">(4.1)</a> below.</p>
 </dd>
 </dl>
 <p>If you already know two data points on the line (call them <span class="math notranslate nohighlight">\((x_1, y_1)\)</span> and <span class="math notranslate nohighlight">\((x_2, y_2)\)</span>), then you can compute the slope using the following formula:</p>
 <div class="math notranslate nohighlight" id="equation-slope-formula">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-slope-formula" title="Permalink to this equation">¶</a></span>\[m = \frac{y_2 - y_1}{x_2 - x_1}\]</div>
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-slope-formula" title="Permalink to this equation">#</a></span>\[m = \frac{y_2 - y_1}{x_2 - x_1}\]</div>
 <p>This formula can also be written in shorthand as <span class="math notranslate nohighlight">\(m = \frac{\Delta y}{\Delta x}\)</span>, where the Greek letter Delta (<span class="math notranslate nohighlight">\(\Delta\)</span>) can be read as “change in __”. In other words, the slope is “the change in <span class="math notranslate nohighlight">\(y\)</span> divided by the change in <span class="math notranslate nohighlight">\(x\)</span>”.  From this perspective, we see that the slope is measuring how much change there is in <span class="math notranslate nohighlight">\(y\)</span> per change in <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <dl class="glossary simple">
-<dt id="term-slope-intercept-form">slope-intercept form<a class="headerlink" href="#term-slope-intercept-form" title="Permalink to this term">¶</a></dt><dd><p>The equation of a line is said to be in <strong>slope-intercept form</strong> if it looks like <span class="math notranslate nohighlight">\(y = mx + b\)</span>.  In this form, <span class="math notranslate nohighlight">\(m\)</span> tells you the slope and <span class="math notranslate nohighlight">\(b\)</span> tells you the <span class="math notranslate nohighlight">\(y\)</span>-intercept (discussed below).</p>
+<dt id="term-slope-intercept-form">slope-intercept form<a class="headerlink" href="#term-slope-intercept-form" title="Permalink to this term">#</a></dt><dd><p>The equation of a line is said to be in <strong>slope-intercept form</strong> if it looks like <span class="math notranslate nohighlight">\(y = mx + b\)</span>.  In this form, <span class="math notranslate nohighlight">\(m\)</span> tells you the slope and <span class="math notranslate nohighlight">\(b\)</span> tells you the <span class="math notranslate nohighlight">\(y\)</span>-intercept (discussed below).</p>
 </dd>
 </dl>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are allowed to be zero.  For example, in our <a class="reference internal" href="1-b-function-definitions.html#shipping-cost-example">shipping cost function</a> <a class="reference internal" href="1-b-function-definitions.html#equation-function-notation-example">(2.1)</a>, we have <span class="math notranslate nohighlight">\(m = 8.25\)</span> and <span class="math notranslate nohighlight">\(b = 0\)</span>, so that <span class="math notranslate nohighlight">\(y = 8.25 x + 0 = 8.25 x\)</span>.</p>
 </div>
-</div>
-<div class="section" id="finding-the-equation-of-a-line">
-<h2><span class="section-number">4.3. </span>Finding the Equation of a Line<a class="headerlink" href="#finding-the-equation-of-a-line" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="finding-the-equation-of-a-line">
+<h2><span class="section-number">4.3. </span>Finding the Equation of a Line<a class="headerlink" href="#finding-the-equation-of-a-line" title="Permalink to this headline">#</a></h2>
 <p>It only takes two data points to determine a line.  In this subsection we’ll see how to use two points to find the equation of the line that contains them.</p>
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 4.1 </span></p>
-<div class="example-content section" id="proof-content">
+<section class="example-content" id="proof-content">
 <p>Let’s say that you want the equation of a line passing through <span class="math notranslate nohighlight">\((1, 2)\)</span> and <span class="math notranslate nohighlight">\((4, 8)\)</span>.</p>
 <p>We know that the line can be written as <span class="math notranslate nohighlight">\(y = mx + b\)</span>, but we need to determine <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.</p>
 <p>It’s a good idea to start by finding $<span class="math notranslate nohighlight">\(m\)</span>$.  Based on the slope formula <a class="reference internal" href="#equation-slope-formula">(4.1)</a> above, we compute:</p>
@@ -536,9 +612,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Note</p>
 <p>We could write <span class="math notranslate nohighlight">\(y = 2x + 0\)</span> if we wanted to emphasize that <span class="math notranslate nohighlight">\(b = 0\)</span>, but normally we suppress the 0 term.</p>
 </div>
-</div>
-</div><div class="section" id="general-procedure">
-<h3><span class="section-number">4.3.1. </span>General Procedure<a class="headerlink" href="#general-procedure" title="Permalink to this headline">¶</a></h3>
+</section>
+</div><section id="general-procedure">
+<h3><span class="section-number">4.3.1. </span>General Procedure<a class="headerlink" href="#general-procedure" title="Permalink to this headline">#</a></h3>
 <p>Following the example above, we can see the following general procedure for finding the equation of a line that passes through some given data points.</p>
 <div class="admonition-finding-the-equation-of-a-line admonition">
 <p class="admonition-title">Finding the Equation of a Line</p>
@@ -549,9 +625,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Write <span class="math notranslate nohighlight">\(y = mx + b\)</span>, with <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span> replaced by the constants you found in steps 2 and 3.</p></li>
 </ol>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -575,9 +651,11 @@ const thebe_selector_output = ".output, .cell_output"
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="1-c-graphs-of-functions.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -593,24 +671,28 @@ const thebe_selector_output = ".output, .cell_output"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Josh Keneda<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Josh Keneda<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
