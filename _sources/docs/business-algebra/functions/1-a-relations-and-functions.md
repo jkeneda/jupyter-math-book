@@ -215,10 +215,10 @@ This still satisfies the definition of a function, even though the output is alw
 
 Here are some of the main ideas we've met in this section:
 
-- A :term:`relation` is a mathematical object that relates an input to an output in a pre-determined way.
-- The set of inputs is called the :term:`domain` of the relation.
-- The set of outputs is called the :term:`range` of the relation.
-- A :term:`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
+- A {term}`relation` is a mathematical object that relates an input to an output in a pre-determined way.
+- The set of inputs is called the {term}`domain` of the relation.
+- The set of outputs is called the {term}`range` of the relation.
+- A {term}`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
 
 ## Zoom Deep and Wide
 
