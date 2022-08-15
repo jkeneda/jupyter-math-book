@@ -1,5 +1,8 @@
 # Relations and Functions
 
+::::{tab-set}
+
+:::{tab-item} Zoom In
 In this section, we introduce *relations* and *functions*, which are used to model relationships between two sets.
 
 ## Relationships between inputs and outputs
@@ -206,6 +209,14 @@ Note that it's okay for a function to have multiple inputs that produce the same
 
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
 ```
+:::
+
+:::{tab-item} Zoom Out
+:::
+
+:::{tab-item} Zoom Deep and Wide
+:::
+::::
 
 ## Practice: Is it a function?
 
