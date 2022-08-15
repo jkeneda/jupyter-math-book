@@ -3,10 +3,12 @@
 
 format: jb-book
 root: docs/index
-chapters: 
+chapters:
   - file: docs/business-algebra/index
     sections:
     - file: docs/business-algebra/functions/index
+      options:
+        numbered: true
       sections:
       - file: docs/business-algebra/functions/1-a-relations-and-functions.md
       - file: docs/business-algebra/functions/1-b-function-definitions.md
@@ -16,6 +18,8 @@ chapters:
       - file: docs/business-algebra/functions/4-polynomial-functions.md
       - file: docs/business-algebra/functions/5-rational-functions.md
     - file: docs/business-algebra/exponentials-and-logarithms/index
+      options:
+        numbered: true
       sections:
       - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/index.md
         sections:

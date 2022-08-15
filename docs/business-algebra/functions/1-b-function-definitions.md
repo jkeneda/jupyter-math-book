@@ -3,6 +3,8 @@
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
 
 ```{prf:example}
+:label: square-pen-example
+
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 | Side Length | Pen Area |
@@ -27,7 +29,7 @@ or
 
 $$A(x) = x^2 \text{ square yards},$$
 
-where the input is thought of as "$x$ yards", and the output is measured in square yards.
+where the input is thought of as "$x$ yards", and the output (denoted as $y$ or $A(x)$, depending on whether we want to emphasize the dependence on $x$) is measured in square yards.
 
 ## What if we want to work in different units?
 
@@ -41,7 +43,7 @@ So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and prod
 
 To elaborate on the notation in the last example, let's look at the ingredients that we'll be using to define functions by formulas/equations.
 
-```{prf:example}
+````{prf:example}
 :label: shipping-cost-example
 
 Suppose you're running a small candlemaking business.  For each online order, you ship the candles using a Small Flat Rate Box from the USPS.  Each box costs \$8.25.
@@ -59,21 +61,37 @@ Since the number of orders changes each day, we'll use the variable $x$ to stand
 Since each order costs \$8.25 in shipping, we see that the total shipping costs for $x$ orders should be $\$8.25 \times x$.  This gives us the following situation:
 
 $$x \text{ orders } \rightarrow \fbox{ function } \rightarrow \$8.25x$$
-```
 
 We can express the above function more compactly using **function notation**.  Function notation replaces a diagram like
  
-$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y$$
+$$x \text{ orders } \rightarrow \fbox{ function } \rightarrow y = \$8.25 x$$
 
-with a compact formula like 
+with a compact formula like:
 
-$$y = \$8.25x.$$
+```{math}
+:label: function-notation-example
 
-This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.
+y = \$8.25x
+```
+
+This formula contains the same information - it says that the output (shipping cost) is \$8.25 times the input (number of orders).  From now on we'll write functions this way.  The notation $y = f(x)$, where $f(x)$ is some expression in $x$, is called *function notation*.
+````
+
+```{prf:example}
+The function that's being used in the {prf:ref}`square pen example <square-pen-example>` above is written
+
+$$y = x^2$$
+
+in function notation.
+```
+
+```{prf:remark}
+Function notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).  An expression like $y = x^2$ tells us how the function relates its inputs to its outputs.
+```
 
 ## Functions in math vs. computer science
 
-If we were writing code in a programming language, we might write something like:
+Let's return to the {prf:ref}`shipping cost example <shipping-cost-example>` above.  If we were writing code in a programming language, we might write something like:
 
 ``` javascript
 function shippingCost(orderNumber) {

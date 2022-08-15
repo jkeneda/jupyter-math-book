@@ -38,27 +38,27 @@ slope-intercept form
 ```
 
 ```{warning}
-$m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
+$m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>` {eq}`function-notation-example`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
 ```
 
 ## Finding the Equation of a Line
 
 It only takes two data points to determine a line.  In this subsection we'll see how to use two points to find the equation of the line that contains them.
 
-### Example 1 {#ex1}
-Let's say that you want the equation of a line passing through $$(1, 2)$$ and $$(4, 8)$$.
+````{prf:example}
+Let's say that you want the equation of a line passing through $(1, 2)$ and $(4, 8)$.
 
-We know that the line can be written as $$y = mx + b$$, but we need to determine $$m$$ and $$b$$.
+We know that the line can be written as $y = mx + b$, but we need to determine $m$ and $b$.
 
 It's a good idea to start by finding $$m$$.  Based on the slope formula {eq}`slope-formula` above, we compute:
 
 $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{8-2}{4-1} = \frac{6}{3} = 2$$
 
-That means that the line we're looking for is $$y = 2x + b$$, but we still need to determine $$b$$.
+That means that the line we're looking for is $y = 2x + b$, but we still need to determine $b$.
 
-To determine $$b$$, note that we already know a couple of $$(x, y)$$ that should balance the equation.  Namely, $$(1, 2)$$ and $$(4, 8)$$ should solve the equation.  We can plug in either of them to solve for $$b$$.
+To determine $b$, note that we already know a couple of $(x, y)$ that should balance the equation.  Namely, $(1, 2)$ and $(4, 8)$ should solve the equation.  We can plug in either of them to solve for $b$.
 
-Let's plug in $$(x, y) = (1, 2)$$ into the equation we've developed so far: $$y = 2x + b$$.
+Let's plug in one of these points, say $(x, y) = (1, 2)$, into the equation we've developed so far: $y = 2x + b$.
 
 We get:
 
@@ -70,22 +70,19 @@ $$
 \end{align*}
 $$
 
-So $$y = 2x$$ is the line we're looking for.  
+So $y = 2x$ is the line we're looking for.  
 
-> Note that we could write $$y = 2x + 0$$ if we wanted to emphasize that $$b = 0$$, but normally we suppress the 0 term.
+```{note}
+We could write $y = 2x + 0$ if we wanted to emphasize that $b = 0$, but normally we suppress the 0 term.
+```
+````
 
-### Procedure:
+### General Procedure
 Following the example above, we can see the following general procedure for finding the equation of a line that passes through some given data points.
 
+```{admonition} Finding the Equation of a Line
 0. (Optional but useful) Graph the data points you're given.  You need at least two points to determine the line.
-1. Compute $$m = \frac{\Delta y}{\Delta x}$$ based on two of the known points.
-2. Plug in $$m$$ and one of your data points $$(x, y)$$ into the equation $$y = mx + b$$.  This should leave $$b$$ as your only variable, and we can solve for $$b$$ from there.
-3. Write $$y = mx + b$$, with $$m$$ and $$b$$ replaced by the constants you found in steps 2 and 3.
-
----
-
-[Return to Previous Section](1-1-c-graphs-of-functions.html)
-
-[Continue to Next Section](1-3-quadratic-functions.html)
-
-[Return to Table of Contents](index.html)
+1. Compute $m = \frac{\Delta y}{\Delta x}$ based on two of the known points.
+2. Plug in $m$ and one of your data points $(x, y)$ into the equation $y = mx + b$.  This should leave $b$ as your only variable, and we can solve for $b$ from there.
+3. Write $y = mx + b$, with $m$ and $b$ replaced by the constants you found in steps 2 and 3.
+```
