@@ -2,7 +2,7 @@
 
 In this section, we introduce *relations* and *functions*, which are used to model relationships between two sets.
 
-## Zoom In
+## Zoom In (A Detailed Look)
 
 Let's start by taking a detailed look at the terminology that we'll be using throughout the course.
 
@@ -211,7 +211,7 @@ Note that it's okay for a function to have multiple inputs that produce the same
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
 ```
 
-## Zoom Out
+## Zoom Out (Summary)
 
 Here are some of the main ideas we've met in this section:
 
@@ -220,7 +220,7 @@ Here are some of the main ideas we've met in this section:
 - The set of outputs is called the {term}`range` of the relation.
 - A {term}`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
 
-## Zoom Deep and Wide
+## Zoom Deep and Wide (Applications/Practice)
 
 Here are some examples that you can use for practice.
 
