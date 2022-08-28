@@ -41,6 +41,7 @@ chapters:
   - file: docs/business-calculus/index
   - file: docs/development-stuff/index
     sections:
+    - file: docs/development-stuff/test/outer-test
     - file: docs/development-stuff/math-tests
     - file: docs/development-stuff/markdown
     - file: docs/development-stuff/notebooks

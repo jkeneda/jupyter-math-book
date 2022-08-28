@@ -2,7 +2,11 @@
 
 In this section, we introduce *relations* and *functions*, which are used to model relationships between two sets.
 
-## Relationships between inputs and outputs
+## Zoom In (A Detailed Look)
+
+Let's start by taking a detailed look at the terminology that we'll be using throughout the course.
+
+### Relationships between inputs and outputs
 
 In many situations, we have one piece of information and we want to use it to find another, *related* piece of information.  For example, your payroll office might need to find an employee's salary information.  If they know the employee, then they can use a table of salary information to look up the corresponding salary.  In situations like this, we could think of the table as having a bunch of possible "inputs" (the employee of interest) and a bunch of corresponding "outputs" (their salary).
 
@@ -63,7 +67,7 @@ The above table represents a relation if we think of the country as the "input" 
 
 Before we discuss the types of relations that will be useful in business algebra, we need to make some formal definitions of the sets and types of relations we'll be using.
 
-## Sets
+### Sets
 
 Every relation has a *set* of inputs and a *set* of outputs.  A relation represents a connection between two sets.  But what are these sets?
 
@@ -85,7 +89,7 @@ Often, we want to work with sets of numbers.  For example, if we wanted to work 
 
 You can think of the real numbers as being the complete number line - everything between negative and positive infinity.
 
-## Domains and Ranges
+### Domains and Ranges
 
 To better analyze relations, we have terminology to separate the set of "inputs" from the set of "outputs".
 
@@ -121,7 +125,7 @@ $$\{113, 88, 71\} = \{71, 88, 113\} = \{71, 71, 88, 88, 88, 113\}$$
 Any of these would be valid answers to "What's the range of the relation above?", but the first one is the most obvious/simple to write, so we usually just go with that one.
 ```
 
-## Relations
+### Relations
 It is typical to use the ordered pair notation $(x, y)$ to say "the input $x$ corresponds to the output $y$" in the context of a given relation.  So, for example, we could represent the USA's medal count as the ordered pair $(\text{USA}, 113)$.  The input is *always* on the left, and the output is *always* on the right.  With this notation, we can revise our definition of relation to be a little more precise now:
 
 ```{glossary}
@@ -154,7 +158,7 @@ The possible concrete values for $x$ (which make up the {term}`domain`) are USA,
 
 Now we're ready to discuss the most useful type of relations: functions.
 
-## Functions
+### Functions
 
 A *function* is a special type of relation.  So it still has a domain (set of inputs) and a range (set of outputs).  But it follows one additional rule: every input has *exactly one* output.  Functions are very predictable - one thing goes in, and one thing comes out.
 
@@ -207,7 +211,20 @@ Note that it's okay for a function to have multiple inputs that produce the same
 This still satisfies the definition of a function, even though the output is always 7, because each input does have only one output.  We just care about the outputs being predictable - it doesn't matter if a particular output is repeated.
 ```
 
-## Practice: Is it a function?
+## Zoom Out (Summary)
+
+Here are some of the main ideas we've met in this section:
+
+- A {term}`relation` is a mathematical object that relates an input to an output in a pre-determined way.
+- The set of inputs is called the {term}`domain` of the relation.
+- The set of outputs is called the {term}`range` of the relation.
+- A {term}`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
+
+## Zoom Deep and Wide (Applications/Practice)
+
+Here are some examples that you can use for practice.
+
+### Practice: Is it a function?
 
 ````{prf:example}
 Is this relation a function?

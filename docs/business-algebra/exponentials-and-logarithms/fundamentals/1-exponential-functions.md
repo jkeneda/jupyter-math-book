@@ -1,1 +1,4 @@
 # Exponential Functions
+
+```{prf:example}
+```

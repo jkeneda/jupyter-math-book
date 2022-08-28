@@ -49,11 +49,3 @@ For example, the coefficients of the terms in $$-x^4 + 2x^2 + 7$$ are -1, 2, and
 ### The Leading Coefficient Test
 
 Coming Soon!  See your lecture notes/videos for help with this topic.
-
----
-
-[Return to Previous Section](1-3-quadratic-functions.html)
-
-[Continue to Next Section](1-5-rational-functions.html)
-
-[Return to Table of Contents](index.html)
