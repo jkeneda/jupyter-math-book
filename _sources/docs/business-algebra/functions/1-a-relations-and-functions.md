@@ -226,43 +226,43 @@ Here are some examples that you can use for practice.
 
 ### Practice: Is it a function?
 
-```{prf:example}
+````{prf:example}
 Is this relation a function?
 
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 
-````{admonition} Answer
+```{admonition} Answer
 :class: dropdown
 
 Yes, each input corresponds to just a single output.
-````
 ```
+````
 
-```{prf:example}
+````{prf:example}
 How about this one?
 
 $$\{(1, 1), (2, 1), (3, 4), (4, 4)\}$$
 
-````{admonition} Answer
+```{admonition} Answer
 :class: dropdown
 Yes, this is still a function.  No $x$ has multiple $y$'s.
 
 Pick any input you'd like.  Is its output predictable?
 
 The inputs 1 and 2 always cause an output of 1, and the inputs 3 and 4 always cause an output of 4.  It's okay that some outputs are repeats.  We just need unambiguous outputs for a given input.
-````
 ```
+````
 
-```{prf:example}
+````{prf:example}
 Lastly, is this relation a function?
 
 $$\{(1, 1), (1, 2), (1, 3), (1, 4)\}$$
 
-````{admonition} Answer
+```{admonition} Answer
 :class: dropdown
 
 No, this is not a function.  The input 1 has multiple potential outputs.
 So if we give this relation an input of 1, we don't know what the output will be.
 The output could be 1, 2, 3, or 4.  This violates the definition of a function.
-````
 ```
+````
