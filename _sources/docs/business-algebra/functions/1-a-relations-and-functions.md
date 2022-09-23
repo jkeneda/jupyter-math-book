@@ -27,7 +27,7 @@ The definition of a relation is very broad.  Many things are relations.  Here ar
 People and their pets:
 
 | Person | Pets |
-| :---:  | :---: |
+| :---:  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -175,7 +175,7 @@ In other words: for a relation to be a *function*, ***every $x$ produces only on
 Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it's **not** a function:
 
 | Person | Pets |
-| :---:  | :---: |
+| :---:  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -203,7 +203,7 @@ The input Kenzie still produces more than one output.
 Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following **does** represent a function:
 
 |Input|Output|
-|---:|:---|
+|:---:|:---|
 | 1 | 7 |
 | 2 | 7 |
 | 3 | 7 |
