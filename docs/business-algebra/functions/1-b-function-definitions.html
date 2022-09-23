@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2. Functions Defined by Algebraic Expressions</title>
+    <title>2. Functions Defined by Equations</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -147,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       2. Functions Defined by Algebraic Expressions
+       2. Functions Defined by Equations
       </a>
      </li>
      <li class="toctree-l3">
@@ -485,18 +485,44 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
-   2.1. What if we want to work in different units?
+  <a class="reference internal nav-link" href="#zoom-in">
+   2.1. Zoom In
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-functions-by-using-equations">
+     2.1.1. Defining Functions by Using Equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
+       2.1.1.1. What if we want to work in different units?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#function-notation">
+     2.1.2. Function Notation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
+       2.1.2.1. Functions in math vs. computer science
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zoom-out">
+   2.2. Zoom Out
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#function-notation">
-   2.2. Function Notation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
-   2.3. Functions in math vs. computer science
+  <a class="reference internal nav-link" href="#zoom-deep-wide">
+   2.3. Zoom Deep &amp; Wide
   </a>
  </li>
 </ul>
@@ -508,7 +534,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Functions Defined by Algebraic Expressions</h1>
+                <h1>Functions Defined by Equations</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -519,18 +545,44 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
-   2.1. What if we want to work in different units?
+  <a class="reference internal nav-link" href="#zoom-in">
+   2.1. Zoom In
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-functions-by-using-equations">
+     2.1.1. Defining Functions by Using Equations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-if-we-want-to-work-in-different-units">
+       2.1.1.1. What if we want to work in different units?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#function-notation">
+     2.1.2. Function Notation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
+       2.1.2.1. Functions in math vs. computer science
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zoom-out">
+   2.2. Zoom Out
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#function-notation">
-   2.2. Function Notation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#functions-in-math-vs-computer-science">
-   2.3. Functions in math vs. computer science
+  <a class="reference internal nav-link" href="#zoom-deep-wide">
+   2.3. Zoom Deep &amp; Wide
   </a>
  </li>
 </ul>
@@ -543,9 +595,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="functions-defined-by-algebraic-expressions">
-<h1><span class="section-number">2. </span>Functions Defined by Algebraic Expressions<a class="headerlink" href="#functions-defined-by-algebraic-expressions" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="functions-defined-by-equations">
+<h1><span class="section-number">2. </span>Functions Defined by Equations<a class="headerlink" href="#functions-defined-by-equations" title="Permalink to this headline">#</a></h1>
 <p>So far, we’ve been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you’re working with numerical functions, there’s often a simple formula that describes how to produce the output from a given input.</p>
+<section id="zoom-in">
+<h2><span class="section-number">2.1. </span>Zoom In<a class="headerlink" href="#zoom-in" title="Permalink to this headline">#</a></h2>
+<p>Let’s begin with an example that shows why we might want to write functions in a compact way.</p>
 <div class="proof example admonition" id="square-pen-example">
 <p class="admonition-title"><span class="caption-number">Example 10 </span></p>
 <section class="example-content" id="proof-content">
@@ -578,7 +633,9 @@ title="Print to PDF"
 </tbody>
 </table>
 </section>
-</div><p>This table might be helpful in some cases, but it’s missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?</p>
+</div><p>The table from this example might be helpful in some cases, but it’s missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?</p>
+<section id="defining-functions-by-using-equations">
+<h3><span class="section-number">2.1.1. </span>Defining Functions by Using Equations<a class="headerlink" href="#defining-functions-by-using-equations" title="Permalink to this headline">#</a></h3>
 <p>Instead of working with tables like this, it’s much more efficient to use an algebraic expression to represent the <em>general relationship</em> between the input and the output.  If we make a square pen whose sides are <span class="math notranslate nohighlight">\(x\)</span> yards long, then the area of the pen will be <span class="math notranslate nohighlight">\(x*x = x^2\)</span> square yards (hence the name of the expression: “<span class="math notranslate nohighlight">\(x\)</span> squared”).</p>
 <p>To represent this relationship compactly, we can write something like:</p>
 <div class="math notranslate nohighlight">
@@ -586,16 +643,17 @@ title="Print to PDF"
 <p>or</p>
 <div class="math notranslate nohighlight">
 \[A(x) = x^2 \text{ square yards},\]</div>
-<p>where the input is thought of as “<span class="math notranslate nohighlight">\(x\)</span> yards”, and the output (denoted as <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(A(x)\)</span>, depending on whether we want to emphasize the dependence on <span class="math notranslate nohighlight">\(x\)</span>) is measured in square yards.</p>
+<p>where the input is thought of as “<span class="math notranslate nohighlight">\(x\)</span> yards”, and the output (denoted as <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(A(x)\)</span>, depending on whether we want to give a name to the function) is measured in square yards.</p>
 <section id="what-if-we-want-to-work-in-different-units">
-<h2><span class="section-number">2.1. </span>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">#</a></h2>
+<h4><span class="section-number">2.1.1.1. </span>What if we want to work in different units?<a class="headerlink" href="#what-if-we-want-to-work-in-different-units" title="Permalink to this headline">#</a></h4>
 <p>Let’s say that you’re measuring the area of an entire (square) ranch.  In that case, even if the side length <span class="math notranslate nohighlight">\(x\)</span> was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate <span class="math notranslate nohighlight">\(\frac{1 \text{ acre}}{4,840 \text{ square yards}}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.\]</div>
 <p>So the functions <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(A^*\)</span> will take any side length <span class="math notranslate nohighlight">\(x\)</span> (in yards) and produce the corresponding pen area (in square yards and acres, respectively).</p>
 </section>
+</section>
 <section id="function-notation">
-<h2><span class="section-number">2.2. </span>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">#</a></h2>
+<h3><span class="section-number">2.1.2. </span>Function Notation<a class="headerlink" href="#function-notation" title="Permalink to this headline">#</a></h3>
 <p>To elaborate on the notation in the last example, let’s look at the ingredients that we’ll be using to define functions by formulas/equations.</p>
 <div class="proof example admonition" id="shipping-cost-example">
 <p class="admonition-title"><span class="caption-number">Example 11 </span></p>
@@ -631,9 +689,8 @@ title="Print to PDF"
 <section class="remark-content" id="proof-content">
 <p>Function notation implicitly thinks of <span class="math notranslate nohighlight">\(x\)</span> as our input (also called the <em>independent variable</em>) and <span class="math notranslate nohighlight">\(y\)</span> as our output (or <em>dependent variable</em>).  An expression like <span class="math notranslate nohighlight">\(y = x^2\)</span> tells us how the function relates its inputs to its outputs.</p>
 </section>
-</div></section>
-<section id="functions-in-math-vs-computer-science">
-<h2><span class="section-number">2.3. </span>Functions in math vs. computer science<a class="headerlink" href="#functions-in-math-vs-computer-science" title="Permalink to this headline">#</a></h2>
+</div><section id="functions-in-math-vs-computer-science">
+<h4><span class="section-number">2.1.2.1. </span>Functions in math vs. computer science<a class="headerlink" href="#functions-in-math-vs-computer-science" title="Permalink to this headline">#</a></h4>
 <p>Let’s return to the <a class="reference internal" href="#shipping-cost-example">shipping cost example</a> above.  If we were writing code in a programming language, we might write something like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">shippingCost</span><span class="p">(</span><span class="nx">orderNumber</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mf">8.25</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">orderNumber</span><span class="w"></span>
@@ -643,6 +700,14 @@ title="Print to PDF"
 <p>In math, we do the same thing, but because we’re doing computations by hand, we like to abbreviate everything.  Instead of using an input like “orderNumber”, we use the shorthand <span class="math notranslate nohighlight">\(x\)</span>.  Instead of using a function name like “shippingCost”, we might use <span class="math notranslate nohighlight">\(f\)</span> or <span class="math notranslate nohighlight">\(g\)</span> to stand for the function.</p>
 <p>For example, the function above could be written as <span class="math notranslate nohighlight">\(f(x) = 8.25 x\)</span>.  It could also be written as <span class="math notranslate nohighlight">\(g(x) = 8.25 x\)</span> or <span class="math notranslate nohighlight">\(y = 8.25 x\)</span>, depending on what we’d like to name the function/output.</p>
 <p>When you see something like <span class="math notranslate nohighlight">\(h(x) = -20x + 5\)</span>, you should think “<span class="math notranslate nohighlight">\(h\)</span> is a function that takes the input <span class="math notranslate nohighlight">\(x\)</span> (the inputs are listed in parentheses) and spits out the output -20 times <span class="math notranslate nohighlight">\(x\)</span> plus 5”.</p>
+</section>
+</section>
+</section>
+<section id="zoom-out">
+<h2><span class="section-number">2.2. </span>Zoom Out<a class="headerlink" href="#zoom-out" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="zoom-deep-wide">
+<h2><span class="section-number">2.3. </span>Zoom Deep &amp; Wide<a class="headerlink" href="#zoom-deep-wide" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 

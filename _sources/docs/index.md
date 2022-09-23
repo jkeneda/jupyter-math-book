@@ -6,3 +6,7 @@ If you're a student, navigate to the table of contents page for the appropriate 
 
 ```{tableofcontents}
 ```
+
+## Structure of the Notes
+
+In each section, the notes start with a Zoom In (giving the detailed look at the new topic), followed by a Zoom Out (summary) and a Zoom Deep & Wide (application and practice).

@@ -1,6 +1,10 @@
-# Functions Defined by Algebraic Expressions
+# Functions Defined by Equations
 
 So far, we've been describing functions by just making a large list of their inputs and their outputs, either in the form of a table/picture or as a list of ordered pairs.  But when you're working with numerical functions, there's often a simple formula that describes how to produce the output from a given input.
+
+## Zoom In
+
+Let's begin with an example that shows why we might want to write functions in a compact way.
 
 ```{prf:example}
 :label: square-pen-example
@@ -17,7 +21,9 @@ Suppose a farmer wants to build a square pen.  They're interested in knowing how
 | 100 yards | 10,000 square yards (2.07 acres) |
 ```
 
-This table might be helpful in some cases, but it's missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?
+The table from this example might be helpful in some cases, but it's missing a lot of information.  What if they want to know about a pen with a side length of 65 yards?  Or 200 yards?
+
+### Defining Functions by Using Equations
 
 Instead of working with tables like this, it's much more efficient to use an algebraic expression to represent the *general relationship* between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: "$x$ squared").
 
@@ -29,9 +35,9 @@ or
 
 $$A(x) = x^2 \text{ square yards},$$
 
-where the input is thought of as "$x$ yards", and the output (denoted as $y$ or $A(x)$, depending on whether we want to emphasize the dependence on $x$) is measured in square yards.
+where the input is thought of as "$x$ yards", and the output (denoted as $y$ or $A(x)$, depending on whether we want to give a name to the function) is measured in square yards.
 
-## What if we want to work in different units?
+#### What if we want to work in different units?
 
 Let's say that you're measuring the area of an entire (square) ranch.  In that case, even if the side length $x$ was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate $\frac{1 \text{ acre}}{4,840 \text{ square yards}}$:
 
@@ -39,7 +45,7 @@ $$\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ ac
 
 So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and produce the corresponding pen area (in square yards and acres, respectively).
 
-## Function Notation
+### Function Notation
 
 To elaborate on the notation in the last example, let's look at the ingredients that we'll be using to define functions by formulas/equations.
 
@@ -89,7 +95,7 @@ in function notation.
 Function notation implicitly thinks of $x$ as our input (also called the *independent variable*) and $y$ as our output (or *dependent variable*).  An expression like $y = x^2$ tells us how the function relates its inputs to its outputs.
 ```
 
-## Functions in math vs. computer science
+#### Functions in math vs. computer science
 
 Let's return to the {prf:ref}`shipping cost example <shipping-cost-example>` above.  If we were writing code in a programming language, we might write something like:
 
@@ -104,3 +110,7 @@ In math, we do the same thing, but because we're doing computations by hand, we 
 For example, the function above could be written as $f(x) = 8.25 x$.  It could also be written as $g(x) = 8.25 x$ or $y = 8.25 x$, depending on what we'd like to name the function/output.
 
 When you see something like $h(x) = -20x + 5$, you should think "$h$ is a function that takes the input $x$ (the inputs are listed in parentheses) and spits out the output -20 times $x$ plus 5".
+
+## Zoom Out
+
+## Zoom Deep & Wide
