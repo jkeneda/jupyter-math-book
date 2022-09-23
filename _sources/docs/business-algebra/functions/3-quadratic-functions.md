@@ -9,7 +9,8 @@ We're going to study three "forms".  Every quadratic can be written in any of th
 | $f(x) = a(x - h)^2 + k$ | $f(x) = ax^2 + bx + c$ | $f(x) = a(x - r_1)(x - r_2)$ |
 
 vertex form
-: A quadratic is in vertex form if it is written as 
+: A quadratic is in vertex form if it is written as
+
 $$f(x) = a(x - h)^2 + k$$
 for some constants $$a, h,$$ and $$k$$.  In this form, the vertex is easily identified: it is $$(h, k)$$.
 
