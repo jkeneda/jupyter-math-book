@@ -25,7 +25,7 @@ The table from this example might be helpful in some cases, but it's missing a l
 
 ### Defining Functions by Using Equations
 
-Instead of working with tables like this, it's much more efficient to use an algebraic expression to represent the *general relationship* between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: "$x$ squared").
+Instead of working with tables like the one above, it's much more efficient to use an algebraic expression to represent the *general relationship* between the input and the output.  If we make a square pen whose sides are $x$ yards long, then the area of the pen will be $x*x = x^2$ square yards (hence the name of the expression: "$x$ squared").
 
 To represent this relationship compactly, we can write something like:
 
