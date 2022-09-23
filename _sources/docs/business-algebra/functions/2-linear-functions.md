@@ -80,7 +80,7 @@ We could write $y = 2x + 0$ if we wanted to emphasize that $b = 0$, but normally
 ### General Procedure
 Following the example above, we can see the following general procedure for finding the equation of a line that passes through some given data points.
 
-```{admonition} Finding the Equation of a Line
+```{prf:algorithm} Finding the Equation of a Line
 0. (Optional but useful) Graph the data points you're given.  You need at least two points to determine the line.
 1. Compute $m = \frac{\Delta y}{\Delta x}$ based on two of the known points.
 2. Plug in $m$ and one of your data points $(x, y)$ into the equation $y = mx + b$.  This should leave $b$ as your only variable, and we can solve for $b$ from there.

@@ -43,7 +43,7 @@ Let's say that you're measuring the area of an entire (square) ranch.  In that c
 
 $$\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.$$
 
-So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and produce the corresponding pen area (in square yards and acres, respectively).
+So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and produce the corresponding pen area in square yards or acres, respectively.
 
 ### Function Notation
 
