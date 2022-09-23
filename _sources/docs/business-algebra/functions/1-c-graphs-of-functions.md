@@ -1,8 +1,12 @@
 # Graphs of Functions
 
-In this section, we'll see how to graphically represent functions.
+In this section, we'll see how to graphically represent functions.  We'll also explore the {term}`domain` and {term}`range` of a function, given its graph.
 
-## Graphs of Discrete Relations
+## Zoom In
+
+Let's start with the most basic type of relation - a finite set of ordered pairs.
+
+### Graphs of Discrete Relations
 
 We've defined a relation as a set of ordered pairs $(x, y)$.  For example, we can define a relation $r = \{(1,3), (2, 1), (3, 5)\}$.  When the inputs and outputs are real numbers (like in $r$), we can represent the same relation using a graph in the $xy$-plane, where $x$ is represented by the horizontal axis and $y$ is represented by the vertical axis.
 
@@ -20,7 +24,7 @@ The graph depicts the relation $\{(1,3), (2, 1), (3, 5)\}$ by plotting all three
 ```
 ````
 
-## Graphs of Functions Defined by Equations
+### Graphs of Functions Defined by Equations
 
 We can also graph functions that are defined by equations.  Recall that an equation like $y = x^2$ is interpreted as a function by thinking of $x$ as the input and $y$ as the corresponding output.  The graph of this function consists of all $(x, y)$ that satisfy the equation.
 
@@ -35,3 +39,7 @@ We could generate more points like this by choosing an arbitrary $x$-value and t
 
 <script src="../../../_static/1-c-graphs-of-functions.js">// Populates Desmos graphs
 </script>
+
+## Zoom Out
+
+## Zoom Deep & Wide

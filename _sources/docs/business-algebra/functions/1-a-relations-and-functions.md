@@ -220,7 +220,7 @@ Here are some of the main ideas we've met in this section:
 - The set of outputs is called the {term}`range` of the relation.
 - A {term}`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
 
-## Zoom Deep and Wide (Applications/Practice)
+## Zoom Deep & Wide (Applications/Practice)
 
 Here are some examples that you can use for practice.
 
