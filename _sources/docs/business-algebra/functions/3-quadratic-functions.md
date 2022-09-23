@@ -23,4 +23,4 @@ factored form
     A quadratic is in factored form if it is written as $f(x) = a(x - r_1)(x - r_2)$ for some constants $a, r_1,$ and $r_2$.  In this form, the roots (zeros) are easily identified: they are $x = r_1, r_2$.
 ```
 
-> Note that all of these forms use the letter $$a$$.  This $$a$$ is called the **leading coefficient**, and it remains the same when switching between forms.  For example, if $$a = 2$$ for your function when it's written in vertex form, then $$a$$ will still be 2 if we convert to general or factored form.
+Note that all of these forms use the letter $$a$$.  This $$a$$ is called the **leading coefficient**, and it remains the same when switching between forms.  For example, if $$a = 2$$ for your function when it's written in vertex form, then $$a$$ will still be 2 if we convert to general or factored form.

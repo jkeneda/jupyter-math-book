@@ -226,17 +226,17 @@ Here are some examples that you can use for practice.
 
 ### Practice: Is it a function?
 
-````{prf:example}
+```{prf:example}
 Is this relation a function?
 
 $$\{(1, 1), (2, 2), (3, 3), (4, 4)\}$$
 
-```{admonition} Answer
+````{admonition} Answer
 :class: dropdown
 
 Yes, each input corresponds to just a single output.
-```
 ````
+```
 
 ````{prf:example}
 How about this one?
