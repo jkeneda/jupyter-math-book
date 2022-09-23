@@ -27,7 +27,7 @@ The definition of a relation is very broad.  Many things are relations.  Here ar
 People and their pets:
 
 | Person | Pets |
-| :---:  | :---: |
+| :---:  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
