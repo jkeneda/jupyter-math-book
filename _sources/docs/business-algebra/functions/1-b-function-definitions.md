@@ -8,7 +8,7 @@ So far, we've been describing functions by just making a large list of their inp
 Suppose a farmer wants to build a square pen.  They're interested in knowing how many acres the pen will enclose based on the length of its sides.  One way to answer that question is by making a table of possible side lengths and the corresponding pen area:
 
 | Side Length | Pen Area |
-|:-----------|---------------------------:|
+|:-----------|:---------------------------|
 | 50 yards | 2500 square yards (0.52 acres)  |
 | 60 yards | 3600 square yards (0.74 acres) |
 | 70 yards | 4900 square yards (1.01 acres) |
