@@ -53,7 +53,7 @@ The left form is useful for determining what the "end behavior" of the graph loo
 
 First, we're going to focus on determining what the edges of a polynomial's graph should look like.  We'll learn how to determine the interior behavior of the graph later.
 
-We saw in the last section that $$ax^2 + bx + c$$ "opens up" if $$a$$ is positive, and it "opens down" if $$a$$ is negative.  More generally, polynomials with an even degree will either "open up" or "open down", depending on the positivity or negativity of their *leading coefficient*.
+We saw in the last section that $ax^2 + bx + c$ "opens up" if $a$ is positive, and it "opens down" if $a$ is negative.  More generally, polynomials with an even degree will either "open up" or "open down", depending on the positivity or negativity of their *leading coefficient*.
 
 ```{glossary}
 leading coefficient
