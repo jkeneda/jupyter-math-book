@@ -27,7 +27,7 @@ The definition of a relation is very broad.  Many things are relations.  Here ar
 People and their pets:
 
 | Person | Pets |
-| ---:  | :--- |
+| :---:  | :---: |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -83,7 +83,7 @@ The set of Jill's pets from {prf:ref}`pets` could be written like $\{\text{Jack}
 Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
 
 | Name of Set | Shorthand | Corresponding Set |
-|:-----------|-----------|-------------------:|
+|:-----------|:-----------:|-------------------:|
 | the integers | $\mathbb{Z}$ | $\{..., -3, -2, -1, 0, 1, 2, 3, ...\}$ |
 | the reals | $\mathbb{R}$ or $(-\infty, \infty)$ | all real numbers (like $0, -0.\overline{333}, \pi, \frac{5}{7}, \sqrt{2}$, etc.) |
 
@@ -109,7 +109,7 @@ Note that the domain and range are properties of a specific relation, and that r
 Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
-| :---  |  ---: |
+| :---:  |  :---: |
 | USA     | 113    |
 | China   | 88     |
 | Russia  | 71     |
@@ -238,31 +238,31 @@ Yes, each input corresponds to just a single output.
 ````
 ```
 
-````{prf:example}
+```{prf:example}
 How about this one?
 
 $$\{(1, 1), (2, 1), (3, 4), (4, 4)\}$$
 
-```{admonition} Answer
+````{admonition} Answer
 :class: dropdown
 Yes, this is still a function.  No $x$ has multiple $y$'s.
 
 Pick any input you'd like.  Is its output predictable?
 
 The inputs 1 and 2 always cause an output of 1, and the inputs 3 and 4 always cause an output of 4.  It's okay that some outputs are repeats.  We just need unambiguous outputs for a given input.
-```
 ````
+```
 
-````{prf:example}
+```{prf:example}
 Lastly, is this relation a function?
 
 $$\{(1, 1), (1, 2), (1, 3), (1, 4)\}$$
 
-```{admonition} Answer
+````{admonition} Answer
 :class: dropdown
 
 No, this is not a function.  The input 1 has multiple potential outputs.
 So if we give this relation an input of 1, we don't know what the output will be.
 The output could be 1, 2, 3, or 4.  This violates the definition of a function.
-```
 ````
+```
