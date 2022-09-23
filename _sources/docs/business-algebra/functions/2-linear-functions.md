@@ -82,7 +82,7 @@ Following the example above, we can see the following general procedure for find
 
 ```{prf:algorithm} Finding the Equation of a Line
 1. Graph the data points you're given.  You need at least two points $(x_1, y_1)$, $(x_2, y_2)$ to determine the line.
-2. Compute the {eq}`slope <slope-formula>` $m = \frac{\Delta y}{\Delta x}$ based on two of the known points.
+2. Compute the slope $m = \frac{\Delta y}{\Delta x}$ (see equation {eq}`slope-formula`) based on two of the known points.
 3. Plug in $m$ and one of your data points $(x, y)$ into the equation $y = mx + b$.  This should leave $b$ as your only variable, and we can solve for $b$ from there.
 4. Write $y = mx + b$, with $m$ and $b$ replaced by the constants you found in steps 2 and 3.
 ```
