@@ -4,6 +4,9 @@
 format: jb-book
 root: docs/index
 chapters:
+  - file: docs/algebra-review/index
+    sections:
+    - file: docs/algebra-review/1-factoring
   - file: docs/business-algebra/index
     sections:
     - file: docs/business-algebra/functions/index

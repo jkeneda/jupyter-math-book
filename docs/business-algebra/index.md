@@ -10,3 +10,4 @@ Here's a list of the fundamental topic sections we'll be covering in the course:
 
 ```{tableofcontents}
 ```
+

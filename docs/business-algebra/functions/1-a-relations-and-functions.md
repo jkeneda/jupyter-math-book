@@ -27,7 +27,7 @@ The definition of a relation is very broad.  Many things are relations.  Here ar
 People and their pets:
 
 | Person | Pets |
-| :---  | ---: |
+| :---:  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -49,7 +49,7 @@ We can interpret the above table as a relation if we think of the person as the 
 Total medals per country in the Tokyo 2020 Olympic Games:
 
 | Country | Medals |
-| :---   |  ---: |
+| :---:   |  :---: |
 | USA     | 113    |
 | China   | 88     |
 | Russia  | 71     |
@@ -83,7 +83,7 @@ The set of Jill's pets from {prf:ref}`pets` could be written like $\{\text{Jack}
 Often, we want to work with sets of numbers.  For example, if we wanted to work with the **integers**, we could write $\{..., -3, -2, -1, 0, 1, 2, 3, 4, ...\}$.  But this quickly becomes irritating to write, so we have a few abbreviations for common sets.
 
 | Name of Set | Shorthand | Corresponding Set |
-|:-----------|-----------|-------------------:|
+|:-----------|:-----------:|-------------------:|
 | the integers | $\mathbb{Z}$ | $\{..., -3, -2, -1, 0, 1, 2, 3, ...\}$ |
 | the reals | $\mathbb{R}$ or $(-\infty, \infty)$ | all real numbers (like $0, -0.\overline{333}, \pi, \frac{5}{7}, \sqrt{2}$, etc.) |
 
@@ -109,7 +109,7 @@ Note that the domain and range are properties of a specific relation, and that r
 Let's return to the {prf:ref}`Olympic <medals>` example.  If we look at the relation determined by the top 3 countries by medal count, we get:
 
 | Country | Medals |
-| :---  |  ---: |
+| :---:  |  :---: |
 | USA     | 113    |
 | China   | 88     |
 | Russia  | 71     |
@@ -175,7 +175,7 @@ In other words: for a relation to be a *function*, ***every $x$ produces only on
 Let's return to the first {prf:ref}`relation <pets>` we looked at to see why it's **not** a function:
 
 | Person | Pets |
-| :---  | ---: |
+| :---:  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -203,7 +203,7 @@ The input Kenzie still produces more than one output.
 Note that it's okay for a function to have multiple inputs that produce the same output.  For example, the following **does** represent a function:
 
 |Input|Output|
-|:---|---:|
+|:---:|:---|
 | 1 | 7 |
 | 2 | 7 |
 | 3 | 7 |
@@ -220,7 +220,7 @@ Here are some of the main ideas we've met in this section:
 - The set of outputs is called the {term}`range` of the relation.
 - A {term}`function` is a special type of relation, whose outputs are especially predictable.  That's important for us, since we want to be doing calculations that depend on the outputs.  More formally, a function has the extra property that *no $x$ has multiple $y$'s*.  Each input will only result in a single, predictable output.
 
-## Zoom Deep and Wide (Applications/Practice)
+## Zoom Deep & Wide (Applications/Practice)
 
 Here are some examples that you can use for practice.
 

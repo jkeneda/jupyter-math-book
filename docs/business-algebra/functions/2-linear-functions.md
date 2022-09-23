@@ -2,13 +2,13 @@
 
 In this section, we look at one of the simplest classes of functions: linear functions.
 
-## Closely Correlated Quantities
+## Zoom In
 
 Linear functions arise when one quantity has a *constant rate of change* with respect to another.  We saw an example of this earlier, where we computed {prf:ref}`shipping costs <shipping-cost-example>`.
 
 Let's recall that function: $f(x) = \$8.25 x$.  Note that every time our order number $x$ goes up by 1, the shipping cost should go up by \$8.25.  So we say that the shipping cost has a constant rate of change with respect to the number of orders.  In other words, the change in the shipping cost is directly proportional to the change in the number of orders.
 
-## General Definitions
+### General Definitions
 
 ```{glossary}
 linear function
@@ -41,7 +41,7 @@ slope-intercept form
 $m$ and $b$ are allowed to be zero.  For example, in our {prf:ref}`shipping cost function <shipping-cost-example>` {eq}`function-notation-example`, we have $m = 8.25$ and $b = 0$, so that $y = 8.25 x + 0 = 8.25 x$.
 ```
 
-## Finding the Equation of a Line
+### Finding the Equation of a Line
 
 It only takes two data points to determine a line.  In this subsection we'll see how to use two points to find the equation of the line that contains them.
 
@@ -77,12 +77,18 @@ We could write $y = 2x + 0$ if we wanted to emphasize that $b = 0$, but normally
 ```
 ````
 
-### General Procedure
+#### General Procedure
 Following the example above, we can see the following general procedure for finding the equation of a line that passes through some given data points.
 
-```{admonition} Finding the Equation of a Line
-0. (Optional but useful) Graph the data points you're given.  You need at least two points to determine the line.
-1. Compute $m = \frac{\Delta y}{\Delta x}$ based on two of the known points.
-2. Plug in $m$ and one of your data points $(x, y)$ into the equation $y = mx + b$.  This should leave $b$ as your only variable, and we can solve for $b$ from there.
-3. Write $y = mx + b$, with $m$ and $b$ replaced by the constants you found in steps 2 and 3.
+```{prf:algorithm} Finding the Equation of a Line
+1. Graph the data points you're given.  You need at least two points $(x_1, y_1)$, $(x_2, y_2)$ to determine the line.
+2. Compute the slope $m = \frac{\Delta y}{\Delta x}$ (see equation {eq}`slope-formula`) based on two of the known points.
+3. Plug in $m$ and one of your data points $(x, y)$ into the equation $y = mx + b$.  This should leave $b$ as your only variable, and we can solve for $b$ from there.
+4. Write $y = mx + b$, with $m$ and $b$ replaced by the constants you found in steps 2 and 3.
 ```
+
+The example above follows exactly this procedure.
+
+## Zoom Out
+
+## Zoom Deep & Wide
