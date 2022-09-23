@@ -27,7 +27,7 @@ The definition of a relation is very broad.  Many things are relations.  Here ar
 People and their pets:
 
 | Person | Pets |
-| :---:  | :--- |
+| :---  | :--- |
 | Jill  | Jack |
 |       | Lola |
 |       | Stevie |
@@ -49,7 +49,7 @@ We can interpret the above table as a relation if we think of the person as the 
 Total medals per country in the Tokyo 2020 Olympic Games:
 
 | Country | Medals |
-| :---:   |  :---: |
+| :---   |  :--- |
 | USA     | 113    |
 | China   | 88     |
 | Russia  | 71     |
