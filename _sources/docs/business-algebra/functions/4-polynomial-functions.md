@@ -9,12 +9,12 @@ We've already been discussing some examples of polynomials.  It's typical to cat
 |   0    | $c$ | $y = 7$ |
 |   1    | $mx + b$ | $f(x) = 2x - 3$ |
 |   2    | $ax^2 + bx + c$ | $y = x^2 - x + 1$ |
-|   3    | $a_3 x^3 + a_2 x^2 + a_1 x + a_0$ | $g(x) = 3x^3 - x$ |
+|   3    | $a_3 x^3 + a_2 x^2 + a_1 x + a_0$ | $g(x) = 3x^3 + x^2 - x$ |
 | $\vdots$ | $\vdots$ |
 | $n$  | $a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$ | |
 
 
-In this table, all of the non-$x$ letters (like $c, m, a_0, a_1, ...$) are taken to be some fixed constants.  These constants are called the *coefficients* of the polynomial.
+In this table, all of the non-$x$ letters (like $c, m, a_0, a_1, ...$) are taken to be some fixed constants.  Note that those constants are allowed to be zero!  If you look at $g(x)$ in the table above, it has $a_3 = 3, a_2 = 1, a_1 = -1,$ and $a_0 = 0$.  You should pause to check that all of those make sense to you.  These constants are called the *coefficients* of the polynomial.
 
 ```{glossary}
 polynomial
