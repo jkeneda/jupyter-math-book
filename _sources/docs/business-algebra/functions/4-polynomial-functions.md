@@ -60,7 +60,7 @@ leading coefficient
     The **leading coefficient** of a polynomial (in general form) is the coefficient of its highest-degree term.
 ```
 
-For example, the coefficients of the terms in $$-x^4 + 2x^2 + 7$$ are -1, 2, and 7.  The leading coefficient would be -1, because that's the coefficient on the term with the highest power of $$x$$.  This polynomial would open down on the edges of the graph by the Leading Coefficient Test.
+For example, the coefficients of the terms in $-x^4 + 2x^2 + 7$ are -1, 2, and 7.  The leading coefficient would be -1, because that's the coefficient on the term with the highest power of $x$.  This polynomial would open down on the edges of the graph by the Leading Coefficient Test (below).
 
 #### The Leading Coefficient Test
 

@@ -1,4 +1,7 @@
 # Exponential Functions
 
-```{prf:example}
-```
+## Zoom In
+
+## Zoom Out
+
+## Zoom Deep & Wide

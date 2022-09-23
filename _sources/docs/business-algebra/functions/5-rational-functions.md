@@ -1,3 +1,7 @@
 # Rational Functions
 
-Coming soon!
+## Zoom In
+
+## Zoom Out
+
+## Zoom Deep & Wide
