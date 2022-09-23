@@ -10,17 +10,17 @@ We're going to study three "forms".  Every quadratic can be written in any of th
 
 ```{glossary}
 vertex form
-: A quadratic is in vertex form if it is written as $f(x) = a(x - h)^2 + k$ for some constants $a, h,$ and $k$.  In this form, the vertex is easily identified: it is $(h, k)$.
+    A quadratic is in vertex form if it is written as $f(x) = a(x - h)^2 + k$ for some constants $a, h,$ and $k$.  In this form, the vertex is easily identified: it is $(h, k)$.
 
 general form
-: A quadratic is in general form if it is written as $f(x) = ax^2 + bx + c$ for some constants $a, b,$ and $c$.
+    A quadratic is in general form if it is written as $f(x) = ax^2 + bx + c$ for some constants $a, b,$ and $c$.
 ```
 
 It is easy to convert *to* general form by just expanding any products and collecting like terms.  Converting *from* general form to something else is a little tougher, but we'll discuss how to do it below.
 
 ```{glossary}
 factored form
-: A quadratic is in factored form if it is written as $f(x) = a(x - r_1)(x - r_2)$ for some constants $a, r_1,$ and $r_2$.  In this form, the roots (zeros) are easily identified: they are $x = r_1, r_2$.
+    A quadratic is in factored form if it is written as $f(x) = a(x - r_1)(x - r_2)$ for some constants $a, r_1,$ and $r_2$.  In this form, the roots (zeros) are easily identified: they are $x = r_1, r_2$.
 ```
 
 > Note that all of these forms use the letter $$a$$.  This $$a$$ is called the **leading coefficient**, and it remains the same when switching between forms.  For example, if $$a = 2$$ for your function when it's written in vertex form, then $$a$$ will still be 2 if we convert to general or factored form.
