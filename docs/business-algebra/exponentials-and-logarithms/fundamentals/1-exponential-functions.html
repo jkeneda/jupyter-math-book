@@ -580,9 +580,9 @@ title="Print to PDF"
 <h2><span class="section-number">1.1.1. </span>Zoom In<a class="headerlink" href="#zoom-in" title="Permalink to this headline">#</a></h2>
 <p>To start our discussion of exponential functions, let’s recall some definitions.</p>
 <dl class="glossary simple">
-<dt id="term-exponent">exponent<a class="headerlink" href="#term-exponent" title="Permalink to this term">#</a></dt><dd><p>An <strong>exponent</strong> is another name for a power.  For example, the exponent in the expression <span class="math notranslate nohighlight">\(2^3\)</span> is a 3.</p>
+<dt id="term-exponent">exponent<a class="headerlink" href="#term-exponent" title="Permalink to this term">#</a></dt><dd><p>An <strong>exponent</strong> is another name for a power.  For example, the exponent in the expression <span class="math notranslate nohighlight">\(2^3\)</span> is a <span class="math notranslate nohighlight">\(3\)</span>.</p>
 </dd>
-<dt id="term-base">base<a class="headerlink" href="#term-base" title="Permalink to this term">#</a></dt><dd><p>The <strong>base</strong> of an exponential expression is the number on the ground floor.  The base of the exponential expression <span class="math notranslate nohighlight">\(4^7\)</span> is a 4.</p>
+<dt id="term-base">base<a class="headerlink" href="#term-base" title="Permalink to this term">#</a></dt><dd><p>The <strong>base</strong> of an exponential expression is the number on the ground floor.  The base of the exponential expression <span class="math notranslate nohighlight">\(4^7\)</span> is a <span class="math notranslate nohighlight">\(4\)</span>.</p>
 </dd>
 </dl>
 <p>So far, we’ve seen plenty of functions where our input <span class="math notranslate nohighlight">\(x\)</span> forms the <em>base</em> of an exponential expression, where its exponent is held constant.  Take <span class="math notranslate nohighlight">\(f(x) = x^3\)</span>, for example.  We can plug in any <span class="math notranslate nohighlight">\(x\)</span> we’d like, which allows us to change the base, but the power is always a 3.  In this section, we’re meeting a new type of function called an <span class="xref std std-term">exponential function</span>, where these roles are reversed: now the base will be fixed (in other words, constant), while the <em>exponent</em> is variable.</p>
@@ -591,7 +591,7 @@ title="Print to PDF"
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 14 </span></p>
 <section class="example-content" id="proof-content">
-<p>Suppose you’re given this choice: you can receive <span class="math notranslate nohighlight">\(1 million in your bank account **or** you can reset your bank account to a single penny (\)</span>0.01) but have it double every day for the next 30 days (so on day two you’d have 2 pennies, on day three you’d have 4 pennies, etc.).  Which would you pick?</p>
+<p>Suppose you’re given this choice: you can receive $1 million in your bank account <strong>or</strong> you can reset your bank account to a single penny ($0.01) but have it double every day for the next 30 days (so on day two you’d have 2 pennies, on day three you’d have 4 pennies, etc.).  Which would you pick?</p>
 <p>Here’s a chart of the next 10 days of the doubling option:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -635,11 +635,25 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<p>Not the most impressive results so far in terms of the total value of the account…  On the other hand, our initial investment has grown by 102,400%.  So maybe this approach will still be better after all!</p>
-<p>Note that the amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, we get a new factor of 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, we have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
+<p>Not the most impressive results so far in terms of the total value of the account…  On the other hand, your initial investment has grown by 102,400%.  So maybe this approach will still be better after all!</p>
+<p>Note that the amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, you get a new multiplier by 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, you have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
 <p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?</p>
+<div>
+    <form id="form1" onsubmit="return false;">
+        Number of Brice:<br/>
+        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
+        (minimum of 1, max of 10)
+    </form>
+</div>
 </section>
-</div></section>
+</div><div>
+    <form id="form1" onsubmit="return false;">
+        Number of Dice:<br/>
+        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
+        (minimum of 1, max of 10)
+    </form>
+</div>
+</section>
 </section>
 <section id="zoom-out">
 <h2><span class="section-number">1.1.2. </span>Zoom Out<a class="headerlink" href="#zoom-out" title="Permalink to this headline">#</a></h2>
