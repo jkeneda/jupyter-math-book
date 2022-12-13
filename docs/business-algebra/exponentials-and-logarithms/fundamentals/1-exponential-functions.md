@@ -40,27 +40,9 @@ Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we can write $B(
 
 <div>
     <form id="form1" onsubmit="return false;">
-        <div id="dayNumber">
-            Number of Days: 
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mi>n</mi>
-                    <mo>=</mo>
-                    <mn>0</mn>
-                </math>
-        </div>
+        <div id="dayNumber"></div>
         <input type="range" id="dayRange" min="0" max="30" value="1"><br/>
-        <div id="balance">
-            Account Balance:
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mi>B</mi>
-                    <mo stretchy="false">(</mo>
-                    <mi>n</mi>
-                    <mo stretchy="false">)</mo>
-                    <mo>=</mo>
-                    <mi mathvariant="normal">$</mi>
-                    <mn>0.01</mn>
-                </math>
-        </div>
+        <div id="balance"></div>
     </form>
 </div>
 ```
