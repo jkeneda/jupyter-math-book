@@ -13,7 +13,7 @@ probability distribution
 The probabilities in a probability distribution should add up to 1 (or 100%).
 ```
 
-When randomness is involved, we don't know the exact outcome we'll get in advance.  Since the outcome isn't known yet, we can give the outcome a *variable name*, like $$n$$, until it's determined.  We call this a *random variable*.
+When randomness is involved, we don't know the exact outcome we'll get in advance.  Since the outcome isn't known yet, we can give the outcome a *variable name*, like $n$, until it's determined.  We call this a *random variable*.
 
 ```{glossary}
 random variable
