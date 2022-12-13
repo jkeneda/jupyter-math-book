@@ -23,5 +23,5 @@ function updateBalance () {
                 </math>`;
 }
 
-document.getElementById('dayRange').addEventListener('load', () => {updateBalance();});
 document.getElementById('dayRange').addEventListener('change', () => {updateBalance();});
+document.onload = updateBalance();
