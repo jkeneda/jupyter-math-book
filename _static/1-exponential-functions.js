@@ -1,4 +1,4 @@
-// Penny doubling functions and event handling
+// Penny doubling functions and event handling; requires MathJax for pretty updating
 function cashMoney (n) {
     return 0.01*(2**n)
 }
@@ -23,5 +23,5 @@ function updateBalance () {
                 </math>`;
 }
 
-document.getElementById('dayRange').addEventListener('change', () => {updateBalance();});
+document.getElementById('dayRange').addEventListener('change', () => {updateBalance(); MathJax.typeset();});
 document.onload = updateBalance();
