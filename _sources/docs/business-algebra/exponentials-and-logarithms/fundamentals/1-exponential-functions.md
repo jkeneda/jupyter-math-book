@@ -36,7 +36,7 @@ So far, things aren't looking great for the people who chose the doubling accoun
 
 Let's rethink the amount in the account over time.  The amount in the account after three days could be expressed as $\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2$.  For every day, you get a new multiplier by 2.  In other words, after three days, we have $\$0.01 \cdot 2^3$ in the account.  More generally, after $n$ days, you have $\$0.01\cdot 2^n$ in the account.
 
-Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we'll often write $B(n)$ instead of just $B$, to emphasize that we're thinking of $B$ as a *function* of $n$).  How much money would you have after 30 days?  Use the slider below to find out.
+Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we can write $B(n)$ instead of just $B$, to emphasize that we're thinking of $B$ as a *function* of $n$).  How much money would you have after 30 days?  Use the slider below to find out.
 
 <div>
     <form id="form1" onsubmit="return false;">
