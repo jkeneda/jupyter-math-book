@@ -1,4 +1,4 @@
-// Penny doubling functions and event handling
+// Penny doubling functions and event handling; requires MathJax for pretty updating
 function cashMoney (n) {
     return 0.01*(2**n)
 }

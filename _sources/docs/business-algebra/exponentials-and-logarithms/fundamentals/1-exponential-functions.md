@@ -15,7 +15,9 @@ So far, we've seen plenty of functions where our input $x$ forms the *base* of a
 ### Exponential Functions and their Graphs
 
 ```{prf:example}
-Suppose you're offered this choice: you can receive \$1 million in your bank account **or** you can reset your bank account to a single penny (\$0.01), but the account doubles every day for the next 30 days (so on day two you'd have 2 pennies, on day three you'd have 4 pennies, etc.).  Which would *you* pick?
+Suppose you're offered the choice between these two options: 
+    - You can receive \$1 million in your bank account **or** 
+    - You can reset your bank account to a single penny (\$0.01), but the account doubles every day for the next 30 days (so on day two you'd have 2 pennies, on day three you'd have 4 pennies, etc.).  Which would *you* pick?
 
 Here's a chart of the next 10 days for the doubling account:
 | Day | Account Balance |
