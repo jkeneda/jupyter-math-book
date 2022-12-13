@@ -50,5 +50,5 @@ Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we'll often writ
 
 ## Zoom Deep & Wide
 
-<script src="../../../_static/1-exponential-functions.js">// handles events
+<script src="../../../../_static/1-exponential-functions.js">// handles events
 </script>
