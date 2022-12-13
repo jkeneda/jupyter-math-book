@@ -639,6 +639,8 @@ title="Print to PDF"
 <p>So far, things aren’t looking great for the people who chose the doubling account option…</p>
 <p>Let’s rethink the amount in the account over time.  The amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, you get a new multiplier by 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, you have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
 <p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?  Use the slider below to find out.</p>
+<p>Number of Days: <span class="math notranslate nohighlight">\(n = 0\)</span></p>
+<p>Account Balance: <span class="math notranslate nohighlight">\(B(n) = \$0.01\)</span></p>
 <div>
     <form id="form1" onsubmit="return false;">
         <div id="dayNumber">Number of Days: 0</div>
@@ -647,7 +649,13 @@ title="Print to PDF"
     </form>
 </div>
 </section>
-</div></section>
+</div><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>B</mi>
+  <mo stretchy="false">(</mo>
+  <mi>n</mi>
+  <mo stretchy="false">)</mo>
+</math>
+</section>
 </section>
 <section id="zoom-out">
 <h2><span class="section-number">1.2. </span>Zoom Out<a class="headerlink" href="#zoom-out" title="Permalink to this headline">#</a></h2>
