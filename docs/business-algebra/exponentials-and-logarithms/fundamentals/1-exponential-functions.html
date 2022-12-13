@@ -638,17 +638,16 @@ title="Print to PDF"
 </table>
 <p>Not the most impressive results so far in terms of the total value of the account…  On the other hand, your initial investment has grown by 102,400%.  So maybe this approach will still be better after all!</p>
 <p>Note that the amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, you get a new multiplier by 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, you have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
-<p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?</p>
+<p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?  Use the slider below to find out.</p>
 <div>
     <form id="form1" onsubmit="return false;">
-        Number of Days:<br/>
-        <input type="range" id="textBox" min="0" max="30" value="1"><br/>
+        <div id="dayNumber">Number of Days: 0</div>
+        <input type="range" id="dayRange" min="0" max="30" value="1"><br/>
+        <div id="balance">Account Balance: $0.01</div>
     </form>
 </div>
 </section>
-</div><div id="test">
-</div>
-</section>
+</div></section>
 </section>
 <section id="zoom-out">
 <h2><span class="section-number">1.1.2. </span>Zoom Out<a class="headerlink" href="#zoom-out" title="Permalink to this headline">#</a></h2>

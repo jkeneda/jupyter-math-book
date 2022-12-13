@@ -1,11 +1,11 @@
+// Penny doubling functions and event handling
 function cashMoney (n) {
-    return 0.01*2^n
+    return 0.01*(2**n)
 }
 
-//document.getElementById('textBox').value
+function updateBalance () {
+    document.getElementById('dayNumber').innerHTML = "Number of Days: " + document.getElementById('dayRange').value;
+    document.getElementById('balance').innerHTML = "Account Balance: $" + cashMoney(document.getElementById('dayRange').value).toLocaleString();
+}
 
-// Sample event handling
-//document.getElementById('textBox').addEventListener('change', () => {updateChart(myChart);});
-
-// Form submission event handling
-document.getElementById('form1').addEventListener('submit', function () {document.getElementById('test').innerHTML = 'hi'});
+document.getElementById('dayRange').addEventListener('change', () => {updateBalance();});
