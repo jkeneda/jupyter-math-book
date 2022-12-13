@@ -15,9 +15,9 @@ So far, we've seen plenty of functions where our input $x$ forms the *base* of a
 ### Exponential Functions and their Graphs
 
 ```{prf:example}
-Suppose you're given this choice: you can receive \$1 million in your bank account **or** you can reset your bank account to a single penny (\$0.01) but have it double every day for the next 30 days (so on day two you'd have 2 pennies, on day three you'd have 4 pennies, etc.).  Which would you pick?
+Suppose you're offered this choice: you can receive \$1 million in your bank account **or** you can reset your bank account to a single penny (\$0.01), but the account doubles every day for the next 30 days (so on day two you'd have 2 pennies, on day three you'd have 4 pennies, etc.).  Which would *you* pick?
 
-Here's a chart of the next 10 days of the doubling option:
+Here's a chart of the next 10 days for the doubling account:
 | Day | Account Balance |
 |:---:|:---------------:|
 | 0 | \$0.01 |
@@ -32,9 +32,9 @@ Here's a chart of the next 10 days of the doubling option:
 | 9 | \$5.12 |
 | 10 | \$10.24 |
 
-Not the most impressive results so far in terms of the total value of the account...  On the other hand, your initial investment has grown by 102,400%.  So maybe this approach will still be better after all!
+So far, things aren't looking great for the people who chose the doubling account option...
 
-Note that the amount in the account after three days could be expressed as $\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2$.  For every day, you get a new multiplier by 2.  In other words, after three days, we have $\$0.01 \cdot 2^3$ in the account.  More generally, after $n$ days, you have $\$0.01\cdot 2^n$ in the account.
+Let's rethink the amount in the account over time.  The amount in the account after three days could be expressed as $\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2$.  For every day, you get a new multiplier by 2.  In other words, after three days, we have $\$0.01 \cdot 2^3$ in the account.  More generally, after $n$ days, you have $\$0.01\cdot 2^n$ in the account.
 
 Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we'll often write $B(n)$ instead of just $B$, to emphasize that we're thinking of $B$ as a *function* of $n$).  How much money would you have after 30 days?  Use the slider below to find out.
 <div>

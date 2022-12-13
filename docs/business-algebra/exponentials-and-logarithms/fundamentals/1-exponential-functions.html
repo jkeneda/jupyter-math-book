@@ -592,8 +592,8 @@ title="Print to PDF"
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 14 </span></p>
 <section class="example-content" id="proof-content">
-<p>Suppose you’re given this choice: you can receive $1 million in your bank account <strong>or</strong> you can reset your bank account to a single penny ($0.01) but have it double every day for the next 30 days (so on day two you’d have 2 pennies, on day three you’d have 4 pennies, etc.).  Which would you pick?</p>
-<p>Here’s a chart of the next 10 days of the doubling option:</p>
+<p>Suppose you’re offered this choice: you can receive $1 million in your bank account <strong>or</strong> you can reset your bank account to a single penny ($0.01), but the account doubles every day for the next 30 days (so on day two you’d have 2 pennies, on day three you’d have 4 pennies, etc.).  Which would <em>you</em> pick?</p>
+<p>Here’s a chart of the next 10 days for the doubling account:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>Day</p></th>
@@ -636,8 +636,8 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<p>Not the most impressive results so far in terms of the total value of the account…  On the other hand, your initial investment has grown by 102,400%.  So maybe this approach will still be better after all!</p>
-<p>Note that the amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, you get a new multiplier by 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, you have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
+<p>So far, things aren’t looking great for the people who chose the doubling account option…</p>
+<p>Let’s rethink the amount in the account over time.  The amount in the account after three days could be expressed as <span class="math notranslate nohighlight">\(\$0.08 = \$0.01\cdot 2 \cdot 2 \cdot 2\)</span>.  For every day, you get a new multiplier by 2.  In other words, after three days, we have <span class="math notranslate nohighlight">\(\$0.01 \cdot 2^3\)</span> in the account.  More generally, after <span class="math notranslate nohighlight">\(n\)</span> days, you have <span class="math notranslate nohighlight">\(\$0.01\cdot 2^n\)</span> in the account.</p>
 <p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?  Use the slider below to find out.</p>
 <div>
     <form id="form1" onsubmit="return false;">
