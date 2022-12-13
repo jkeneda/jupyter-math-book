@@ -38,24 +38,32 @@ Let's rethink the amount in the account over time.  The amount in the account af
 
 Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we'll often write $B(n)$ instead of just $B$, to emphasize that we're thinking of $B$ as a *function* of $n$).  How much money would you have after 30 days?  Use the slider below to find out.
 
-Number of Days: $n = 0$
-
-Account Balance: $B(n) = \$0.01$
-
 <div>
     <form id="form1" onsubmit="return false;">
-        <div id="dayNumber">Number of Days: 0</div>
+        <div id="dayNumber">
+            Number of Days: 
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+        </div>
         <input type="range" id="dayRange" min="0" max="30" value="1"><br/>
-        <div id="balance">Account Balance: $0.01</div>
+        <div id="balance">
+            Account Balance:
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>B</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>n</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mi mathvariant="normal">$</mi>
+                    <mn>0.01</mn>
+                </math>
+        </div>
     </form>
 </div>
 ```
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>B</mi>
-  <mo stretchy="false">(</mo>
-  <mi>n</mi>
-  <mo stretchy="false">)</mo>
-</math>
 
 ## Zoom Out
 
