@@ -23,5 +23,5 @@ function updateBalance () {
                 </math>`;
 }
 
-document.getElementById('dayRange').addEventListener('change', () => {updateBalance();});
+document.getElementById('dayRange').addEventListener('change', () => {updateBalance(); MathJax.typeset();});
 document.onload = updateBalance();
