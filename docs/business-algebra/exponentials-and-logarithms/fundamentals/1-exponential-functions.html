@@ -44,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../../_static/togglebutton.js"></script>
     <script src="../../../../_static/1-c-graphs-of-functions.js"></script>
+    <script src="../../../../_static/1-exponential-functions.js"></script>
     <script src="../../../../_static/1-probability-distributions.js"></script>
     <script src="../../../../_static/chart.js"></script>
     <script src="../../../../_static/distributions.js"></script>
@@ -640,18 +641,12 @@ title="Print to PDF"
 <p>Let <span class="math notranslate nohighlight">\(B = \$0.01\cdot 2^n\)</span> represent the balance after <span class="math notranslate nohighlight">\(n\)</span> days (we’ll often write <span class="math notranslate nohighlight">\(B(n)\)</span> instead of just <span class="math notranslate nohighlight">\(B\)</span>, to emphasize that we’re thinking of <span class="math notranslate nohighlight">\(B\)</span> as a <em>function</em> of <span class="math notranslate nohighlight">\(n\)</span>).  How much money would you have after 30 days?</p>
 <div>
     <form id="form1" onsubmit="return false;">
-        Number of Brice:<br/>
-        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
-        (minimum of 1, max of 10)
+        Number of Days:<br/>
+        <input type="range" id="textBox" min="0" max="30" value="1"><br/>
     </form>
 </div>
 </section>
-</div><div>
-    <form id="form1" onsubmit="return false;">
-        Number of Dice:<br/>
-        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
-        (minimum of 1, max of 10)
-    </form>
+</div><div id="test">
 </div>
 </section>
 </section>
@@ -660,7 +655,8 @@ title="Print to PDF"
 </section>
 <section id="zoom-deep-wide">
 <h2><span class="section-number">1.1.3. </span>Zoom Deep &amp; Wide<a class="headerlink" href="#zoom-deep-wide" title="Permalink to this headline">#</a></h2>
-</section>
+<script src="../../../_static/1-exponential-functions.js">// handles events
+</script></section>
 </section>
 
     <script type="text/x-thebe-config">

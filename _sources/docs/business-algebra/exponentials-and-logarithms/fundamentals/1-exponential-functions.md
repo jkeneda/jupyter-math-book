@@ -39,20 +39,18 @@ Note that the amount in the account after three days could be expressed as $\$0.
 Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we'll often write $B(n)$ instead of just $B$, to emphasize that we're thinking of $B$ as a *function* of $n$).  How much money would you have after 30 days?
 <div>
     <form id="form1" onsubmit="return false;">
-        Number of Brice:<br/>
-        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
-        (minimum of 1, max of 10)
+        Number of Days:<br/>
+        <input type="range" id="textBox" min="0" max="30" value="1"><br/>
     </form>
 </div>
 ```
-<div>
-    <form id="form1" onsubmit="return false;">
-        Number of Dice:<br/>
-        <input type="range" id="textBox" min="1" max="10" value="1"><br/>
-        (minimum of 1, max of 10)
-    </form>
+<div id="test">
 </div>
+
 
 ## Zoom Out
 
 ## Zoom Deep & Wide
+
+<script src="../../../_static/1-exponential-functions.js">// handles events
+</script>
