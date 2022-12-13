@@ -41,7 +41,7 @@ Let $B = \$0.01\cdot 2^n$ represent the balance after $n$ days (we can write $B(
 <div>
     <form id="form1" onsubmit="return false;">
         <div id="dayNumber"></div>
-        <input type="range" id="dayRange" min="0" max="30" value="1"><br/>
+        <input type="range" id="dayRange" min="0" max="30" value="0"><br/>
         <div id="balance"></div>
     </form>
 </div>
