@@ -8,6 +8,7 @@ This is the zoomed-in content.
 This is an example.
 ```
 ```{mermaid}
+:class: dropdown
 
     sequenceDiagram
       participant Alice
