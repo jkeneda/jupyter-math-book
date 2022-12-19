@@ -5,10 +5,10 @@
 :::{tab-item} Zoom In
 This is the zoomed-in content.
 ```{prf:example}
+:class: dropdown
 This is an example.
 ```
 ```{mermaid}
-:class: dropdown
 
     sequenceDiagram
       participant Alice
