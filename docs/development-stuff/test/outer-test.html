@@ -48,6 +48,7 @@
     <script src="../../../_static/1-probability-distributions.js"></script>
     <script src="../../../_static/chart.js"></script>
     <script src="../../../_static/distributions.js"></script>
+    <script src="../../../_static/outer-test.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -554,32 +555,35 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="outer-test">
 <h1>Outer Test<a class="headerlink" href="#outer-test" title="Permalink to this headline">#</a></h1>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="0145f76a-d017-472a-b7ed-24ce840ce939" name="f22b40c9-0201-4656-810b-e9f42c38f344" type="radio">
-</input><label class="sd-tab-label" for="0145f76a-d017-472a-b7ed-24ce840ce939">
+<input checked="checked" id="41e530ea-cdb1-44ce-b4d8-be289cf096e2" name="337b8baa-b8f5-49fb-b093-46f0ca97deec" type="radio">
+</input><label class="sd-tab-label" for="41e530ea-cdb1-44ce-b4d8-be289cf096e2">
 Zoom In</label><div class="sd-tab-content docutils">
 <p>This is the zoomed-in content.</p>
 <div class="proof example dropdown admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 15 </span></p>
 <section class="example-content" id="proof-content">
 <p>This is an example.</p>
+<div id="outer-test-box"></div>
 </section>
 </div><div class="mermaid">
-                sequenceDiagram
-      participant Alice
-      participant Bob
-      Alice-&gt;John: Hello John, how are you?
+                flowchart TD
+    A[Start] --&gt; B{Is it?}
+    B -- Yes --&gt; C[OK]
+    C --&gt; D[Rethink]
+    D --&gt; B
+    B -- No ----&gt; E[End]
         </div></div>
-<input id="d494e17c-a8ec-43f2-9ee9-f28508a4bd26" name="f22b40c9-0201-4656-810b-e9f42c38f344" type="radio">
-</input><label class="sd-tab-label" for="d494e17c-a8ec-43f2-9ee9-f28508a4bd26">
+<input id="b761b60f-edec-4e3e-9e2d-b4d45001c766" name="337b8baa-b8f5-49fb-b093-46f0ca97deec" type="radio">
+</input><label class="sd-tab-label" for="b761b60f-edec-4e3e-9e2d-b4d45001c766">
 Zoom Out</label><div class="sd-tab-content docutils">
 </div>
-<input id="2ad69b3b-17cf-4097-9ec7-0a3fe989638a" name="f22b40c9-0201-4656-810b-e9f42c38f344" type="radio">
-</input><label class="sd-tab-label" for="2ad69b3b-17cf-4097-9ec7-0a3fe989638a">
+<input id="d59ccc11-48dd-49b3-9e4e-dd0e54789ed2" name="337b8baa-b8f5-49fb-b093-46f0ca97deec" type="radio">
+</input><label class="sd-tab-label" for="d59ccc11-48dd-49b3-9e4e-dd0e54789ed2">
 Zoom Wide</label><div class="sd-tab-content docutils">
 <p>more content</p>
 </div>
 </div>
-</section>
+<script src=">../../_static/1-exponential-functions.js"></script></section>
 <section class="tex2jax_ignore mathjax_ignore" id="inside-stuff-1">
 <h1>Inside Stuff 1<a class="headerlink" href="#inside-stuff-1" title="Permalink to this headline">#</a></h1>
 <div class="admonition note">
