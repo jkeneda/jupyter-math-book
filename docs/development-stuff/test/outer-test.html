@@ -481,12 +481,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Outer Test
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inside-stuff-1">
+   Inside Stuff 1
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -498,6 +527,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Outer Test
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inside-stuff-1">
+   Inside Stuff 1
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -508,39 +555,37 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="outer-test">
 <h1>Outer Test<a class="headerlink" href="#outer-test" title="Permalink to this headline">#</a></h1>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="216d2bc2-a9fa-43f5-999b-4efb5047dd94" name="79c11ead-fc64-4e1a-8eab-3c69d6a1c0df" type="radio">
-</input><label class="sd-tab-label" for="216d2bc2-a9fa-43f5-999b-4efb5047dd94">
+<input checked="checked" id="ab013f77-9389-40d9-9988-ea84c0bb366c" name="73522cb8-6bb2-4cd5-ba26-d393e1e2965c" type="radio">
+</input><label class="sd-tab-label" for="ab013f77-9389-40d9-9988-ea84c0bb366c">
 Zoom In</label><div class="sd-tab-content docutils">
 <p>This is the zoomed-in content.</p>
-<div class="proof example dropdown admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 15 </span></p>
-<section class="example-content" id="proof-content">
-<p>This is an example.</p>
-<div id="outer-test-box"></div>
-</section>
-</div><div id="outer-test-box-2"></div>
-```{mermaid}
-    flowchart TD
-    A[Start] --> B{Is it?}
-    B -- Yes --> C[OK]
-    C --> D[Rethink]
-    D --> B
-    B -- No ----> E[End]
-```
-```{include} inner-test-1.md
-```
-</div>
-<input id="10ef01c3-e511-416b-b08e-8ef806f26794" name="79c11ead-fc64-4e1a-8eab-3c69d6a1c0df" type="radio">
-</input><label class="sd-tab-label" for="10ef01c3-e511-416b-b08e-8ef806f26794">
+<div id="outer-test-box-2"></div>
+<div class="mermaid">
+                flowchart TD
+    A[Start] --&gt; B{Is it?}
+    B -- Yes --&gt; C[OK]
+    C --&gt; D[Rethink]
+    D --&gt; B
+    B -- No ----&gt; E[End]
+        </div></div>
+<input id="77e87405-2270-41ed-98a0-ecc0dbaeb5a6" name="73522cb8-6bb2-4cd5-ba26-d393e1e2965c" type="radio">
+</input><label class="sd-tab-label" for="77e87405-2270-41ed-98a0-ecc0dbaeb5a6">
 Zoom Out</label><div class="sd-tab-content docutils">
 </div>
-<input id="36dd3d27-e91a-4f6c-bab6-52c48dbc4acd" name="79c11ead-fc64-4e1a-8eab-3c69d6a1c0df" type="radio">
-</input><label class="sd-tab-label" for="36dd3d27-e91a-4f6c-bab6-52c48dbc4acd">
+<input id="929f1db4-a630-4726-8597-e5e334a8c5d8" name="73522cb8-6bb2-4cd5-ba26-d393e1e2965c" type="radio">
+</input><label class="sd-tab-label" for="929f1db4-a630-4726-8597-e5e334a8c5d8">
 Zoom Wide</label><div class="sd-tab-content docutils">
 <p>more content</p>
 </div>
 </div>
 <script src=">../../_static/1-exponential-functions.js"></script></section>
+<section class="tex2jax_ignore mathjax_ignore" id="inside-stuff-1">
+<h1>Inside Stuff 1<a class="headerlink" href="#inside-stuff-1" title="Permalink to this headline">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s a note.</p>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
