@@ -14,6 +14,7 @@ This is an example.
 ```
 
 <div id="outer-test-box-2"></div>
+<button type="button">Randomize</button>
 
 ```{mermaid}
     flowchart TD

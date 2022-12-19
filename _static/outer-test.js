@@ -23,8 +23,8 @@ function updateBalance () {
                 </math>`;
 }
 
-//document.getElementById('dayRange').addEventListener('change', () => {updateBalance(); MathJax.typeset([document.getElementById('dayNumber'), document.getElementById('balance')]);});
+document.getElementById('randomize-button').addEventListener('click', () => {MathJax.typeset();});
 //document.onload = updateBalance();
 
-document.getElementById('outer-test-box').innerHTML = 'Hi.';
+//document.getElementById('outer-test-box').innerHTML = 'Hi.';
 document.getElementById('outer-test-box-2').innerHTML = 'Hello.';
