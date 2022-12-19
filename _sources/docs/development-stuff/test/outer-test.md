@@ -4,13 +4,16 @@
 
 :::{tab-item} Zoom In
 This is the zoomed-in content.
+
 ```{prf:example}
 :class: dropdown
 :open:
 
 This is an example.
+
 <div id="outer-test-box"></div>
 ```
+
 <div id="outer-test-box-2"></div>
 
 ```{mermaid}
