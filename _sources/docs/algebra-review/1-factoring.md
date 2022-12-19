@@ -4,7 +4,7 @@ Here is an example generator.  Practice with each type of problem until you're c
 
 ::::{tab-set}
 
-:::{tab-item} Monic Quadratics $$x^2 + bx + c$$
+:::{tab-item} Monic Quadratics ($x^2 + bx + c$)
 This is the zoomed-in content.
 ```{include} inner-test-1.md
 ```

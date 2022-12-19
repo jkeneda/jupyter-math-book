@@ -7,6 +7,13 @@ This is the zoomed-in content.
 ```{prf:example}
 This is an example.
 ```
+```{mermaid}
+
+    sequenceDiagram
+      participant Alice
+      participant Bob
+      Alice->John: Hello John, how are you?
+```
 ```{include} inner-test-1.md
 ```
 :::
