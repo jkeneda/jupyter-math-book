@@ -4,6 +4,9 @@
 
 :::{tab-item} Zoom In
 This is the zoomed-in content.
+```{prf:example}
+This is an example.
+```
 ```{include} inner-test-1.md
 ```
 :::
