@@ -6,8 +6,7 @@
 This is the zoomed-in content.
 
 ```{prf:example}
-:class: dropdown
-:class: open
+:label: factoring-tricks
 
 This is an example.
 
