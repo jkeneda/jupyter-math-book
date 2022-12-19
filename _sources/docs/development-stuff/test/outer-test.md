@@ -5,14 +5,12 @@
 :::{tab-item} Zoom In
 This is the zoomed-in content.
 
-<h2>Header test</h2>
-
 ```{prf:example}
 :label: factoring-tricks
 
 This is an example.
 
-<div id="outer-test-box"></div>
+<div id="outer-test-box">$700$</div>
 ```
 
 <div id="outer-test-box-2"></div>
