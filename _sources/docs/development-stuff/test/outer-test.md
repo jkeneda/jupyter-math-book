@@ -9,6 +9,7 @@ This is the zoomed-in content.
 This is an example.
 <div id="outer-test-box"></div>
 ```
+<div id="outer-test-box-2"></div>
 ```{mermaid}
     flowchart TD
     A[Start] --> B{Is it?}
