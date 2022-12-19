@@ -36,4 +36,4 @@ This is an example.
 more content
 :::
 ::::
-<script src="../../_static/outer-test.js"></script>
+<script src="../../../../_static/outer-test.js"></script>
