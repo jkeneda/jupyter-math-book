@@ -27,7 +27,7 @@ function randomizeExample () {
     document.getElementById('outer-test-box').innerHTML = "Button works.";
 }
 
-document.getElementById('randomize-button').addEventListener('click', () => {MathJax.typeset();});
+document.getElementById('randomize-button').addEventListener('click', () => {randomizeExample(); MathJax.typeset();});
 //document.onload = updateBalance();
 
 //document.getElementById('outer-test-box').innerHTML = 'Hi.';
