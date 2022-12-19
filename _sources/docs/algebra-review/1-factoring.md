@@ -19,3 +19,8 @@ This is the zoomed-in content.
 more content
 :::
 ::::
+
+```{glossary}
+FOIL
+    **FOIL** stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: $(a+b)(c+d) = ac + ad + bc + bd$.
+```

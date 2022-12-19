@@ -483,41 +483,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Outer Test
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inside-stuff-1">
-   Inside Stuff 1
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -529,24 +500,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Outer Test
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inside-stuff-1">
-   Inside Stuff 1
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -557,19 +510,28 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="outer-test">
 <h1>Outer Test<a class="headerlink" href="#outer-test" title="Permalink to this headline">#</a></h1>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="97e9bc04-c8b8-4266-b921-00000628499c" name="3c0296f8-35d2-4dc7-9e7d-7614b4f814e0" type="radio">
-</input><label class="sd-tab-label" for="97e9bc04-c8b8-4266-b921-00000628499c">
+<input checked="checked" id="fd81a4f6-55ff-4b4b-a547-5a21e25a6342" name="792e2897-746a-4955-a2b7-fad5e6abf5a9" type="radio">
+</input><label class="sd-tab-label" for="fd81a4f6-55ff-4b4b-a547-5a21e25a6342">
 Zoom In</label><div class="sd-tab-content docutils">
-<p>This is the zoomed-in content.</p>
+<p>Note that if we <a class="reference internal" href="../../algebra-review/1-factoring.html#term-FOIL"><span class="xref std std-term">FOIL</span></a> the expression <span class="math notranslate nohighlight">\((x+m)(x+n)\)</span>, then we get:</p>
+<div class="math notranslate nohighlight">
+\[(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + (m+n)x + (mn).\]</div>
+<p>When factoring, we want to reverse this pattern.  Given an <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>, we’d like to find the numbers <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> so that <span class="math notranslate nohighlight">\(x^2 + bx + c = (x+m)(x+n)\)</span>.  The formula above suggests that we need three things to work out:</p>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="../../business-algebra/functions/4-polynomial-functions.html#term-leading-coefficient"><span class="xref std std-term">leading coefficient</span></a> <span class="math notranslate nohighlight">\(a\)</span> needs to be 1.  The trick only works on <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>, not on <span class="math notranslate nohighlight">\(7x^2 + bx + c\)</span>.</p></li>
+<li><p>The <strong>sum</strong> of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> needs to be <span class="math notranslate nohighlight">\(b\)</span></p></li>
+<li><p>The <strong>product</strong> of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> needs to be <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+</ul>
+<p>In other words, we’re looking for factors of <span class="math notranslate nohighlight">\(c\)</span> that add up to <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p>Here’s an example.</p>
 <div class="proof example admonition" id="factoring-tricks">
 <p class="admonition-title"><span class="caption-number">Example 15 </span></p>
 <section class="example-content" id="proof-content">
-<p>This is an example.</p>
+<p>Let’s try to factor <span class="math notranslate nohighlight">\(x^2 + 5x + 6\)</span>.  This is a quadratic function in <a class="reference internal" href="../../business-algebra/functions/3-quadratic-functions.html#term-general-form"><span class="xref std std-term">general form</span></a> with <span class="math notranslate nohighlight">\(a = 1\)</span>, <span class="math notranslate nohighlight">\(b = 5\)</span>, and <span class="math notranslate nohighlight">\(c = 6\)</span>.  Since <span class="math notranslate nohighlight">\(a = 1\)</span>, we can try out the factoring trick above.  We just need to find factors of <span class="math notranslate nohighlight">\(c = 6\)</span> that add up to <span class="math notranslate nohighlight">\(b = 5\)</span>.  The factors of <span class="math notranslate nohighlight">\(6\)</span> that add up to <span class="math notranslate nohighlight">\(5\)</span> are <span class="math notranslate nohighlight">\(2, 3\)</span> (when you multiply them, you get 6, and when you add them, you get 5).</p>
+<p>Therefore, <span class="math notranslate nohighlight">\(x^2 + 5x + 6 = (x + 2)(x + 3)\)</span>.</p>
 <div id="outer-test-box">$700$</div>
 </section>
-</div><div id="outer-test-box-2"></div>
-<p><button id="randomize-button" type="button">Randomize</button></p>
-<p><span class="math notranslate nohighlight">\(700\)</span></p>
+</div><p><button id="randomize-button" type="button">Randomize</button></p>
 <div class="mermaid">
                 flowchart TD
     A[Start] --&gt; B{Is it?}
@@ -578,24 +540,13 @@ Zoom In</label><div class="sd-tab-content docutils">
     D --&gt; B
     B -- No ----&gt; E[End]
         </div></div>
-<input id="58f75fb5-1607-4af8-8146-c4c12e2d77a0" name="3c0296f8-35d2-4dc7-9e7d-7614b4f814e0" type="radio">
-</input><label class="sd-tab-label" for="58f75fb5-1607-4af8-8146-c4c12e2d77a0">
-Zoom Out</label><div class="sd-tab-content docutils">
-</div>
-<input id="2dd41a58-4d6e-4302-bd1e-05e97f1479f2" name="3c0296f8-35d2-4dc7-9e7d-7614b4f814e0" type="radio">
-</input><label class="sd-tab-label" for="2dd41a58-4d6e-4302-bd1e-05e97f1479f2">
+<input id="cf340856-e0a1-4019-ac36-02ffcb24bb70" name="792e2897-746a-4955-a2b7-fad5e6abf5a9" type="radio">
+</input><label class="sd-tab-label" for="cf340856-e0a1-4019-ac36-02ffcb24bb70">
 Zoom Wide</label><div class="sd-tab-content docutils">
 <p>more content</p>
 </div>
 </div>
 <script src="../../../../../_static/outer-test.js"></script></section>
-<section class="tex2jax_ignore mathjax_ignore" id="inside-stuff-1">
-<h1>Inside Stuff 1<a class="headerlink" href="#inside-stuff-1" title="Permalink to this headline">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It’s a note.</p>
-</div>
-</section>
 
     <script type="text/x-thebe-config">
     {

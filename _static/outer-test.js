@@ -1,7 +1,4 @@
-// Penny doubling functions and event handling; requires MathJax for pretty updating
-function cashMoney (n) {
-    return 0.01*(2**n)
-}
+// Testing random factoring examples
 
 function updateBalance () {
     document.getElementById('dayNumber').innerHTML = `Number of Days: 
@@ -24,11 +21,9 @@ function updateBalance () {
 }
 
 function randomizeExample () {
-    document.getElementById('outer-test-box').innerHTML = "Button works.";
+    let 
+    document.getElementById('outer-test-box').innerHTML = "Button works.  $700$";
 }
 
 document.getElementById('randomize-button').addEventListener('click', () => {randomizeExample(); MathJax.typeset();});
 //document.onload = updateBalance();
-
-//document.getElementById('outer-test-box').innerHTML = 'Hi.';
-document.getElementById('outer-test-box-2').innerHTML = 'Hello.';
