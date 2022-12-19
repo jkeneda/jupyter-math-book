@@ -13,6 +13,20 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+
+        {
+            "label": "Build-a-whole-book",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "./.vscode/build-all.sh"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
         }
     ]
 }
