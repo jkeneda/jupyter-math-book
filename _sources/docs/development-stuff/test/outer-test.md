@@ -7,7 +7,7 @@ This is the zoomed-in content.
 
 ```{prf:example}
 :class: dropdown
-:open:
+:class: open
 
 This is an example.
 
