@@ -23,6 +23,10 @@ function updateBalance () {
                 </math>`;
 }
 
+function randomizeExample () {
+    document.getElementById('outer-test-box').innerHTML = "Button works.";
+}
+
 document.getElementById('randomize-button').addEventListener('click', () => {MathJax.typeset();});
 //document.onload = updateBalance();
 

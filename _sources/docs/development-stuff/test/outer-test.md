@@ -17,6 +17,8 @@ This is an example.
 
 <button id="randomize-button" type="button">Randomize</button>
 
+$700$
+
 ```{mermaid}
     flowchart TD
     A[Start] --> B{Is it?}
