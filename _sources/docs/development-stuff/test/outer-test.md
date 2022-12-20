@@ -5,7 +5,7 @@
 :::{tab-item} Zoom In
 Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
-$$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + (m+n)x + (mn).$$
+$$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
 
 When factoring, we want to reverse this pattern.  Given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  The formula above suggests that we need three things to work out:
 - The {term}`leading coefficient` $a$ needs to be 1.  The trick only works on $x^2 + bx + c$, not on $7x^2 + bx + c$.
@@ -23,7 +23,7 @@ Let's try to factor $x^2 + 5x + 6$.  This is a quadratic function in {term}`gene
 
 Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 
-<div id="outer-test-box">$700$</div>
+<div id="outer-test-box">Click the Randomize button below to get a new example.</div>
 ```
 
 <button id="randomize-button" type="button">Randomize</button>
