@@ -12,7 +12,7 @@ When factoring, we want to reverse this pattern.  Given an $x^2 + bx + c$, we'd 
 - The **sum** of $m$ and $n$ needs to be $b$
 - The **product** of $m$ and $n$ needs to be $c$.
 
-In other words, we're looking for factors of $c$ that add up to $b$.
+In other words, ***we're looking for factors of $c$ that add up to $b$***.
 
 Here's an example.
 
