@@ -55,4 +55,4 @@ FOIL
     **FOIL** stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: $(a+b)(c+d) = ac + ad + bc + bd$.
 ```
 
-<script src="../../../../../_static/outer-test.js"></script>
+<script src="../../_static/1-factoring.js"></script>
