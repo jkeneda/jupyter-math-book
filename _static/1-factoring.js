@@ -22,7 +22,7 @@ function middleTerm (b) {
     if (b == 0) {
         return '';
     } else if (Math.abs(b) !== 1) {
-        return b + 'x';
+        return sign2pm(b) + Math.abs(b) + 'x';
     } else {
         return sign2pm(b) + 'x';
     }
@@ -32,7 +32,7 @@ function lastTerm (b) {
     if (b == 0) {
         return '';
     } else {
-        return b;
+        return sign2pm(b) + Math.abs(b);
     }
 }
 
