@@ -7,7 +7,7 @@ function randomMonic () {
     
     document.getElementById('monic-prompt').innerHTML = 'Factor \\(x^2 ' + middleTerm(m+n) +  lastTerm(m*n) + '\\).';
 
-    
+    document.getElementById('monic-answer').innerHTML = 'This is a quadratic function in {term}`general form` with $a = 1$, $b = 5$, and $c = 6$.  Since $a = 1$, we can try out the factoring trick above.  We just need to find factors of $c = 6$ that add up to $b = 5$.  The factors of $6$ that add up to $5$ are $2, 3$ (when you multiply them, you get 6, and when you add them, you get 5).  Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.';
 
     MathJax.typeset([document.getElementById('monic-prompt'), document.getElementById('monic-answer')]);
 }

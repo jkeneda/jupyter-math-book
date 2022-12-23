@@ -26,10 +26,10 @@ Let's try to factor $x^2 + 5x + 6$.  This is a quadratic function in {term}`gene
 Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
 
-````{admonition} Experiment {octicon}`beaker;1em;sd-text-dark`
+````{admonition} Experiment
 :class: tip
 
-<div id='monic-prompt'>Click the Randomize button to start.</div>
+<div id='monic-prompt'>Click the Randomize button to start!</div>
 
 ```{button-ref} #
 :color: info
@@ -43,7 +43,6 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 <div id='monic-answer'></div>
 ```
-
 ````
 
 ```{mermaid}
