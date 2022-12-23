@@ -36,5 +36,5 @@ function lastTerm (b) {
     }
 }
 
-document.getElementsByClassName('sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-rounded-pill float-left').item(0).addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
+document.getElementsByClassName('sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-rounded-pill float-left').item(0).addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
 // Warning: interprets first button as randomizing
