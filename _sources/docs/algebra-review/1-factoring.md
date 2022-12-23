@@ -41,7 +41,7 @@ Reroll {octicon}`sync;1em;sd-text-light`
 ```{admonition} Answer
 :class: note, dropdown
 
-<div id='monic-answer'></div>
+<div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
 ````
 
