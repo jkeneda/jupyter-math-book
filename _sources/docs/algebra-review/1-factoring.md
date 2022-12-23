@@ -39,9 +39,11 @@ Reroll {octicon}`sync;1em;sd-text-light`
 ```
 
 ```{admonition} Answer
-:class: tip, dropdown
+:class: note, dropdown
 
 Just try harder.
+
+<div id="hidden-div"></div>
 
 ````
 
