@@ -27,7 +27,6 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
 
 ```{admonition} Exercise Randomizer
-:class: dropdown
 :label: monic-randomizer
 
 <div id="monic-div">Click the Randomize button below to get a new example.</div>
