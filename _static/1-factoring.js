@@ -1,6 +1,8 @@
 // Randomized Factoring Examples
 // Requires some Ids and MathJax
 
+// Functions
+
 function randomMonic () {
     let m = Math.floor(Math.random() * 20 - 10);
     let n = Math.floor(Math.random() * 20 - 10);
@@ -40,7 +42,7 @@ function lastTerm (b) {
     }
 }
 
+// Event Listeners
+
 document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic();});
 // Warning: interprets first info button as randomizing
-
-document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {document.getElementById('hidden-div').innerHTML = 'worked';});
