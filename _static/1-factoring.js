@@ -1,10 +1,15 @@
-// Testing random factoring examples
+// Randomized Factoring Examples
+// Requires some Ids and MathJax
 
 function randomMonic () {
     let m = Math.floor(Math.random() * 20 - 10);
     let n = Math.floor(Math.random() * 20 - 10);
     
-    document.getElementById('monic-div').innerHTML = 'Factor \\(x^2 ' + middleTerm(m+n) +  lastTerm(m*n) + '\\).';
+    document.getElementById('monic-prompt').innerHTML = 'Factor \\(x^2 ' + middleTerm(m+n) +  lastTerm(m*n) + '\\).';
+
+    
+
+    MathJax.typeset([document.getElementById('monic-prompt'), document.getElementById('monic-answer')]);
 }
 
 function sign2pm (a) {
@@ -35,7 +40,7 @@ function lastTerm (b) {
     }
 }
 
-document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
+document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic();});
 // Warning: interprets first info button as randomizing
 
 document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {document.getElementById('hidden-div').innerHTML = 'worked';});
