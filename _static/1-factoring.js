@@ -4,7 +4,8 @@ function randomMonic () {
     let m = Math.floor(Math.random() * 20 - 10);
     let n = Math.floor(Math.random() * 20 - 10);
     
-    document.getElementById('monic-div').innerHTML = 'Factor <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup>' + middleTerm(m+n) + lastTerm(m*n) + '</math>';
+    //document.getElementById('monic-div').innerHTML = 'Factor <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup>' + middleTerm(m+n) + lastTerm(m*n) + '</math>';
+    document.getElementById('monic-div').innerHTML = 'Factor \(x^2 + ' + m + 'x + c\)';
 }
 
 function sign2pm (a) {
@@ -36,4 +37,4 @@ function lastTerm (b) {
 }
 
 document.getElementsByClassName('sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-rounded-pill float-left').item(0).addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
-// Warning: interprets buttons as randomizing
+// Warning: interprets first button as randomizing
