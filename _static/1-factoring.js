@@ -28,7 +28,7 @@ function randomizeExample () {
     document.getElementById('outer-test-box').innerHTML = 'Factor <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>' + (m + n) + '</mn><mi>x</mi><mo>+</mo><mn>' + (m*n) + '</mn></math>';
     // the above works, but it doesn't have cleaned-up behavior with negatives and zeros
 
-    document.getElementById('outer-test-box').innerHTML = MathJax.tex2chtml('\\sqrt{x^2+1}', {em: 12, ex: 6, display: false}).outerHTML;
+    document.getElementById('outer-test-box').innerHTML = MathJax.tex2mml('\\sqrt{x^2+1}', {em: 12, ex: 6, display: false}).outerHTML;
 }
 
 document.getElementById('randomize-button').addEventListener('click', () => {randomizeExample(); MathJax.typeset();});
