@@ -9,7 +9,7 @@ function randomMonic () {
     
     document.getElementById('monic-prompt').innerHTML = 'Factor \\(x^2 ' + middleTerm(m+n) +  lastTerm(m*n) + '\\).';
 
-    document.getElementById('monic-answer').innerHTML = 'This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ' + (m + n) + '\\), and \\(c = ' + (m*n) + '\\).  Since \\(a = 1\\), we can try out the factoring trick above.\nWe just need to find factors of \\(c = ' + (m*n) + '\\) that add up to \\(b = ' + (m + n) + '\\).\nThe factors of ' + (m*n) + ' that add up to ' + (m + n) + ' are ' + m + ', ' + n + '.  Therefore, \\(x^2 ' + middleTerm(m+n) + lastTerm(m*n) + ' = (x' + lastTerm(m) + ')(x' + lastTerm(n) +')\\).';
+    document.getElementById('monic-answer').innerHTML = 'This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ' + (m + n) + '\\), and \\(c = ' + (m*n) + '\\).  Since \\(a = 1\\), we can try out the factoring trick above.<br/>We just need to find factors of \\(c = ' + (m*n) + '\\) that add up to \\(b = ' + (m + n) + '\\).<br/>The factors of ' + (m*n) + ' that add up to ' + (m + n) + ' are ' + m + ', ' + n + '.<br/>Therefore, \\(x^2 ' + middleTerm(m+n) + lastTerm(m*n) + ' = (x' + lastTerm(m) + ')(x' + lastTerm(n) +')\\).';
 
     MathJax.typeset([document.getElementById('monic-prompt'), document.getElementById('monic-answer')]);
 }
