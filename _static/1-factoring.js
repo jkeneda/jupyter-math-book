@@ -5,7 +5,7 @@ function randomMonic () {
     let n = Math.floor(Math.random() * 20 - 10);
     
     //document.getElementById('monic-div').innerHTML = 'Factor <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup>' + middleTerm(m+n) + lastTerm(m*n) + '</math>';
-    document.getElementById('monic-div').innerHTML = '\(x^2 + x + c\)';
+    document.getElementById('monic-div').innerHTML = '\\(x^2 + x + c\\)';
 }
 
 function sign2pm (a) {
