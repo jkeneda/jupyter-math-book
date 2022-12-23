@@ -35,7 +35,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 :color: info
 :class: sd-rounded-pill float-left
 
-Reroll {octicon}`sync;1em;sd-text-info`
+Reroll {octicon}`sync;1em;sd-text-light`
 ```
 
 ````
