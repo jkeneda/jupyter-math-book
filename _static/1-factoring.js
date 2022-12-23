@@ -35,4 +35,4 @@ function lastTerm (b) {
     }
 }
 
-document.getElementById('randomize-button').addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
+document.getElementsByClassName('sd-btn').addEventListener('click', () => {randomMonic(); MathJax.typeset([document.getElementById('monic-div')]);});
