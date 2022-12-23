@@ -27,7 +27,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
 
 ```{prf:example}
-<div id="outer-test-box">Click the Randomize button below to get a new example.</div>
+<div id="monic-div">Click the Randomize button below to get a new example.</div>
 ```
 
 <button id="randomize-button" type="button">Randomize</button>
