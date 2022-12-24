@@ -3,15 +3,25 @@
 
 // Functions
 
-function randomMonic () {
+function randomMonic (isSpecialized = True) {
+    // Makes prompt, hint, and answers
     let m = Math.floor(Math.random() * 20 - 10);
     let n = Math.floor(Math.random() * 20 - 10);
+
+    let prompt = 'Factor \\(x^2 ' + middleTerm(m + n) +  lastTerm(m*n) + '\\).';
+    let hint = 'Can you think of factors of \\(' + (m*n) + '\\) that add up to \\(' + (m + n) + '\\)?';
+    let answer = 'This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ' + (m + n) + '\\), and \\(c = ' + (m*n) + '\\).  Since \\(a = 1\\), this quadratic is monic and we can try out the factoring trick above.  We just need to find factors of \\(c = ' + (m*n) + '\\) that add up to \\(b = ' + (m + n) + '\\).<br/><br/>The factors of \\(' + (m*n) + '\\) that add up to \\(' + (m + n) + '\\) are: \\(' + m + '\\), \\(' + n + '\\).<br/><br/>Therefore, \\(x^2 ' + middleTerm(m + n) + lastTerm(m*n) + ' = (x' + lastTerm(m) + ')(x' + lastTerm(n) +')\\).';
     
-    document.getElementById('prompt').innerHTML = 'Factor \\(x^2 ' + middleTerm(m + n) +  lastTerm(m*n) + '\\).';
-
-    document.getElementById('hint').innerHTML = 'Can you think of factors of \\(' + (m*n) + '\\) that add up to \\(' + (m + n) + '\\)?';
-
-    document.getElementById('answer').innerHTML = 'This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ' + (m + n) + '\\), and \\(c = ' + (m*n) + '\\).  Since \\(a = 1\\), this quadratic is monic and we can try out the factoring trick above.  We just need to find factors of \\(c = ' + (m*n) + '\\) that add up to \\(b = ' + (m + n) + '\\).<br/><br/>The factors of \\(' + (m*n) + '\\) that add up to \\(' + (m + n) + '\\) are: \\(' + m + '\\), \\(' + n + '\\).<br/><br/>Therefore, \\(x^2 ' + middleTerm(m + n) + lastTerm(m*n) + ' = (x' + lastTerm(m) + ')(x' + lastTerm(n) +')\\).';
+    // Write to correct DOM elements
+    if (isSpecialized) {
+        document.getElementById('monic-prompt').innerHTML = prompt;
+        document.getElementById('monic-hint').innerHTML = hint;
+        document.getElementById('monic-answer').innerHTML = answer;
+    } else {
+        document.getElementById('all-prompt').innerHTML = prompt;
+        document.getElementById('all-hint').innerHTML = hint;
+        document.getElementById('all-answer').innerHTML = answer;
+    }
 
     MathJax.typeset(['.random']);
 }
@@ -51,8 +61,18 @@ function lastTerm (b) {
 document.addEventListener('click', (e) => {
     const target = e.target.closest('.sd-btn-info');
 
-    if (target) {
+    if (target.closest('#monic-generator')) {
+
         randomMonic();
+
+    } else if (target.closest('#non-monic-generator')) {
+
+    } else if (target.closest('#special-generator')) {
+    
+    } else if (target.closest('#all-generator')) {
+
+        randomMonic(False); // The False flag makes sure we write to the All tab
+
     }
 });
 

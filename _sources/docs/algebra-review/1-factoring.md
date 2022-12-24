@@ -42,7 +42,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand 
 :label: monic-generator
 :nonumber:
 
-<div class='random' id='prompt'>Click the Randomize button to start!</div>
+<div class='random' id='monic-prompt'>Click the Randomize button to start!</div>
 
 ```{button-ref} #
 :color: info
@@ -54,14 +54,14 @@ Reroll {octicon}`sync;1em;sd-text-light`
 ```{hint}
 :class: dropdown
 
-<div class='random' id='hint'></div>
+<div class='random' id='monic-hint'></div>
 ```
 ````
 
 ```{solution} monic-generator
 :class: dropdown
 
-<div class='random' id='answer'>You need to generate an example with the Reroll button above first!</div>
+<div class='random' id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
 :::::
 
@@ -129,6 +129,32 @@ Stuff
 
 :::::{tab-item} All
 This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on *all* of the factoring tricks?
+
+````{exercise} Random Generator
+:label: all-generator
+:nonumber:
+
+<div class='random' id='all-prompt'>Click the Randomize button to start!</div>
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
+
+```{hint}
+:class: dropdown
+
+<div class='random' id='all-hint'></div>
+```
+````
+
+```{solution} all-generator
+:class: dropdown
+
+<div class='random' id='all-answer'>You need to generate an example with the Reroll button above first!</div>
+```
 :::::
 ::::::
 
