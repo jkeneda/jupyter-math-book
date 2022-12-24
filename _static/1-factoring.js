@@ -44,7 +44,16 @@ function lastTerm (b) {
     }
 }
 
-// Event Listeners
+// Delegated Event Listening?  Stack Overflow thought it was a good idea... :)
+// Warning: interprets info buttons as randomizers
+document.addEventListener('click', (e) => {
+    const target = e.target.closest('.sd-btn-info');
 
-document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic();});
+    if (target) {
+        randomMonic();
+    }
+});
+
+// Old Event Listener
+//document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic();});
 // Warning: interprets first info button as randomizing
