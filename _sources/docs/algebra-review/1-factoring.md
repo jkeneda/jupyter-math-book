@@ -4,7 +4,7 @@ Here is an exercise generator.  Practice with each type of problem until you're 
 
 ::::{tab-set}
 
-:::{tab-item} Monic Quadratics ($x^2 + bx + c$)
+:::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
 Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
@@ -47,14 +47,17 @@ Reroll {octicon}`sync;1em;sd-text-light`
 :::
 
 :::{tab-item} Non-Monic Quadratics
+In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
 :::
 
-:::{tab-item} Zoom Wide
-more content
+:::{tab-item} Special Binomials
+Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
 :::
 ::::
 
 ```{glossary}
+difference of squares
+    A **difference of squares** is a difference where both terms are squares: $A^2 - B^2$.  In this case, we can always factor, since $A^2 - B^2 = (A - B)(A + B)$
 FOIL
     **FOIL** stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: $(a+b)(c+d) = ac + ad + bc + bd$.
 monic
