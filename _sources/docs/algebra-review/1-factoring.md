@@ -1,6 +1,6 @@
 # Factoring Polynomials
 
-Here is an exercise generator.  Practice with each type of problem until you're comfortable with the relevant tricks.
+At the bottom of each tab is an exercise generator.  Practice with each type of problem until you're comfortable with the relevant tricks.
 
 ::::{tab-set}
 
@@ -61,6 +61,10 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 
 :::{tab-item} Special Binomials
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
+:::
+
+:::{tab-item} Practice All
+This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on *all* of the factoring tricks?
 :::
 ::::
 
