@@ -62,7 +62,7 @@ document.addEventListener('click', (e) => {
     const target = e.target.closest('.sd-btn-info');
 
     if (target.closest('#monic-generator')) {
-
+        console.log('Got initial call.');
         randomMonic();
 
     } else if (target.closest('#non-monic-generator')) {
