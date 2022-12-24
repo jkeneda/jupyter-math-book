@@ -2,9 +2,9 @@
 
 This page is designed to walk you through all of the factoring tricks we'll need.  Each tab discusses a new factoring trick, and you can find an exercise generator at the bottom of each tab.  Practice with each type of problem until you're comfortable with the relevant trick, and then move on to the next tab!
 
-::::{tab-set}
+::::::{tab-set}
 
-:::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
+:::::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
 Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
@@ -59,27 +59,28 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 <div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
-:::
+:::::
 
-:::{tab-item} Non-Monic Quadratics
+:::::{tab-item} Non-Monic Quadratics
 In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
+:::::
+
+:::::{tab-item} Special Binomials
+Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
+::::{tab-set}
+:::{tab-item} Test1
+Test 1
 :::
 
-:::{tab-item} Special Binomials
-Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
-:::::{tab-set}
-::::{tab-item}
-Test 1
-::::
-
-::::{tab-item}
+:::{tab-item} Test2
+Stuff
+:::
 ::::
 :::::
-:::
 
-:::{tab-item} All
+:::::{tab-item} All
 This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on *all* of the factoring tricks?
-:::
-::::
+:::::
+::::::
 
 <script src="../../_static/1-factoring.js"></script>
