@@ -53,7 +53,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand 
 Reroll {octicon}`sync;1em;sd-text-light`
 ```
 ```{hint}
-:class: dropdown
+:class: dropdown, hinty
 
 <div id='monic-hint'></div>
 ```
@@ -74,7 +74,11 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
 ::::{tab-set}
 :::{tab-item} Difference of Squares
-Test 1
+Differences of squares can be factored using:
+
+$$A^2 - B^2 = (A - B)(A + B).$$
+
+
 :::
 
 :::{tab-item} Sum/Difference of Cubes
