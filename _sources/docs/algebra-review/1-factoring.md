@@ -67,6 +67,14 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 
 :::{tab-item} Special Binomials
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
+:::::{tab-set}
+::::{tab-item}
+Test 1
+::::
+
+::::{tab-item}
+::::
+:::::
 :::
 
 :::{tab-item} All
