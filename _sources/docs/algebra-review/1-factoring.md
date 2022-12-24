@@ -37,7 +37,7 @@ Let's try to factor $x^2 + 5x + 6$.  This is a quadratic function in {term}`gene
 
 The factors of $6$ that add up to $5$ are $2, 3$ (when you multiply them, you get 6, and when you add them, you get 5).
 
-Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
+Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand side to check our answer, if we want.
 ```
 
 ````{exercise} Random Generator
@@ -51,6 +51,11 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 :class: sd-rounded-pill float-center
 
 Reroll {octicon}`sync;1em;sd-text-light`
+```
+```{hint}
+:class: dropdown
+
+<div id='monic-hint'></div>
 ```
 ````
 
@@ -68,11 +73,11 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 :::::{tab-item} Special Binomials
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
 ::::{tab-set}
-:::{tab-item} Test1
+:::{tab-item} Difference of Squares
 Test 1
 :::
 
-:::{tab-item} Test2
+:::{tab-item} Sum/Difference of Cubes
 Stuff
 :::
 ::::
