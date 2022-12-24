@@ -25,6 +25,9 @@ Let's try to factor $x^2 + 5x + 6$.  This is a quadratic function in {term}`gene
 
 Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
+```{margin}
+Remember: we chose the numbers $2$ and $3$ (which end up next to the $x$'s in the factored form) because we need **factors of $c$ that add up to $b$**.
+```
 
 ````{admonition} Experiment
 :class: tip
