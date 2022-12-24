@@ -16,5 +16,4 @@ $$a^2 + b^2 = c^2$$
 </iframe>
 
 ```{youtube} jnxqHcObNK4
-:label: wavelet-vid
 ```
