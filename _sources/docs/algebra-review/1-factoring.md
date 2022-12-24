@@ -31,8 +31,6 @@ We chose the numbers $2$ and $3$ (which end up next to the $x$'s in the {term}`f
 ````
 
 ```{prf:example}
-:label: factoring-tricks
-
 Let's try to factor $x^2 + 5x + 6$.  This is a quadratic function in {term}`general form` with $a = 1$, $b = 5$, and $c = 6$.  Since $a = 1$, we can try out the factoring trick above.  We just need to find factors of $c = 6$ that add up to $b = 5$.
 
 The factors of $6$ that add up to $5$ are $2, 3$ (when you multiply them, you get 6, and when you add them, you get 5).
@@ -52,6 +50,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand 
 
 Reroll {octicon}`sync;1em;sd-text-light`
 ```
+
 ```{hint}
 :class: dropdown
 
@@ -78,7 +77,48 @@ Differences of squares can be factored using:
 
 $$A^2 - B^2 = (A - B)(A + B).$$
 
-<div class='random' id='prompt'>test</div>
+Here's an example.
+
+````{margin}
+```{note}
+The main trick is trying to rewrite your original binomial as an $A^2 - B^2$.  Think carefully about what $A$ and $B$ are.
+```
+````
+
+```{prf:example}
+Let's try to factor $f(x) = 9x^2 - 16$.
+
+The first thing to notice is that both $9$ and $16$ are squares: $3^2$ and $4^2$.  In fact, we can rewrite the original $f(x)$ as a difference of squares.
+
+$$f(x) = 9x^2 - 16 = (3x)^2 - (4)^2.$$
+
+Now, applying the factoring trick above, we get $f(x) = (3x)^2 - (4)^2 = (3x - 4)(3x + 4)$.
+```
+
+````{exercise} Random Generator
+:label: difference-of-squares-generator
+:nonumber:
+
+<div class='random' id='prompt'>Click the Randomize button to start!</div>
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
+```{hint}
+:class: dropdown
+
+<div class='random' id='hint'></div>
+```
+````
+
+```{solution} difference-of-squares-generator
+:class: dropdown
+
+<div class='random' id='answer'>You need to generate an example with the Reroll button above first!</div>
+```
 :::
 
 :::{tab-item} Sum/Difference of Cubes
