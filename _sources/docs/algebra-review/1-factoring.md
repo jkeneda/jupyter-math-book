@@ -1,6 +1,6 @@
-# Factoring Polynomials
+# Factoring Tricks
 
-At the bottom of each tab is an exercise generator.  Practice with each type of problem until you're comfortable with the relevant tricks.
+This page is designed to walk you through all of the factoring tricks we'll need.  Each tab discusses a new factoring trick, and you can find an exercise generator at the bottom of each tab.  Practice with each type of problem until you're comfortable with the relevant trick, and then move on to the next tab!
 
 ::::{tab-set}
 
@@ -63,7 +63,7 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
 :::
 
-:::{tab-item} Practice All
+:::{tab-item} All
 This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on *all* of the factoring tricks?
 :::
 ::::
