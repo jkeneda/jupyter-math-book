@@ -105,7 +105,7 @@ Here we'll discuss factoring tricks involving a {term}`difference of squares` or
 :::{tab-item} Difference of Squares
 
 Differences of squares can be factored using:
-$$\text{ }$$
+
 $$A^2 - B^2 = (A - B)(A + B).$$
 
 Here's an example.
