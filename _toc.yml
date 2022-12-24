@@ -7,42 +7,43 @@ chapters:
   - file: docs/algebra-review/index
     sections:
     - file: docs/algebra-review/1-factoring
+    - file: docs/algebra-review/factoring-glossary
   - file: docs/business-algebra/index
     sections:
     - file: docs/business-algebra/functions/index
       options:
         numbered: true
       sections:
-      - file: docs/business-algebra/functions/1-a-relations-and-functions.md
-      - file: docs/business-algebra/functions/1-b-function-definitions.md
-      - file: docs/business-algebra/functions/1-c-graphs-of-functions.md
-      - file: docs/business-algebra/functions/2-linear-functions.md
-      - file: docs/business-algebra/functions/3-quadratic-functions.md
-      - file: docs/business-algebra/functions/4-polynomial-functions.md
-      - file: docs/business-algebra/functions/5-rational-functions.md
+      - file: docs/business-algebra/functions/1-a-relations-and-functions
+      - file: docs/business-algebra/functions/1-b-function-definitions
+      - file: docs/business-algebra/functions/1-c-graphs-of-functions
+      - file: docs/business-algebra/functions/2-linear-functions
+      - file: docs/business-algebra/functions/3-quadratic-functions
+      - file: docs/business-algebra/functions/4-polynomial-functions
+      - file: docs/business-algebra/functions/5-rational-functions
     - file: docs/business-algebra/exponentials-and-logarithms/index
       sections:
-      - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/index.md
+      - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/index
         options:
           numbered: true
         sections:
-        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/1-exponential-functions.md
-        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/2-logarithmic-functions.md
-        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/3-exp-and-log-equations.md
-        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/4-applications.md
-      - file: docs/business-algebra/exponentials-and-logarithms/finance/index.md
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/1-exponential-functions
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/2-logarithmic-functions
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/3-exp-and-log-equations
+        - file: docs/business-algebra/exponentials-and-logarithms/fundamentals/4-applications
+      - file: docs/business-algebra/exponentials-and-logarithms/finance/index
         options:
           numbered: true
         sections:
-        - file: docs/business-algebra/exponentials-and-logarithms/finance/1-simple-interest.md
-        - file: docs/business-algebra/exponentials-and-logarithms/finance/2-compound-interest.md
-        - file: docs/business-algebra/exponentials-and-logarithms/finance/3-future-value.md
-        - file: docs/business-algebra/exponentials-and-logarithms/finance/4-present-value.md
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/1-simple-interest
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/2-compound-interest
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/3-future-value
+        - file: docs/business-algebra/exponentials-and-logarithms/finance/4-present-value
     - file: docs/business-algebra/matrices-and-systems-of-equations/index
     - file: docs/business-algebra/linear-programming/index
     - file: docs/business-algebra/probability/index
       sections:
-      - file: docs/business-algebra/probability/1-probability-distributions.md
+      - file: docs/business-algebra/probability/1-probability-distributions
   - file: docs/business-calculus/index
   - file: docs/development-stuff/index
     sections:
