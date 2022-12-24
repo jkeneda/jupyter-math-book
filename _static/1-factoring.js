@@ -3,7 +3,7 @@
 
 // Functions
 
-function randomMonic (isSpecialized = True) {
+function randomMonic (isSpecialized = true) {
     // Makes prompt, hint, and answers
     let m = Math.floor(Math.random() * 20 - 10);
     let n = Math.floor(Math.random() * 20 - 10);
@@ -71,7 +71,7 @@ document.addEventListener('click', (e) => {
     
     } else if (target.closest('#all-generator')) {
 
-        randomMonic(False); // The False flag makes sure we write to the All tab
+        randomMonic(false); // The false flag makes sure we write to the All tab
 
     }
 });
