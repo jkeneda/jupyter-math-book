@@ -5,6 +5,7 @@ This page is designed to walk you through all of the factoring tricks we'll need
 ::::::{tab-set}
 
 :::::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
+
 Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
@@ -66,13 +67,43 @@ Reroll {octicon}`sync;1em;sd-text-light`
 :::::
 
 :::::{tab-item} Non-Monic Quadratics
+
 In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
+
+````{exercise} Random Generator
+:label: non-monic-generator
+:nonumber:
+
+<div class='random' id='non-monic-prompt'>Click the Randomize button to start!</div>
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
+
+```{hint}
+:class: dropdown
+
+<div class='random' id='non-monic-hint'></div>
+```
+````
+
+```{solution} non-monic-generator
+:class: dropdown
+
+<div class='random' id='non-monic-answer'>You need to generate an example with the Reroll button above first!</div>
+```
 :::::
 
 :::::{tab-item} Special Binomials
+
 Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
+
 ::::{tab-set}
 :::{tab-item} Difference of Squares
+
 Differences of squares can be factored using:
 
 $$A^2 - B^2 = (A - B)(A + B).$$
@@ -99,7 +130,7 @@ Now, applying the factoring trick above, we get $f(x) = (3x)^2 - (4)^2 = (3x - 4
 :label: difference-of-squares-generator
 :nonumber:
 
-<div class='random' id='prompt'>Click the Randomize button to start!</div>
+<div class='random' id='difference-of-squares-prompt'>Click the Randomize button to start!</div>
 
 ```{button-ref} #
 :color: info
@@ -110,24 +141,58 @@ Reroll {octicon}`sync;1em;sd-text-light`
 ```{hint}
 :class: dropdown
 
-<div class='random' id='hint'></div>
+<div class='random' id='difference-of-squares-hint'></div>
 ```
 ````
 
 ```{solution} difference-of-squares-generator
 :class: dropdown
 
-<div class='random' id='answer'>You need to generate an example with the Reroll button above first!</div>
+<div class='random' id='difference-of-squares-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
 :::
 
 :::{tab-item} Sum/Difference of Cubes
-Stuff
+
+There are also factoring tricks for sums/differences of cubes.
+
+$$A^3 - B^3 = (A - B)(A^2 + AB + B^2)$$
+
+$$A^3 + B^3 = (A + B)(A^2 - AB + B^2)$$
+
+Try some for yourself.
+
+````{exercise} Random Generator
+:label: cube-generator
+:nonumber:
+
+<div class='random' id='cube-prompt'>Click the Randomize button to start!</div>
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
+
+```{hint}
+:class: dropdown
+
+<div class='random' id='cube-hint'></div>
+```
+````
+
+```{solution} cube-generator
+:class: dropdown
+
+<div class='random' id='cube-answer'>You need to generate an example with the Reroll button above first!</div>
+```
 :::
 ::::
 :::::
 
 :::::{tab-item} All
+
 This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on *all* of the factoring tricks?
 
 ````{exercise} Random Generator
