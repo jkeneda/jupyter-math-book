@@ -34,8 +34,8 @@ The factors of $6$ that add up to $5$ are $2, 3$ (when you multiply them, you ge
 Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
 
-````{admonition} Experiment
-:class: tip
+````{exercise} Exercise Generator
+:label: monic-generator
 
 <div id='monic-prompt'>Click the Randomize button to start!</div>
 
@@ -45,13 +45,13 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 
 Reroll {octicon}`sync;1em;sd-text-light`
 ```
+````
 
-```{admonition} Answer
-:class: note, dropdown
+```{solution} monic-generator
+:class: dropdown
 
 <div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
-````
 :::
 
 :::{tab-item} Non-Monic Quadratics
