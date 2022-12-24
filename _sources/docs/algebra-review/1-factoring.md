@@ -104,9 +104,7 @@ Here we'll discuss factoring tricks involving a {term}`difference of squares` or
 ::::{tab-set}
 :::{tab-item} Difference of Squares
 
-Differences of squares can be factored using:
-
-$$ test $$
+Differences of squares can be factored using: $ $
 
 $$A^2 - B^2 = (A - B)(A + B).$$
 
