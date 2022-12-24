@@ -10,7 +10,7 @@ Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
 
 When factoring, we want to reverse this pattern.  Given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  To go from the right side to the left in the formula above, we need three things to work out:
-- The {term}`leading coefficient` $a$ needs to be 1.  The trick only works on $x^2 + bx + c$, not on $7x^2 + bx + c$.
+- The {term}`leading coefficient` $a$ needs to be 1.  A polynomial whose {term}`leading coefficient` is 1 is called {term}`monic`.  The word comes from the Greek 'mono', meaning 'one'.  In other words, this trick only works on things like $x^2 + bx + c$, not on $7x^2 + bx + c$ or $-2x^2 + bx + c$.
 - The **sum** of $m$ and $n$ needs to be $b$
 - The **product** of $m$ and $n$ needs to be $c$.
 
@@ -44,18 +44,9 @@ Reroll {octicon}`sync;1em;sd-text-light`
 <div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 ```
 ````
-
-```{mermaid}
-    flowchart TD
-    A[Start] --> B{Is it?}
-    B -- Yes --> C[OK]
-    C --> D[Rethink]
-    D --> B
-    B -- No ----> E[End]
-```
 :::
 
-:::{tab-item} Zoom Out
+:::{tab-item} Non-Monic Quadratics
 :::
 
 :::{tab-item} Zoom Wide
@@ -66,6 +57,8 @@ more content
 ```{glossary}
 FOIL
     **FOIL** stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: $(a+b)(c+d) = ac + ad + bc + bd$.
+monic
+    A polynomial is called **monic** if its {term}`leading coefficient` is 1.  For quadratics of the form $ax^2 + bx + c$, this means $a = 1$.
 ```
 
 <script src="../../_static/1-factoring.js"></script>

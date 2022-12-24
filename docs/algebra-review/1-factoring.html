@@ -512,15 +512,15 @@ title="Print to PDF"
 <h1>Factoring Polynomials<a class="headerlink" href="#factoring-polynomials" title="Permalink to this headline">#</a></h1>
 <p>Here is an exercise generator.  Practice with each type of problem until you’re comfortable with the relevant tricks.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="75da0a1e-cc1d-4896-b492-cfa6b4d84745" name="b2ad5b81-5993-473e-a3ab-e72967c3aae1" type="radio">
-</input><label class="sd-tab-label" for="75da0a1e-cc1d-4896-b492-cfa6b4d84745">
+<input checked="checked" id="34938a78-0276-4905-88f4-55f0e0901753" name="c057ac4e-e0a6-4691-b60d-0d79ab24ed18" type="radio">
+</input><label class="sd-tab-label" for="34938a78-0276-4905-88f4-55f0e0901753">
 Monic Quadratics (<span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>)</label><div class="sd-tab-content docutils">
 <p>Note that if we <a class="reference internal" href="#term-FOIL"><span class="xref std std-term">FOIL</span></a> the expression <span class="math notranslate nohighlight">\((x+m)(x+n)\)</span>, then we get:</p>
 <div class="math notranslate nohighlight">
 \[(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.\]</div>
 <p>When factoring, we want to reverse this pattern.  Given an <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>, we’d like to find the numbers <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> so that <span class="math notranslate nohighlight">\(x^2 + bx + c = (x+m)(x+n)\)</span>.  To go from the right side to the left in the formula above, we need three things to work out:</p>
 <ul class="simple">
-<li><p>The <a class="reference internal" href="../business-algebra/functions/4-polynomial-functions.html#term-leading-coefficient"><span class="xref std std-term">leading coefficient</span></a> <span class="math notranslate nohighlight">\(a\)</span> needs to be 1.  The trick only works on <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>, not on <span class="math notranslate nohighlight">\(7x^2 + bx + c\)</span>.</p></li>
+<li><p>The <a class="reference internal" href="../business-algebra/functions/4-polynomial-functions.html#term-leading-coefficient"><span class="xref std std-term">leading coefficient</span></a> <span class="math notranslate nohighlight">\(a\)</span> needs to be 1.  A polynomial whose <a class="reference internal" href="../business-algebra/functions/4-polynomial-functions.html#term-leading-coefficient"><span class="xref std std-term">leading coefficient</span></a> is 1 is called <a class="reference internal" href="#term-monic"><span class="xref std std-term">monic</span></a>.  The word comes from the Greek ‘mono’, meaning ‘one’.  In other words, this trick only works on things like <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>, not on <span class="math notranslate nohighlight">\(7x^2 + bx + c\)</span> or <span class="math notranslate nohighlight">\(-2x^2 + bx + c\)</span>.</p></li>
 <li><p>The <strong>sum</strong> of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> needs to be <span class="math notranslate nohighlight">\(b\)</span></p></li>
 <li><p>The <strong>product</strong> of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> needs to be <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
 </ul>
@@ -541,22 +541,17 @@ Monic Quadratics (<span class="math notranslate nohighlight">\(x^2 + bx + c\)</s
 <div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
 </div>
 </div>
-<div class="mermaid">
-                flowchart TD
-    A[Start] --&gt; B{Is it?}
-    B -- Yes --&gt; C[OK]
-    C --&gt; D[Rethink]
-    D --&gt; B
-    B -- No ----&gt; E[End]
-        </div></div>
-<input id="90105ab8-d255-46cf-bc54-f6fc9dec02d1" name="b2ad5b81-5993-473e-a3ab-e72967c3aae1" type="radio">
-</input><label class="sd-tab-label" for="90105ab8-d255-46cf-bc54-f6fc9dec02d1">
+</div>
+<input id="4dcf3e87-907c-4ebe-b8c3-eedaf4d3452c" name="c057ac4e-e0a6-4691-b60d-0d79ab24ed18" type="radio">
+</input><label class="sd-tab-label" for="4dcf3e87-907c-4ebe-b8c3-eedaf4d3452c">
 Zoom Wide</label><div class="sd-tab-content docutils">
 <p>more content</p>
 </div>
 </div>
 <dl class="glossary simple">
 <dt id="term-FOIL">FOIL<a class="headerlink" href="#term-FOIL" title="Permalink to this term">#</a></dt><dd><p><strong>FOIL</strong> stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: <span class="math notranslate nohighlight">\((a+b)(c+d) = ac + ad + bc + bd\)</span>.</p>
+</dd>
+<dt id="term-monic">monic<a class="headerlink" href="#term-monic" title="Permalink to this term">#</a></dt><dd><p>A polynomial is called <strong>monic</strong> if its <a class="reference internal" href="../business-algebra/functions/4-polynomial-functions.html#term-leading-coefficient"><span class="xref std std-term">leading coefficient</span></a> is 1.  For quadratics of the form <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>, this means <span class="math notranslate nohighlight">\(a = 1\)</span>.</p>
 </dd>
 </dl>
 <script src="../../_static/1-factoring.js"></script></section>
