@@ -9,10 +9,11 @@ Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
 
-When factoring, we want to reverse this pattern.  Given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  To go from the right side to the left in the formula above, we need three things to work out:
+When factoring, we want to reverse this pattern: given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  To go from the $ax^2 + bx + c$ form to the {term}`factored form`, we need a few things to work out:
 - The {term}`leading coefficient` $a$ needs to be 1.  A polynomial whose {term}`leading coefficient` is 1 is called {term}`monic`.  The word comes from the Greek 'mono', meaning 'one'.  In other words, this trick only works on things like $x^2 + bx + c$, not on $7x^2 + bx + c$ or $-2x^2 + bx + c$.
-- The **sum** of $m$ and $n$ needs to be $b$
-- The **product** of $m$ and $n$ needs to be $c$.
+- We're looking for two numbers, $m$ and $n$, but they have to add up/multiply to the right things:
+    - The **sum** of $m$ and $n$ needs to be $b$
+    - The **product** of $m$ and $n$ needs to be $c$.
 
 In other words, ***we're looking for factors of $c$ that add up to $b$***.
 
@@ -20,7 +21,7 @@ Here's an example.
 
 ````{margin}
 ```{note}
-We chose the numbers $2$ and $3$ (which end up next to the $x$'s in the factored form) because we need **factors of $c$ that add up to $b$**.
+We chose the numbers $2$ and $3$ (which end up next to the $x$'s in the {term}`factored form`) because we need **factors of $c$ that add up to $b$**.
 ```
 ````
 
