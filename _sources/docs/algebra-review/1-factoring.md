@@ -44,7 +44,7 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand 
 :label: monic-generator
 :nonumber:
 
-<div id='monic-prompt' class='randomy'>Click the Randomize button to start!</div>
+<div class='random' id='prompt'>Click the Randomize button to start!</div>
 
 ```{button-ref} #
 :color: info
@@ -53,16 +53,16 @@ Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.  We can {term}`FOIL` the right-hand 
 Reroll {octicon}`sync;1em;sd-text-light`
 ```
 ```{hint}
-:class: dropdown, random
+:class: dropdown
 
-<div id='monic-hint'></div>
+<div class='random' id='hint'></div>
 ```
 ````
 
 ```{solution} monic-generator
 :class: dropdown
 
-<div id='monic-answer'>You need to generate an example with the Reroll button above first!</div>
+<div class='random' id='answer'>You need to generate an example with the Reroll button above first!</div>
 ```
 :::::
 
