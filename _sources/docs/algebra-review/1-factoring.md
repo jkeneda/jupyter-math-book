@@ -78,7 +78,7 @@ Differences of squares can be factored using:
 
 $$A^2 - B^2 = (A - B)(A + B).$$
 
-
+<div class='random' id='prompt'>test</div>
 :::
 
 :::{tab-item} Sum/Difference of Cubes
