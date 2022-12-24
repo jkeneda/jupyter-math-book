@@ -84,17 +84,28 @@ document.addEventListener('click', (e) => {
     const target = e.target.closest('.sd-btn-info');
 
     if (target.closest('#monic-generator')) {
-        console.log('Got initial call.');
+        
         randomMonic();
 
     } else if (target.closest('#non-monic-generator')) {
 
-    } else if (target.closest('#special-generator')) {
-    
+    } else if (target.closest('#difference-of-squares-generator')) {
+        
+        randomDoS();
+
     } else if (target.closest('#all-generator')) {
 
-        randomMonic(false); // The false flag makes sure we write to the All tab
+        let n = 2; // Number of randomizers implemented
+        let c = Math.floor(Math.random() * n);
 
+        switch (c) {
+            case 0:
+                randomMonic(false); // The false flag makes sure we write to the All tab
+                break;
+            case 1:
+                randomDoS(false);
+                break;
+        }
     }
 });
 
