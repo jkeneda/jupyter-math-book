@@ -34,8 +34,9 @@ The factors of $6$ that add up to $5$ are $2, 3$ (when you multiply them, you ge
 Therefore, $x^2 + 5x + 6 = (x + 2)(x + 3)$.
 ```
 
-````{exercise} Exercise Generator
+````{exercise} Random Generator
 :label: monic-generator
+:nonumber:
 
 <div id='monic-prompt'>Click the Randomize button to start!</div>
 
