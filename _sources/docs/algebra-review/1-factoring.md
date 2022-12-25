@@ -106,7 +106,11 @@ Here we'll discuss factoring tricks involving a {term}`difference of squares` or
 
 Differences of squares can be factored using:
 
-$$A^2 - B^2 = (A - B)(A + B).$$
+```{math}
+:label: difference-of-squares
+
+A^2 - B^2 = (A - B)(A + B).
+```
 
 Here's an example.
 
@@ -123,7 +127,7 @@ The first thing to notice is that both $9$ and $16$ are squares: $3^2$ and $4^2$
 
 $$f(x) = 9x^2 - 16 = (3x)^2 - (4)^2.$$
 
-Now, applying the factoring trick above, we get $f(x) = (3x)^2 - (4)^2 = (3x - 4)(3x + 4)$.
+Now, applying the factoring trick {eq}`difference-of-squares` above, we get $f(x) = (3x)^2 - (4)^2 = (3x - 4)(3x + 4)$.
 ```
 
 ````{exercise} Random Generator
