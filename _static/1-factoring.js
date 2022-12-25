@@ -33,9 +33,14 @@ function randomMonic (isSpecialized = true) {
 
     let prompt = `Factor \\(x^2 ${middleTerm(m + n)} ${lastTerm(m*n)}\\).`;
     let hint = `Can you think of factors of \\(${m*n}\\) that add up to \\(${m + n}\\)?`;
-    let answer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ${m + n}\\), and \\(c = ${m*n}\\).  Since \\(a = 1\\), this quadratic is monic and we can try out the factoring trick above.  We just need to find factors of \\(c = ${m*n}\\) that add up to \\(b = ${m + n}\\).<br/><br/>
+    let localanswer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ${m + n}\\), and \\(c = ${m*n}\\).  Since \\(a = 1\\), this quadratic is monic and we can try out the factoring trick above.  We just need to find factors of \\(c = ${m*n}\\) that add up to \\(b = ${m + n}\\).<br/><br/>
     
-    The factors of \\(${m*n}\\) that add up to \\(${m + n}\\) are: \\(${m}\\), \\(${n}\\).<br/><br/>
+    The factors of \\(${m*n}\\) that add up to \\(${m + n}\\) are: \\(${m}, ${n}\\).<br/><br/>
+    
+    Therefore, \\(x^2 ${middleTerm(m + n)} ${lastTerm(m*n)} = (x ${lastTerm(m)})(x ${lastTerm(n)})\\).`;
+    let answer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = 1\\), \\(b = ${m + n}\\), and \\(c = ${m*n}\\).  Since \\(a = 1\\), this quadratic is monic and we can try out the monic factoring trick.  We just need to find factors of \\(c = ${m*n}\\) that add up to \\(b = ${m + n}\\).<br/><br/>
+    
+    The factors of \\(${m*n}\\) that add up to \\(${m + n}\\) are: \\(${m}, ${n}\\).<br/><br/>
     
     Therefore, \\(x^2 ${middleTerm(m + n)} ${lastTerm(m*n)} = (x ${lastTerm(m)})(x ${lastTerm(n)})\\).`;
     
@@ -43,7 +48,7 @@ function randomMonic (isSpecialized = true) {
     if (isSpecialized) {
         document.getElementById('monic-prompt').innerHTML = prompt;
         document.getElementById('monic-hint').innerHTML = hint;
-        document.getElementById('monic-answer').innerHTML = answer;
+        document.getElementById('monic-answer').innerHTML = localanswer;
     } else {
         document.getElementById('all-prompt').innerHTML = prompt;
         document.getElementById('all-hint').innerHTML = hint;
