@@ -183,9 +183,8 @@ The first thing to notice is that $27$ and $64$ are cubes: $27 = 3^3$ and $64 = 
 
 $$f(x) = 27x^3 + 64 = (3x)^3 + (4)^3.$$
 
-Now, applying the factoring trick {eq}`sum-and-difference-of-cubes` above, we get $f(x) = (3x)^3 + (4)^3 = (3x + 4)((3x)^2 - (3x)(4) + (4)^2) = (3x + 4)(9x^2 - 12x + 16)$.
+Now, applying the factoring trick {eq}`sum-and-difference-of-cubes` above (specifically, the top formula, since this is a sum of cubes), we get $f(x) = (3x)^3 + (4)^3 &= (3x + 4)((3x)^2 - (3x)(4) + (4)^2)\\ &= (3x + 4)(9x^2 - 12x + 16)$.
 ```
-Try some for yourself.
 
 ````{margin}
 ```{note}
@@ -204,6 +203,9 @@ The following cubes might be helpful to you:
 | $10$ | $1000$ |
 ```
 ````
+
+Try some for yourself.
+
 ````{exercise} Random Generator
 :label: cube-generator
 :nonumber:
