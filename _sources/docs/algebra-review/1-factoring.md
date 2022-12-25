@@ -99,7 +99,7 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 :::::{tab-item} Special Binomials
 
-Here we'll discuss factoring tricks involving a {term}`difference of squares` or sums/differences of cubes.
+Here we'll discuss factoring tricks involving a {term}`difference of squares` or {term}`sums/differences of cubes`.
 
 ::::{tab-set}
 :::{tab-item} Difference of Squares
@@ -116,7 +116,7 @@ Here's an example.
 
 ````{margin}
 ```{note}
-The main trick is trying to rewrite your original binomial as an $A^2 - B^2$.  Think carefully about what $A$ and $B$ are.
+The main trick is trying to rewrite your original binomial as an $A^2 - B^2$.  Think carefully about what $A$ and $B$ are!
 ```
 ````
 
@@ -162,13 +162,48 @@ There are also factoring tricks for sums/differences of cubes.
 
 ```{math}
 :label: sum-and-difference-of-cubes
-A^3 - B^3 = (A - B)(A^2 + AB + B^2)\\\\
 
 A^3 + B^3 = (A + B)(A^2 - AB + B^2)
+\\\\
+A^3 - B^3 = (A - B)(A^2 + AB + B^2)
 ```
 
+Here's an example.
+
+````{margin}
+```{note}
+The main trick is trying to rewrite your original binomial as an $A^3 - B^3$.  Think carefully about what $A$ and $B$ are!
+```
+````
+
+```{prf:example}
+Let's try to factor $f(x) = 27x^3 + 64$.
+
+The first thing to notice is that $27$ and $64$ are cubes: $27 = 3^3$ and $64 = 4^3$.  In fact, we can rewrite the original $f(x)$ as a sum of cubes.
+
+$$f(x) = 27x^3 + 64 = (3x)^3 + (4)^3.$$
+
+Now, applying the factoring trick {eq}`sum-and-difference-of-cubes` above, we get $f(x) = (3x)^3 + (4)^3 = (3x + 4)((3x)^2 - (3x)(4) + (4)^2) = (3x + 4)(9x^2 - 12x + 16)$.
+```
 Try some for yourself.
 
+````{margin}
+```{note}
+The following cubes might be helpful to you:
+| $n$ | $n^3$|
+|:---:|:----:|
+| $1$ | $1$ |
+| $2$ | $8$ |
+| $3$ | $27$ |
+| $4$ | $64$ |
+| $5$ | $125$ |
+| $6$ | $216$ |
+| $7$ | $343$ |
+| $8$ | $512$ |
+| $9$ | $729$ |
+| $10$ | $1000$ |
+```
+````
 ````{exercise} Random Generator
 :label: cube-generator
 :nonumber:

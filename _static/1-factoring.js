@@ -2,7 +2,6 @@
 // Requires some Ids and MathJax
 
 // Functions
-
 function randomCube (isSpecialized = true) {
     // Makes prompt, hint, and answers
     let m = Math.floor(Math.random() * 9 + 2); // 2 through 10
@@ -11,13 +10,13 @@ function randomCube (isSpecialized = true) {
     let prompt = `Factor \\(${m*m}x^2 - ${n*n}\\).`;
     let hint = `Can you rewrite \\(${m*m}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
     let localanswer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
-    let answer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula \\(A^2 - B^2 = (A - B)(A + B)\\). \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
+    let answer = ``;
     
     // Write to correct DOM elements
     if (isSpecialized) {
-        document.getElementById('difference-of-squares-prompt').innerHTML = prompt;
-        document.getElementById('difference-of-squares-hint').innerHTML = hint;
-        document.getElementById('difference-of-squares-answer').innerHTML = localanswer;
+        document.getElementById('cube-prompt').innerHTML = prompt;
+        document.getElementById('cube-hint').innerHTML = hint;
+        document.getElementById('cube-answer').innerHTML = localanswer;
     } else {
         document.getElementById('all-prompt').innerHTML = prompt;
         document.getElementById('all-hint').innerHTML = hint;
@@ -112,9 +111,7 @@ function lastTerm (b) {
 }
 
 // Delegated Event Listening (tip from https://stackoverflow.com/questions/34896106/attach-event-to-dynamic-elements-in-javascript)
-// Warning: interprets info buttons as randomizers
-
-// Issue: currently randomizes in previous tab instead of current tab.  Might need to just do class selectors instead of id's?  It seems to find the initial prompt/hint/answer id's and bind to them.
+// Warning: interprets sd-btn-info buttons as randomizers
 document.addEventListener('click', (e) => {
     const target = e.target.closest('.sd-btn-info');
 
@@ -128,9 +125,13 @@ document.addEventListener('click', (e) => {
         
         randomDoS();
 
+    } else if (target.closest('#cube-generator')) {
+
+        randomCube();
+
     } else if (target.closest('#all-generator')) {
 
-        let n = 2; // Number of randomizers implemented
+        let n = 3; // Number of randomizers implemented
         let c = Math.floor(Math.random() * n);
 
         switch (c) {
@@ -139,6 +140,9 @@ document.addEventListener('click', (e) => {
                 break;
             case 1:
                 randomDoS(false);
+                break;
+            case 2:
+                randomCube(false);
                 break;
         }
     }
