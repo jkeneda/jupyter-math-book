@@ -9,8 +9,8 @@ function randomCube (isSpecialized = true) {
     let b = Math.sign(Math.random() - 0.5); // +1 or -1 randomly
 
     let prompt = `Factor \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\).`;
-    let hint = `Can you rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as an \\(A^3 ${sign2pm(b)} B^3\\)?`;
-    let localanswer = `We can rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as a ${(b + 1) ? 'sum' : 'difference'} of cubes and then use the relevant factoring formula <a class="reference internal" href="#equation-sum-and-difference-of-cubes">(2)</a> above. \\[${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3} = (${forgetOne(m)}x)^3 ${sign2pm(b)} (${n})^3 = (${forgetOne(m)}x ${sign2pm(b)} ${n})((${forgetOne(m)}x)^2 ${sign2pm(-b)} (${forgetOne(m)}x)(${n}) + (${n})^2)\\]`;
+    let hint = `Can you rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as an \\(A^3 ${sign2pm(b)} B^3\\)?${isSpecialized ? ' See the table to the right for help.' : ''}`;
+    let localanswer = `We can rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as a ${(b + 1) ? 'sum' : 'difference'} of cubes and then use the relevant factoring formula <a class="reference internal" href="#equation-sum-and-difference-of-cubes">(2)</a> above. \\[${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3} = (${forgetOne(m)}x)^3 ${sign2pm(b)} (${n})^3 = (${forgetOne(m)}x ${sign2pm(b)} ${n})((${forgetOne(m)}x)^2 ${sign2pm(-b)} (${forgetOne(m)}x)(${n}) + (${n})^2).\\]  Technically, the last expression is a factored form for \\(f(x)\\), which is what we wanted, but it's typical to clean this last part up: \\[f(x) = (${forgetOne(m)}x ${sign2pm(b)} ${n})(${forgetOne(m**2)}x^2 ${sign2pm(-b)} ${forgetOne(m*n)}x + ${n**2}).\\]`;
     let answer = ``;
 
     // Write to correct DOM elements
@@ -34,7 +34,7 @@ function randomDoS (isSpecialized = true) {
 
     let prompt = `Factor \\(${forgetOne(m*m)}x^2 - ${n*n}\\).`;
     let hint = `Can you rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
-    let localanswer = `We can rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${forgetOne(m*m)}x^2 - ${n*n} = (${forgetOne(m)}x)^2 - (${n})^2 = (${forgetOne(m)}x - ${n})(${m}x + ${n})\\]`;
+    let localanswer = `We can rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${forgetOne(m*m)}x^2 - ${n*n} = (${forgetOne(m)}x)^2 - (${n})^2 = (${forgetOne(m)}x - ${n})(${forgetOne(m)}x + ${n})\\]`;
     let answer = `We can rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula \\(A^2 - B^2 = (A - B)(A + B)\\). \\[${forgetOne(m*m)}x^2 - ${n*n} = (${forgetOne(m)}x)^2 - (${n})^2 = (${forgetOne(m)}x - ${n})(${forgetOne(m)}x + ${n})\\]`;
     
     // Write to correct DOM elements
