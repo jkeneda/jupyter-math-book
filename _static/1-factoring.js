@@ -8,9 +8,9 @@ function randomDoS (isSpecialized = true) {
     let m = Math.floor(Math.random() * 10 + 1);
     let n = Math.floor(Math.random() * 10 + 1);
 
-    let prompt = 'Factor \\(' + (m*m) + 'x^2 - ' + (n*n) + '\\).';
+    let prompt = `Factor \\(${m*m}x^2 - ${n*n}\\).`;
     let hint = 'Can you rewrite \\(' + (m*m) + 'x^2 - ' + (n*n) + '\\) as an \\(A^2 - B^2\\)?';
-    let answer = 'We can rewrite \\(' + (m*m) + 'x^2 - ' + (n*n) + '\\) as a difference of squares and then use the factoring formula above. \\[' + (m*m) + 'x^2 - ' + (n*n) + ' = (' + m + 'x)^2 - (' + n + ')^2 = (' + m + 'x - ' + n + ')(' + m + 'x + ' + n + ')\\]';
+    let answer = 'We can rewrite \\(' + (m*m) + 'x^2 - ' + (n*n) + '\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[' + (m*m) + 'x^2 - ' + (n*n) + ' = (' + m + 'x)^2 - (' + n + ')^2 = (' + m + 'x - ' + n + ')(' + m + 'x + ' + n + ')\\]';
     
     // Write to correct DOM elements
     if (isSpecialized) {
