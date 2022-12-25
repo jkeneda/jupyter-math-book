@@ -99,7 +99,7 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 :::::{tab-item} Special Binomials
 
-Here we'll discuss factoring tricks involving a {term}`difference of squares` or {term}`sums/differences of cubes`.
+Here we'll discuss factoring tricks involving a {term}`difference of squares` or a {term}`sum/difference of cubes`.
 
 ::::{tab-set}
 :::{tab-item} Difference of Squares
@@ -187,7 +187,7 @@ Now, applying the factoring trick {eq}`sum-and-difference-of-cubes` above (speci
 
 $$
 \begin{align*}
-f(x) = (3x)^3 + (4)^3 &= (3x + 4)((3x)^2 - (3x)(4) + (4)^2) && \text{(fatoring trick)}\\ 
+f(x) = (3x)^3 + (4)^3 &= (3x + 4)((3x)^2 - (3x)(4) + (4)^2) && \text{(factoring trick)}\\ 
 &= (3x + 4)(9x^2 - 12x + 16). && \text{(clean up)}
 \end{align*}
 $$
