@@ -1,5 +1,9 @@
 # Factoring Tricks
-
+````{margin}
+```{warning}
+The randomized examples aren't smart enough to spot common factors.  For example, if you were asked to factor $9x^2 - 9$, it's best to start by factoring out the common factor of $9$.  The solutions for the randomizer will ignore this step - they're only going to focus on the factoring tricks provided on this page.
+```
+````
 This page is designed to walk you through all of the factoring tricks we'll need.  Each tab discusses a new factoring trick, and you can find an exercise generator at the bottom of each tab.  Practice with each type of problem until you're comfortable with the relevant trick, and then move on to the next tab!
 
 ::::::{tab-set}
