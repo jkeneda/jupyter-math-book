@@ -10,7 +10,7 @@ Note that if we {term}`FOIL` the expression $(x+m)(x+n)$, then we get:
 
 $$(x+m)(x+n) = x^2 + nx + mx + mn = x^2 + \underbrace{(m+n)}_{b} x + \underbrace{(mn)}_{c}.$$
 
-When factoring, we want to reverse this pattern: given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  But to go from the $ax^2 + bx + c$ form back to the {term}`factored form` $(x + m)(x + n)$, we need a few things to work out:
+When factoring, we want to reverse this pattern.  That is, given an $x^2 + bx + c$, we'd like to find the numbers $m$ and $n$ so that $x^2 + bx + c = (x+m)(x+n)$.  But to go from the $ax^2 + bx + c$ form back to the {term}`factored form` $(x + m)(x + n)$, we need a few things to work out:
 ````{margin}
 ```{note}
 A polynomial whose {term}`leading coefficient` is 1 is called {term}`monic`.  The word {term}`monic` comes from the Greek 'mono', meaning 'one'.
@@ -23,7 +23,9 @@ A polynomial whose {term}`leading coefficient` is 1 is called {term}`monic`.  Th
 
 In other words, ***we're looking for factors of $c$ that add up to $b$***.
 
-If we can find numbers $m, n$ with $m\cdot n = c$ and $m + n = b$, then the original function will factor like $(x + m)(x + n)$.  To make things more concrete, here's an example.
+If we can find numbers $m, n$ with $m\cdot n = c$ and $m + n = b$, then the original function will factor like $x^2 + bx + c = (x + m)(x + n)$.
+
+To make things more concrete, here's an example.
 
 ````{margin}
 ```{note}
