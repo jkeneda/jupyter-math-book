@@ -4,14 +4,15 @@
 // Functions
 function randomCube (isSpecialized = true) {
     // Makes prompt, hint, and answers
-    let m = Math.floor(Math.random() * 9 + 2); // 2 through 10
-    let n = Math.floor(Math.random() * 10 + 1); // 1 through 10
+    let m = Math.floor(Math.random() * 10 + 1); // 1 through 10
+    let n = Math.floor(Math.random() * 10 + 1);
+    let b = Math.sign(Math.random() - 0.5); // +1 or -1 randomly
 
-    let prompt = `Factor \\(${m*m}x^2 - ${n*n}\\).`;
-    let hint = `Can you rewrite \\(${m*m}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
-    let localanswer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
+    let prompt = `Factor \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\).`;
+    let hint = `Can you rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as an \\(A^3 ${sign2pm(b)} B^3\\)?`;
+    let localanswer = `We can rewrite \\(${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3}\\) as a ${(b + 1) ? 'sum' : 'difference'} of cubes and then use the relevant factoring formula <a class="reference internal" href="#equation-sum-and-difference-of-cubes">(2)</a> above. \\[${forgetOne(m**3)}x^3 ${sign2pm(b)} ${n**3} = (${forgetOne(m)}x)^3 ${sign2pm(b)} (${n})^3 = (${forgetOne(m)}x ${sign2pm(b)} ${n})((${forgetOne(m)}x)^2 ${sign2pm(-b)} (${forgetOne(m)}x)(${n}) + (${n})^2)\\]`;
     let answer = ``;
-    
+
     // Write to correct DOM elements
     if (isSpecialized) {
         document.getElementById('cube-prompt').innerHTML = prompt;
@@ -28,13 +29,13 @@ function randomCube (isSpecialized = true) {
 
 function randomDoS (isSpecialized = true) {
     // Makes prompt, hint, and answers
-    let m = Math.floor(Math.random() * 9 + 2); // 2 through 10
-    let n = Math.floor(Math.random() * 10 + 1); // 1 through 10
+    let m = Math.floor(Math.random() * 10 + 1); // 1 through 10
+    let n = Math.floor(Math.random() * 10 + 1);
 
-    let prompt = `Factor \\(${m*m}x^2 - ${n*n}\\).`;
-    let hint = `Can you rewrite \\(${m*m}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
-    let localanswer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
-    let answer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula \\(A^2 - B^2 = (A - B)(A + B)\\). \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
+    let prompt = `Factor \\(${forgetOne(m*m)}x^2 - ${n*n}\\).`;
+    let hint = `Can you rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
+    let localanswer = `We can rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${forgetOne(m*m)}x^2 - ${n*n} = (${forgetOne(m)}x)^2 - (${n})^2 = (${forgetOne(m)}x - ${n})(${m}x + ${n})\\]`;
+    let answer = `We can rewrite \\(${forgetOne(m*m)}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula \\(A^2 - B^2 = (A - B)(A + B)\\). \\[${forgetOne(m*m)}x^2 - ${n*n} = (${forgetOne(m)}x)^2 - (${n})^2 = (${forgetOne(m)}x - ${n})(${forgetOne(m)}x + ${n})\\]`;
     
     // Write to correct DOM elements
     if (isSpecialized) {
@@ -89,6 +90,14 @@ function sign2pm (a) {
         return '+';
     } else {
         return '';
+    }
+}
+
+function forgetOne (n) {
+    if (n == 1) {
+        return '';
+    } else {
+        return n;
     }
 }
 
