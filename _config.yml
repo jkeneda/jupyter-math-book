@@ -46,6 +46,7 @@ sphinx:
     - sphinx_exercise
     - sphinx_proof
     - sphinxcontrib.mermaid
+    - sphinxcontrib.youtube
     
 parse:
   myst_enable_extensions:

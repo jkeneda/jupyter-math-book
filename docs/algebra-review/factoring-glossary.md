@@ -9,4 +9,6 @@ FOIL
     **FOIL** stands for First, Outer, Inner, Last.  It represents the four products that you get when expanding a product of binomials: $(a+b)(c+d) = ac + ad + bc + bd$.
 monic
     A polynomial is called **monic** if its {term}`leading coefficient` is 1.  For quadratics of the form $ax^2 + bx + c$, this means $a = 1$.
+sum/difference of cubes
+    A **sum/difference of cubes** is a sum/difference where both terms are cubes: $A^3 + B^3$ or $A^3 - B^3$.  In these cases, we can always factor, since $A^3 \pm B^3 = (A \pm B)(A^2 \mp AB + B^2)$.
 ```
