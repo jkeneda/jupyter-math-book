@@ -3,6 +3,30 @@
 
 // Functions
 
+function randomCube (isSpecialized = true) {
+    // Makes prompt, hint, and answers
+    let m = Math.floor(Math.random() * 9 + 2); // 2 through 10
+    let n = Math.floor(Math.random() * 10 + 1); // 1 through 10
+
+    let prompt = `Factor \\(${m*m}x^2 - ${n*n}\\).`;
+    let hint = `Can you rewrite \\(${m*m}x^2 - ${n*n}\\) as an \\(A^2 - B^2\\)?`;
+    let localanswer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula <a class="reference internal" href="#equation-difference-of-squares">(1)</a> above. \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
+    let answer = `We can rewrite \\(${m*m}x^2 - ${n*n}\\) as a difference of squares and then use the factoring formula \\(A^2 - B^2 = (A - B)(A + B)\\). \\[${m*m}x^2 - ${n*n} = (${m}x)^2 - (${n})^2 = (${m}x - ${n})(${m}x + ${n})\\]`;
+    
+    // Write to correct DOM elements
+    if (isSpecialized) {
+        document.getElementById('difference-of-squares-prompt').innerHTML = prompt;
+        document.getElementById('difference-of-squares-hint').innerHTML = hint;
+        document.getElementById('difference-of-squares-answer').innerHTML = localanswer;
+    } else {
+        document.getElementById('all-prompt').innerHTML = prompt;
+        document.getElementById('all-hint').innerHTML = hint;
+        document.getElementById('all-answer').innerHTML = answer;
+    }
+
+    MathJax.typeset(['.random']);
+}
+
 function randomDoS (isSpecialized = true) {
     // Makes prompt, hint, and answers
     let m = Math.floor(Math.random() * 9 + 2); // 2 through 10
@@ -26,6 +50,7 @@ function randomDoS (isSpecialized = true) {
 
     MathJax.typeset(['.random']);
 }
+
 function randomMonic (isSpecialized = true) {
     // Makes prompt, hint, and answers
     let m = Math.floor(Math.random() * 21 - 10); // -10 through 10

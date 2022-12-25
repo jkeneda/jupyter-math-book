@@ -160,9 +160,12 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 There are also factoring tricks for sums/differences of cubes.
 
-$$A^3 - B^3 = (A - B)(A^2 + AB + B^2)$$
+```{math}
+:label: sum-and-difference-of-cubes
+A^3 - B^3 = (A - B)(A^2 + AB + B^2)
 
-$$A^3 + B^3 = (A + B)(A^2 - AB + B^2)$$
+A^3 + B^3 = (A + B)(A^2 - AB + B^2)
+```
 
 Try some for yourself.
 
