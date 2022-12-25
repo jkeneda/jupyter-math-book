@@ -275,10 +275,12 @@ Reroll {octicon}`sync;1em;sd-text-light`
 :::::
 ::::::
 
+````{margin}
 ```{warning}
 The randomized solutions aren't smart enough to spot common factors.  For example, if you were asked to factor $9x^2 - 9$, it's best to start by factoring out the common factor of $9$ to get $9(x^2 - 1)$, and then you can finish factoring the $x^2 - 1$ part using the {term}`difference of squares` trick.
 
 The solutions for the randomizer will ignore any common factors like this - they're only going to use the factoring tricks provided on this page.
 ```
+````
 
 <script src="../../_static/1-factoring.js"></script>
