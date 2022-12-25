@@ -163,7 +163,7 @@ There are also factoring tricks for sums/differences of cubes.
 ```{math}
 :label: sum-and-difference-of-cubes
 A^3 - B^3 = (A - B)(A^2 + AB + B^2)
-
+\linebreak
 A^3 + B^3 = (A + B)(A^2 - AB + B^2)
 ```
 
