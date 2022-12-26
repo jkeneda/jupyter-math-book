@@ -103,19 +103,19 @@ function randomNonMonic (isSpecialized = true) {
     
     Therefore, 
     \\[\\begin{align*}
-    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= ${a}x^2 ${middleTerm(a*m)} ${middleTerm(n)} ${lastTerm(m*n)} && \\text{(split up middle term)}\\\\ 
+    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= \\underbrace{${a}x^2 ${middleTerm(a*m)}} \\underbrace{${middleTerm(n)} ${lastTerm(m*n)}} && \\text{(split up middle term)}\\\\ 
     &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
     &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)}).
     \\end{align*}
     \\]`;
-    
+
     let answer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = ${a}\\), \\(b = ${a*m + n}\\), and \\(c = ${m*n}\\).  Unfortunately, since \\(a = ${a}\\), this quadratic isn't monic, so we'll have to use the non-monic factoring trick.  We just need to find factors of \\(ac = ${a*m*n}\\) that add up to \\(b = ${a*m + n}\\), and then we'll use them to split up the middle term in such a way that we can factor by grouping.<br/><br/>
     
     The factors of \\(${a*m*n}\\) that add up to \\(${a*m + n}\\) are: \\(${a*m}, ${n}\\).<br/><br/>
     
     Therefore, 
     \\[\\begin{align*}
-    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= ${a}x^2 ${middleTerm(a*m)} ${middleTerm(n)} ${lastTerm(m*n)} && \\text{(split up middle term)}\\\\ 
+    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= \\underbrace{${a}x^2 ${middleTerm(a*m)}} \\underbrace{${middleTerm(n)} ${lastTerm(m*n)}} && \\text{(split up middle term)}\\\\ 
     &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
     &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)}).
     \\end{align*}
