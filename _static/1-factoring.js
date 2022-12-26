@@ -3,7 +3,8 @@
 
 // To-do:
 // - Randomizers still have some degenerate cases, with m or n = 0, or with a nontrivial GCF.
-// - 
+// - Non-Monic page still needs polish.
+// - Add page for GCF, factoring by grouping.
 
 // Functions
 function randomCube (isSpecialized = true) {
