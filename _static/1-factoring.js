@@ -175,7 +175,7 @@ document.addEventListener('click', (e) => {
 
     } else if (target.closest('#non-monic-generator')) {
 
-        randonNonMonic();
+        randomNonMonic();
 
     } else if (target.closest('#difference-of-squares-generator')) {
         
