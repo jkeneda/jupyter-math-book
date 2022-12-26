@@ -100,7 +100,7 @@ function randomNonMonic (isSpecialized = true) {
     The factors of \\(${a*m*n}\\) that add up to \\(${a*m + n}\\) are: \\(${a*m}, ${n}\\).<br/><br/>
     
     Therefore, \\[\\begin{align*}${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= ${a}x^2 ${middleTerm(a*m)} ${middleTerm(n)} ${lastTerm(m*n)} && \\text{(split up middle term)}\\\\ 
-    &= ${a}x(x ${lastTerm(m)}) + ${forgetOne(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
+    &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
     &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)})
     \\end{align*}
     \\].`;
@@ -109,7 +109,7 @@ function randomNonMonic (isSpecialized = true) {
     The factors of \\(${a*m*n}\\) that add up to \\(${a*m + n}\\) are: \\(${a*m}, ${n}\\).<br/><br/>
     
     Therefore, \\[\\begin{align*}${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= ${a}x^2 ${middleTerm(a*m)} ${middleTerm(n)} ${lastTerm(m*n)} && \\text{(split up middle term)}\\\\ 
-    &= ${a}x(x ${lastTerm(m)}) + ${forgetOne(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
+    &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
     &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)})
     \\end{align*}
     \\].`;
