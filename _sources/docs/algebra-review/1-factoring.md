@@ -72,6 +72,15 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
 
+```{mermaid}
+    flowchart LR
+    A[Find factors of $ac$ that add up to $b$.] --> B{Is it?}
+    B -- Yes --> C[OK]
+    C --> D[Rethink]
+    D --> B
+    B -- No ----> E[End]
+```
+
 ````{exercise} Random Generator
 :label: non-monic-generator
 :nonumber:
