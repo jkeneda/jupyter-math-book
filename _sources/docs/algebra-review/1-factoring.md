@@ -74,7 +74,7 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 
 ```{mermaid}
     flowchart TD
-    A[Find factors of $ac$ that add up to $b$.] --> B{Is it?}
+    A[Find factors of \\(ac\\) that add up to \\(b\\).] --> B{Is it?}
     B -- Yes --> C[OK]
     C --> D[Rethink]
     D --> B
