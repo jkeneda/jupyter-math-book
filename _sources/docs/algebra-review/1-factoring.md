@@ -4,7 +4,7 @@ This page is designed to walk you through all of the factoring tricks we'll need
 
 ```{mermaid}
     flowchart LR
-        A[$$m$$ stuff] --> B[other stuff]
+        A[Find factors "$$m$$", $$n$$ of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
         B --> C[Factor by grouping.]
 ```
 
@@ -77,15 +77,6 @@ Reroll {octicon}`sync;1em;sd-text-light`
 :::::{tab-item} Non-Monic Quadratics
 
 In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
-
-```{mermaid}
-    flowchart LR
-        A[stuff] --> B[other stuff]
-        B --> C[Factor by grouping.]
-```
-Find factors "$$m$$", $$n$$ of *ac* that add up to *b*.
-Split up middle term *bx* into *mx + nx*.
-
 
 More coming soon!
 
