@@ -4,7 +4,7 @@ This page is designed to walk you through all of the factoring tricks we'll need
 
 ```{mermaid}
     flowchart LR
-        A[stuff] --> B[other stuff]
+        A[$$m$$ stuff] --> B[other stuff]
         B --> C[Factor by grouping.]
 ```
 
