@@ -74,8 +74,8 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
 
 ```{mermaid}
     flowchart LR
-    A[stuff] --> B[other stuff]
-    B --> C[Factor by grouping.]
+        A[stuff] --> B[other stuff]
+        B --> C[Factor by grouping.]
 ```
 Find factors "$$m$$", $$n$$ of *ac* that add up to *b*.
 Split up middle term *bx* into *mx + nx*.
