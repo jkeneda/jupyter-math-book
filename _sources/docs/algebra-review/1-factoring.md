@@ -2,6 +2,12 @@
 
 This page is designed to walk you through all of the factoring tricks we'll need.  Each tab discusses a new factoring trick, and you can find an exercise generator at the bottom of each tab.  Practice with each type of problem until you're comfortable with the relevant trick, and then move on to the next tab!
 
+```{mermaid}
+    flowchart LR
+        A[stuff] --> B[other stuff]
+        B --> C[Factor by grouping.]
+```
+
 ::::::{tab-set}
 
 :::::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
