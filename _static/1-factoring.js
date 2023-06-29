@@ -3,6 +3,8 @@
 
 // To-do:
 // - Randomizers still have some degenerate cases, with m or n = 0, or with a nontrivial GCF.
+// - Non-Monic page still needs polish.
+// - Add page for GCF, factoring by grouping.
 
 // Functions
 function randomCube (isSpecialized = true) {
@@ -86,6 +88,55 @@ function randomMonic (isSpecialized = true) {
     MathJax.typeset(['.random']);
 }
 
+function randomNonMonic (isSpecialized = true) {
+    // Makes prompt, hint, and answers
+    // Idea: c = mn, so that ac = amn.  Then b = am + n.
+    let a = Math.floor(Math.random() * 4 + 2); // 2 through 5
+    let m = Math.floor(Math.random() * 11 - 5); // -5 through 5
+    let n = Math.floor(Math.random() * 13 - 6); // -6 through 6
+
+    let prompt = `Factor \\(${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)}\\).`;
+
+    let hint = `Can you think of factors of \\(ac = ${a*m*n}\\) that add up to \\(b = ${a*m + n}\\)?`;
+
+    let localanswer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = ${a}\\), \\(b = ${a*m + n}\\), and \\(c = ${m*n}\\).  Unfortunately, since \\(a = ${a}\\), this quadratic isn't monic, so we'll have to use the non-monic factoring trick above.  We just need to find factors of \\(ac = ${a*m*n}\\) that add up to \\(b = ${a*m + n}\\), and then we'll use them to split up the middle term in such a way that we can factor by grouping.<br/><br/>
+    
+    The factors of \\(${a*m*n}\\) that add up to \\(${a*m + n}\\) are: \\(${a*m}, ${n}\\).<br/><br/>
+    
+    Therefore, 
+    \\[\\begin{align*}
+    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= \\underbrace{${a}x^2 ${middleTerm(a*m)}} \\underbrace{${middleTerm(n)} ${lastTerm(m*n)}} && \\text{(split up middle term)}\\\\ 
+    &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
+    &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)}).
+    \\end{align*}
+    \\]`;
+
+    let answer = `This is a quadratic function (\\(ax^2 + bx + c\\)) with \\(a = ${a}\\), \\(b = ${a*m + n}\\), and \\(c = ${m*n}\\).  Unfortunately, since \\(a = ${a}\\), this quadratic isn't monic, so we'll have to use the non-monic factoring trick.  We just need to find factors of \\(ac = ${a*m*n}\\) that add up to \\(b = ${a*m + n}\\), and then we'll use them to split up the middle term in such a way that we can factor by grouping.<br/><br/>
+    
+    The factors of \\(${a*m*n}\\) that add up to \\(${a*m + n}\\) are: \\(${a*m}, ${n}\\).<br/><br/>
+    
+    Therefore, 
+    \\[\\begin{align*}
+    ${a}x^2 ${middleTerm(a*m + n)} ${lastTerm(m*n)} &= \\underbrace{${a}x^2 ${middleTerm(a*m)}} \\underbrace{${middleTerm(n)} ${lastTerm(m*n)}} && \\text{(split up middle term)}\\\\ 
+    &= ${a}x(x ${lastTerm(m)}) ${lastTerm(n)}(x ${lastTerm(m)}) && \\text{(factor by grouping)}\\\\
+    &= (${a}x ${lastTerm(n)})(x ${lastTerm(m)}).
+    \\end{align*}
+    \\]`;
+    
+    // Write to correct DOM elements
+    if (isSpecialized) {
+        document.getElementById('non-monic-prompt').innerHTML = prompt;
+        document.getElementById('non-monic-hint').innerHTML = hint;
+        document.getElementById('non-monic-answer').innerHTML = localanswer;
+    } else {
+        document.getElementById('all-prompt').innerHTML = prompt;
+        document.getElementById('all-hint').innerHTML = hint;
+        document.getElementById('all-answer').innerHTML = answer;
+    }
+
+    MathJax.typeset(['.random']);
+}
+
 function sign2pm (a) {
     if (Math.sign(a) < 0) {
         return '-';
@@ -133,6 +184,8 @@ document.addEventListener('click', (e) => {
 
     } else if (target.closest('#non-monic-generator')) {
 
+        randomNonMonic();
+
     } else if (target.closest('#difference-of-squares-generator')) {
         
         randomDoS();
@@ -143,7 +196,7 @@ document.addEventListener('click', (e) => {
 
     } else if (target.closest('#all-generator')) {
 
-        let n = 3; // Number of randomizers implemented
+        let n = 4; // Number of randomizers implemented
         let c = Math.floor(Math.random() * n);
 
         switch (c) {
@@ -156,10 +209,9 @@ document.addEventListener('click', (e) => {
             case 2:
                 randomCube(false);
                 break;
+            case 3:
+                randomNonMonic(false);
+                break;
         }
     }
 });
-
-// Old Event Listener
-//document.getElementsByClassName('sd-btn-info').item(0).addEventListener('click', () => {randomMonic();});
-// Warning: interprets first info button as randomizing

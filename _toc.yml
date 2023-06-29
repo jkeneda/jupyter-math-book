@@ -40,6 +40,11 @@ chapters:
         - file: docs/business-algebra/exponentials-and-logarithms/finance/3-future-value
         - file: docs/business-algebra/exponentials-and-logarithms/finance/4-present-value
     - file: docs/business-algebra/matrices-and-systems-of-equations/index
+      options:
+        numbered: true
+      sections:
+      - file: docs/business-algebra/matrices-and-systems-of-equations/1-systems-of-equations
+      - file: docs/business-algebra/matrices-and-systems-of-equations/2-gauss-jordan-elimination
     - file: docs/business-algebra/linear-programming/index
     - file: docs/business-algebra/probability/index
       sections:
