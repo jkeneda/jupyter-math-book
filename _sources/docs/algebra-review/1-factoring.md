@@ -4,7 +4,7 @@ This page is designed to walk you through all of the factoring tricks we'll need
 
 ```{mermaid}
     flowchart LR
-        A[`Find factors $m$, *n* of *ac* that add up to *b*.`] --> B[Split up middle term *bx* into *mx + nx*.]
+        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
         B --> C[Factor by grouping.]
 ```
 
