@@ -1,6 +1,6 @@
-// Depends on Vectorious (exposed v in browser)
+// Designed to work with Vectorious (exposed v in browser), but not strictly necessary
 
-// Takes a javascript array of arrays and outputs the TeX to typeset that array
+// Takes a JavaScript array (of arrays) and outputs the TeX (with escaped slashes, etc.) to typeset that array
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
 function toLaTeX(matrix, split = false, matrixType = "") {
@@ -62,15 +62,3 @@ function makeTeXRow(rowMatrix) {
     }
     return TeX;
 }
-
-document.addEventListener('click', (e) => {
-    const target = e.target.closest('.sd-btn-info');
-
-    var x = v.array([1.5]);//([[1, 2, 3], [4, 5, 6]]);
-
-    //v.swap(x, 0, 1);
-
-    document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
-
-    MathJax.typeset(['.live']);
-});

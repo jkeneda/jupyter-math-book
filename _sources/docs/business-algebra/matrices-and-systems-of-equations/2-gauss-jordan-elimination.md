@@ -1,7 +1,5 @@
 # Gauss-Jordan Elimination
 
-This page hasn't been made yet.
-
 Testing:
 
 $$
@@ -10,3 +8,26 @@ $$
     2 & 3 & 0  \\
 \end{array}\right]
 $$
+
+<div class="live" id="matrix-test">
+\left[\begin{array}{cc|c}
+    1 & 1 & -1 \\
+    2 & 3 & 0  \\
+\end{array}\right]
+</div>
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
+
+<script>MathJax.typeset(['.live']);</script>
+
+<script src="../../../_static/vectorious.js">
+</script>
+<script src="../../../_static/matrix-TeX.js">
+</script>
+<script src="../../../_static/Matrix Unit/2-gauss-jordan-elimination.js">
+</script>
