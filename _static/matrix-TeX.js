@@ -23,28 +23,29 @@ function toLaTeX(matrix, split = false, matrixType = "") {
             TeX += makeTeXRow(matrix);
             TeX += `\\end{${matrixType}matrix}`;
         }
-    }
+    } else {
     // Next, handle non-row matrices
-    if (split) {
         var columns = matrix[0].length
         if (columns < 2) {
-            return toLaTeX(matrix, split = false, matrixType);
+            split = false;
         }
-        TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
-        for (var i = 1; i < columns; i++) {
-            TeX += `c`;
+        if (split) {
+            TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
+            for (var i = 1; i < columns; i++) {
+                TeX += `c`;
+            }
+            TeX += `|c}\n`;
+            for (var i = 0; i < matrix.length; i++) {
+                TeX += makeTeXRow(matrix[i]);
+            }
+            TeX += `\\end{array}\\right]\n\\end{split}`;
+        } else {
+            TeX += `\\begin{${matrixType}matrix}\n`;
+            for (var i = 0; i < matrix.length; i++) {
+                TeX += makeTeXRow(matrix[i]);
+            }
+            TeX += `\\end{${matrixType}matrix}`;
         }
-        TeX += `|c}\n`;
-        for (var i = 0; i < matrix.length; i++) {
-            TeX += makeTeXRow(matrix[i]);
-        }
-        TeX += `\\end{array}\\right]\n\\end{split}`;
-    } else {
-        TeX += `\\begin{${matrixType}matrix}\n`;
-        for (var i = 0; i < matrix.length; i++) {
-            TeX += makeTeXRow(matrix[i]);
-        }
-        TeX += `\\end{${matrixType}matrix}`;
     }
     return TeX;
 }
