@@ -19,5 +19,7 @@ $$a^2 + b^2 = c^2$$
 :url_parameters: ?start=30
 ```
 
-<script src="../../_static/vectorious.js" />
-<script src="../../_static/matrix-TeX.js" />
+<script src="../../_static/vectorious.js">
+</script>
+<script src="../../_static/matrix-TeX.js">
+</script>
