@@ -5,6 +5,26 @@
 // Split matrices will have an augmented column and will be bracketed
 function toLaTeX(matrix, split = false, matrixType = "") {
     var TeX = ``;
+    // First, deal with the possibility of being handed a single row matrix
+    if (matrix[0][0] == undefined) {
+        if (matrix.length < 2) {
+            return toLaTeX(matrix, split = false, matrixType); // Don't allow splitting in the event of a single column
+        }
+        if (split) {
+            TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
+            for (var i = 1; i < matrix.length; i++) {
+                TeX += `c`;
+            }
+            TeX += `|c}\n`;
+            TeX += makeTeXRow(matrix);
+            TeX += `\\end{array}\\right]\n\\end{split}`;
+        } else {
+            TeX += `\\begin{${matrixType}matrix}\n`;
+            TeX += makeTeXRow(matrix);
+            TeX += `\\end{${matrixType}matrix}`;
+        }
+    }
+    // Next, handle non-row matrices
     if (split) {
         var columns = matrix[0].length
         if (columns < 2) {
@@ -14,42 +34,30 @@ function toLaTeX(matrix, split = false, matrixType = "") {
         for (var i = 1; i < columns; i++) {
             TeX += `c`;
         }
-        TeX += `|c}\n`
+        TeX += `|c}\n`;
         for (var i = 0; i < matrix.length; i++) {
-            for (var j = 0; j < matrix[i].length; j++) {
-                TeX += matrix[i][j];
-                if (j + 1 < matrix[i].length) {
-                    TeX += ` & `;
-                } else {
-                    TeX += ` \\\\\n`;
-                }
-            }
+            TeX += makeTeXRow(matrix[i]);
         }
-        TeX += `\\end{array}\\right]\n\\end{split}`
+        TeX += `\\end{array}\\right]\n\\end{split}`;
     } else {
         TeX += `\\begin{${matrixType}matrix}\n`;
-        if (matrix[0][0] == undefined) { // implies we were given a row matrix
-            for (var j = 0; j < matrix.length; j++) {
-                TeX += matrix[j];
-                if (j + 1 < matrix.length) {
-                        TeX += ` & `;
-                } else {
-                    TeX += ` \\\\\n`;
-                }
-            }
-        } else {
-            for (var i = 0; i < matrix.length; i++) {
-                for (var j = 0; j < matrix[i].length; j++) {
-                    TeX += matrix[i][j];
-                    if (j + 1 < matrix[i].length) {
-                        TeX += ` & `;
-                    } else {
-                        TeX += ` \\\\\n`;
-                    }
-                }
-            }
+        for (var i = 0; i < matrix.length; i++) {
+            TeX += makeTeXRow(matrix[i]);
         }
         TeX += `\\end{${matrixType}matrix}`;
+    }
+    return TeX;
+}
+
+function makeTeXRow(rowMatrix) {
+    for (var j = 0; j < rowMatrix.length; j++) {
+        var TeX = ``;
+        TeX += rowMatrix[j];
+        if (j + 1 < matrix.length) {
+                TeX += ` & `;
+        } else {
+            TeX += ` \\\\\n`;
+        }
     }
     return TeX;
 }
