@@ -1,10 +1,4 @@
 // Takes a javascript array of arrays and outputs the TeX to typeset that array
-
-var x = v.array([[1, 2, 3], [4, 5, 6]]);
-
-v.toArray(x);
-console.log("hullo!");
-
 function toLaTeX(matrix, matrixType = "") {
     var TeX = ``;
     TeX += `\\begin{${matrixType}matrix}\n`;
@@ -21,3 +15,9 @@ function toLaTeX(matrix, matrixType = "") {
     TeX += `\\end{${matrixType}matrix}`;
     return TeX;
 }
+
+var x = v.array([[1, 2, 3], [4, 5, 6]]);
+
+document.getElementById('matrix-text').innerHTML = toLaTex(v.toArray(x));
+
+MathJax.typeset(['.live']);
