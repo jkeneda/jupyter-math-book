@@ -1,5 +1,5 @@
 // Takes a javascript array of arrays and outputs the TeX to typeset that array
-function toLaTeX(matrix, matrixType = "") {
+function toLaTeX(matrix, matrixType = "b") {
     var TeX = ``;
     TeX += `\\begin{${matrixType}matrix}\n`;
     for (var i = 0; i < matrix.length; i++) {
