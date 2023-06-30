@@ -12,11 +12,11 @@ function toLaTeX(matrix, matrixType = "") {
         for (var j = 0; j < matrix[i].length; j++) {
             TeX += matrix[i][j];
             if (j + 1 < matrix[i].length) {
-                TeX += `` & ``;
+                TeX += ` & `;
             } else {
-                TeX += `` \\\n``;
+                TeX += ` \\\n`;
             }
         }
     }
-    TeX += `\\end{${matrixType}matrix}"
+    TeX += `\\end{${matrixType}matrix}`;
 }
