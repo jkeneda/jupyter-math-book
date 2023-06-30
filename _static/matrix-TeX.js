@@ -54,7 +54,7 @@ function makeTeXRow(rowMatrix) {
     for (var j = 0; j < rowMatrix.length; j++) {
         var TeX = ``;
         TeX += rowMatrix[j];
-        if (j + 1 < matrix.length) {
+        if (j + 1 < rowMatrix.length) {
                 TeX += ` & `;
         } else {
             TeX += ` \\\\\n`;
