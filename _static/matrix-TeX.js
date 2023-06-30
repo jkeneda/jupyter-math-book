@@ -8,7 +8,7 @@ function toLaTeX(matrix, matrixType = "") {
             if (j + 1 < matrix[i].length) {
                 TeX += ` & `;
             } else {
-                TeX += ` \\\n`;
+                TeX += ` \\\\\n`;
             }
         }
     }
