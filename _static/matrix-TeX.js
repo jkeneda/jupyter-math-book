@@ -21,7 +21,7 @@ document.addEventListener('click', (e) => {
 
     var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
-    document.getElementById('matrix-text').innerHTML = toLaTex(v.toArray(x));
+    document.getElementById('matrix-text').innerHTML = toLaTeX(v.toArray(x));
 
     MathJax.typeset(['.live']);
 });
