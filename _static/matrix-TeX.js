@@ -2,5 +2,5 @@
 
 const x = v.array([[1, 2, 3], [4, 5, 6]]);
 
-toArray(x);
-console.log(toArray(x));
+v.toArray(x);
+console.log(v.toArray(x));
