@@ -1,12 +1,12 @@
 // Takes a javascript array of arrays and outputs the TeX to typeset that array
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
-function toLaTeX(matrix, matrixType = "b", split = false) {
+function toLaTeX(matrix, split = false, matrixType = "") {
     var TeX = ``;
     if (split) {
         var columns = matrix[0].length
         if (columns < 2) {
-            return toLaTeX(matrix, matrixType, split = false);
+            return toLaTeX(matrix, split = false, matrixType);
         }
         TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
         for (var i = 1; i < columns; i++) {
