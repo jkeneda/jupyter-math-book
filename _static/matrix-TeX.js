@@ -26,7 +26,7 @@ function toLaTeX(matrix, matrixType = "b", split = false) {
         TeX += `\\end{array}\\right]\n\\end{split}`
     } else {
         TeX += `\\begin{${matrixType}matrix}\n`;
-        if (matrix[0][0] = undefined) { // implies we were given a row matrix
+        if (matrix[0][0] == undefined) { // implies we were given a row matrix
             for (var j = 0; j < matrix.length; j++) {
                 TeX += matrix[j];
                 if (j + 1 < matrix.length) {
