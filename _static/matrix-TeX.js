@@ -8,7 +8,7 @@ function toLaTeX(matrix, split = false, matrixType = "") {
     // First, deal with the possibility of being handed a single row matrix
     if (matrix[0][0] == undefined) {
         if (matrix.length < 2) {
-            return toLaTeX(matrix, split = false, matrixType); // Don't allow splitting in the event of a single column
+            split = false; // Don't allow splitting in the event of a single column
         }
         if (split) {
             TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
