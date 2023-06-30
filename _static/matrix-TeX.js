@@ -5,4 +5,18 @@ var x = v.array([[1, 2, 3], [4, 5, 6]]);
 v.toArray(x);
 console.log("hullo!");
 
-function toTeX()
+function toLaTeX(matrix, matrixType = "") {
+    var TeX = ``;
+    TeX += `\\begin{${matrixType}matrix}\n`;
+    for (var i = 0; i < matrix.length; i++) {
+        for (var j = 0; j < matrix[i].length; j++) {
+            TeX += matrix[i][j];
+            if (j + 1 < matrix[i].length) {
+                TeX += `` & ``;
+            } else {
+                TeX += `` \\\n``;
+            }
+        }
+    }
+    TeX += `\\end{${matrixType}matrix}"
+}
