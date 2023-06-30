@@ -1,3 +1,5 @@
+// Depends on Vectorious (exposed v in browser)
+
 // Takes a javascript array of arrays and outputs the TeX to typeset that array
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
@@ -57,7 +59,7 @@ document.addEventListener('click', (e) => {
 
     var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
-    v.swap(x, 1, 2);
+    v.swap(x, 0, 1);
 
     document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
 
