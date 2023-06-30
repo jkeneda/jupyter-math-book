@@ -51,8 +51,8 @@ function toLaTeX(matrix, split = false, matrixType = "") {
 }
 
 function makeTeXRow(rowMatrix) {
+    var TeX = ``;
     for (var j = 0; j < rowMatrix.length; j++) {
-        var TeX = ``;
         TeX += rowMatrix[j];
         if (j + 1 < rowMatrix.length) {
                 TeX += ` & `;
