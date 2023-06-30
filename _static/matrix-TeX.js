@@ -16,8 +16,12 @@ function toLaTeX(matrix, matrixType = "") {
     return TeX;
 }
 
-var x = v.array([[1, 2, 3], [4, 5, 6]]);
+document.addEventListener('click', (e) => {
+    const target = e.target.closest('.sd-btn-info');
 
-document.getElementById('matrix-text').innerHTML = toLaTex(v.toArray(x));
+    var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
-MathJax.typeset(['.live']);
+    document.getElementById('matrix-text').innerHTML = toLaTex(v.toArray(x));
+
+    MathJax.typeset(['.live']);
+});

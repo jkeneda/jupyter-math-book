@@ -8,6 +8,12 @@ $$a^2 + b^2 = c^2$$
 :url_parameters: ?start=30
 ```
 <div class="live" id="matrix-test"></div>
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Reroll {octicon}`sync;1em;sd-text-light`
+```
 
 <script src="../../_static/vectorious.js">
 </script>
