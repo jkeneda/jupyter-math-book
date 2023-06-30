@@ -19,4 +19,5 @@ function toLaTeX(matrix, matrixType = "") {
         }
     }
     TeX += `\\end{${matrixType}matrix}`;
+    return TeX;
 }
