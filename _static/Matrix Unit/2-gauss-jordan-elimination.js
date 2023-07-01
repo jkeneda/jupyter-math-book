@@ -8,8 +8,3 @@ document.addEventListener('click', (e) => {
     document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
     MathJax.typeset(['.live']);
 });
-
-window.MathJax = {
-    loader: {load: ['[tex]/colortbl']},
-    tex: {packages: {'[+]': ['colortbl']}}
-  };

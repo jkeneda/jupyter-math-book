@@ -9,7 +9,7 @@ $$
 \end{array}\right]
 $$
 
-<div onload="MathJax.typeset(['.live'])" class="live" id="matrix-test">
+<div class="live" id="matrix-test">
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor{blue} 1 & 1 & -1 \\
     2 & 3 & 0  \\
@@ -24,7 +24,7 @@ Reroll {octicon}`sync;1em;sd-text-light`
 ```
 
 <script src="../../../_static/vectorious.js">
-</>
+</script>
 <script src="../../../_static/matrix-TeX.js">
 </script>
 <script src="../../../_static/Matrix Unit/2-gauss-jordan-elimination.js">
