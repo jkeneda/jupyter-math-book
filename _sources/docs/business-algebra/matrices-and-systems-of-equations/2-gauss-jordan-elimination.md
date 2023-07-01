@@ -10,10 +10,10 @@ $$
 $$
 
 <div onload="MathJax.typeset('.live')" class="live" id="matrix-test">
-\left[\begin{array}{cc|c}
+\begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 1 & -1 \\
     2 & 3 & 0  \\
-\end{array}\right]
+\end{array}\right]\end{split}
 </div>
 
 ```{button-ref} #
