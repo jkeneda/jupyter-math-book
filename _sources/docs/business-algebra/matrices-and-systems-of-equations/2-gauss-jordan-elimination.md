@@ -4,7 +4,7 @@ Testing:
 
 $$
 \left[\begin{array}{cc|c}
-    \columncolor[html]{f16b14} 1 & 1 & -1 \\
+    \columncolor[HTML]{f16b14} 1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]
 $$
