@@ -16,9 +16,10 @@ $$
 \end{array}\right]
 </div>
 
-```{button-ref} swap
+```{button-ref}
 :color: info
 :class: sd-rounded-pill float-center
+:label: swap
 
 Swap Rows {octicon}`sync;1em;sd-text-light`
 ```
