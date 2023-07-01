@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl"]}, "tex": {"packages": {"[+]": ["colortbl"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl", "[tex]/nicematrix"]}, "tex": {"packages": {"[+]": ["colortbl", "nicematrix"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
@@ -542,8 +542,8 @@ title="Print to PDF"
         A[&quot;`Find factors $m$, *n* of *ac* that add up to *b*.`&quot;] --&gt; B[Split up middle term *bx* into *mx + nx*.]
         B --&gt; C[Factor by grouping.]
         </div><div class="sd-tab-set docutils">
-<input checked="checked" id="c9af401b-c654-4c8a-b93d-797790ebaa3a" name="8a854f78-583e-4880-aac0-b83cfff9d354" type="radio">
-</input><label class="sd-tab-label" for="c9af401b-c654-4c8a-b93d-797790ebaa3a">
+<input checked="checked" id="56683981-4607-46f8-a6f4-0cdb22da6e3a" name="64092612-f3c7-47c4-8696-02df8052d1f2" type="radio">
+</input><label class="sd-tab-label" for="56683981-4607-46f8-a6f4-0cdb22da6e3a">
 Monic Quadratics (<span class="math notranslate nohighlight">\(1x^2 + bx + c\)</span>)</label><div class="sd-tab-content docutils">
 <p>Note that if we <a class="reference internal" href="factoring-glossary.html#term-FOIL"><span class="xref std std-term">FOIL</span></a> the expression <span class="math notranslate nohighlight">\((x+m)(x+n)\)</span>, then we get:</p>
 <div class="math notranslate nohighlight">
@@ -601,8 +601,8 @@ Monic Quadratics (<span class="math notranslate nohighlight">\(1x^2 + bx + c\)</
 </section>
 </div>
 </div>
-<input id="0fe824f7-c0d4-43c3-965b-7608578e72ce" name="8a854f78-583e-4880-aac0-b83cfff9d354" type="radio">
-</input><label class="sd-tab-label" for="0fe824f7-c0d4-43c3-965b-7608578e72ce">
+<input id="d97277d1-48e0-4bbf-9553-861b83b5691b" name="64092612-f3c7-47c4-8696-02df8052d1f2" type="radio">
+</input><label class="sd-tab-label" for="d97277d1-48e0-4bbf-9553-861b83b5691b">
 Non-Monic Quadratics</label><div class="sd-tab-content docutils">
 <p>In this section, we’ll discuss an extension of the trick for factoring monic quadratics.  What happens if <span class="math notranslate nohighlight">\(a \neq 1\)</span>?</p>
 <p>More coming soon!</p>
@@ -625,13 +625,13 @@ Non-Monic Quadratics</label><div class="sd-tab-content docutils">
 </section>
 </div>
 </div>
-<input id="e0426bda-3826-48d8-8683-deed6a0f9485" name="8a854f78-583e-4880-aac0-b83cfff9d354" type="radio">
-</input><label class="sd-tab-label" for="e0426bda-3826-48d8-8683-deed6a0f9485">
+<input id="b0609c29-aa12-47fa-864e-26f9d135e695" name="64092612-f3c7-47c4-8696-02df8052d1f2" type="radio">
+</input><label class="sd-tab-label" for="b0609c29-aa12-47fa-864e-26f9d135e695">
 Special Binomials</label><div class="sd-tab-content docutils">
 <p>Here we’ll discuss factoring tricks involving a <a class="reference internal" href="factoring-glossary.html#term-difference-of-squares"><span class="xref std std-term">difference of squares</span></a> or a <a class="reference internal" href="factoring-glossary.html#term-sum-difference-of-cubes"><span class="xref std std-term">sum/difference of cubes</span></a>.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="d76bdf8a-443f-4fb9-863b-5ece51cbe22e" name="35c57f2f-2c82-46c6-8ed0-e11162c55767" type="radio">
-</input><label class="sd-tab-label" for="d76bdf8a-443f-4fb9-863b-5ece51cbe22e">
+<input checked="checked" id="bcd62f0f-2628-4ea4-8e71-88bafe208898" name="bcbdb6cd-1057-4ad4-8331-c8b9ad4e75f4" type="radio">
+</input><label class="sd-tab-label" for="bcd62f0f-2628-4ea4-8e71-88bafe208898">
 Difference of Squares</label><div class="sd-tab-content docutils">
 <p>Differences of squares can be factored using:</p>
 <div class="math notranslate nohighlight" id="equation-difference-of-squares">
@@ -672,8 +672,8 @@ Difference of Squares</label><div class="sd-tab-content docutils">
 </section>
 </div>
 </div>
-<input id="184ea7ee-b493-4a2d-9e4f-fbc7da33f61a" name="35c57f2f-2c82-46c6-8ed0-e11162c55767" type="radio">
-</input><label class="sd-tab-label" for="184ea7ee-b493-4a2d-9e4f-fbc7da33f61a">
+<input id="77f73ecb-05e5-4087-a350-f0682ec63d6a" name="bcbdb6cd-1057-4ad4-8331-c8b9ad4e75f4" type="radio">
+</input><label class="sd-tab-label" for="77f73ecb-05e5-4087-a350-f0682ec63d6a">
 Sum/Difference of Cubes</label><div class="sd-tab-content docutils">
 <p>There are also factoring tricks for sums/differences of cubes.</p>
 <div class="math notranslate nohighlight" id="equation-sum-and-difference-of-cubes">
@@ -769,8 +769,8 @@ f(x) = (3x)^3 + (4)^3 &amp;= (3x + 4)((3x)^2 - (3x)(4) + (4)^2) &amp;&amp; \text
 </div>
 </div>
 </div>
-<input id="2ea62027-2238-45d3-b448-bf252b768e2d" name="8a854f78-583e-4880-aac0-b83cfff9d354" type="radio">
-</input><label class="sd-tab-label" for="2ea62027-2238-45d3-b448-bf252b768e2d">
+<input id="2b6a63ae-8b8f-41c2-a3d8-48677e9ddebd" name="64092612-f3c7-47c4-8696-02df8052d1f2" type="radio">
+</input><label class="sd-tab-label" for="2b6a63ae-8b8f-41c2-a3d8-48677e9ddebd">
 All</label><div class="sd-tab-content docutils">
 <p>This exercise randomizer combines all of the randomizers from the previous tabs.  Are you ready to test yourself on <em>all</em> of the factoring tricks?</p>
 <div class="exercise admonition" id="all-generator">
