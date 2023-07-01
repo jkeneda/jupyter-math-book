@@ -14,7 +14,8 @@ When we translate
 
 $$\left[\begin{array}{cc|c}
     1 & 1 & -1 \\
-    2 & 3 & 0  \\
+    \left[2 & 3 & 0  \\
+    a & b & c \right]\\
 \end{array}\right]$$
 
 $$\bordermatrix{a & x & y \\
