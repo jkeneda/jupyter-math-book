@@ -18,16 +18,13 @@ $$\left[\begin{array}{cc|c}
 \end{array}\right]$$
 
 $$
-\begin{blockarray}{cccccc}
-x & y & c & d & e \\
-\begin{block}{(ccccc)c}
-  1 & 1 & 1 & 1 & 1 & f \\
-  0 & 1 & 0 & 0 & 1 & g \\
-  0 & 0 & 1 & 0 & 1 & h \\
-  0 & 0 & 0 & 1 & 1 & i \\
-  0 & 0 & 0 & 0 & 1 & j \\
-\end{block}
-\end{blockarray}
+\begin{array}{ccc}
+x & y & c\\
+\left[\begin{array}{cc|c}
+    1 & 1 & -1 \\
+    2 & 3 & 0  \\
+\end{array}\right]
+\end{array}
  $$
 
 ## Reducing the Matrix

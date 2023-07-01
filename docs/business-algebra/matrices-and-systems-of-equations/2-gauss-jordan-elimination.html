@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl", "[tex]/blkarray"]}, "tex": {"packages": {"[+]": ["colortbl", "blkarray"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl"]}, "tex": {"packages": {"[+]": ["colortbl"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
@@ -600,16 +600,13 @@ x + y = 4\\
 \end{array}\right]\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{blockarray}{cccccc}
-x &amp; y &amp; c &amp; d &amp; e \\
-\begin{block}{(ccccc)c}
-  1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; f \\
-  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; g \\
-  0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; h \\
-  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; i \\
-  0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; j \\
-\end{block}
-\end{blockarray}
+\begin{array}{ccc}
+x &amp; y &amp; c\\
+\left[\begin{array}{cc|c}
+    1 &amp; 1 &amp; -1 \\
+    2 &amp; 3 &amp; 0  \\
+\end{array}\right]
+\end{array}
  \end{split}\]</div>
 </section>
 <section id="reducing-the-matrix">
