@@ -1,6 +1,6 @@
 // Assumes vectoriouus and matrix-TeX have been loaded
 
-var x = v.array([1, 2, 3], [4, 5, 6]);
+var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
 // Currently a bit dumb - the top option is just listening for *any* click
 
