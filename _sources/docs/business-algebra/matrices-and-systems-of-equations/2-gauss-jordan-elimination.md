@@ -22,6 +22,7 @@ $$\begin{array}{c}
 
 In other words, we have:
 
+```{note}
 $$\begin{array}{ccc}
 \begin{cases}
 \ \ \ x + y = 4\\
@@ -36,6 +37,7 @@ $$\begin{array}{ccc}
 \end{array}\right]\\\\
 \end{array}
 \end{array}$$
+```
 
 ## Reducing the Matrix
 
