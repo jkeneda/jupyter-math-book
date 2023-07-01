@@ -533,8 +533,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#translating-from-a-system-to-a-matrix">
-   2.1. Translating from a System to a Matrix
+  <a class="reference internal nav-link" href="#translating-from-a-system-to-a-matrix-and-vice-versa">
+   2.1. Translating from a System to a Matrix (and vice versa)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -562,8 +562,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#translating-from-a-system-to-a-matrix">
-   2.1. Translating from a System to a Matrix
+  <a class="reference internal nav-link" href="#translating-from-a-system-to-a-matrix-and-vice-versa">
+   2.1. Translating from a System to a Matrix (and vice versa)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -584,8 +584,8 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="gauss-jordan-elimination">
 <h1><span class="section-number">2. </span>Gauss-Jordan Elimination<a class="headerlink" href="#gauss-jordan-elimination" title="Permalink to this headline">#</a></h1>
 <p>Gauss-Jordan Elimination is a method for reducing the matrices from systems of equations.  The reduced form allows us to solve the system.</p>
-<section id="translating-from-a-system-to-a-matrix">
-<h2><span class="section-number">2.1. </span>Translating from a System to a Matrix<a class="headerlink" href="#translating-from-a-system-to-a-matrix" title="Permalink to this headline">#</a></h2>
+<section id="translating-from-a-system-to-a-matrix-and-vice-versa">
+<h2><span class="section-number">2.1. </span>Translating from a System to a Matrix (and vice versa)<a class="headerlink" href="#translating-from-a-system-to-a-matrix-and-vice-versa" title="Permalink to this headline">#</a></h2>
 <p>Suppose we’re given the system of equations</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
@@ -595,12 +595,28 @@ title="Print to PDF"
 <p>When we translate an equation like <span class="math notranslate nohighlight">\(x + y = 4\)</span> into a matrix row, we think of it in terms of its <a class="reference internal" href="../functions/4-polynomial-functions.html#term-coefficient"><span class="xref std std-term">coefficients</span></a>: <span class="math notranslate nohighlight">\(1x + 1y = 4\)</span>.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c}
-\  x \quad\  y \quad\, c\\
+\ \:\! x \quad\  \:\! y \quad\;\! c\\
 \left[\begin{array}{cc|c}
     1 &amp; 1 &amp; 4 \\
     -1 &amp; 1 &amp; 0  \\
 \end{array}\right]
 \end{array}\end{split}\]</div>
+<p>In other words, we have:
+$<span class="math notranslate nohighlight">\(
+\begin{array}{ccc}
+\begin{cases}
+\ \ \ x + y = 4\\
+-x + y = 0\\
+\end{cases} &amp;
+\iff &amp;
+\begin{array}{c}
+\ \:\! x \quad\  \:\! y \quad\;\! c\\
+\left[\begin{array}{cc|c}
+    1 &amp; 1 &amp; 4 \\
+    -1 &amp; 1 &amp; 0  \\
+\end{array}\right]
+\end{array}
+\end{array}\)</span>$</p>
 </section>
 <section id="reducing-the-matrix">
 <h2><span class="section-number">2.2. </span>Reducing the Matrix<a class="headerlink" href="#reducing-the-matrix" title="Permalink to this headline">#</a></h2>

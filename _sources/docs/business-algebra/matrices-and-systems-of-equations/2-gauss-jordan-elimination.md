@@ -2,7 +2,7 @@
 
 Gauss-Jordan Elimination is a method for reducing the matrices from systems of equations.  The reduced form allows us to solve the system.
 
-## Translating from a System to a Matrix
+## Translating from a System to a Matrix (and vice versa)
 Suppose we're given the system of equations
 
 $$\begin{cases}
@@ -13,11 +13,28 @@ $$\begin{cases}
 When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficients<coefficient>`: $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
 
 $$\begin{array}{c}
-\  x \quad\  y \quad\, c\\
+\ \:\! x \quad\  \:\! y \quad\;\! c\\
 \left[\begin{array}{cc|c}
     1 & 1 & 4 \\
     -1 & 1 & 0  \\
 \end{array}\right]
+\end{array}$$
+
+In other words, we have:
+$$
+\begin{array}{ccc}
+\begin{cases}
+\ \ \ x + y = 4\\
+-x + y = 0\\
+\end{cases} &
+\iff &
+\begin{array}{c}
+\ \:\! x \quad\  \:\! y \quad\;\! c\\
+\left[\begin{array}{cc|c}
+    1 & 1 & 4 \\
+    -1 & 1 & 0  \\
+\end{array}\right]
+\end{array}
 \end{array}$$
 
 ## Reducing the Matrix
