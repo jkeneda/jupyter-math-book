@@ -1,6 +1,12 @@
 # Gauss-Jordan Elimination
 
-Testing:
+Gauss-Jordan Elimination is a method for reducing the matrices from systems of equations.  The reduced form allows us to solve the system.
+
+## Translating from a System to a Matrix
+Suppose we're given the system of equations
+$$
+trololo
+$$
 
 $$
 \left[\begin{array}{cc|c}
