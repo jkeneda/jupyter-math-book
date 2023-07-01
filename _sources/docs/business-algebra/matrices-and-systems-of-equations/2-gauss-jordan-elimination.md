@@ -4,8 +4,10 @@ Gauss-Jordan Elimination is a method for reducing the matrices from systems of e
 
 ## Translating from a System to a Matrix
 Suppose we're given the system of equations
-$$
-trololo
+
+$$\begin{equation}
+f(x) = \begin{cases} x & \text{if }x < 0 \\ x + 1 & \text{if }x \ge 0 \\ \end{cases}
+\end{equation}
 $$
 
 $$
