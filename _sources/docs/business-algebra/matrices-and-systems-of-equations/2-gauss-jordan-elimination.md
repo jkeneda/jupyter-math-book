@@ -33,7 +33,7 @@ $$\begin{array}{ccc}
 \left[\begin{array}{cc|c}
     1 & 1 & 4 \\
     -1 & 1 & 0  \\
-\end{array}\right]
+\end{array}\right]\\\\
 \end{array}
 \end{array}$$
 
