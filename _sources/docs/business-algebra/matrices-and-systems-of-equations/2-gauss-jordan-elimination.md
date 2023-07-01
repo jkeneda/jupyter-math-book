@@ -23,7 +23,7 @@ $$
 Reroll {octicon}`sync;1em;sd-text-light`
 ```
 
-<script>MathJax.typeset(['.live']);</script>
+<script>body.onload = MathJax.typeset(['.live']);</script>
 
 <script src="../../../_static/vectorious.js">
 </script>
