@@ -4,14 +4,14 @@ Testing:
 
 $$
 \left[\begin{array}{cc|c}
-    \columncolor{red}1 & 1 & -1 \\
+    \columncolor{red} 1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]
 $$
 
 <div class="live" id="matrix-test">
 \begin{split}\left[\begin{array}{cc|c}
-    \columncolor{blue}1 & 1 & -1 \\
+    \columncolor{blue} 1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]\end{split}
 </div>
