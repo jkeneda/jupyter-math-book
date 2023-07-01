@@ -23,6 +23,7 @@ $$
 </div>
 
 ```{div} live
+:name: math-block-1
 $$x + 2y$$
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\\\
