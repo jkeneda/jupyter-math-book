@@ -10,17 +10,17 @@ $$
 $$
 
 <div class="live" id="matrix-test">
-\begin{split}\left[\begin{array}{cc|c}
-    \columncolor{blue} 1 & 1 & -1 \\
+\left[\begin{array}{cc|c}
+    \columncolor[rgb]{0, 1, 1} 1 & 1 & -1 \\
     2 & 3 & 0  \\
-\end{array}\right]\end{split}
+\end{array}\right]
 </div>
 
 ```{button-ref} #
 :color: info
 :class: sd-rounded-pill float-center
 
-Reroll {octicon}`sync;1em;sd-text-light`
+Swap Rows {octicon}`sync;1em;sd-text-light`
 ```
 
 <script src="../../../_static/vectorious.js">
