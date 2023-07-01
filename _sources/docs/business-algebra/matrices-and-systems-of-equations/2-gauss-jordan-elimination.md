@@ -15,12 +15,11 @@ When we translate
 $$\left[\begin{array}{cc|c}
     1 & 1 & -1 \\
     2 & 3 & 0  \\
-    a & b & c\\
 \end{array}\right]$$
 
 $$\bordermatrix{a & x & y \\
               A & 1 & 0 \\
-              B & 0 & 1 \\}
+              B & 0 & 1}
 $$
 
 $$
