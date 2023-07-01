@@ -2,7 +2,7 @@
 
 //var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
-// Currently a bit dumb - the top option is just listening for *any* click
+// Currently a bit dumb - the top option is just listening for *any* click, and it seems to fire twice
 
 document.addEventListener('click', (e) => {
     var x = v.array([[1, 2, 3], [4, 5, 6]]);
