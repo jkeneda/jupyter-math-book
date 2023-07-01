@@ -21,8 +21,8 @@ $$\begin{array}{c}
 \end{array}$$
 
 In other words, we have:
-$$
-\begin{array}{ccc}
+
+$$\begin{array}{ccc}
 \begin{cases}
 \ \ \ x + y = 4\\
 -x + y = 0\\
