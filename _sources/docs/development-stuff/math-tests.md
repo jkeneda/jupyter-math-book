@@ -35,3 +35,10 @@ $$\begin{split}\left[\begin{array}{cc|c}
     4 & 5 & 6  \\
 \end{array}\right]\end{split}$$
 ```
+
+MathJax doesn't like bordermatrix, so here's a way of labeling:
+$$\begin{matrix}
+ & \begin{matrix}A&C&G&T\end{matrix} \\\\
+\begin{matrix}A\\\\C\\\\G\\\\T\end{matrix} & 
+  \begin{pmatrix}1&2&3&4\\\\3&4&5&6\\\\3&4&5&6\\\\3&4&5&6\end{pmatrix}\\\\
+\end{matrix}$$
