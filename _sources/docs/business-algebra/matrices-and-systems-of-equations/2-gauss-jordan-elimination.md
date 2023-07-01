@@ -4,7 +4,7 @@ Testing:
 
 $$
 \left[\begin{array}{cc|c}
-    \columncolor[rgb]{1, 1, 1} 1 & 1 & -1 \\
+    \columncolor[rgb]{0, 1, 1} 1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]
 $$
