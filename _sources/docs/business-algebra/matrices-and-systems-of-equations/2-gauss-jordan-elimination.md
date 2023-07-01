@@ -25,7 +25,7 @@ $$
 ```{div} live
 $$x + 2y$$
 \begin{split}\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
+    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\\\
     4 & 5 & 6  \\
 \end{array}\right]\end{split}
 ```
