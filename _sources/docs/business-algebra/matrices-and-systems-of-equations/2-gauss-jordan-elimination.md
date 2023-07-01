@@ -9,7 +9,7 @@ $$
 \end{array}\right]
 $$
 
-<div onload="test()" class="live" id="matrix-test">
+<div class="live" id="matrix-test">
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 1 & -1 \\
     2 & 3 & 0  \\
