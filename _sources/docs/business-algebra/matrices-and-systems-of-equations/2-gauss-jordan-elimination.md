@@ -17,7 +17,7 @@ $$\left[\begin{array}{cc|c}
     2 & 3 & 0  \\
 \end{array}\right]$$
 
-$$\bordermatrix{~ & x & y \cr
+$$\bordermatrix{a & x & y \cr
               A & 1 & 0 \cr
               B & 0 & 1 \cr}
 $$
