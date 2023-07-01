@@ -30,7 +30,7 @@ This one will be typeset on its own, and it can have an id via :name:.
 ```{div} live
 :name: math-block-1
 
-$$x + 2y
+$$
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
     4 & 5 & 6  \\

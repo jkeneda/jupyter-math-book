@@ -20,17 +20,20 @@ $$
 \end{array}\right]
 $$
 
+Here's one option for a div with an id, but you need to typeset onload:
 <div class="live" id="matrix-test">
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
     4 & 5 & 6  \\
 \end{array}\right]\end{split}
 </div>
+<script>window.onload = function(){MathJax.typeset(['.live']);}</script>
 
+This one will be typeset on its own, and it can have an id via :name:.
 ```{div} live
 :name: math-block-1
 
-$$x + 2y
+$$
 \begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
     4 & 5 & 6  \\
