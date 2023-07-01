@@ -12,3 +12,5 @@ document.addEventListener('click', (e) => {
 });
 
 //document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
+
+document.addEventListener("load", MathJax.typeset(['.live']));
