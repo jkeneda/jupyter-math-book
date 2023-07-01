@@ -22,7 +22,7 @@ $$\begin{array}{c}
 
 In other words, we have:
 
-```{note}
+```{admonition} Translating Back and Forth
 $$\begin{array}{ccc}
 \begin{cases}
 \ \ \ x + y = 4\\
