@@ -4,7 +4,7 @@ Testing:
 
 $$
 \left[\begin{array}{cc|c}
-    \columncolor{red} 1 & 1 & -1 \\
+    \columncolor{orange} 1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]
 $$
