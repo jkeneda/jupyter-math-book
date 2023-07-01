@@ -7,47 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Content with notebooks</title>
-    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    
-        <script>
-            MathJax = {
-            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
-            tex: {
-                packages: {'[+]': ['boldsymbol', 'textmacros']},
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                processEscapes: true,
-                macros: {
-                    "argmax" : "arg\\,max",
-                    "argmin" : "arg\\,min",
-                    "col"    : "col",
-                    "Span"   :  "span",
-                    "epsilon": "\\varepsilon",
-                    "EE": "\\mathbb{E}",
-                    "PP": "\\mathbb{P}",
-                    "RR": "\\mathbb{R}",
-                    "NN": "\\mathbb{N}",
-                    "ZZ": "\\mathbb{Z}",
-                    "aA": "\\mathcal{A}",
-                    "bB": "\\mathcal{B}",
-                    "cC": "\\mathcal{C}",
-                    "dD": "\\mathcal{D}",
-                    "eE": "\\mathcal{E}",
-                    "fF": "\\mathcal{F}",
-                    "gG": "\\mathcal{G}",
-                    "hH": "\\mathcal{H}",
-                }
-            },
-            svg: {
-                fontCache: 'global',
-                scale: 0.92,
-                displayAlign: "center",
-            },
-            };
-        </script>
-    
-    
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -62,7 +21,7 @@
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/quantecon-book-theme.1ef59f8f4e91ec8319176e8479c6af4e.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -73,7 +32,6 @@
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -98,7 +56,6 @@
     <script src="../../_static/Matrix Unit/2-gauss-jordan-elimination.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script src="../../_static/quantecon-book-theme.15b0c36fffe88f468997fa7b698991d3.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -114,52 +71,529 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
     <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
 
-<!-- Normal Meta Tags -->
-<meta name="author" context="Josh Keneda" />
-<meta name="keywords" content="" />
-<meta name="description" content=Content with notebooks  You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.  Markdow />
-
-<!-- Twitter tags -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@" />
-<meta name="twitter:title" content="Content with notebooks"/>
-<meta name="twitter:description" content="Content with notebooks  You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.  Markdow">
-<meta name="twitter:creator" content="@">
-<meta name="twitter:image" content="">
-
-<!-- Opengraph tags -->
-<meta property="og:title" content="Content with notebooks" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="None" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="Content with notebooks  You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.  Markdow" />
-<meta property="og:site_name" content="" />
-<meta name="theme-color" content="#ffffff" />
-
+    <!-- Google Analytics -->
+    
   </head>
-<body>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome to Business Math!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../algebra-review/index.html">
+   Algebra Review
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../algebra-review/1-factoring.html">
+     Factoring Tricks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../algebra-review/factoring-glossary.html">
+     Factoring Glossary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../business-algebra/index.html">
+   Business Algebra (MATH 1324)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../business-algebra/functions/index.html">
+     Functions
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/1-a-relations-and-functions.html">
+       1. Relations and Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/1-b-function-definitions.html">
+       2. Functions Defined by Equations
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/1-c-graphs-of-functions.html">
+       3. Graphs of Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/2-linear-functions.html">
+       4. Linear Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/3-quadratic-functions.html">
+       5. Quadratic Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/4-polynomial-functions.html">
+       6. Polynomials
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/functions/5-rational-functions.html">
+       7. Rational Functions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/index.html">
+     Exponentials and Logarithms
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/fundamentals/index.html">
+       Fundamentals of Exponential and Logarithmic Functions
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/fundamentals/1-exponential-functions.html">
+         1. Exponential Functions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/fundamentals/2-logarithmic-functions.html">
+         2. Logarithmic Functions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/fundamentals/3-exp-and-log-equations.html">
+         3. Exponential and Logarithmic Equations
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/fundamentals/4-applications.html">
+         4. Applications of Exponentials and Logarithms
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/finance/index.html">
+       Finance
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/finance/1-simple-interest.html">
+         1. Simple Interest
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/finance/2-compound-interest.html">
+         2. Compound Interest
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/finance/3-future-value.html">
+         3. Future Value of an Annuity
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/finance/4-present-value.html">
+         4. Present Value of an Annuity
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../business-algebra/matrices-and-systems-of-equations/index.html">
+     Matrices and Systems of Equations
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/matrices-and-systems-of-equations/1-systems-of-equations.html">
+       1. Systems of Equations
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/matrices-and-systems-of-equations/2-gauss-jordan-elimination.html">
+       2. Gauss-Jordan Elimination
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../business-algebra/linear-programming/index.html">
+     Linear Programming
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../business-algebra/probability/index.html">
+     Intro to Probability Theory
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../business-algebra/probability/1-probability-distributions.html">
+       Probability Distributions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../business-calculus/index.html">
+   Business Calculus (MATH 1325)
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Development Stuff
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="test/outer-test.html">
+     Outer Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="math-tests.html">
+     Math Tests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown-notebooks.html">
+     Notebooks with MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="my-markdown-file.html">
+     Here’s my sample title
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="issues-with-documentation.html">
+     Issues list
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../genindex.html">
+   Index
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
 
-    <span id="top"></span>
+          
 
-    <div class="qe-wrapper">
 
-        <div class="qe-main">
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
 
-            <div class="qe-page" id=docs/development-stuff/notebooks>
 
-                <div class="qe-page__toc">
 
-                    <div class="inner">
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
 
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jkeneda/jupyter-math-book/main?urlpath=tree/docs/development-stuff/notebooks.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/jkeneda/jupyter-math-book/issues/new?title=Issue%20on%20page%20%2Fdocs/development-stuff/notebooks.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/development-stuff/notebooks.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-notebooks">
+   Markdown + notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-markdown">
+   MyST markdown
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-blocks-and-outputs">
+   Code blocks and outputs
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Content with notebooks</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
                         
-                        <div class="qe-page__toc-header">
-                            On this page
+                        <div>
+                            <h2> Contents </h2>
                         </div>
-
-
-                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
+                        <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#markdown-notebooks">
@@ -178,49 +612,14 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-                            <p class="logo">
-                                
-                                    
-                                    <a href="../index.html"><img src="../../_static/logo.png" class="logo" alt="logo"></a>
-                                    
-                                
-                            </p>
-
-                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
-
                         </nav>
-
-                        <div class="qe-page__toc-footer">
-                            
-                            
-                            <p><a href="#top"><strong>Back to top</strong></a></p>
-                        </div>
-
                     </div>
-
                 </div>
-
-                <div class="qe-page__header">
-
-                    <div class="qe-page__header-copy">
-
-                        <p class="qe-page__header-heading"><a href="../index.html"></a></p>
-
-                        <p class="qe-page__header-subheading">Content with notebooks</p>
-
-                    </div>
-
-                    <p class="qe-page__header-authors">Josh Keneda</p>
-
-                </div> <!-- .page__header -->
-
-
-
+            </div>
+            <main id="main-content" role="main">
                 
-                <main class="qe-page__content" role="main">
-                    
-                    <div>
-                        
+              <div>
+                
   <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
 <h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Permalink to this headline">#</a></h1>
 <p>You can also create content with Jupyter Notebooks. This means that you can include
@@ -264,7 +663,7 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x23b282abbb0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x1be97705430&gt;
 </pre></div>
 </div>
 </div>
@@ -321,317 +720,50 @@ with your book. For more information about this, see <a class="reference externa
     </script>
     <script>kernelName = 'python3'</script>
 
-                    </div>
-                    
-                </main> <!-- .page__content -->
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
                 
-
-
-                <footer class="qe-page__footer">
-
-                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
-
-                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
-
-                </footer> <!-- .page__footer -->
-
-            </div> <!-- .page -->
-
-            
-
-            
-            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
-
-                <div class="qe-sidebar__header">
-
-
-                    Contents
-
-                </div>
-
-                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
-                    <ul class="nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../index.html">
-   Welcome to Business Math!
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../algebra-review/index.html">
-   Algebra Review
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../algebra-review/1-factoring.html">
-     Factoring Tricks
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../algebra-review/factoring-glossary.html">
-     Factoring Glossary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../business-algebra/index.html">
-   Business Algebra (MATH 1324)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../business-algebra/functions/index.html">
-     Functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../business-algebra/exponentials-and-logarithms/index.html">
-     Exponentials and Logarithms
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../business-algebra/matrices-and-systems-of-equations/index.html">
-     Matrices and Systems of Equations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../business-algebra/linear-programming/index.html">
-     Linear Programming
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../business-algebra/probability/index.html">
-     Intro to Probability Theory
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../business-calculus/index.html">
-   Business Calculus (MATH 1325)
-  </a>
- </li>
- <li class="toctree-l1 current active has-children active">
-  <a class="reference internal" href="index.html">
-   Development Stuff
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="test/outer-test.html">
-     Outer Test
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="math-tests.html">
-     Math Tests
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2 current active active">
-    <a class="current reference internal" href="#">
-     Content with notebooks
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="markdown-notebooks.html">
-     Notebooks with MyST Markdown
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="my-markdown-file.html">
-     Here’s my sample title
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="issues-with-documentation.html">
-     Issues list
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../genindex.html">
-   Index
-  </a>
- </li>
-</ul>
-
-                </nav>
-
-                <div class="qe-sidebar__footer">
-
-                </div>
-
-            </div> <!-- .sidebar -->
-            
-        </div> <!-- .main -->
-
-        <div class="qe-toolbar">
-
-            <div class="qe-toolbar__inner">
-
-                <ul class="qe-toolbar__main">
-                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
-                    <li data-tippy-content="Home"><a href="../index.html"><i data-feather="home"></i></a></li>
-                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
-                    <!-- <li class="btn__search">
-                        <form action="../../search.html" method="get">
-                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off">
-                            <i data-feather="search"></i>
-                        </form>
-                    </li> -->
-                </ul>
-
-                <ul class="qe-toolbar__links">
-                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
-                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
-                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
-                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
-                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
-                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/jkeneda/jupyter-math-book/tree/main/docs/development-stuff/notebooks.ipynb" download><i data-feather="github"></i></a></li>
-                </ul>
-
-            </div>
-
-        </div> <!-- .toolbar -->
-        <div id="downloadPDFModal" style="display: none;">
-            <ul class="pdf-options" style="display: block;">
-                <li class="download-pdf-book" onClick="window.print()">
-                    <p>Lecture (PDF)</p>
-                </li>
-                <li class="download-pdf-file">
-                    <a href="" download><p>Book (PDF)</p></a>
-                </li>
-            </ul>
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Markdown Files</p>
         </div>
-        <div id="settingsModal" style="display: none;">
-            <p class="modal-title"> Notebook Launcher </p>
-            <div class="modal-desc">
-            <p>
-                Choose public or private cloud service for "Launch" button.
-            </p>
-            </div>
-            <p class="modal-subtitle">Select a server</p>
-            <ul class="modal-servers">
-            <li class="active launcher-public">
-                <span class="label">Public</span>
-                <select id="launcher-public-input">
-                
-                </select>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            <li class="launcher-private">
-                <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            </ul>
-            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
-            <script>
-                // QuantEcon Notebook Launcher
-                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
-                // Highlight the server type if previous selection exists
-                if (typeof localStorage.launcherType !== 'undefined') {
-                  for (var i = 0; i < launcherTypeElements.length; i++) {
-                    launcherTypeElements[i].classList.remove('active');
-                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
-                      launcherTypeElements[i].classList.add('active');
-                    }
-                  }
-                }
-                // Highlight server type on click and set local storage value
-                for (var i = 0; i < launcherTypeElements.length; i++) {
-                  launcherTypeElements[i].addEventListener('click', function() {
-                    for (var j = 0; j < launcherTypeElements.length; j++) {
-                      launcherTypeElements[j].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    if ( this.classList.contains('launcher-private') ) {
-                      localStorage.launcherType = 'launcher-private';
-                    } else if ( this.classList.contains('launcher-public') ) {
-                      localStorage.launcherType = 'launcher-public';
-                    }
-                    setLaunchServer();
-                  })
-                }
-                const launcherPublic = document.getElementById('launcher-public-input');
-                const launcherPrivate = document.getElementById('launcher-private-input');
-                const pageName = "docs/development-stuff/notebooks";
-                const repoURL = "";
-                const urlPath = "";
-                const branch = ""
-                const launchNotebookLink = document.getElementById('advancedLaunchButton');
-
-                // Highlight public server option if previous selection exists
-                if (typeof localStorage.launcherPublic !== 'undefined') {
-                  launcherPublic.value = localStorage.launcherPublic;
-                }
-                // Update local storage upon public server selection
-                launcherPublic.addEventListener('change', (event) => {
-                  setLaunchServer();
-                });
-                // Populate private server input if previous entry exists
-                if (typeof localStorage.launcherPrivate !== 'undefined') {
-                  launcherPrivate.value = localStorage.launcherPrivate;
-                }
-                // Update local storage when a private server is entered
-                launcherPrivate.addEventListener('input', (event) => {
-                  setLaunchServer();
-                });
-
-                // Function to update the "Launch Notebook" link href
-                function setLaunchServer() {
-                  launchNotebookLink.removeAttribute("style")
-                  if ( localStorage.launcherType == 'launcher-private' ) {
-                    let repoPrefix = "/jupyter/hub/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
-                    launcherPrivateValue = launcherPrivate.value
-                    if (!launcherPrivateValue) {
-                        launchNotebookLink.removeAttribute("href")
-                        launchNotebookLink.style.background = "grey"
-                        return
-                    }
-                    localStorage.launcherPrivate = launcherPrivateValue;
-                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
-                    if (!privateServer.includes("http")) {
-                        privateServer = "http://" + privateServer
-                    }
-                    launchNotebookLinkURL = privateServer + repoPrefix;
-                  } else if ( localStorage.launcherType == 'launcher-public' ) {
-                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
-                    localStorage.launcherPublic = launcherPublicValue;
-                    launchNotebookLinkURL = localStorage.launcherPublic;
-                  }
-                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
-                }
-                // Check if user has previously selected a server
-                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
-                  setLaunchServer();
-                }
-                </script>
-
+    </a>
+    <a class='right-next' id="next-link" href="markdown-notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
-
-    </div> <!-- .wrapper-->
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Josh Keneda<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
     
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
   </body>
 </html>
