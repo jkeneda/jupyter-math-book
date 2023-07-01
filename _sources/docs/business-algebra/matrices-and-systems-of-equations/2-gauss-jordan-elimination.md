@@ -19,6 +19,7 @@ $$
 ```{button-ref} #
 :color: info
 :class: sd-rounded-pill float-center
+:name: swap
 
 Swap Rows {octicon}`sync;1em;sd-text-light`
 ```
