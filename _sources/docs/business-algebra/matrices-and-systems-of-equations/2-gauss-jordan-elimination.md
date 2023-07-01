@@ -5,30 +5,35 @@ Gauss-Jordan Elimination is a method for reducing the matrices from systems of e
 ## Translating from a System to a Matrix
 Suppose we're given the system of equations
 
-$$\begin{equation}
-f(x) = \begin{cases} x & \text{if }x < 0 \\ x + 1 & \text{if }x \ge 0 \\ \end{cases}
-\end{equation}
-$$
+$$\begin{cases}
+x + y = 4\\
+-x + y = 0\\
+\end{cases}$$
 
-$$
-\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 & 1 & -1 \\
+When we translate 
+
+$$\left[\begin{array}{cc|c}
+    1 & 1 & -1 \\
     2 & 3 & 0  \\
-\end{array}\right]
+\end{array}\right]$$
+
 $$
+\begin{blockarray}{cccccc}
+x & y & c & d & e \\
+\begin{block}{(ccccc)c}
+  1 & 1 & 1 & 1 & 1 & f \\
+  0 & 1 & 0 & 0 & 1 & g \\
+  0 & 0 & 1 & 0 & 1 & h \\
+  0 & 0 & 0 & 1 & 1 & i \\
+  0 & 0 & 0 & 0 & 1 & j \\
+\end{block}
+\end{blockarray}
+ $$
 
-Here's one option for a div with an id, but you need to typeset onload:
-<div class="live" id="matrix-test">
-\begin{split}\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
-    4 & 5 & 6  \\
-\end{array}\right]\end{split}
-</div>
-<script>window.onload = function(){MathJax.typeset(['.live']);}</script>
+## Reducing the Matrix
 
-This one will be typeset on its own, and it can have an id via :name:.
 ```{div} live
-:name: math-block-1
+:name: matrix-test
 
 $$
 \begin{split}\left[\begin{array}{cc|c}

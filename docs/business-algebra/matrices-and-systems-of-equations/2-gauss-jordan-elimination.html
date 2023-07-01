@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl"]}, "tex": {"packages": {"[+]": ["colortbl"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl", "[tex]/blkarray"]}, "tex": {"packages": {"[+]": ["colortbl", "blkarray"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
@@ -537,6 +537,11 @@ title="Print to PDF"
    2.1. Translating from a System to a Matrix
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reducing-the-matrix">
+   2.2. Reducing the Matrix
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -561,6 +566,11 @@ title="Print to PDF"
    2.1. Translating from a System to a Matrix
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reducing-the-matrix">
+   2.2. Reducing the Matrix
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -578,27 +588,33 @@ title="Print to PDF"
 <h2><span class="section-number">2.1. </span>Translating from a System to a Matrix<a class="headerlink" href="#translating-from-a-system-to-a-matrix" title="Permalink to this headline">#</a></h2>
 <p>Suppose we’re given the system of equations</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
-f(x) = \begin{cases} x &amp; \text{if }x &lt; 0 \\ x + 1 &amp; \text{if }x \ge 0 \\ \end{cases}
-\end{equation}
-\end{split}\]</div>
+\[\begin{split}\begin{cases}
+x + y = 4\\
+-x + y = 0\\
+\end{cases}\end{split}\]</div>
+<p>When we translate</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{cc|c}
+    1 &amp; 1 &amp; -1 \\
+    2 &amp; 3 &amp; 0  \\
+\end{array}\right]\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 &amp; 1 &amp; -1 \\
-    2 &amp; 3 &amp; 0  \\
-\end{array}\right]
-\end{split}\]</div>
-<p>Here’s one option for a div with an id, but you need to typeset onload:</p>
-<div class="live" id="matrix-test">
-\begin{split}\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
-    4 & 5 & 6  \\
-\end{array}\right]\end{split}
-</div>
-<script>window.onload = function(){MathJax.typeset(['.live']);}</script>
-<p>This one will be typeset on its own, and it can have an id via :name:.</p>
-<div class="live docutils" id="math-block-1">
+\begin{blockarray}{cccccc}
+x &amp; y &amp; c &amp; d &amp; e \\
+\begin{block}{(ccccc)c}
+  1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; f \\
+  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; g \\
+  0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; h \\
+  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; i \\
+  0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; j \\
+\end{block}
+\end{blockarray}
+ \end{split}\]</div>
+</section>
+<section id="reducing-the-matrix">
+<h2><span class="section-number">2.2. </span>Reducing the Matrix<a class="headerlink" href="#reducing-the-matrix" title="Permalink to this headline">#</a></h2>
+<div class="live docutils" id="matrix-test">
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{split}\left[\begin{array}{cc|c}

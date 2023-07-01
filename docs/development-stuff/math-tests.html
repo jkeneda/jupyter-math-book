@@ -62,7 +62,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl"]}, "tex": {"packages": {"[+]": ["colortbl"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl", "[tex]/blkarray"]}, "tex": {"packages": {"[+]": ["colortbl", "blkarray"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
@@ -544,15 +544,12 @@ title="Print to PDF"
 </iframe></div><div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation}
 f(x) = \begin{cases} x &amp; \text{if }x &lt; 0 \\ x + 1 &amp; \text{if }x \ge 0 \\ \end{cases}
-\end{equation}
-\end{split}\]</div>
+\end{equation}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\left[\begin{array}{cc|c}
+\[\begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 &amp; 1 &amp; -1 \\
     2 &amp; 3 &amp; 0  \\
-\end{array}\right]
-\end{split}\]</div>
+\end{array}\right]\end{split}\]</div>
 <p>Here’s one option for a div with an id, but you need to typeset onload:</p>
 <div class="live" id="matrix-test">
 \begin{split}\left[\begin{array}{cc|c}
@@ -564,12 +561,10 @@ f(x) = \begin{cases} x &amp; \text{if }x &lt; 0 \\ x + 1 &amp; \text{if }x \ge 0
 <p>This one will be typeset on its own, and it can have an id via :name:.</p>
 <div class="live docutils" id="math-block-1">
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{split}\left[\begin{array}{cc|c}
+\[\begin{split}\begin{split}\left[\begin{array}{cc|c}
     \columncolor[rgb]{0, 1, 1} 1 &amp; 2 &amp; 3 \\
     4 &amp; 5 &amp; 6  \\
-\end{array}\right]\end{split}
-\end{split}\]</div>
+\end{array}\right]\end{split}\end{split}\]</div>
 </div>
 </section>
 
