@@ -11,6 +11,7 @@ document.addEventListener('click', (e) => {
     console.log(v.toArray(x));
     document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
     MathJax.typeset(['.live']);
+    console.log('once here');
 });
 
 //document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
