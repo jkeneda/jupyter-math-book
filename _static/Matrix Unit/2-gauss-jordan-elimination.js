@@ -15,6 +15,3 @@ document.addEventListener('click', (e) => {
 });
 
 //document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
-
-window.onload = function(){MathJax.typeset(['.live']);}
-//document.addEventListener("load", MathJax.typeset(['.live'])); seems to go too fast for mathjax to load.
