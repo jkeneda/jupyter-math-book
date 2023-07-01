@@ -10,7 +10,7 @@ $$
 $$
 
 <div class="live" id="matrix-test">
-\begin{split}\left[\begin{array}{cc|c}
+\begin{split}\left[\begin{array}{>\columncolor{yellow!20}cc|c}
     1 & 1 & -1 \\
     2 & 3 & 0  \\
 \end{array}\right]\end{split}
