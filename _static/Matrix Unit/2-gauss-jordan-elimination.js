@@ -8,3 +8,5 @@ document.addEventListener('click', (e) => {
     document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
     MathJax.typeset(['.live']);
 });
+
+document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
