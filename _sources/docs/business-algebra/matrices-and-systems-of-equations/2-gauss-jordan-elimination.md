@@ -6,11 +6,11 @@ Gauss-Jordan Elimination is a method for reducing the matrices from systems of e
 Suppose we're given the system of equations
 
 $$\begin{cases}
-x + y = 4\\
--x + y = 0\\
+&x + y &= 4\\
+-x &+ y &= 0\\
 \end{cases}$$
 
-When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficient`s: $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
+When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficients<coefficient>`: $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
 
 $$
 \begin{array}{c}
