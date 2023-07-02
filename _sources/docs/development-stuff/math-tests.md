@@ -14,6 +14,7 @@ This is a tab.
 ::::
 
 ::::{tab-item} Tab B
+There's content here!
 ::::
 :::::
 
