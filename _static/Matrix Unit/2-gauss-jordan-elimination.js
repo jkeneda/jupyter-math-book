@@ -4,7 +4,7 @@ var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
 // Currently a bit dumb - the top option is just listening for *any* click, and it seems to fire twice
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', () => {
     // var x = v.array([[1, 2, 3], [4, 5, 6]]);
     console.log(v.toArray(x));
     v.swap(x, 0, 1);
