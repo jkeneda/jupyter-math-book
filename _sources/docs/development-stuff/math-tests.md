@@ -15,6 +15,12 @@ This is a tab.
 
 ::::{tab-item} Tab B
 There's content here!
+
+```{mermaid}
+    flowchart LR
+        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
+        B --> C[Factor by grouping.]
+```
 ::::
 :::::
 
