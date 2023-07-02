@@ -1,5 +1,13 @@
 # Math Tests
 
+Can I do Mermaid diagrams inside of tab environments?
+
+:::::{tab-set}
+
+::::{tab-item}
+
+
+
 You can do inline math: $e^{i\pi} = -1$ and display style math:  
 
 $$a^2 + b^2 = c^2$$

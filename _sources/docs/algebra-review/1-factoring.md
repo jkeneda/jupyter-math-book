@@ -84,6 +84,10 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
         B --> C[Factor by grouping.]
 ```
 
+```{youtube} jnxqHcObNK4
+:url_parameters: ?start=30
+```
+
 More coming soon!
 
 ````{exercise} Random Generator
