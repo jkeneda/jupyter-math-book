@@ -4,7 +4,7 @@ Can I do Mermaid diagrams inside of tab environments?
 
 :::::{tab-set}
 
-::::{tab-item}
+::::{tab-item} Tab A
 This is a tab.
 ```{mermaid}
     flowchart LR
@@ -13,7 +13,7 @@ This is a tab.
 ```
 ::::
 
-::::{tab-item}
+::::{tab-item} Tab B
 ::::
 :::::
 
@@ -63,6 +63,7 @@ $$\begin{split}\left[\begin{array}{cc|c}
 ```
 
 MathJax doesn't like bordermatrix, so here's a way of labeling:
+
 $$\begin{matrix}
  & \begin{matrix}A&C&G&T\end{matrix} \\\\
 \begin{matrix}A\\\\C\\\\G\\\\T\end{matrix} & 

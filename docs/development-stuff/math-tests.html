@@ -538,6 +538,15 @@ title="Print to PDF"
 <h1>Math Tests<a class="headerlink" href="#math-tests" title="Permalink to this headline">#</a></h1>
 <p>Can I do Mermaid diagrams inside of tab environments?</p>
 <div class="sd-tab-set docutils">
+<input checked="checked" id="c15f7b28-e769-438d-af6f-8b1447fc8f10" name="716a2aac-f0e7-4708-ba4b-a51f0ff98a3d" type="radio">
+</input><label class="sd-tab-label" for="c15f7b28-e769-438d-af6f-8b1447fc8f10">
+Tab A</label><div class="sd-tab-content docutils">
+<p>This is a tab.</p>
+<div class="mermaid">
+                flowchart LR
+        A[&quot;`Find factors $m$, *n* of *ac* that add up to *b*.`&quot;] --&gt; B[Split up middle term *bx* into *mx + nx*.]
+        B --&gt; C[Factor by grouping.]
+        </div></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -576,14 +585,13 @@ f(x) = \begin{cases} x &amp; \text{if }x &lt; 0 \\ x + 1 &amp; \text{if }x \ge 0
     4 &amp; 5 &amp; 6  \\
 \end{array}\right]\end{split}\end{split}\]</div>
 </div>
-<p>MathJax doesn’t like bordermatrix, so here’s a way of labeling:
-$$\begin{matrix}
-&amp; \begin{matrix}A&amp;C&amp;G&amp;T\end{matrix} \</p>
-<div class="amsmath math notranslate nohighlight" id="equation-55b1520e-efae-4382-ae47-84e461a9307f">
-<span class="eqno">(5)<a class="headerlink" href="#equation-55b1520e-efae-4382-ae47-84e461a9307f" title="Permalink to this equation">#</a></span>\[\begin{matrix}A\\\\C\\\\G\\\\T\end{matrix}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-4f9a7494-b70d-47ba-950d-90e475c36c56">
-<span class="eqno">(6)<a class="headerlink" href="#equation-4f9a7494-b70d-47ba-950d-90e475c36c56" title="Permalink to this equation">#</a></span>\[\begin{pmatrix}1&amp;2&amp;3&amp;4\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\end{pmatrix}\]</div>
-<p>\end{matrix}$$</p>
+<p>MathJax doesn’t like bordermatrix, so here’s a way of labeling:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{matrix}
+ &amp; \begin{matrix}A&amp;C&amp;G&amp;T\end{matrix} \\\\
+\begin{matrix}A\\\\C\\\\G\\\\T\end{matrix} &amp; 
+  \begin{pmatrix}1&amp;2&amp;3&amp;4\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\end{pmatrix}\\\\
+\end{matrix}\end{split}\]</div>
 </section>
 
     <script type="text/x-thebe-config">

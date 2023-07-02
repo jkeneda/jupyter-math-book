@@ -63,6 +63,11 @@ $$\begin{array}{ccc}
 \end{array}$$
 ```
 
+From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll just write the translation as $\left[\begin{array}{cc|c}
+    1 & 1 & 4 \\
+    -1 & 1 & 0  \\
+\end{array}\right]$, with the understanding that the columns correspond to the variables (in alphabetical order).
+
 ## Reducing the Matrix
 
 ```{div} live
