@@ -26,7 +26,7 @@ Same diagram as in Tab A, but it's not visible after switching.
 ::::
 :::::
 
-`````{syntax}
+`````{admonition} Syntax
 :class: dropdown
 
 ````{code}
