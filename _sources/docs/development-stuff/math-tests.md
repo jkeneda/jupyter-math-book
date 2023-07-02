@@ -8,8 +8,8 @@ Q: Why aren't Mermaid diagrams showing up in secondary tabs?
 This is a primary tab.
 ```{mermaid}
     flowchart LR
-        A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
-        B --> C[Factor by grouping.]
+        A[Live] --> B[Laugh]
+            B --> C[Factor by grouping.]
 ```
 Diagram shows up fine here.
 ::::
@@ -19,8 +19,8 @@ There's content here too!
 
 ```{mermaid}
     flowchart LR
-        A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
-        B --> C[Factor by grouping.]
+        A[Live] --> B[Laugh]
+            B --> C[Factor by grouping.]
 ```
 Same diagram as in Tab A, but it's not visible after switching.
 ::::
