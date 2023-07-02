@@ -13,11 +13,11 @@ $$\begin{cases}
 When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficients<coefficient>`.  But sometimes the coefficients aren't written explicitly.  If we want to grab the coefficients on $x$ and $y$, we should think of the equation as $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
 
 $$\begin{array}{c}
-\ \:\! x \quad\  \:\! y \quad\;\! \ \ \\
+\ \, x \quad\  \:\! y \quad\;\! \ \ \\
 \left[\begin{array}{cc|c}
     1 & 1 & 4 \\
     -1 & 1 & 0  \\
-\end{array}\right]
+\end{array}\right]\\\\
 \end{array}$$
 
 ````{margin}
@@ -35,13 +35,10 @@ y = 7\\
 0x + 1y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
-\begin{array}{c}
-x \quad y \quad \ \ \\
 \left[\begin{array}{cc|c}
     1 & 0 & 2 \\
     0 & 1 & 7 \\
 \end{array}\right]\\\\
-\end{array}
 \end{array}$$
 
 ```
@@ -57,7 +54,7 @@ $$\begin{array}{ccc}
 \end{cases} &
 \iff &
 \begin{array}{c}
-\ \:\! x \quad\  \:\! y \quad\;\! \ \ \\
+\ \, x \quad\  \:\! y \quad\;\! \ \ \\
 \left[\begin{array}{cc|c}
     1 & 1 & 4 \\
     -1 & 1 & 0  \\
