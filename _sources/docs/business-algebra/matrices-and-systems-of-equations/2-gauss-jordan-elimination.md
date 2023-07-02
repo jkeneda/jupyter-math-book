@@ -31,8 +31,8 @@ y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
 \begin{cases}
-1x + 0y &= 2\\
-0x + 1y &= 7\\
+1x + 0y = 2\\
+0x + 1y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
 \begin{array}{c}
