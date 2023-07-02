@@ -5,13 +5,10 @@ var x = v.array([[1, 2, 3], [4, 5, 6]]);
 // Currently a bit dumb - the top option is just listening for *any* click, and it seems to fire twice
 
 document.addEventListener('click', () => {
-    // var x = v.array([[1, 2, 3], [4, 5, 6]]);
-    console.log(v.toArray(x));
     v.swap(x, 0, 1);
-    console.log(v.toArray(x));
     document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
     MathJax.typeset(['.live']);
-    console.log('once here');
+    console.log('Click event fired.');
 });
 
 //document.getElementById('form1').addEventListener('submit', function () {updateChart(myChart);});
