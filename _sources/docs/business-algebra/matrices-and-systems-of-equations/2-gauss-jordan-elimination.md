@@ -24,22 +24,22 @@ $$\begin{array}{c}
 ```{note}
 Some equations are especially tricky to translate.  For example, if a term/variable is *missing entirely*, then its coefficient is 0.
 
-$$\begin{array}{ccccc}
+$$\begin{array}{c}
 \begin{cases}
-\ \ \ x = 2\\
-y = 2\\
-\end{cases} &
-\iff &
+\ \ \ x &= 2\\
+y &= 2\\
+\end{cases} \\
+\iff \\
 \begin{cases}
-\ \ \ 1x + 0y = 2\\
-0x + 1y = 2\\
-\end{cases} &
-\iff &
+\ \ \ 1x + 0y &= 2\\
+0x + 1y &= 2\\
+\end{cases} \\
+\iff \\
 \begin{array}{c}
 \ \:\! x \quad\  \:\! y \quad\;\! c\\
 \left[\begin{array}{cc|c}
-    1 & 1 & 4 \\
-    -1 & 1 & 0  \\
+    1 & 0 & 2 \\
+    0 & 1 & 2  \\
 \end{array}\right]\\\\
 \end{array}
 \end{array}$$
