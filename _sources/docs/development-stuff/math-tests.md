@@ -5,7 +5,25 @@ Can I do Mermaid diagrams inside of tab environments?
 :::::{tab-set}
 
 ::::{tab-item}
+This is a tab.
+```{mermaid}
+    flowchart LR
+        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
+        B --> C[Factor by grouping.]
+```
+::::
 
+::::{tab-item}
+::::
+:::::
+
+````{note}
+```{mermaid}
+    flowchart LR
+        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
+        B --> C[Factor by grouping.]
+```
+````
 
 
 You can do inline math: $e^{i\pi} = -1$ and display style math:  

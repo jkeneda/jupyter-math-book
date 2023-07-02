@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/colortbl"]}, "tex": {"packages": {"[+]": ["colortbl"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
@@ -537,6 +539,51 @@ title="Print to PDF"
 <p>Can I do Mermaid diagrams inside of tab environments?</p>
 <div class="sd-tab-set docutils">
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="mermaid">
+                flowchart LR
+        A[&quot;`Find factors $m$, *n* of *ac* that add up to *b*.`&quot;] --&gt; B[Split up middle term *bx* into *mx + nx*.]
+        B --&gt; C[Factor by grouping.]
+        </div></div>
+<p>You can do inline math: <span class="math notranslate nohighlight">\(e^{i\pi} = -1\)</span> and display style math:</p>
+<div class="math notranslate nohighlight">
+\[a^2 + b^2 = c^2\]</div>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/jnxqHcObNK4" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{equation}
+f(x) = \begin{cases} x &amp; \text{if }x &lt; 0 \\ x + 1 &amp; \text{if }x \ge 0 \\ \end{cases}
+\end{equation}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[\begin{array}{cc|c}
+    \columncolor[rgb]{0, 1, 1} 1 &amp; 1 &amp; -1 \\
+    2 &amp; 3 &amp; 0  \\
+\end{array}\right]\end{split}\]</div>
+<p>Here’s one option for a div with an id, but you need to typeset onload:</p>
+<div class="live" id="matrix-test">
+\begin{split}\left[\begin{array}{cc|c}
+    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
+    4 & 5 & 6  \\
+\end{array}\right]\end{split}
+</div>
+<script>window.onload = function(){MathJax.typeset(['.live']);}</script>
+<p>This one will be typeset on its own, and it can have an id via :name:.</p>
+<div class="live docutils" id="math-block-1">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}\left[\begin{array}{cc|c}
+    \columncolor[rgb]{0, 1, 1} 1 &amp; 2 &amp; 3 \\
+    4 &amp; 5 &amp; 6  \\
+\end{array}\right]\end{split}\end{split}\]</div>
+</div>
+<p>MathJax doesn’t like bordermatrix, so here’s a way of labeling:
+$$\begin{matrix}
+&amp; \begin{matrix}A&amp;C&amp;G&amp;T\end{matrix} \</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d1cd3582-b643-4acf-8c7e-9602e9e34231">
+<span class="eqno">(5)<a class="headerlink" href="#equation-d1cd3582-b643-4acf-8c7e-9602e9e34231" title="Permalink to this equation">#</a></span>\[\begin{matrix}A\\\\C\\\\G\\\\T\end{matrix}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-4ec030de-21ef-44ed-b86c-ee77a16430f5">
+<span class="eqno">(6)<a class="headerlink" href="#equation-4ec030de-21ef-44ed-b86c-ee77a16430f5" title="Permalink to this equation">#</a></span>\[\begin{pmatrix}1&amp;2&amp;3&amp;4\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\\\\3&amp;4&amp;5&amp;6\end{pmatrix}\]</div>
+<p>\end{matrix}$$</p>
 </section>
 
     <script type="text/x-thebe-config">

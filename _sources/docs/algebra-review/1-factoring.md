@@ -2,12 +2,6 @@
 
 This page is designed to walk you through all of the factoring tricks we'll need.  Each tab discusses a new factoring trick, and you can find an exercise generator at the bottom of each tab.  Practice with each type of problem until you're comfortable with the relevant trick, and then move on to the next tab!
 
-```{mermaid}
-    flowchart LR
-        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
-        B --> C[Factor by grouping.]
-```
-
 ::::::{tab-set}
 
 :::::{tab-item} Monic Quadratics ($1x^2 + bx + c$)
@@ -84,11 +78,7 @@ In this section, we'll discuss an extension of the trick for factoring monic qua
         B --> C[Factor by grouping.]
 ```
 
-```{youtube} jnxqHcObNK4
-:url_parameters: ?start=30
-```
-
-More coming soon!
+Fixes and more coming soon!
 
 ````{exercise} Random Generator
 :label: non-monic-generator
