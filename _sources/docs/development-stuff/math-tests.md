@@ -9,7 +9,7 @@ This is a primary tab.
 ```{mermaid}
     flowchart LR
         A[Live] --> B[Laugh]
-            B --> C[Factor by grouping.]
+        B --> C[Factor by grouping.]
 ```
 Diagram shows up fine here.
 ::::
@@ -20,7 +20,7 @@ There's content here too!
 ```{mermaid}
     flowchart LR
         A[Live] --> B[Laugh]
-            B --> C[Factor by grouping.]
+        B --> C[Factor by grouping.]
 ```
 Same diagram as in Tab A, but it's not visible after switching.
 ::::
@@ -54,7 +54,6 @@ Here's the code I'm trying to use::
     Same diagram as in Tab A, but it's not visible after switching.
     ::::
     :::::
-````
 `````
 
 ## Math Tests
