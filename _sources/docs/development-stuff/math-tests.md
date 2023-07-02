@@ -29,30 +29,31 @@ Same diagram as in Tab A, but it's not visible after switching.
 `````{admonition} Syntax
 :class: dropdown
 
-````{code}
-:::::{tab-set}
+Here's the code I'm trying to use::
 
-::::{tab-item} Tab A
-This is a primary tab.
-```{mermaid}
-    flowchart LR
-        A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
-        B --> C[Factor by grouping.]
-```
-Diagram shows up fine here.
-::::
+    :::::{tab-set}
 
-::::{tab-item} Tab B
-There's content here too!
+    ::::{tab-item} Tab A
+    This is a primary tab.
+    ```{mermaid}
+        flowchart LR
+            A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
+            B --> C[Factor by grouping.]
+    ```
+    Diagram shows up fine here.
+    ::::
 
-```{mermaid}
-    flowchart LR
-        A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
-        B --> C[Factor by grouping.]
-```
-Same diagram as in Tab A, but it's not visible after switching.
-::::
-:::::
+    ::::{tab-item} Tab B
+    There's content here too!
+
+    ```{mermaid}
+        flowchart LR
+            A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
+            B --> C[Factor by grouping.]
+    ```
+    Same diagram as in Tab A, but it's not visible after switching.
+    ::::
+    :::::
 ````
 `````
 
