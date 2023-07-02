@@ -20,28 +20,10 @@ $$\begin{array}{c}
 \end{array}\right]
 \end{array}$$
 
-In other words, we have:
-
-```{admonition} Translating Back and Forth
-$$\begin{array}{ccc}
-\begin{cases}
-\ \ \ x + y = 4\\
--x + y = 0\\
-\end{cases} &
-\iff &
-\begin{array}{c}
-\ \:\! x \quad\  \:\! y \quad\;\! c\\
-\left[\begin{array}{cc|c}
-    1 & 1 & 4 \\
-    -1 & 1 & 0  \\
-\end{array}\right]\\\\
-\end{array}
-\end{array}$$
-```
-
 ````{margin}
 ```{note}
 Some equations are especially tricky to translate.  For example, if a term/variable is *missing entirely*, then its coefficient is 0.
+
 $$\begin{array}{ccccc}
 \begin{cases}
 \ \ \ x = 2\\
@@ -61,8 +43,28 @@ y = 2\\
 \end{array}\right]\\\\
 \end{array}
 \end{array}$$
+
 ```
 ````
+
+In other words, we have:
+
+```{admonition} Translating Back and Forth
+$$\begin{array}{ccc}
+\begin{cases}
+\ \ \ x + y = 4\\
+-x + y = 0\\
+\end{cases} &
+\iff &
+\begin{array}{c}
+\ \:\! x \quad\  \:\! y \quad\;\! c\\
+\left[\begin{array}{cc|c}
+    1 & 1 & 4 \\
+    -1 & 1 & 0  \\
+\end{array}\right]\\\\
+\end{array}
+\end{array}$$
+```
 
 ## Reducing the Matrix
 
