@@ -26,13 +26,13 @@ Some equations are especially tricky to translate.  For example, if a term/varia
 
 $$\begin{array}{c}
 \begin{cases}
-\ x = 2\\
-\ y = 7\\
+\, x = 2\\
+\, y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
 \begin{cases}
-1x + 0y = 2\\
-0x + 1y = 7\\
+\, 1x + 0y = 2\\
+\, 0x + 1y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
 \left[\begin{array}{cc|c}
