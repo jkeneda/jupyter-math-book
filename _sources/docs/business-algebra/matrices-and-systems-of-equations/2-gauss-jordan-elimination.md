@@ -26,8 +26,8 @@ Some equations are especially tricky to translate.  For example, if a term/varia
 
 $$\begin{array}{c}
 \begin{cases}
-x = 2\\
-y = 7\\
+\ x = 2\\
+\ y = 7\\
 \end{cases} \\\\
 \big\Updownarrow \\\\
 \begin{cases}
