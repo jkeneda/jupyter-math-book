@@ -37,7 +37,7 @@ Here's the code I'm trying to use::
     This is a primary tab.
     ```{mermaid}
         flowchart LR
-            A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
+            A[Live] --> B[Laugh]
             B --> C[Factor by grouping.]
     ```
     Diagram shows up fine here.
@@ -48,7 +48,7 @@ Here's the code I'm trying to use::
 
     ```{mermaid}
         flowchart LR
-            A[Find factors *m*, *n* of *ac* that add up to *b*.] --> B[Split up middle term *bx* into *mx + nx*.]
+            A[Live] --> B[Laugh]
             B --> C[Factor by grouping.]
     ```
     Same diagram as in Tab A, but it's not visible after switching.
