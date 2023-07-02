@@ -26,20 +26,20 @@ Some equations are especially tricky to translate.  For example, if a term/varia
 
 $$\begin{array}{c}
 \begin{cases}
-\ \ \ x &= 2\\
-y &= 2\\
-\end{cases} \\
-\iff \\
+x = 2\\
+y = 7\\
+\end{cases} \\\\
+\big\Updownarrow \\\\
 \begin{cases}
-\ \ \ 1x + 0y &= 2\\
-0x + 1y &= 2\\
-\end{cases} \\
-\iff \\
+1x + 0y &= 2\\
+0x + 1y &= 7\\
+\end{cases} \\\\
+\big\Updownarrow \\\\
 \begin{array}{c}
-\ \:\! x \quad\  \:\! y \quad\;\! c\\
+x \quad y \quad c\\
 \left[\begin{array}{cc|c}
     1 & 0 & 2 \\
-    0 & 1 & 2  \\
+    0 & 1 & 7 \\
 \end{array}\right]\\\\
 \end{array}
 \end{array}$$
