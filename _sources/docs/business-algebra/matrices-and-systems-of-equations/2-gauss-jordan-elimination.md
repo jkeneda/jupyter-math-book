@@ -10,7 +10,7 @@ $$\begin{cases}
 -x + y = 0\\
 \end{cases}$$
 
-When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficients<coefficient>`: $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
+When we translate an equation like $x + y = 4$ into a matrix row, we think of it in terms of its {term}`coefficients<coefficient>`.  But sometimes the coefficients aren't written explicitly.  If we want to grab the coefficients on $x$ and $y$, we should think of the equation as $1x + 1y = 4$.  We then form a column for each variable, and we leave the right-hand side constants in the matrix as an augmented column.  The matrix below is just a way of rewriting the system above.
 
 $$\begin{array}{c}
 \ \:\! x \quad\  \:\! y \quad\;\! c\\
@@ -38,6 +38,8 @@ $$\begin{array}{ccc}
 \end{array}
 \end{array}$$
 ```
+
+
 
 ## Reducing the Matrix
 

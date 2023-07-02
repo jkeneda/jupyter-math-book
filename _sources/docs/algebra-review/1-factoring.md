@@ -78,6 +78,12 @@ Reroll {octicon}`sync;1em;sd-text-light`
 
 In this section, we'll discuss an extension of the trick for factoring monic quadratics.  What happens if $a \neq 1$?
 
+```{mermaid}
+    flowchart LR
+        A["`Find factors $m$, *n* of *ac* that add up to *b*.`"] --> B[Split up middle term *bx* into *mx + nx*.]
+        B --> C[Factor by grouping.]
+```
+
 More coming soon!
 
 ````{exercise} Random Generator
