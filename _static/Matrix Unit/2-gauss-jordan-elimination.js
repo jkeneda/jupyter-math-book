@@ -16,7 +16,7 @@ document.addEventListener('click', () => {
 document.addEventListener('click', (e) => {
     const target = e.target.closest('.sd-btn-info');
 
-    if (target.closest('#monic-generator')) {
+    if (target.closest('#swap-rows')) {
         
         v.swap(x, 0, 1);
         document.getElementById('matrix-test').innerHTML = v.toLaTeX(v.toArray(x), split = true);
