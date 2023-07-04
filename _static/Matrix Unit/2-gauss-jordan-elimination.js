@@ -18,7 +18,7 @@ document.addEventListener('click', (e) => {
 
     if (target.closest('#swap-rows')) {
         
-        v.swap(x, 0, 1);
+        x = v.swap(x, 0, 1);
         document.getElementById('matrix-test').innerHTML = v.toLaTeX(v.toArray(x), split = true);
         MathJax.typeset(['.live']);
         console.log('Click event fired.');
