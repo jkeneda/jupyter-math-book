@@ -82,7 +82,6 @@ $$\begin{split}\left[\begin{array}{cc|c}
 ```{button-ref} #
 :color: info
 :class: sd-rounded-pill float-center
-:name: tag-test
 
 Swap Rows {octicon}`sync;1em;sd-text-light`
 ```

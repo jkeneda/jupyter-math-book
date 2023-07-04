@@ -6,7 +6,7 @@ var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
 document.addEventListener('click', () => {
     v.swap(x, 0, 1);
-    document.getElementById('matrix-test').innerHTML = toLaTeX(v.toArray(x), split = true);
+    document.getElementById('matrix-test').innerHTML = v.toLaTeX(v.toArray(x), split = true);
     MathJax.typeset(['.live']);
     console.log('Click event fired.');
 });
