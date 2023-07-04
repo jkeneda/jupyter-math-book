@@ -87,11 +87,11 @@ normal distribution
 There's much more to say here, but normal random variables have *infinitely* many possible outcomes, and we're going to focus on simpler random variables for this course.  You'll see more about *continuous* distributions (like the bell curve) if you take a course in statistics.
 ```
 
-<script src="../../../_static/chart.js">
+<script src="../../../scripts/chart.js">
 </script>
 
 <script src="../../../scripts/distributions.js"> // Functions for handling dice distributions
 </script>
 
-<script src="../../../_static/1-probability-distributions.js">// Creates local chart and handles events
+<script src="../../../scripts/1-probability-distributions.js">// Creates local chart and handles events
 </script>

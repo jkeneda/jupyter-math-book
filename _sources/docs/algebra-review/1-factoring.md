@@ -289,4 +289,4 @@ The randomized solutions aren't smart enough (yet?) to spot common factors.  For
 The solutions for the randomizer will ignore any common factors like this - they're only going to use the factoring tricks provided on this page.
 ```
 
-<script src="../../_static/1-factoring.js"></script>
+<script src="../../scripts/1-factoring.js"></script>

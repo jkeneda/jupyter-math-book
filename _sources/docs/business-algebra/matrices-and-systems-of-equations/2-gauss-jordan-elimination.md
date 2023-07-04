@@ -90,9 +90,9 @@ Swap Rows {octicon}`sync;1em;sd-text-light`
 ```
 ````
 
-<script src="../../../_static/vectorious.js">
+<script src="../../../scripts/vectorious.js">
 </script>
-<script src="../../../_static/matrix-TeX.js">
+<script src="../../../scripts/matrix-TeX.js">
 </script>
-<script src="../../../_static/Matrix Unit/2-gauss-jordan-elimination.js">
+<script src="../../../scripts/Matrix Unit/2-gauss-jordan-elimination.js">
 </script>
