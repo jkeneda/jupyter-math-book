@@ -14,7 +14,7 @@ document.addEventListener('click', () => {
 */
 
 document.addEventListener('click', (e) => {
-    const target = e.target.closest('.sd-btn-info');
+    const target = e.target.closest('.sd-btn-info') || document.body;
 
     if (target.closest('#swap-rows')) {
         
