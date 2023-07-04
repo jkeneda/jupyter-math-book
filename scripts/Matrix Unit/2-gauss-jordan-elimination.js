@@ -1,4 +1,4 @@
-// Assumes vectoriouus and matrix-TeX have been loaded
+// Assumes vectorious and matrix-TeX have been loaded
 
 var x = v.array([[1, 2, 3], [4, 5, 6]]);
 
