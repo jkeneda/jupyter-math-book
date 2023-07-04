@@ -37,7 +37,7 @@ We could generate more points like this by choosing an arbitrary $x$-value and t
 
 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
-<script src="../../../_static/1-c-graphs-of-functions.js">// Populates Desmos graphs
+<script src="../../../scripts/1-c-graphs-of-functions.js">// Populates Desmos graphs
 </script>
 
 ## Zoom Out

@@ -54,6 +54,8 @@ chapters:
     sections:
     - file: docs/development-stuff/test/outer-test
     - file: docs/development-stuff/math-tests
+    - file: docs/development-stuff/mermaid-tests
+    - file: docs/development-stuff/mermaid-test-diagnose
     - file: docs/development-stuff/markdown
     - file: docs/development-stuff/notebooks
     - file: docs/development-stuff/markdown-notebooks

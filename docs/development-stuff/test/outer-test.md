@@ -48,4 +48,4 @@ more content
 :::
 ::::
 
-<script src="../../../_static/outer-test.js"></script>
+<script src="../../../scripts/outer-test.js"></script>
