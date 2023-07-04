@@ -94,5 +94,5 @@ Swap Rows {octicon}`sync;1em;sd-text-light`
 </script>
 <script src="../../../_static/matrix-TeX.js">
 </script>
-<script src="2-gauss-jordan-elimination.js">
+<script src="../../../_static/Matrix Unit/2-gauss-jordan-elimination.js">
 </script>
