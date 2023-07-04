@@ -90,7 +90,7 @@ There's much more to say here, but normal random variables have *infinitely* man
 <script src="../../../_static/chart.js">
 </script>
 
-<script src="../../../_static/distributions.js"> // Functions for handling dice distributions
+<script src="../../../scripts/distributions.js"> // Functions for handling dice distributions
 </script>
 
 <script src="../../../_static/1-probability-distributions.js">// Creates local chart and handles events
