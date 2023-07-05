@@ -9,7 +9,7 @@ document.addEventListener('click', (e) => {
     if (target.closest('#swap-rows')) {
         x = v.swap(x, 0, 1);
         document.getElementById('matrix-test').innerHTML = v.toLaTeX(v.toArray(x), split = true);
-        MathJax.typeset(['.live']);
+        MathJax.typeset(['#matrix-test']);
         console.log('Click event fired.');
     }
 });
