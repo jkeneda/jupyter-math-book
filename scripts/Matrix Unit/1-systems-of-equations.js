@@ -16,7 +16,7 @@ var calculator1 = Desmos.GraphingCalculator(document.getElementById('calculator1
     calculator1.setExpression({
         id: '3',
         latex: '(2, 0)',
-        color: Desmos.Colors.ORANGE,
+        color: Desmos.Colors.GREEN,
         showLabel: true
     });
 
