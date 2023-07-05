@@ -85,7 +85,7 @@ To get to a matrix that looks like the one above, we are only allowed to do row 
 
 We are allowed to swap rows, because that's the same thing as swapping the equations in the system.  This doesn't affect the solution set.
 
-`````{admonititon} Try it yourself!
+`````{admonition} Try it yourself!
 :class: tip
 
 ```{div}
@@ -97,6 +97,16 @@ $$\begin{split}\left[\begin{array}{cc|c}
 \end{array}\right]\end{split}$$
 ```
 
+````{div}
+:name: swap-rows
+
+```{button-ref} #
+:color: info
+:class: sd-rounded-pill float-center
+
+Swap Rows {octicon}`sync;1em;sd-text-light`
+```
+````
 `````
 
 Typically, we use this row operation to get a 1 where we want it in the matrix.  The next operation can also be used to force a specific entry to become a 1.
