@@ -74,7 +74,7 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
 :name: matrix-test
 
 $$\begin{split}\left[\begin{array}{cc|c}
-    \columncolor[rgb]{0, 1, 1} 1 & 2 & 3 \\
+    1 & 2 & 3 \\
     4 & 5 & 6  \\
 \end{array}\right]\end{split}$$
 ```
