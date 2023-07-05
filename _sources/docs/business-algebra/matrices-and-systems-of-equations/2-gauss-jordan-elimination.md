@@ -119,7 +119,7 @@ We are also allowed to multiply/divide a row by a **non-zero** number.  This is 
 
 <script src="../../../scripts/vectorious.js">
 </script>
-<script src="../../../scripts/matrix-TeX.js">
+<script src="../../../scripts/more-vectorious.js">
 </script>
 <script src="../../../scripts/Matrix Unit/2-gauss-jordan-elimination.js">
 </script>
