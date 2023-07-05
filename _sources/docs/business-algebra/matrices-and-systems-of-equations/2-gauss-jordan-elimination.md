@@ -69,7 +69,7 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
 \end{array}\right]$, with the understanding that the columns correspond to the variables (in alphabetical order).
 
 ```{warning}
-Sometimes, we have to rearrange the equation we start with until it has the appropriate format for the matrix.  For example, if we start with the equation $2x = 3y$, we would need to rearrange the equation to get the variables together (maybe subtract $3y$ from both sides to get $2x - 3y = 0$).  The corresponding matrix row would look like $[2 \quad -3\ |\ 0]$.
+Sometimes, we have to rearrange the equation we start with until it has the appropriate format for the matrix.  For example, if we start with the equation $2x = 3y$, we would need to rearrange the equation to get the variables together (maybe subtract $3y$ from both sides to get $2x - 3y = 0$).  The corresponding matrix row would look like $[2 \ -3\ |\ 0]$.
 ```
 
 ## Reducing the Matrix
@@ -87,8 +87,8 @@ To get to a matrix that looks like the one above, we are only allowed to do row 
 :name: gje1
 
 $$\begin{split}\left[\begin{array}{cc|c}
-    1 & 2 & 3 \\
     4 & 5 & 6 \\
+    1 & 2 & 3 \\
 \end{array}\right]\end{split}$$
 ```
 
