@@ -31,7 +31,7 @@ v.toLaTeX = function (matrix, split = false, matrixType = "") {
             split = false;
         }
         if (split) {
-            TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
+            TeX += `\\[\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
             for (var i = 1; i < columns; i++) {
                 TeX += `c`;
             }
@@ -39,7 +39,7 @@ v.toLaTeX = function (matrix, split = false, matrixType = "") {
             for (var i = 0; i < matrix.length; i++) {
                 TeX += makeTeXRow(matrix[i]);
             }
-            TeX += `\\end{array}\\right]\n\\end{split}`;
+            TeX += `\\end{array}\\right]\n\\end{split}\\]`;
         } else {
             TeX += `\\begin{${matrixType}matrix}\n`;
             for (var i = 0; i < matrix.length; i++) {
