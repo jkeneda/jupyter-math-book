@@ -508,12 +508,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-systems-of-two-variables">
+   1.1. Linear Systems of Two Variables
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -525,6 +549,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-systems-of-two-variables">
+   1.1. Linear Systems of Two Variables
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -534,12 +571,28 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="systems-of-equations">
 <h1><span class="section-number">1. </span>Systems of Equations<a class="headerlink" href="#systems-of-equations" title="Permalink to this headline">#</a></h1>
-<p>So far in this course, we’ve met equations like <span class="math notranslate nohighlight">\(y = 2x - 4\)</span>  We’ve seen that such equations can have many solutions.  For example, both <span class="math notranslate nohighlight">\((x, y) = (0, -4)\)</span> and <span class="math notranslate nohighlight">\((x, y) = (2, 0)\)</span> are solutions to this equation.  We often visualize the full set of solutions to the equation in the form of a graph:</p>
+<p>So far in this course, we’ve met equations like <span class="math notranslate nohighlight">\(y = 2x - 4\)</span>.  We’ve seen that such equations can have many solutions.  For example, both <span class="math notranslate nohighlight">\((x, y) = (0, -4)\)</span> and <span class="math notranslate nohighlight">\((x, y) = (2, 0)\)</span> are solutions to this equation.  We often visualize the full set of solutions to the equation in the form of a graph:</p>
 <div id="calculator1" style="width: 90%; height: 300px; margin-left: auto; margin-right: auto;">
 </div>
+<p>Now we want to think about balancing multiple equations at the same time.</p>
+<section id="linear-systems-of-two-variables">
+<h2><span class="section-number">1.1. </span>Linear Systems of Two Variables<a class="headerlink" href="#linear-systems-of-two-variables" title="Permalink to this headline">#</a></h2>
+<p>When we have multiple constraints that we need to satisfy simultaneously, we typically write them with a curly brace, like this:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+\ \ \ x + y = 4\\
+-x + y = 0\\
+\end{cases}\end{split}\]</div>
+<p>This is called a <em><strong>system of equations</strong></em>.</p>
+<dl class="glossary simple">
+<dt id="term-system-of-equations">system of equations<a class="headerlink" href="#term-system-of-equations" title="Permalink to this term">#</a></dt><dd><p>A system of equations is a set of equations (usually grouped with a curly brace) that we want to simultaneously balance</p>
+</dd>
+</dl>
+<p>A <em><strong>solution</strong></em> to a system of equations is an assignment of values for the variables (<span class="math notranslate nohighlight">\(x = ..., y = ...\)</span>) that will solve <strong>all</strong> of the equations in the system.</p>
 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 <script src="../../../scripts/Matrix Unit/1-systems-of-equations.js">
 </script></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
