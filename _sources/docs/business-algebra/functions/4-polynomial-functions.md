@@ -32,7 +32,7 @@ degree
 ```{warning}
 You can only directly read the degree of a polynomial when it has been fully FOILed/expanded, with like terms collected.  For example, if $f(x) = 5(x-3)(x+4)$, then you might be tempted to say that the degree is 1.  But if we FOIL, we get: 
 
-$f(x) = 5(x^2 + 4x - 3x - 12) = 5(x^2 + x - 12) = 5x^2 + 5x - 60.$  
+$$f(x) = 5(x^2 + 4x - 3x - 12) = 5(x^2 + x - 12) = 5x^2 + 5x - 60.$$
 
 So the degree would be 2, and the {term}`leading coefficient` would be 5.
 ```
