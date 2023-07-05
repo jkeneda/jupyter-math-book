@@ -6,7 +6,7 @@ v.printMatrix = function (x, id) {
     document.getElementById(id).firstChild.nextSibling.innerHTML = v.toLaTeX(v.toArray(x), split = true);
         // The Child shenanigans are necessary because the Jupyter Book typesetting will wrap the math in newlines and an extra div - we need to preserve it for spacing
         MathJax.typeset(['#' + id]);
-}[1, 2, 3],
+}
 
 document.addEventListener('click', (e) => {
     e.stopImmediatePropagation(); // Makes sure it only fires once instead of bubbling.
