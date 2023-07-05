@@ -1,6 +1,6 @@
 # Systems of Equations
 
-So far in this course, we've met equations like $y = 2x - 4 \, \textcolor{blue}\big\cdot$  We've seen that such equations can have many solutions.  For example, both $(x, y) = (0, -4) \textcolor{red}\big\cdot$ and $(x, y) = (2, 0) \textcolor{green}\big\cdot$ are solutions to this equation.  We often visualize the full set of solutions to the equation in the form of a graph:
+So far in this course, we've met equations like $y = 2x - 4 \, \textcolor{blue}\large\cdot$  We've seen that such equations can have many solutions.  For example, both $(x, y) = (0, -4) \textcolor{red}\large\cdot$ and $(x, y) = (2, 0) \textcolor{green}\large\cdot$ are solutions to this equation.  We often visualize the full set of solutions to the equation in the form of a graph:
 
 <div id="calculator1" style="width: 90%; height: 300px; margin-left: auto; margin-right: auto;">
 </div>
