@@ -70,8 +70,8 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
 
 ## Reducing the Matrix
 
-```{div} live
-:name: matrix-test
+```{div}
+:name: gje1
 
 $$\begin{split}\left[\begin{array}{cc|c}
     1 & 2 & 3 \\
