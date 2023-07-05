@@ -15,16 +15,21 @@ $$\begin{cases}
 -x + y = 0\\
 \end{cases}$$
 
-This is called a ***system of equations***.
+This is called a *system of equations*.
 
 ```{glossary}
 system of equations
-    A system of equations is a set of equations (usually grouped with a curly brace) that we want to simultaneously balance
+    A ***system of equations**** is a set of equations (usually grouped with a curly brace) that we want to simultaneously balance
+
+solution
+    A ***solution*** to a system of equations is an assignment of values for the variables ($x = ..., y = ...$) that will solve **all** of the equations in the system.
 ```
 
-A ***solution*** to a system of equations is an assignment of values for the variables ($x = ..., y = ...$) that will solve **all** of the equations in the system.
-
-
+````{margin}
+```{note}
+The solution to the system here is $(x, y) = (2, 2)$.  We can check a solution by verifying that all of the equations in the system are balanced.
+```
+````
 
 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
