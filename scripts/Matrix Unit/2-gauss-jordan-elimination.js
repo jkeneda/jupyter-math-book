@@ -7,8 +7,8 @@ document.addEventListener('click', (e) => {
     
     if (e.target.closest('#swap-rows')) {
         x = v.swap(x, 0, 1);
-        document.getElementById('matrix-test').secondChild.innerHTML = v.toLaTeX(v.toArray(x), split = true);
-        // The firstChild is because the Jupyter Book typesetting will wrap the math in an extra div - we need to preserve it for spacing
+        document.getElementById('matrix-test').firstChild.nextSibling.innerHTML = v.toLaTeX(v.toArray(x), split = true);
+        // The Child shenanigans are necessary because the Jupyter Book typesetting will wrap the math in newlines and an extra div - we need to preserve it for spacing
         MathJax.typeset(['#matrix-test']);
     }
 });
