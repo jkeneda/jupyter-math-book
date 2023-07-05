@@ -1,4 +1,4 @@
-// Assumes vectorious and matrix-TeX have been loaded - adds to exposed v
+// Assumes vectorious.js and more-vectorious.js have been loaded - adds to exposed v
 
 var x = v.array([[4, 5, 6], [1, 2, 3]]); // For gje1
 

@@ -66,4 +66,6 @@ v.toLaTeX = function (matrix, split = false, matrixType = "") {
 
 v.scalarMult = function (vmatrix, row, scalar) {
     vmatrix.row_add(row, row, scalar - 1);
+    v.map(vmatrix, value => value.toPrecision(3));
+    return vmatrix;
 }
