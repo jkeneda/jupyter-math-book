@@ -545,6 +545,11 @@ title="Print to PDF"
      2.2.1. Row Swapping
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiplying-dividing-a-row-by-a-number">
+     2.2.2. Multiplying/Dividing a Row by a Number
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -579,6 +584,11 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#row-swapping">
      2.2.1. Row Swapping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiplying-dividing-a-row-by-a-number">
+     2.2.2. Multiplying/Dividing a Row by a Number
     </a>
    </li>
   </ul>
@@ -674,16 +684,12 @@ title="Print to PDF"
 <p>To get to a matrix that looks like the one above, we are only allowed to do row operations that preserve the original solution set.  There are three such row operations.  Let’s explore the first one.</p>
 <section id="row-swapping">
 <h3><span class="section-number">2.2.1. </span>Row Swapping<a class="headerlink" href="#row-swapping" title="Permalink to this headline">#</a></h3>
-<div class="docutils" id="gje1">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{split}\left[\begin{array}{cc|c}
-    4 &amp; 5 &amp; 6 \\
-    1 &amp; 2 &amp; 3 \\
-\end{array}\right]\end{split}\end{split}\]</div>
-</div>
-<div class="docutils" id="swap-rows">
-<p><span class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-rounded-pill float-center">Swap Rows <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-sync sd-text-light" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.5a5.487 5.487 0 00-4.131 1.869l1.204 1.204A.25.25 0 014.896 6H1.25A.25.25 0 011 5.75V2.104a.25.25 0 01.427-.177l1.38 1.38A7.001 7.001 0 0114.95 7.16a.75.75 0 11-1.49.178A5.501 5.501 0 008 2.5zM1.705 8.005a.75.75 0 01.834.656 5.501 5.501 0 009.592 2.97l-1.204-1.204a.25.25 0 01.177-.427h3.646a.25.25 0 01.25.25v3.646a.25.25 0 01-.427.177l-1.38-1.38A7.001 7.001 0 011.05 8.84a.75.75 0 01.656-.834z"></path></svg></span></p>
-</div>
+<p>We are allowed to swap rows, because that’s the same thing as swapping the equations in the system.  This doesn’t affect the solution set.</p>
+<p>Typically, we use this row operation to get a 1 where we want it in the matrix.  The next operation can also be used to force a specific entry to become a 1.</p>
+</section>
+<section id="multiplying-dividing-a-row-by-a-number">
+<h3><span class="section-number">2.2.2. </span>Multiplying/Dividing a Row by a Number<a class="headerlink" href="#multiplying-dividing-a-row-by-a-number" title="Permalink to this headline">#</a></h3>
+<p>We are also allowed to multiply/divide a row by a <strong>non-zero</strong> number.  This is analogous to multiplying/dividing both sides of an equation by the number, which doesn’t change its solution set.  For example, <span class="math notranslate nohighlight">\(2x = 6\)</span> means the same thing as <span class="math notranslate nohighlight">\(x = 3\)</span>.  We can go back and forth between these formats by multiplying/dividing by 2, but this doesn’t change the <span class="math notranslate nohighlight">\(x\)</span>-value that we’re looking for.</p>
 <script src="../../../scripts/vectorious.js">
 </script>
 <script src="../../../scripts/matrix-TeX.js">

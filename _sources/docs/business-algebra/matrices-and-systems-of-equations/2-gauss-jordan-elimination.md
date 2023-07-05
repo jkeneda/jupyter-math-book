@@ -83,6 +83,11 @@ To get to a matrix that looks like the one above, we are only allowed to do row 
 
 ### Row Swapping
 
+We are allowed to swap rows, because that's the same thing as swapping the equations in the system.  This doesn't affect the solution set.
+
+`````{admonititon} Try it yourself!
+:class: tip
+
 ```{div}
 :name: gje1
 
@@ -102,6 +107,14 @@ $$\begin{split}\left[\begin{array}{cc|c}
 Swap Rows {octicon}`sync;1em;sd-text-light`
 ```
 ````
+`````
+Typically, we use this row operation to get a 1 where we want it in the matrix.  The next operation can also be used to force a specific entry to become a 1.
+
+### Multiplying/Dividing a Row by a Number
+
+We are also allowed to multiply/divide a row by a **non-zero** number.  This is analogous to multiplying/dividing both sides of an equation by the number, which doesn't change its solution set.  For example, $2x = 6$ means the same thing as $x = 3$.  We can go back and forth between these formats by multiplying/dividing by 2, but this doesn't change the $x$-value that we're looking for.
+
+
 
 <script src="../../../scripts/vectorious.js">
 </script>
