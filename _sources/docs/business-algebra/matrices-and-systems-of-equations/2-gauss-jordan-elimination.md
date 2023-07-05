@@ -68,6 +68,10 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
     -1 & 1 & 0  \\
 \end{array}\right]$, with the understanding that the columns correspond to the variables (in alphabetical order).
 
+```{warning}
+Sometimes, we have to rearrange the equation we start with until it has the appropriate format for the matrix.  For example, if we start with the equation $2x = 3y$, we would need to rearrange the equation to get the variables together (maybe subtract $3y$ from both sides to get $2x - 3y = 0$).  The corresponding matrix row would look like $[2 \quad -3\ |\ 0]$.
+```
+
 ## Reducing the Matrix
 
 In this chapter, the goal is to find the $x$- and $y$-values that simultaneously balance the system of equations we started with.  Gauss-Jordan Elimination is an approach that allows us to solve the system by using a few row operations to reduce the system's matrix until it is of the form $\left[\begin{array}{cc|c}
