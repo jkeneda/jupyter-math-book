@@ -97,17 +97,8 @@ $$\begin{split}\left[\begin{array}{cc|c}
 \end{array}\right]\end{split}$$
 ```
 
-````{div}
-:name: swap-rows
-
-```{button-ref} #
-:color: info
-:class: sd-rounded-pill float-center
-
-Swap Rows {octicon}`sync;1em;sd-text-light`
-```
-````
 `````
+
 Typically, we use this row operation to get a 1 where we want it in the matrix.  The next operation can also be used to force a specific entry to become a 1.
 
 ### Multiplying/Dividing a Row by a Number
