@@ -70,6 +70,15 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
 
 ## Reducing the Matrix
 
+In this chapter, the goal is to find the $x$- and $y$-values that simultaneously balance the system of equations we started with.  Gauss-Jordan Elimination is an approach that allows us to solve the system by using a few row operations to reduce the system's matrix until it is of the form $\left[\begin{array}{cc|c}
+    1 & 0 & a \\
+    0 & 1 & b  \\
+\end{array}\right]$.  We can then translate the matrix into our answer: $x = a$ and $y = b$.
+
+To get to a matrix that looks like the one above, we are only allowed to do row operations that preserve the original solution set.  There are three such row operations.  Let's explore the first one.
+
+### Row Swapping
+
 ```{div}
 :name: gje1
 

@@ -539,6 +539,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#reducing-the-matrix">
    2.2. Reducing the Matrix
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#row-swapping">
+     2.2.1. Row Swapping
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -568,6 +575,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#reducing-the-matrix">
    2.2. Reducing the Matrix
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#row-swapping">
+     2.2.1. Row Swapping
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -649,6 +663,13 @@ title="Print to PDF"
 </section>
 <section id="reducing-the-matrix">
 <h2><span class="section-number">2.2. </span>Reducing the Matrix<a class="headerlink" href="#reducing-the-matrix" title="Permalink to this headline">#</a></h2>
+<p>In this chapter, the goal is to find the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-values that simultaneously balance the system of equations we started with.  Gauss-Jordan Elimination is an approach that allows us to solve the system by using a few row operations to reduce the system’s matrix until it is of the form <span class="math notranslate nohighlight">\(\left[\begin{array}{cc|c}
+    1 &amp; 0 &amp; a \\
+    0 &amp; 1 &amp; b  \\
+\end{array}\right]\)</span>.  We can then translate the matrix into our answer: <span class="math notranslate nohighlight">\(x = a\)</span> and <span class="math notranslate nohighlight">\(y = b\)</span>.</p>
+<p>To get to a matrix that looks like the one above, we are only allowed to do row operations that preserve the original solution set.  There are three such row operations.  Let’s explore the first one.</p>
+<section id="row-swapping">
+<h3><span class="section-number">2.2.1. </span>Row Swapping<a class="headerlink" href="#row-swapping" title="Permalink to this headline">#</a></h3>
 <div class="docutils" id="gje1">
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{split}\left[\begin{array}{cc|c}
@@ -665,6 +686,7 @@ title="Print to PDF"
 </script>
 <script src="../../../scripts/Matrix Unit/2-gauss-jordan-elimination.js">
 </script></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
