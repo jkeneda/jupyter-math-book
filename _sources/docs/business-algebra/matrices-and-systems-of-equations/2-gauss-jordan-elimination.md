@@ -73,10 +73,10 @@ From now on, we'll leave off the $x$ and $y$'s above the matrix.  Usually, we'll
 ```{div} live
 :name: matrix-test
 
-$$\begin{split}\left[\begin{array}{cc|c}
+$\begin{split}\left[\begin{array}{cc|c}
     1 & 2 & 3 \\
     4 & 5 & 6  \\
-\end{array}\right]\end{split}$$
+\end{array}\right]\end{split}$
 ```
 
 ````{div}
