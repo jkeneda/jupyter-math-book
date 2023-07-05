@@ -103,6 +103,7 @@ $$\begin{split}\left[\begin{array}{cc|c}
 ```{button-ref} #
 :color: info
 :class: sd-rounded-pill float-center
+:tooltip: Swap Row 1 with Row 2
 
 Swap Rows {octicon}`sync;1em;sd-text-light`
 ```

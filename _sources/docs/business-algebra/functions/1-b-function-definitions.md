@@ -41,7 +41,7 @@ where the input is thought of as "$x$ yards", and the output (denoted as $y$ or 
 
 Let's say that you're measuring the area of an entire (square) ranch.  In that case, even if the side length $x$ was measured in yards, it might make more sense to measure our output in terms of acres than square yards.  One acre is 4,840 square yards.  So if we want the output to be measured in acres instead, all we have to do is take our original outputs and convert them to acres by multiplying by the conversion rate $\frac{1 \text{ acre}}{4,840 \text{ square yards}}$:
 
-$$\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} * \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.$$
+$$\require{cancel}A^*(x) = x^2 \cancel{\text{ square yards}} \cdot \frac{1 \text{ acre}}{4,840 \cancel{\text{ square yards}}} = \frac{x^2}{4,840} \text{ acres}.$$
 
 So the functions $A$ and $A^*$ will take any side length $x$ (in yards) and produce the corresponding pen area in square yards or acres, respectively.
 
