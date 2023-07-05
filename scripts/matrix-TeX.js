@@ -3,7 +3,8 @@
 // Takes a JavaScript array (of arrays) and outputs the TeX (with escaped slashes, etc.) to typeset that array
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
-v.toLaTeX = function toLaTeX(matrix, split = false, matrixType = "") {
+
+v.toLaTeX = function (matrix, split = false, matrixType = "") {
     var TeX = ``;
     // First, deal with the possibility of being handed a single row matrix
     if (matrix[0][0] == undefined) {
@@ -11,13 +12,13 @@ v.toLaTeX = function toLaTeX(matrix, split = false, matrixType = "") {
             split = false; // Don't allow splitting in the event of a single column
         }
         if (split) {
-            TeX += `\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
+            TeX += `\\[\\begin{split}\n \\left[\\begin{array}{`; //Ready for column split description, e.g. cc|c
             for (var i = 1; i < matrix.length; i++) {
                 TeX += `c`;
             }
             TeX += `|c}\n`;
             TeX += makeTeXRow(matrix);
-            TeX += `\\end{array}\\right]\n\\end{split}`;
+            TeX += `\\end{array}\\right]\n\\end{split}\\]`;
         } else {
             TeX += `\\begin{${matrixType}matrix}\n`;
             TeX += makeTeXRow(matrix);
