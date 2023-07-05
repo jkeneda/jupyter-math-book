@@ -21,8 +21,8 @@ var calculator1 = Desmos.GraphingCalculator(document.getElementById('calculator1
     });
 
     calculator1.setMathBounds({
-        left: -5,
-        right: 5,
+        left: -3,
+        right: 4,
         bottom: -5,
-        top: 5
+        top: 2
     });
