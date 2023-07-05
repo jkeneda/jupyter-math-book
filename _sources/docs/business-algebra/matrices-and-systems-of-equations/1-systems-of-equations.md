@@ -5,5 +5,7 @@ So far in this course, we've met equations like $y = 2x - 4$.  We've seen that s
 <div id="calculator1" style="width: 60%; height: 300px; margin-left: auto; margin-right: auto;">
 </div>
 
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
 <script src="../../../scripts/Matrix Unit/1-systems-of-equations.js">
 </script>
