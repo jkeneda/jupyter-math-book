@@ -4,8 +4,10 @@
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
 
-v.toLaTeX = function (matrix, split = false, matrixType = "") {
-    var TeX = ``;
+v.toLaTeX = function (vmatrix, split = false, matrixType = "") {
+    let TeX = ``;
+    let matrix = v.toArray(vmatrix); // If we're passed a Vectorious matrix, cast to array of arrays
+
     // First, deal with the possibility of being handed a single row matrix
     if (matrix[0][0] == undefined) {
         if (matrix.length < 2) {
@@ -51,8 +53,8 @@ v.toLaTeX = function (matrix, split = false, matrixType = "") {
     return TeX;
 
     function makeTeXRow(rowMatrix) {
-        var TeX = ``;
-        for (var j = 0; j < rowMatrix.length; j++) {
+        let TeX = ``;
+        for (let j = 0; j < rowMatrix.length; j++) {
             TeX += rowMatrix[j];
             if (j + 1 < rowMatrix.length) {
                     TeX += ` & `;
