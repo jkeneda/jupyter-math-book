@@ -1,10 +1,13 @@
-// Designed to work with Vectorious (exposed v in browser)
+// Designed (by me) to work with Vectorious (exposed v in browser)
 
 // Takes a JavaScript array (of arrays) and outputs the TeX (with escaped slashes, etc.) to typeset that array
 // When not split, matrixType will change the parentheses/brackets around the matrix
 // Split matrices will have an augmented column and will be bracketed
-v.toLaTeX = function toLaTeX(matrix, split = false, matrixType = "") {
-    var TeX = ``;
+
+v.toLaTeX = function (vmatrix, split = false, matrixType = "") {
+    let TeX = ``;
+    let matrix = v.toArray(vmatrix); // If we're passed a Vectorious matrix, cast to array of arrays
+
     // First, deal with the possibility of being handed a single row matrix
     if (matrix[0][0] == undefined) {
         if (matrix.length < 2) {
@@ -50,8 +53,8 @@ v.toLaTeX = function toLaTeX(matrix, split = false, matrixType = "") {
     return TeX;
 
     function makeTeXRow(rowMatrix) {
-        var TeX = ``;
-        for (var j = 0; j < rowMatrix.length; j++) {
+        let TeX = ``;
+        for (let j = 0; j < rowMatrix.length; j++) {
             TeX += rowMatrix[j];
             if (j + 1 < rowMatrix.length) {
                     TeX += ` & `;
@@ -61,4 +64,10 @@ v.toLaTeX = function toLaTeX(matrix, split = false, matrixType = "") {
         }
         return TeX;
     }
+}
+
+v.scalarMult = function (vmatrix, row, scalar) {
+    vmatrix.row_add(row, row, scalar - 1);
+    // vmatrix = v.map(vmatrix, row => v.map(row, value => value.toPrecision(3))); // Not working yet
+    return vmatrix;
 }

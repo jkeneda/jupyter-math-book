@@ -1,15 +1,26 @@
-// Assumes vectorious and matrix-TeX have been loaded
+// Assumes vectorious.js and more-vectorious.js have been loaded - adds to exposed v
+// Still need to implement history and printStep
 
-var x = v.array([[1, 2, 3], [4, 5, 6]]);
+var x = v.array([[4, 5, 6], [1, 2, 3]]); // For gje1
+x.history = [x]; // Still needed
+
+v.printMatrix = function (x, id) {
+    document.getElementById(id).firstChild.nextSibling.innerHTML = v.toLaTeX(v.toArray(x), split = true);
+        // The Child shenanigans are necessary because the Jupyter Book typesetting will wrap the math in newlines and an extra div - we need to preserve it for spacing
+        MathJax.typeset(['#' + id]);
+}
+
+v.printStep = function(x, id, operation) {
+    document.getElementById(id).firstChild.nextSibling.innerHTML = v.toLaTeX(v.toArray(x), split = true);
+        // The Child shenanigans are necessary because the Jupyter Book typesetting will wrap the math in newlines and an extra div - we need to preserve it for spacing
+        MathJax.typeset(['#' + id]);
+}
 
 document.addEventListener('click', (e) => {
     e.stopImmediatePropagation(); // Makes sure it only fires once instead of bubbling.
-    const target = e.target.closest('.sd-btn-info') || document.body;
-
-    if (target.closest('#swap-rows')) {
+    
+    if (e.target.closest('#swap-rows')) {
         x = v.swap(x, 0, 1);
-        document.getElementById('matrix-test').innerHTML = v.toLaTeX(v.toArray(x), split = true);
-        MathJax.typeset(['.live']);
-        console.log('Click event fired.');
+        v.printMatrix(x, 'gje1');
     }
 });
